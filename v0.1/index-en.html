@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/hdgi#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/hdgi#","name":"Human Device Gesture Interaction Ontology ", "headline":"Gesture-controlled interfaces are becoming popular with the recent advent of IoT systems. Especially in the current automobiles, smart homes, computer games and AR/VR applications, gestures have become prevalent due to its accessibility to everyone. Designers, producers and vendors integrating gesture interfaces into their products have also increased in numbers, giving rise to a greater variation of standards in utilizing them. This could confuse the users who are accustomed to a set of conventional controls. This ontology formally describes human gestures and facilitate automated reasoning tasks which help systems to map gestures to corresponding affordances. This will be helpful for standardizing gesture designing and to bring interoperability across gesture-controlled interfaces.", "datePublished":"Sat May 16 22:11:54 AEST 2020", "author":[{"@type":"Person","name":"Madhawa Perera"},{"@type":"Person","name":"Armin Haller"},{"@type":"Person","name":"Sergio J. Rodríguez Méndez"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/hdgi#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/hdgi#","name":"Human Device Gesture Interaction Ontology ", "headline":"Gesture-controlled interfaces are becoming popular with the recent advent of IoT systems. Especially in the current automobiles, smart homes, computer games and AR/VR applications, gestures have become prevalent due to its accessibility to everyone. Designers, producers and vendors integrating gesture interfaces into their products have also increased in numbers, giving rise to a greater variation of standards in utilizing them. This could confuse the users who are accustomed to a set of conventional controls. This ontology formally describes human gestures and facilitate automated reasoning tasks which help systems to map gestures to corresponding affordances. This will be helpful for standardizing gesture designing and to bring interoperability across gesture-controlled interfaces.", "datePublished":"Sat May 16 22:21:26 AEST 2020", "license":"https://github.com/madhawap/human-device-interaction-ontology/blob/master/LICENSE", "author":[{"@type":"Person","name":"Madhawa Perera"},{"@type":"Person","name":"Armin Haller"},{"@type":"Person","name":"Sergio J. Rodríguez Méndez "}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -44,15 +44,8 @@ function loadTOC(){
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
-    });
-    </script> 
+ }; 
+   </script> 
   </head> 
 
 <body>
@@ -66,9 +59,9 @@ function loadTOC(){
 <dt>This version:</dt>
 <dd><a href="https://w3id.org/hdgi/v0.1">https://w3id.org/hdgi/v0.1</a></dd>
 <dt>Authors:</dt>
-<dd>Madhawa Perera</dd><dd>Armin Haller</dd><dd>Sergio J. Rodríguez Méndez</dd>
+<dd>Madhawa Perera</dd><dd>Armin Haller</dd><dd>Sergio J. Rodríguez Méndez </dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://github.com/madhawap/human-device-interaction-ontology/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="https://github.com/madhawap/human-device-interaction-ontology/blob/master/LICENSE" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd> Retrieved from: https://w3id.org/hdgi/v0.1</dd>
@@ -80,12 +73,3802 @@ function loadTOC(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract"></div>
-<div id="toc"></div>     <div id="introduction"></div>
-     <div id="overview"></div>
-     <div id="description"></div>
-     <div id="crossref"></div>
-     <div id="references"></div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+Gesture-controlled interfaces are becoming popular with the recent advent of IoT systems. Especially in the current automobiles, smart homes, computer games and AR/VR applications, gestures have become prevalent due to its accessibility to everyone. Designers, producers and vendors integrating gesture interfaces into their products have also increased in numbers, giving rise to a greater variation of standards in utilizing them. This could confuse the users who are accustomed to a set of conventional controls. This ontology formally describes human gestures and facilitate automated reasoning tasks which help systems to map gestures to corresponding affordances. This will be helpful for standardizing gesture designing and to bring interoperability across gesture-controlled interfaces.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>hdgi</b></td><td>&lt;https://w3id.org/hdgi#&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>hdgi</b></td><td>&lt;https://w3id.org/hdgi&gt;</td></tr>
+<tr><td><b>default namespace</b></td><td>&lt;https://w3id.org/hdgi&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Human Device Gesture Interaction Ontology ]: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul class="hlist">
+   <li>
+      <a href="#ActuatableAffordance" title="https://w3id.org/hdgi#ActuatableAffordance">
+         <span>actuatable affordance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Affordance" title="https://w3id.org/hdgi#Affordance">
+         <span>affordance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Body" title="https://w3id.org/hdgi#Body">
+         <span>body</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">
+         <span>body part</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Device" title="https://w3id.org/hdgi#Device">
+         <span>device</span>
+      </a>
+   </li>
+   <li>
+      <a href="#DeviceContext" title="https://w3id.org/hdgi#DeviceContext">
+         <span>device context</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Duration" title="https://w3id.org/hdgi#Duration">
+         <span>duration</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Face" title="https://w3id.org/hdgi#Face">
+         <span>face</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FacialGesture" title="https://w3id.org/hdgi#FacialGesture">
+         <span>facial gesture</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Finger" title="https://w3id.org/hdgi#Finger">
+         <span>finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerAnticlcokwiseRotation"
+         title="https://w3id.org/hdgi#FingerAnticlcokwiseRotation">
+         <span>finger anticlcokwise rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerBackward" title="https://w3id.org/hdgi#FingerBackward">
+         <span>finger backward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerClockwiseRotation" title="https://w3id.org/hdgi#FingerClockwiseRotation">
+         <span>finger clockwise rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerCurled" title="https://w3id.org/hdgi#FingerCurled">
+         <span>finger curled</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerDownward" title="https://w3id.org/hdgi#FingerDownward">
+         <span>finger downward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerFolded" title="https://w3id.org/hdgi#FingerFolded">
+         <span>finger folded</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerForward" title="https://w3id.org/hdgi#FingerForward">
+         <span>finger forward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerLeftward" title="https://w3id.org/hdgi#FingerLeftward">
+         <span>finger leftward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">
+         <span>finger movement</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">
+         <span>finger pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerRightward" title="https://w3id.org/hdgi#FingerRightward">
+         <span>finger rightward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerStraightandBackward" title="https://w3id.org/hdgi#FingerStraightandBackward">
+         <span>finger straightand backward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerStraightandDownward" title="https://w3id.org/hdgi#FingerStraightandDownward">
+         <span>finger straightand downward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerStraightandForward" title="https://w3id.org/hdgi#FingerStraightandForward">
+         <span>finger straightand forward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerStraightandLeftward" title="https://w3id.org/hdgi#FingerStraightandLeftward">
+         <span>finger straightand leftward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerStraightandRightward" title="https://w3id.org/hdgi#FingerStraightandRightward">
+         <span>finger straightand rightward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerStraightandUpwards" title="https://w3id.org/hdgi#FingerStraightandUpwards">
+         <span>finger straightand upwards</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FingerUpward" title="https://w3id.org/hdgi#FingerUpward">
+         <span>finger upward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Foot" title="https://w3id.org/hdgi#Foot">
+         <span>foot</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FootGesture" title="https://w3id.org/hdgi#FootGesture">
+         <span>foot gesture</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FootPose" title="https://w3id.org/hdgi#FootPose">
+         <span>foot pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Forearm" title="https://w3id.org/hdgi#Forearm">
+         <span>forearm</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmAnticlockwiseRotation"
+         title="https://w3id.org/hdgi#ForearmAnticlockwiseRotation">
+         <span>forearm anticlockwise rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmBackward" title="https://w3id.org/hdgi#ForearmBackward">
+         <span>forearm backward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmClockwiseRotation" title="https://w3id.org/hdgi#ForearmClockwiseRotation">
+         <span>forearm clockwise rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmDownward" title="https://w3id.org/hdgi#ForearmDownward">
+         <span>forearm downward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmForward" title="https://w3id.org/hdgi#ForearmForward">
+         <span>forearm forward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmGesture" title="https://w3id.org/hdgi#ForearmGesture">
+         <span>forearm gesture</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmLeftward" title="https://w3id.org/hdgi#ForearmLeftward">
+         <span>forearm leftward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmLeftwardAndDown" title="https://w3id.org/hdgi#ForearmLeftwardAndDown">
+         <span>forearm leftward and down</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmLeftwardAndUp" title="https://w3id.org/hdgi#ForearmLeftwardAndUp">
+         <span>forearm leftward and up</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">
+         <span>forearm movement</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmPose" title="https://w3id.org/hdgi#ForearmPose">
+         <span>forearm pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmRightward" title="https://w3id.org/hdgi#ForearmRightward">
+         <span>forearm rightward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmRightwardAndDown" title="https://w3id.org/hdgi#ForearmRightwardAndDown">
+         <span>forearm rightward and down</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmRightwardAndUp" title="https://w3id.org/hdgi#ForearmRightwardAndUp">
+         <span>forearm rightward and up</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ForearmUpward" title="https://w3id.org/hdgi#ForearmUpward">
+         <span>forearm upward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">
+         <span>gesture</span>
+      </a>
+   </li>
+   <li>
+      <a href="#HandGesture" title="https://w3id.org/hdgi#HandGesture">
+         <span>hand gesture</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Head" title="https://w3id.org/hdgi#Head">
+         <span>head</span>
+      </a>
+   </li>
+   <li>
+      <a href="#HeadGesture" title="https://w3id.org/hdgi#HeadGesture">
+         <span>head gesture</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Human" title="https://w3id.org/hdgi#Human">
+         <span>human</span>
+      </a>
+   </li>
+   <li>
+      <a href="#IndexFinger" title="https://w3id.org/hdgi#IndexFinger">
+         <span>index finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LeftForearm" title="https://w3id.org/hdgi#LeftForearm">
+         <span>left forearm</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LeftIndexFinger" title="https://w3id.org/hdgi#LeftIndexFinger">
+         <span>left index finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LeftLittleFinger" title="https://w3id.org/hdgi#LeftLittleFinger">
+         <span>left little finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LeftMiddleFinger" title="https://w3id.org/hdgi#LeftMiddleFinger">
+         <span>left middle finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LeftPalm" title="https://w3id.org/hdgi#LeftPalm">
+         <span>left palm</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LeftRingFinger" title="https://w3id.org/hdgi#LeftRingFinger">
+         <span>left ring finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LeftThumb" title="https://w3id.org/hdgi#LeftThumb">
+         <span>left thumb</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LeftUpperArm" title="https://w3id.org/hdgi#LeftUpperArm">
+         <span>left upper arm</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Leg" title="https://w3id.org/hdgi#Leg">
+         <span>leg</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LegGesture" title="https://w3id.org/hdgi#LegGesture">
+         <span>leg gesture</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LegPose" title="https://w3id.org/hdgi#LegPose">
+         <span>leg pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LittleFinger" title="https://w3id.org/hdgi#LittleFinger">
+         <span>little finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LocalCoordinateSystem" title="https://w3id.org/hdgi#LocalCoordinateSystem">
+         <span>local coordinate system</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Manufacturer" title="https://w3id.org/hdgi#Manufacturer">
+         <span>manufacturer</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MiddleFinger" title="https://w3id.org/hdgi#MiddleFinger">
+         <span>middle finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Movement" title="https://w3id.org/hdgi#Movement">
+         <span>movement</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ObservableAffordance" title="https://w3id.org/hdgi#ObservableAffordance">
+         <span>observable affordance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Observer" title="https://w3id.org/hdgi#Observer">
+         <span>observer</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Palm" title="https://w3id.org/hdgi#Palm">
+         <span>palm</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmAnticlockwiseRotation" title="https://w3id.org/hdgi#PalmAnticlockwiseRotation">
+         <span>palm anticlockwise rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmBackward" title="https://w3id.org/hdgi#PalmBackward">
+         <span>palm backward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmClockwiseRotation" title="https://w3id.org/hdgi#PalmClockwiseRotation">
+         <span>palm clockwise rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmDownward" title="https://w3id.org/hdgi#PalmDownward">
+         <span>palm downward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmDownwardPose" title="https://w3id.org/hdgi#PalmDownwardPose">
+         <span>palm downward pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmForward" title="https://w3id.org/hdgi#PalmForward">
+         <span>palm forward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmInwardPose" title="https://w3id.org/hdgi#PalmInwardPose">
+         <span>palm inward pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmLeftward" title="https://w3id.org/hdgi#PalmLeftward">
+         <span>palm leftward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmLeftwardPose" title="https://w3id.org/hdgi#PalmLeftwardPose">
+         <span>palm leftward pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">
+         <span>palm movement</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmOutwardPose" title="https://w3id.org/hdgi#PalmOutwardPose">
+         <span>palm outward pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmPose" title="https://w3id.org/hdgi#PalmPose">
+         <span>palm pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmRightward" title="https://w3id.org/hdgi#PalmRightward">
+         <span>palm rightward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmRightwardPose" title="https://w3id.org/hdgi#PalmRightwardPose">
+         <span>palm rightward pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmUpward" title="https://w3id.org/hdgi#PalmUpward">
+         <span>palm upward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PalmUpwardPose" title="https://w3id.org/hdgi#PalmUpwardPose">
+         <span>palm upward pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Pose" title="https://w3id.org/hdgi#Pose">
+         <span>pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Position" title="https://w3id.org/hdgi#Position">
+         <span>position</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Quaternion" title="https://w3id.org/hdgi#Quaternion">
+         <span>quaternion</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RightForearm" title="https://w3id.org/hdgi#RightForearm">
+         <span>right forearm</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RightIndexFinger" title="https://w3id.org/hdgi#RightIndexFinger">
+         <span>right index finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RightLittleFinger" title="https://w3id.org/hdgi#RightLittleFinger">
+         <span>right little finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RightMiddleFinger" title="https://w3id.org/hdgi#RightMiddleFinger">
+         <span>right middle finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RightPalm" title="https://w3id.org/hdgi#RightPalm">
+         <span>right palm</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RightRingFinger" title="https://w3id.org/hdgi#RightRingFinger">
+         <span>right ring finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RightThumb" title="https://w3id.org/hdgi#RightThumb">
+         <span>right thumb</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RightUpperArm" title="https://w3id.org/hdgi#RightUpperArm">
+         <span>right upper arm</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RingFinger" title="https://w3id.org/hdgi#RingFinger">
+         <span>ring finger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Rotation" title="https://w3id.org/hdgi#Rotation">
+         <span>rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Thumb" title="https://w3id.org/hdgi#Thumb">
+         <span>thumb</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UnitOfMeasure" title="https://w3id.org/hdgi#UnitOfMeasure">
+         <span>unit of measure</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArm" title="https://w3id.org/hdgi#UpperArm">
+         <span>upper arm</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmAnticlcockwiseRotation"
+         title="https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation">
+         <span>upper arm anticlcockwise rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmBackward" title="https://w3id.org/hdgi#UpperArmBackward">
+         <span>upper arm backward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmClockwiseRotation" title="https://w3id.org/hdgi#UpperArmClockwiseRotation">
+         <span>upper arm clockwise rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmForward" title="https://w3id.org/hdgi#UpperArmForward">
+         <span>upper arm forward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmGesture" title="https://w3id.org/hdgi#UpperArmGesture">
+         <span>upper arm gesture</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmLeftward" title="https://w3id.org/hdgi#UpperArmLeftward">
+         <span>upper arm leftward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmLeftwardAndBack" title="https://w3id.org/hdgi#UpperArmLeftwardAndBack">
+         <span>upper arm leftward and back</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmLeftwardAndFront" title="https://w3id.org/hdgi#UpperArmLeftwardAndFront">
+         <span>upper arm leftward and front</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">
+         <span>upper arm movement</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmPose" title="https://w3id.org/hdgi#UpperArmPose">
+         <span>upper arm pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmRightward" title="https://w3id.org/hdgi#UpperArmRightward">
+         <span>upper arm rightward</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmRightwardAndBack" title="https://w3id.org/hdgi#UpperArmRightwardAndBack">
+         <span>upper arm rightward and back</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UpperArmRightwardAndFront" title="https://w3id.org/hdgi#UpperArmRightwardAndFront">
+         <span>upper arm rightward and front</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UserContext" title="https://w3id.org/hdgi#UserContext">
+         <span>user context</span>
+      </a>
+   </li>
+</ul><h4>Object Properties</h4><ul class="hlist">
+   <li>
+      <a href="#hasEndPose" title="https://w3id.org/hdgi#hasEndPose">
+         <span>has end pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasPart" title="https://w3id.org/hdgi#hasPart">
+         <span>has part</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasStartPose" title="https://w3id.org/hdgi#hasStartPose">
+         <span>has start pose</span>
+      </a>
+   </li>
+   <li>
+      <a href="#observes" title="https://w3id.org/hdgi#observes">
+         <span>observes</span>
+      </a>
+   </li>
+</ul><h4>Data Properties</h4><ul class="hlist">
+   <li>
+      <a href="#i-component" title="https://w3id.org/hdgi#i-component">
+         <span>i component</span>
+      </a>
+   </li>
+   <li>
+      <a href="#j-component" title="https://w3id.org/hdgi#j-component">
+         <span>j component</span>
+      </a>
+   </li>
+   <li>
+      <a href="#k-component" title="https://w3id.org/hdgi#k-component">
+         <span>k component</span>
+      </a>
+   </li>
+   <li>
+      <a href="#originPoint" title="https://w3id.org/hdgi#originPoint">
+         <span>origin point</span>
+      </a>
+   </li>
+   <li>
+      <a href="#w-component" title="https://w3id.org/hdgi#w-component">
+         <span>w component</span>
+      </a>
+   </li>
+   <li>
+      <a href="#x-axisDirection" title="https://w3id.org/hdgi#x-axisDirection">
+         <span>x axis direction</span>
+      </a>
+   </li>
+   <li>
+      <a href="#xPosition" title="https://w3id.org/hdgi#xPosition">
+         <span>x position</span>
+      </a>
+   </li>
+   <li>
+      <a href="#xRotation" title="https://w3id.org/hdgi#xRotation">
+         <span>x rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#y-axisDirection" title="https://w3id.org/hdgi#y-axisDirection">
+         <span>y axis direction</span>
+      </a>
+   </li>
+   <li>
+      <a href="#yPosition" title="https://w3id.org/hdgi#yPosition">
+         <span>y position</span>
+      </a>
+   </li>
+   <li>
+      <a href="#yRotation" title="https://w3id.org/hdgi#yRotation">
+         <span>y rotation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#z-axisDirection" title="https://w3id.org/hdgi#z-axisDirection">
+         <span>z axis direction</span>
+      </a>
+   </li>
+   <li>
+      <a href="#zPosition" title="https://w3id.org/hdgi#zPosition">
+         <span>z position</span>
+      </a>
+   </li>
+   <li>
+      <a href="#zRotation" title="https://w3id.org/hdgi#zRotation">
+         <span>z rotation</span>
+      </a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Human Device Gesture Interaction Ontology ]: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Human Device Gesture Interaction Ontology ] classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Human Device Gesture Interaction Ontology ].
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#ActuatableAffordance" title="https://w3id.org/hdgi#ActuatableAffordance">
+            <span>actuatable affordance</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Affordance" title="https://w3id.org/hdgi#Affordance">
+            <span>affordance</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Body" title="https://w3id.org/hdgi#Body">
+            <span>body</span>
+         </a>
+      </li>
+      <li>
+         <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">
+            <span>body part</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Device" title="https://w3id.org/hdgi#Device">
+            <span>device</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DeviceContext" title="https://w3id.org/hdgi#DeviceContext">
+            <span>device context</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Duration" title="https://w3id.org/hdgi#Duration">
+            <span>duration</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Face" title="https://w3id.org/hdgi#Face">
+            <span>face</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FacialGesture" title="https://w3id.org/hdgi#FacialGesture">
+            <span>facial gesture</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Finger" title="https://w3id.org/hdgi#Finger">
+            <span>finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerAnticlcokwiseRotation"
+            title="https://w3id.org/hdgi#FingerAnticlcokwiseRotation">
+            <span>finger anticlcokwise rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerBackward" title="https://w3id.org/hdgi#FingerBackward">
+            <span>finger backward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerClockwiseRotation" title="https://w3id.org/hdgi#FingerClockwiseRotation">
+            <span>finger clockwise rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerCurled" title="https://w3id.org/hdgi#FingerCurled">
+            <span>finger curled</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerDownward" title="https://w3id.org/hdgi#FingerDownward">
+            <span>finger downward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerFolded" title="https://w3id.org/hdgi#FingerFolded">
+            <span>finger folded</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerForward" title="https://w3id.org/hdgi#FingerForward">
+            <span>finger forward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerLeftward" title="https://w3id.org/hdgi#FingerLeftward">
+            <span>finger leftward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">
+            <span>finger movement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">
+            <span>finger pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerRightward" title="https://w3id.org/hdgi#FingerRightward">
+            <span>finger rightward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerStraightandBackward" title="https://w3id.org/hdgi#FingerStraightandBackward">
+            <span>finger straightand backward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerStraightandDownward" title="https://w3id.org/hdgi#FingerStraightandDownward">
+            <span>finger straightand downward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerStraightandForward" title="https://w3id.org/hdgi#FingerStraightandForward">
+            <span>finger straightand forward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerStraightandLeftward" title="https://w3id.org/hdgi#FingerStraightandLeftward">
+            <span>finger straightand leftward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerStraightandRightward" title="https://w3id.org/hdgi#FingerStraightandRightward">
+            <span>finger straightand rightward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerStraightandUpwards" title="https://w3id.org/hdgi#FingerStraightandUpwards">
+            <span>finger straightand upwards</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FingerUpward" title="https://w3id.org/hdgi#FingerUpward">
+            <span>finger upward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Foot" title="https://w3id.org/hdgi#Foot">
+            <span>foot</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FootGesture" title="https://w3id.org/hdgi#FootGesture">
+            <span>foot gesture</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FootPose" title="https://w3id.org/hdgi#FootPose">
+            <span>foot pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Forearm" title="https://w3id.org/hdgi#Forearm">
+            <span>forearm</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmAnticlockwiseRotation"
+            title="https://w3id.org/hdgi#ForearmAnticlockwiseRotation">
+            <span>forearm anticlockwise rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmBackward" title="https://w3id.org/hdgi#ForearmBackward">
+            <span>forearm backward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmClockwiseRotation" title="https://w3id.org/hdgi#ForearmClockwiseRotation">
+            <span>forearm clockwise rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmDownward" title="https://w3id.org/hdgi#ForearmDownward">
+            <span>forearm downward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmForward" title="https://w3id.org/hdgi#ForearmForward">
+            <span>forearm forward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmGesture" title="https://w3id.org/hdgi#ForearmGesture">
+            <span>forearm gesture</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmLeftward" title="https://w3id.org/hdgi#ForearmLeftward">
+            <span>forearm leftward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmLeftwardAndDown" title="https://w3id.org/hdgi#ForearmLeftwardAndDown">
+            <span>forearm leftward and down</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmLeftwardAndUp" title="https://w3id.org/hdgi#ForearmLeftwardAndUp">
+            <span>forearm leftward and up</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">
+            <span>forearm movement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmPose" title="https://w3id.org/hdgi#ForearmPose">
+            <span>forearm pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmRightward" title="https://w3id.org/hdgi#ForearmRightward">
+            <span>forearm rightward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmRightwardAndDown" title="https://w3id.org/hdgi#ForearmRightwardAndDown">
+            <span>forearm rightward and down</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmRightwardAndUp" title="https://w3id.org/hdgi#ForearmRightwardAndUp">
+            <span>forearm rightward and up</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForearmUpward" title="https://w3id.org/hdgi#ForearmUpward">
+            <span>forearm upward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">
+            <span>gesture</span>
+         </a>
+      </li>
+      <li>
+         <a href="#HandGesture" title="https://w3id.org/hdgi#HandGesture">
+            <span>hand gesture</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Head" title="https://w3id.org/hdgi#Head">
+            <span>head</span>
+         </a>
+      </li>
+      <li>
+         <a href="#HeadGesture" title="https://w3id.org/hdgi#HeadGesture">
+            <span>head gesture</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Human" title="https://w3id.org/hdgi#Human">
+            <span>human</span>
+         </a>
+      </li>
+      <li>
+         <a href="#IndexFinger" title="https://w3id.org/hdgi#IndexFinger">
+            <span>index finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LeftForearm" title="https://w3id.org/hdgi#LeftForearm">
+            <span>left forearm</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LeftIndexFinger" title="https://w3id.org/hdgi#LeftIndexFinger">
+            <span>left index finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LeftLittleFinger" title="https://w3id.org/hdgi#LeftLittleFinger">
+            <span>left little finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LeftMiddleFinger" title="https://w3id.org/hdgi#LeftMiddleFinger">
+            <span>left middle finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LeftPalm" title="https://w3id.org/hdgi#LeftPalm">
+            <span>left palm</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LeftRingFinger" title="https://w3id.org/hdgi#LeftRingFinger">
+            <span>left ring finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LeftThumb" title="https://w3id.org/hdgi#LeftThumb">
+            <span>left thumb</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LeftUpperArm" title="https://w3id.org/hdgi#LeftUpperArm">
+            <span>left upper arm</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Leg" title="https://w3id.org/hdgi#Leg">
+            <span>leg</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LegGesture" title="https://w3id.org/hdgi#LegGesture">
+            <span>leg gesture</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LegPose" title="https://w3id.org/hdgi#LegPose">
+            <span>leg pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LittleFinger" title="https://w3id.org/hdgi#LittleFinger">
+            <span>little finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LocalCoordinateSystem" title="https://w3id.org/hdgi#LocalCoordinateSystem">
+            <span>local coordinate system</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Manufacturer" title="https://w3id.org/hdgi#Manufacturer">
+            <span>manufacturer</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MiddleFinger" title="https://w3id.org/hdgi#MiddleFinger">
+            <span>middle finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Movement" title="https://w3id.org/hdgi#Movement">
+            <span>movement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ObservableAffordance" title="https://w3id.org/hdgi#ObservableAffordance">
+            <span>observable affordance</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Observer" title="https://w3id.org/hdgi#Observer">
+            <span>observer</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Palm" title="https://w3id.org/hdgi#Palm">
+            <span>palm</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmAnticlockwiseRotation" title="https://w3id.org/hdgi#PalmAnticlockwiseRotation">
+            <span>palm anticlockwise rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmBackward" title="https://w3id.org/hdgi#PalmBackward">
+            <span>palm backward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmClockwiseRotation" title="https://w3id.org/hdgi#PalmClockwiseRotation">
+            <span>palm clockwise rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmDownward" title="https://w3id.org/hdgi#PalmDownward">
+            <span>palm downward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmDownwardPose" title="https://w3id.org/hdgi#PalmDownwardPose">
+            <span>palm downward pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmForward" title="https://w3id.org/hdgi#PalmForward">
+            <span>palm forward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmInwardPose" title="https://w3id.org/hdgi#PalmInwardPose">
+            <span>palm inward pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmLeftward" title="https://w3id.org/hdgi#PalmLeftward">
+            <span>palm leftward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmLeftwardPose" title="https://w3id.org/hdgi#PalmLeftwardPose">
+            <span>palm leftward pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">
+            <span>palm movement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmOutwardPose" title="https://w3id.org/hdgi#PalmOutwardPose">
+            <span>palm outward pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmPose" title="https://w3id.org/hdgi#PalmPose">
+            <span>palm pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmRightward" title="https://w3id.org/hdgi#PalmRightward">
+            <span>palm rightward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmRightwardPose" title="https://w3id.org/hdgi#PalmRightwardPose">
+            <span>palm rightward pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmUpward" title="https://w3id.org/hdgi#PalmUpward">
+            <span>palm upward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PalmUpwardPose" title="https://w3id.org/hdgi#PalmUpwardPose">
+            <span>palm upward pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Pose" title="https://w3id.org/hdgi#Pose">
+            <span>pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Position" title="https://w3id.org/hdgi#Position">
+            <span>position</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Quaternion" title="https://w3id.org/hdgi#Quaternion">
+            <span>quaternion</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RightForearm" title="https://w3id.org/hdgi#RightForearm">
+            <span>right forearm</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RightIndexFinger" title="https://w3id.org/hdgi#RightIndexFinger">
+            <span>right index finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RightLittleFinger" title="https://w3id.org/hdgi#RightLittleFinger">
+            <span>right little finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RightMiddleFinger" title="https://w3id.org/hdgi#RightMiddleFinger">
+            <span>right middle finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RightPalm" title="https://w3id.org/hdgi#RightPalm">
+            <span>right palm</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RightRingFinger" title="https://w3id.org/hdgi#RightRingFinger">
+            <span>right ring finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RightThumb" title="https://w3id.org/hdgi#RightThumb">
+            <span>right thumb</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RightUpperArm" title="https://w3id.org/hdgi#RightUpperArm">
+            <span>right upper arm</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RingFinger" title="https://w3id.org/hdgi#RingFinger">
+            <span>ring finger</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Rotation" title="https://w3id.org/hdgi#Rotation">
+            <span>rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Thumb" title="https://w3id.org/hdgi#Thumb">
+            <span>thumb</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UnitOfMeasure" title="https://w3id.org/hdgi#UnitOfMeasure">
+            <span>unit of measure</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArm" title="https://w3id.org/hdgi#UpperArm">
+            <span>upper arm</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmAnticlcockwiseRotation"
+            title="https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation">
+            <span>upper arm anticlcockwise rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmBackward" title="https://w3id.org/hdgi#UpperArmBackward">
+            <span>upper arm backward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmClockwiseRotation" title="https://w3id.org/hdgi#UpperArmClockwiseRotation">
+            <span>upper arm clockwise rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmForward" title="https://w3id.org/hdgi#UpperArmForward">
+            <span>upper arm forward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmGesture" title="https://w3id.org/hdgi#UpperArmGesture">
+            <span>upper arm gesture</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmLeftward" title="https://w3id.org/hdgi#UpperArmLeftward">
+            <span>upper arm leftward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmLeftwardAndBack" title="https://w3id.org/hdgi#UpperArmLeftwardAndBack">
+            <span>upper arm leftward and back</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmLeftwardAndFront" title="https://w3id.org/hdgi#UpperArmLeftwardAndFront">
+            <span>upper arm leftward and front</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">
+            <span>upper arm movement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmPose" title="https://w3id.org/hdgi#UpperArmPose">
+            <span>upper arm pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmRightward" title="https://w3id.org/hdgi#UpperArmRightward">
+            <span>upper arm rightward</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmRightwardAndBack" title="https://w3id.org/hdgi#UpperArmRightwardAndBack">
+            <span>upper arm rightward and back</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpperArmRightwardAndFront" title="https://w3id.org/hdgi#UpperArmRightwardAndFront">
+            <span>upper arm rightward and front</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UserContext" title="https://w3id.org/hdgi#UserContext">
+            <span>user context</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="ActuatableAffordance">
+      <h3>actuatable affordance<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ActuatableAffordance</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Affordance" title="https://w3id.org/hdgi#Affordance">affordance</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Affordance">
+      <h3>affordance<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Affordance</p>
+      <div class="comment">
+         <span class="markdown">Affordances are the all type of properties that are belong to devices and it show the possible actions users can take with it.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ActuatableAffordance" title="https://w3id.org/hdgi#ActuatableAffordance">actuatable affordance</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ObservableAffordance" title="https://w3id.org/hdgi#ObservableAffordance">observable affordance</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Body">
+      <h3>body<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Body</p>
+      <div class="comment">
+         <span class="markdown">Human body. A collection of body parts.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="BodyPart">
+      <h3>body part<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#BodyPart</p>
+      <div class="comment">
+         <span class="markdown">Parts of human body.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>"Head", "Palm", "Finger" etc.</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Face" title="https://w3id.org/hdgi#Face">face</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Finger" title="https://w3id.org/hdgi#Finger">finger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Foot" title="https://w3id.org/hdgi#Foot">foot</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Forearm" title="https://w3id.org/hdgi#Forearm">forearm</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Head" title="https://w3id.org/hdgi#Head">head</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Leg" title="https://w3id.org/hdgi#Leg">leg</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Palm" title="https://w3id.org/hdgi#Palm">palm</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArm" title="https://w3id.org/hdgi#UpperArm">upper arm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Device">
+      <h3>device<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Device</p>
+      <div class="comment">
+         <span class="markdown">In here, device means a piece of hardware or software which consists with sensors or actuators or both.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="DeviceContext">
+      <h3>device context<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#DeviceContext</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/hdgi#Context">context</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Duration">
+      <h3>duration<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Duration</p>
+      <div class="comment">
+         <span class="markdown">Duration is a temporal extent. 
+In this ontology, duration is used to measure a certain body part movement.</span>
+      </div>
+   </div>
+   <div class="entity" id="Face">
+      <h3>face<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Face</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">body part</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FacialGesture">
+      <h3>facial gesture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FacialGesture</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">gesture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Finger">
+      <h3>finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Finger</p>
+      <div class="comment">
+         <span class="markdown">A finger is a (body) part of the human body and a type of digit.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>thumb, middle finger, left ring finger etc</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">body part</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#IndexFinger" title="https://w3id.org/hdgi#IndexFinger">index finger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LittleFinger" title="https://w3id.org/hdgi#LittleFinger">little finger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MiddleFinger" title="https://w3id.org/hdgi#MiddleFinger">middle finger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RingFinger" title="https://w3id.org/hdgi#RingFinger">ring finger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Thumb" title="https://w3id.org/hdgi#Thumb">thumb</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerAnticlcokwiseRotation">
+      <h3>finger anticlcokwise rotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerAnticlcokwiseRotation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">finger movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerBackward">
+      <h3>finger backward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerBackward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">finger movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerClockwiseRotation">
+      <h3>finger clockwise rotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerClockwiseRotation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">finger movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerCurled">
+      <h3>finger curled<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerCurled</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">finger pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerDownward">
+      <h3>finger downward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerDownward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">finger movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerFolded">
+      <h3>finger folded<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerFolded</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">finger pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerForward">
+      <h3>finger forward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerForward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">finger movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerLeftward">
+      <h3>finger leftward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerLeftward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">finger movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerMovement">
+      <h3>finger movement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerMovement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Movement" title="https://w3id.org/hdgi#Movement">movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#FingerAnticlcokwiseRotation"
+               title="https://w3id.org/hdgi#FingerAnticlcokwiseRotation">finger anticlcokwise rotation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerBackward" title="https://w3id.org/hdgi#FingerBackward">finger backward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerClockwiseRotation" title="https://w3id.org/hdgi#FingerClockwiseRotation">finger clockwise rotation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerDownward" title="https://w3id.org/hdgi#FingerDownward">finger downward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerForward" title="https://w3id.org/hdgi#FingerForward">finger forward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerLeftward" title="https://w3id.org/hdgi#FingerLeftward">finger leftward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerRightward" title="https://w3id.org/hdgi#FingerRightward">finger rightward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerUpward" title="https://w3id.org/hdgi#FingerUpward">finger upward</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerPose">
+      <h3>finger pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Pose" title="https://w3id.org/hdgi#Pose">pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#FingerCurled" title="https://w3id.org/hdgi#FingerCurled">finger curled</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerFolded" title="https://w3id.org/hdgi#FingerFolded">finger folded</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerStraightandBackward" title="https://w3id.org/hdgi#FingerStraightandBackward">finger straightand backward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerStraightandDownward" title="https://w3id.org/hdgi#FingerStraightandDownward">finger straightand downward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerStraightandForward" title="https://w3id.org/hdgi#FingerStraightandForward">finger straightand forward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerStraightandLeftward" title="https://w3id.org/hdgi#FingerStraightandLeftward">finger straightand leftward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerStraightandRightward" title="https://w3id.org/hdgi#FingerStraightandRightward">finger straightand rightward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FingerStraightandUpwards" title="https://w3id.org/hdgi#FingerStraightandUpwards">finger straightand upwards</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerRightward">
+      <h3>finger rightward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerRightward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">finger movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerStraightandBackward">
+      <h3>finger straightand backward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerStraightandBackward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">finger pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerStraightandDownward">
+      <h3>finger straightand downward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerStraightandDownward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">finger pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerStraightandForward">
+      <h3>finger straightand forward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerStraightandForward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">finger pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerStraightandLeftward">
+      <h3>finger straightand leftward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerStraightandLeftward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">finger pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerStraightandRightward">
+      <h3>finger straightand rightward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerStraightandRightward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">finger pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerStraightandUpwards">
+      <h3>finger straightand upwards<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerStraightandUpwards</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">finger pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FingerUpward">
+      <h3>finger upward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FingerUpward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">finger movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Foot">
+      <h3>foot<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Foot</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">body part</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FootGesture">
+      <h3>foot gesture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FootGesture</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">gesture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FootPose">
+      <h3>foot pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#FootPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Pose" title="https://w3id.org/hdgi#Pose">pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Forearm">
+      <h3>forearm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Forearm</p>
+      <div class="comment">
+         <span class="markdown">The forearm is the line between the elbow joint and the wrist</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">body part</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LeftForearm" title="https://w3id.org/hdgi#LeftForearm">left forearm</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RightForearm" title="https://w3id.org/hdgi#RightForearm">right forearm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmAnticlockwiseRotation">
+      <h3>forearm anticlockwise rotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmAnticlockwiseRotation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmBackward">
+      <h3>forearm backward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmBackward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmClockwiseRotation">
+      <h3>forearm clockwise rotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmClockwiseRotation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmDownward">
+      <h3>forearm downward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmDownward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmForward">
+      <h3>forearm forward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmForward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmGesture">
+      <h3>forearm gesture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmGesture</p>
+      <div class="comment">
+         <span class="markdown">Gestures (movements) made with forearm</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">gesture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmLeftward">
+      <h3>forearm leftward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmLeftward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmLeftwardAndDown">
+      <h3>forearm leftward and down<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmLeftwardAndDown</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmLeftwardAndUp">
+      <h3>forearm leftward and up<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmLeftwardAndUp</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmMovement">
+      <h3>forearm movement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmMovement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Movement" title="https://w3id.org/hdgi#Movement">movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ForearmAnticlockwiseRotation"
+               title="https://w3id.org/hdgi#ForearmAnticlockwiseRotation">forearm anticlockwise rotation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmBackward" title="https://w3id.org/hdgi#ForearmBackward">forearm backward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmClockwiseRotation" title="https://w3id.org/hdgi#ForearmClockwiseRotation">forearm clockwise rotation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmDownward" title="https://w3id.org/hdgi#ForearmDownward">forearm downward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmForward" title="https://w3id.org/hdgi#ForearmForward">forearm forward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmLeftward" title="https://w3id.org/hdgi#ForearmLeftward">forearm leftward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmLeftwardAndDown" title="https://w3id.org/hdgi#ForearmLeftwardAndDown">forearm leftward and down</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmLeftwardAndUp" title="https://w3id.org/hdgi#ForearmLeftwardAndUp">forearm leftward and up</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmRightward" title="https://w3id.org/hdgi#ForearmRightward">forearm rightward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmRightwardAndDown" title="https://w3id.org/hdgi#ForearmRightwardAndDown">forearm rightward and down</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmRightwardAndUp" title="https://w3id.org/hdgi#ForearmRightwardAndUp">forearm rightward and up</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmUpward" title="https://w3id.org/hdgi#ForearmUpward">forearm upward</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmPose">
+      <h3>forearm pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Pose" title="https://w3id.org/hdgi#Pose">pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmRightward">
+      <h3>forearm rightward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmRightward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmRightwardAndDown">
+      <h3>forearm rightward and down<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmRightwardAndDown</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmRightwardAndUp">
+      <h3>forearm rightward and up<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmRightwardAndUp</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForearmUpward">
+      <h3>forearm upward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ForearmUpward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Gesture">
+      <h3>gesture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Gesture</p>
+      <div class="comment">
+         <span class="markdown">In this ontology, a gesturre is defined as a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#FacialGesture" title="https://w3id.org/hdgi#FacialGesture">facial gesture</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FootGesture" title="https://w3id.org/hdgi#FootGesture">foot gesture</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmGesture" title="https://w3id.org/hdgi#ForearmGesture">forearm gesture</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HandGesture" title="https://w3id.org/hdgi#HandGesture">hand gesture</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HeadGesture" title="https://w3id.org/hdgi#HeadGesture">head gesture</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LegGesture" title="https://w3id.org/hdgi#LegGesture">leg gesture</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmGesture" title="https://w3id.org/hdgi#UpperArmGesture">upper arm gesture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HandGesture">
+      <h3>hand gesture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#HandGesture</p>
+      <div class="comment">
+         <span class="markdown">Gestures (movements) made with fingers and palms</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">gesture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Head">
+      <h3>head<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Head</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">body part</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HeadGesture">
+      <h3>head gesture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#HeadGesture</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">gesture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Human">
+      <h3>human<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Human</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="IndexFinger">
+      <h3>index finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#IndexFinger</p>
+      <div class="comment">
+         <span class="markdown">Second finger or the second digit of hand</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Finger" title="https://w3id.org/hdgi#Finger">finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LeftIndexFinger" title="https://w3id.org/hdgi#LeftIndexFinger">left index finger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RightIndexFinger" title="https://w3id.org/hdgi#RightIndexFinger">right index finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeftForearm">
+      <h3>left forearm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LeftForearm</p>
+      <div class="comment">
+         <span class="markdown">Left forearm</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Forearm" title="https://w3id.org/hdgi#Forearm">forearm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeftIndexFinger">
+      <h3>left index finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LeftIndexFinger</p>
+      <div class="comment">
+         <span class="markdown">Left hand index finger</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#IndexFinger" title="https://w3id.org/hdgi#IndexFinger">index finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeftLittleFinger">
+      <h3>left little finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LeftLittleFinger</p>
+      <div class="comment">
+         <span class="markdown">Left hand little finger</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#LittleFinger" title="https://w3id.org/hdgi#LittleFinger">little finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeftMiddleFinger">
+      <h3>left middle finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LeftMiddleFinger</p>
+      <div class="comment">
+         <span class="markdown">Left hand middle finger</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#MiddleFinger" title="https://w3id.org/hdgi#MiddleFinger">middle finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeftPalm">
+      <h3>left palm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LeftPalm</p>
+      <div class="comment">
+         <span class="markdown">Left hand palm</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Palm" title="https://w3id.org/hdgi#Palm">palm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeftRingFinger">
+      <h3>left ring finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LeftRingFinger</p>
+      <div class="comment">
+         <span class="markdown">Left hand ring finger</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RingFinger" title="https://w3id.org/hdgi#RingFinger">ring finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeftThumb">
+      <h3>left thumb<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LeftThumb</p>
+      <div class="comment">
+         <span class="markdown">Thumb of left hand</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Thumb" title="https://w3id.org/hdgi#Thumb">thumb</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeftUpperArm">
+      <h3>left upper arm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LeftUpperArm</p>
+      <div class="comment">
+         <span class="markdown">Left upper arm</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArm" title="https://w3id.org/hdgi#UpperArm">upper arm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Leg">
+      <h3>leg<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Leg</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">body part</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LegGesture">
+      <h3>leg gesture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LegGesture</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">gesture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LegPose">
+      <h3>leg pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LegPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Pose" title="https://w3id.org/hdgi#Pose">pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LittleFinger">
+      <h3>little finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LittleFinger</p>
+      <div class="comment">
+         <span class="markdown">Fifth finger or the fifth digit of hand</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Finger" title="https://w3id.org/hdgi#Finger">finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LeftLittleFinger" title="https://w3id.org/hdgi#LeftLittleFinger">left little finger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RightLittleFinger" title="https://w3id.org/hdgi#RightLittleFinger">right little finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LocalCoordinateSystem">
+      <h3>local coordinate system<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LocalCoordinateSystem</p>
+      <div class="comment">
+         <span class="markdown">The coordinate system that’s convenient for a given entity(Finger, palm etc.) is called the local coordinate system, local space, or object space.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="Manufacturer">
+      <h3>manufacturer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Manufacturer</p>
+      <div class="comment">
+         <span class="markdown">Manufacturing company of a device</span>
+      </div>
+   </div>
+   <div class="entity" id="MiddleFinger">
+      <h3>middle finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#MiddleFinger</p>
+      <div class="comment">
+         <span class="markdown">Third finger or the third digit of hand</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Finger" title="https://w3id.org/hdgi#Finger">finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LeftMiddleFinger" title="https://w3id.org/hdgi#LeftMiddleFinger">left middle finger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RightMiddleFinger" title="https://w3id.org/hdgi#RightMiddleFinger">right middle finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Movement">
+      <h3>movement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Movement</p>
+      <div class="comment">
+         <span class="markdown">An act of moving. In this onlogy it is an act of moving a certain body part towrds a certain direction.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#FingerMovement" title="https://w3id.org/hdgi#FingerMovement">finger movement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmMovement" title="https://w3id.org/hdgi#ForearmMovement">forearm movement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">palm movement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ObservableAffordance">
+      <h3>observable affordance<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ObservableAffordance</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Affordance" title="https://w3id.org/hdgi#Affordance">affordance</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Observer">
+      <h3>observer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Observer</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="Palm">
+      <h3>palm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Palm</p>
+      <div class="comment">
+         <span class="markdown">The area located at the end of the forearm (starting from wrist) up until the start of a finger which is the central region of the anterior part of the hand.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">body part</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LeftPalm" title="https://w3id.org/hdgi#LeftPalm">left palm</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RightPalm" title="https://w3id.org/hdgi#RightPalm">right palm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmAnticlockwiseRotation">
+      <h3>palm anticlockwise rotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmAnticlockwiseRotation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">palm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmBackward">
+      <h3>palm backward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmBackward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">palm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmClockwiseRotation">
+      <h3>palm clockwise rotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmClockwiseRotation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">palm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmDownward">
+      <h3>palm downward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmDownward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">palm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmDownwardPose">
+      <h3>palm downward pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmDownwardPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmPose" title="https://w3id.org/hdgi#PalmPose">palm pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmForward">
+      <h3>palm forward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmForward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">palm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmInwardPose">
+      <h3>palm inward pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmInwardPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmPose" title="https://w3id.org/hdgi#PalmPose">palm pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmLeftward">
+      <h3>palm leftward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmLeftward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">palm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmLeftwardPose">
+      <h3>palm leftward pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmLeftwardPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmPose" title="https://w3id.org/hdgi#PalmPose">palm pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmMovement">
+      <h3>palm movement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmMovement</p>
+      <div class="comment">
+         <span class="markdown">Movement of palm. Either right or left.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Movement" title="https://w3id.org/hdgi#Movement">movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PalmAnticlockwiseRotation" title="https://w3id.org/hdgi#PalmAnticlockwiseRotation">palm anticlockwise rotation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmBackward" title="https://w3id.org/hdgi#PalmBackward">palm backward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmClockwiseRotation" title="https://w3id.org/hdgi#PalmClockwiseRotation">palm clockwise rotation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmDownward" title="https://w3id.org/hdgi#PalmDownward">palm downward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmForward" title="https://w3id.org/hdgi#PalmForward">palm forward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmLeftward" title="https://w3id.org/hdgi#PalmLeftward">palm leftward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmRightward" title="https://w3id.org/hdgi#PalmRightward">palm rightward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmUpward" title="https://w3id.org/hdgi#PalmUpward">palm upward</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmOutwardPose">
+      <h3>palm outward pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmOutwardPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmPose" title="https://w3id.org/hdgi#PalmPose">palm pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmPose">
+      <h3>palm pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Pose" title="https://w3id.org/hdgi#Pose">pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PalmDownwardPose" title="https://w3id.org/hdgi#PalmDownwardPose">palm downward pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmInwardPose" title="https://w3id.org/hdgi#PalmInwardPose">palm inward pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmLeftwardPose" title="https://w3id.org/hdgi#PalmLeftwardPose">palm leftward pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmOutwardPose" title="https://w3id.org/hdgi#PalmOutwardPose">palm outward pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmRightwardPose" title="https://w3id.org/hdgi#PalmRightwardPose">palm rightward pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmUpwardPose" title="https://w3id.org/hdgi#PalmUpwardPose">palm upward pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmRightward">
+      <h3>palm rightward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmRightward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">palm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmRightwardPose">
+      <h3>palm rightward pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmRightwardPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmPose" title="https://w3id.org/hdgi#PalmPose">palm pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmUpward">
+      <h3>palm upward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmUpward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmMovement" title="https://w3id.org/hdgi#PalmMovement">palm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PalmUpwardPose">
+      <h3>palm upward pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#PalmUpwardPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PalmPose" title="https://w3id.org/hdgi#PalmPose">palm pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Pose">
+      <h3>pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Pose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#FingerPose" title="https://w3id.org/hdgi#FingerPose">finger pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FootPose" title="https://w3id.org/hdgi#FootPose">foot pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForearmPose" title="https://w3id.org/hdgi#ForearmPose">forearm pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LegPose" title="https://w3id.org/hdgi#LegPose">leg pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PalmPose" title="https://w3id.org/hdgi#PalmPose">palm pose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmPose" title="https://w3id.org/hdgi#UpperArmPose">upper arm pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Position">
+      <h3>position<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Position</p>
+      <div class="comment">
+         <span class="markdown">Position of a pose in a particular time</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="Quaternion">
+      <h3>quaternion<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Quaternion</p>
+      <div class="comment">
+         <span class="markdown">The quaternion itself is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.
+
+The magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="RightForearm">
+      <h3>right forearm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RightForearm</p>
+      <div class="comment">
+         <span class="markdown">Right forearm</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Forearm" title="https://w3id.org/hdgi#Forearm">forearm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RightIndexFinger">
+      <h3>right index finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RightIndexFinger</p>
+      <div class="comment">
+         <span class="markdown">Right hand index finger</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#IndexFinger" title="https://w3id.org/hdgi#IndexFinger">index finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RightLittleFinger">
+      <h3>right little finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RightLittleFinger</p>
+      <div class="comment">
+         <span class="markdown">Right hand little finger</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#LittleFinger" title="https://w3id.org/hdgi#LittleFinger">little finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RightMiddleFinger">
+      <h3>right middle finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RightMiddleFinger</p>
+      <div class="comment">
+         <span class="markdown">Right hand middle finger</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#MiddleFinger" title="https://w3id.org/hdgi#MiddleFinger">middle finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RightPalm">
+      <h3>right palm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RightPalm</p>
+      <div class="comment">
+         <span class="markdown">Right hand palm</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Palm" title="https://w3id.org/hdgi#Palm">palm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RightRingFinger">
+      <h3>right ring finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RightRingFinger</p>
+      <div class="comment">
+         <span class="markdown">Right hand ring finger</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RingFinger" title="https://w3id.org/hdgi#RingFinger">ring finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RightThumb">
+      <h3>right thumb<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RightThumb</p>
+      <div class="comment">
+         <span class="markdown">Thumb of right hand</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Thumb" title="https://w3id.org/hdgi#Thumb">thumb</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RightUpperArm">
+      <h3>right upper arm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RightUpperArm</p>
+      <div class="comment">
+         <span class="markdown">Right upper arm</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArm" title="https://w3id.org/hdgi#UpperArm">upper arm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RingFinger">
+      <h3>ring finger<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RingFinger</p>
+      <div class="comment">
+         <span class="markdown">Fourth finger or the fourth digit of hand</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Finger" title="https://w3id.org/hdgi#Finger">finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LeftRingFinger" title="https://w3id.org/hdgi#LeftRingFinger">left ring finger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RightRingFinger" title="https://w3id.org/hdgi#RightRingFinger">right ring finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Rotation">
+      <h3>rotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Rotation</p>
+      <div class="comment">
+         <span class="markdown">Rotation of a pose</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="Thumb">
+      <h3>thumb<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Thumb</p>
+      <div class="comment">
+         <span class="markdown">First digit of hand</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Finger" title="https://w3id.org/hdgi#Finger">finger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LeftThumb" title="https://w3id.org/hdgi#LeftThumb">left thumb</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RightThumb" title="https://w3id.org/hdgi#RightThumb">right thumb</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UnitOfMeasure">
+      <h3>unit of measure<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UnitOfMeasure</p>
+      <div class="comment">
+         <span class="markdown">Defines units of measurement for position and rotation</span>
+      </div>
+   </div>
+   <div class="entity" id="UpperArm">
+      <h3>upper arm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArm</p>
+      <div class="comment">
+         <span class="markdown">The upper arm is the line between the shoulder and elbow joint.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">body part</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LeftUpperArm" title="https://w3id.org/hdgi#LeftUpperArm">left upper arm</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RightUpperArm" title="https://w3id.org/hdgi#RightUpperArm">right upper arm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmAnticlcockwiseRotation">
+      <h3>upper arm anticlcockwise rotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmBackward">
+      <h3>upper arm backward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmBackward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmClockwiseRotation">
+      <h3>upper arm clockwise rotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmClockwiseRotation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmForward">
+      <h3>upper arm forward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmForward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmGesture">
+      <h3>upper arm gesture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmGesture</p>
+      <div class="comment">
+         <span class="markdown">Gestures (movements) made with upper arm</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">gesture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmLeftward">
+      <h3>upper arm leftward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmLeftward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmLeftwardAndBack">
+      <h3>upper arm leftward and back<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmLeftwardAndBack</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmLeftwardAndFront">
+      <h3>upper arm leftward and front<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmLeftwardAndFront</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmMovement">
+      <h3>upper arm movement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmMovement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Movement" title="https://w3id.org/hdgi#Movement">movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#UpperArmAnticlcockwiseRotation"
+               title="https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation">upper arm anticlcockwise rotation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmBackward" title="https://w3id.org/hdgi#UpperArmBackward">upper arm backward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmClockwiseRotation" title="https://w3id.org/hdgi#UpperArmClockwiseRotation">upper arm clockwise rotation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmForward" title="https://w3id.org/hdgi#UpperArmForward">upper arm forward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmLeftward" title="https://w3id.org/hdgi#UpperArmLeftward">upper arm leftward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmLeftwardAndBack" title="https://w3id.org/hdgi#UpperArmLeftwardAndBack">upper arm leftward and back</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmLeftwardAndFront" title="https://w3id.org/hdgi#UpperArmLeftwardAndFront">upper arm leftward and front</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmRightward" title="https://w3id.org/hdgi#UpperArmRightward">upper arm rightward</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmRightwardAndBack" title="https://w3id.org/hdgi#UpperArmRightwardAndBack">upper arm rightward and back</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpperArmRightwardAndFront" title="https://w3id.org/hdgi#UpperArmRightwardAndFront">upper arm rightward and front</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmPose">
+      <h3>upper arm pose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmPose</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Pose" title="https://w3id.org/hdgi#Pose">pose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmRightward">
+      <h3>upper arm rightward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmRightward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmRightwardAndBack">
+      <h3>upper arm rightward and back<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmRightwardAndBack</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperArmRightwardAndFront">
+      <h3>upper arm rightward and front<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmRightwardAndFront</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UpperArmMovement" title="https://w3id.org/hdgi#UpperArmMovement">upper arm movement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UserContext">
+      <h3>user context<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#UserContext</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/hdgi#Context">context</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasEndPose" title="https://w3id.org/hdgi#hasEndPose">
+            <span>has end pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasPart" title="https://w3id.org/hdgi#hasPart">
+            <span>has part</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasStartPose" title="https://w3id.org/hdgi#hasStartPose">
+            <span>has start pose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#observes" title="https://w3id.org/hdgi#observes">
+            <span>observes</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="hasEndPose">
+      <h3>has end pose<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#hasEndPose</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/hdgi#hasPose">has pose</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPart">
+      <h3>has part<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#hasPart</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/hdgi#isPartOf">is part of</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStartPose">
+      <h3>has start pose<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#hasStartPose</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/hdgi#hasPose">has pose</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="observes">
+      <h3>observes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#observes</p>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#i-component" title="https://w3id.org/hdgi#i-component">
+            <span>i component</span>
+         </a>
+      </li>
+      <li>
+         <a href="#j-component" title="https://w3id.org/hdgi#j-component">
+            <span>j component</span>
+         </a>
+      </li>
+      <li>
+         <a href="#k-component" title="https://w3id.org/hdgi#k-component">
+            <span>k component</span>
+         </a>
+      </li>
+      <li>
+         <a href="#originPoint" title="https://w3id.org/hdgi#originPoint">
+            <span>origin point</span>
+         </a>
+      </li>
+      <li>
+         <a href="#w-component" title="https://w3id.org/hdgi#w-component">
+            <span>w component</span>
+         </a>
+      </li>
+      <li>
+         <a href="#x-axisDirection" title="https://w3id.org/hdgi#x-axisDirection">
+            <span>x axis direction</span>
+         </a>
+      </li>
+      <li>
+         <a href="#xPosition" title="https://w3id.org/hdgi#xPosition">
+            <span>x position</span>
+         </a>
+      </li>
+      <li>
+         <a href="#xRotation" title="https://w3id.org/hdgi#xRotation">
+            <span>x rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#y-axisDirection" title="https://w3id.org/hdgi#y-axisDirection">
+            <span>y axis direction</span>
+         </a>
+      </li>
+      <li>
+         <a href="#yPosition" title="https://w3id.org/hdgi#yPosition">
+            <span>y position</span>
+         </a>
+      </li>
+      <li>
+         <a href="#yRotation" title="https://w3id.org/hdgi#yRotation">
+            <span>y rotation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#z-axisDirection" title="https://w3id.org/hdgi#z-axisDirection">
+            <span>z axis direction</span>
+         </a>
+      </li>
+      <li>
+         <a href="#zPosition" title="https://w3id.org/hdgi#zPosition">
+            <span>z position</span>
+         </a>
+      </li>
+      <li>
+         <a href="#zRotation" title="https://w3id.org/hdgi#zRotation">
+            <span>z rotation</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="i-component">
+      <h3>i component<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#i-component</p>
+      <div class="comment">
+         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x 
+
+In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="j-component">
+      <h3>j component<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#j-component</p>
+      <div class="comment">
+         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y 
+
+In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="k-component">
+      <h3>k component<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#k-component</p>
+      <div class="comment">
+         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z 
+
+In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="originPoint">
+      <h3>origin point<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#originPoint</p>
+      <div class="comment">
+         <span class="markdown">Frame of reference or the initial center. 
+Location of the (0,0,0) postion related to the given coordinates.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="w-component">
+      <h3>w component<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#w-component</p>
+      <div class="comment">
+         <span class="markdown">Represents the amount of rotation which will occur about this axis defined by (i-component, j-component, k-component). Known as scalar component.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="x-axisDirection">
+      <h3>x axis direction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#x-axisDirection</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>{ "leftward" , "rightward" }</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="xPosition">
+      <h3>x position<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#xPosition</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="xRotation">
+      <h3>x rotation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#xRotation</p>
+      <div class="comment">
+         <span class="markdown">Angle around the x-axis</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="y-axisDirection">
+      <h3>y axis direction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#y-axisDirection</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>{ "downward" , "upward" }</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="yPosition">
+      <h3>y position<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#yPosition</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="yRotation">
+      <h3>y rotation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#yRotation</p>
+      <div class="comment">
+         <span class="markdown">Angle around the y-axis</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="z-axisDirection">
+      <h3>z axis direction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#z-axisDirection</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>{ "inward" , "outward" }</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="zPosition">
+      <h3>z position<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#zPosition</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="zRotation">
+      <h3>z rotation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#zRotation</p>
+      <div class="comment">
+         <span class="markdown">Angle around the z-axis</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
 <div id="acknowledgements">
 <h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
