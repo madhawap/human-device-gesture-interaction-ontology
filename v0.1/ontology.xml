@@ -1,0 +1,2119 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/hdgi#"
+     xml:base="https://w3id.org/hdgi"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="https://w3id.org/hdgi#">
+        <owl:versionIRI rdf:resource="https://w3id.org/hdgi/v0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/hdgi#affordedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#affordedBy"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasContext -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasContext"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasDuration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasDuration"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasEndPose -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasEndPose">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hdgi#hasPose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasLocalCoordinateSystem -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasLocalCoordinateSystem"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasMovement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasMovement"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasPart">
+        <owl:inverseOf rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasPose -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasPose"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasPosition -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasPosition"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasQuaternion -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasQuaternion"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasRotation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasRotation"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#hasStartPose -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasStartPose">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hdgi#hasPose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#includesGesture -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#includesGesture"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#involves -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#involves"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#isPartOf"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#manufacturedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#manufacturedBy"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#observes -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#observes">
+        <owl:propertyDisjointWith rdf:resource="https://w3id.org/hdgi#performs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#performs -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#performs"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#supportsGesture -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#supportsGesture"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#uses -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#uses"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/hdgi#i-component -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#i-component">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x 
+
+In the euqation &apos;i&apos; is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#j-component -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#j-component">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y 
+
+In the euqation &apos;i&apos; is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#k-component -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#k-component">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z 
+
+In the euqation &apos;i&apos; is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#originPoint -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#originPoint">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Frame of reference or the initial center. 
+Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#timeStamp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#timeStamp"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#w-component -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#w-component">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Represents the amount of rotation which will occur about this axis defined by (i-component, j-component, k-component). Known as scalar component.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#x-axisDirection -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#x-axisDirection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>leftward</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>rightward</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#xPosition -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#xPosition">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#xRotation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#xRotation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Angle around the x-axis</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#y-axisDirection -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#y-axisDirection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>downward</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>upward</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#yPosition -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#yPosition">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#yRotation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#yRotation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Angle around the y-axis</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#z-axisDirection -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#z-axisDirection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>inward</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>outward</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#zPosition -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#zPosition">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hdgi#zRotation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#zRotation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Angle around the z-axis</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/hdgi#ActuatableAffordance -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ActuatableAffordance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Affordance"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Affordance -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Affordance">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#affordedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#supportsGesture"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Gesture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Affordances are the all type of properties that are belong to devices and it show the possible actions users can take with it.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Body -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Body">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasPart"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Human body. A collection of body parts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#BodyPart -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#BodyPart">
+        <rdfs:comment>Parts of human body.</rdfs:comment>
+        <skos:example>&quot;Head&quot;, &quot;Palm&quot;, &quot;Finger&quot; etc.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Context -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Context"/>
+    
+
+
+    <!-- https://w3id.org/hdgi#Device -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasContext"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#DeviceContext"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#manufacturedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>In here, device means a piece of hardware or software which consists with sensors or actuators or both.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#DeviceContext -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#DeviceContext">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Duration -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Duration">
+        <rdfs:comment>Duration is a temporal extent. 
+In this ontology, duration is used to measure a certain body part movement.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Face -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Face">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FacialGesture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FacialGesture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Gesture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Face"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Finger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Finger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A finger is a (body) part of the human body and a type of digit.</rdfs:comment>
+        <skos:example>thumb, middle finger, left ring finger etc</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerAnticlcokwiseRotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerAnticlcokwiseRotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerBackward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerBackward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerClockwiseRotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerClockwiseRotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerCurled -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerCurled">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerDownward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerDownward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerFolded -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerFolded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerForward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerForward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerLeftward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerLeftward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerMovement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerMovement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Movement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Finger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Finger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Pose"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Finger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Finger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerRightward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerRightward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerStraightandBackward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerStraightandBackward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerStraightandDownward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerStraightandDownward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerStraightandForward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerStraightandForward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerStraightandLeftward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerStraightandLeftward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerStraightandRightward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerStraightandRightward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerStraightandUpwards -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerStraightandUpwards">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FingerUpward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FingerUpward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Foot -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Foot">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FootGesture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FootGesture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Gesture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Foot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Foot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#FootPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#FootPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Pose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Forearm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Forearm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The forearm is the line between the elbow joint and the wrist</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmAnticlockwiseRotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmAnticlockwiseRotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmBackward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmBackward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmClockwiseRotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmClockwiseRotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmDownward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmDownward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmForward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmForward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmGesture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmGesture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Gesture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Forearm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Forearm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Gestures (movements) made with forearm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmLeftward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmLeftward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmLeftwardAndDown -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmLeftwardAndDown">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmLeftwardAndUp -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmLeftwardAndUp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmMovement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmMovement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Movement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Forearm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Forearm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Pose"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Forearm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Forearm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmRightward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmRightward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmRightwardAndDown -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmRightwardAndDown">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmRightwardAndUp -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmRightwardAndUp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ForearmUpward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ForearmUpward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Gesture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Gesture">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#includesGesture"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Gesture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasMovement"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>In this ontology, a gesturre is defined as a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#HandGesture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#HandGesture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Gesture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Finger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Palm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Palm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Finger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Gestures (movements) made with fingers and palms</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Head -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Head">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#HeadGesture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#HeadGesture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Gesture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Head"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Human -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Human">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasContext"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#UserContext"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#performs"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#Gesture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#performs"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#uses"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Body"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#IndexFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#IndexFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
+        <rdfs:comment>Second finger or the second digit of hand</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LeftForearm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LeftForearm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Forearm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Forearm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Left forearm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LeftIndexFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LeftIndexFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFinger"/>
+        <rdfs:comment>Left hand index finger</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LeftLittleFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LeftLittleFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFinger"/>
+        <rdfs:comment>Left hand little finger</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LeftMiddleFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LeftMiddleFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFinger"/>
+        <rdfs:comment>Left hand middle finger</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LeftPalm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LeftPalm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Palm"/>
+        <rdfs:comment>Left hand palm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LeftRingFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LeftRingFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFinger"/>
+        <rdfs:comment>Left hand ring finger</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LeftThumb -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LeftThumb">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Thumb"/>
+        <rdfs:comment>Thumb of left hand</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LeftUpperArm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LeftUpperArm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Left upper arm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Leg -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Leg">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LegGesture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LegGesture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Gesture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Leg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Leg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LegPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LegPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Pose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LittleFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LittleFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
+        <rdfs:comment>Fifth finger or the fifth digit of hand</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#LocalCoordinateSystem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#LocalCoordinateSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#x-axisDirection"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>leftward</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>rightward</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#y-axisDirection"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>downward</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>upward</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#z-axisDirection"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>inward</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>outward</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The coordinate system that’s convenient for a given entity(Finger, palm etc.) is called the local coordinate system, local space, or object space.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Manufacturer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Manufacturer">
+        <rdfs:comment>Manufacturing company of a device</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#MiddleFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
+        <rdfs:comment>Third finger or the third digit of hand</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Movement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Movement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasDuration"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Duration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasEndPose"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasStartPose"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An act of moving. In this onlogy it is an act of moving a certain body part towrds a certain direction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#ObservableAffordance -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#ObservableAffordance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Affordance"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Observer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Observer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#observes"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#Gesture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#observes"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Palm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Palm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The area located at the end of the forearm (starting from wrist) up until the start of a finger which is the central region of the anterior part of the hand.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmAnticlockwiseRotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmAnticlockwiseRotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmBackward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmBackward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmClockwiseRotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmClockwiseRotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmDownward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmDownward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmDownwardPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmDownwardPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmForward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmForward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmInwardPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmInwardPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmLeftward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmLeftward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmLeftwardPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmLeftwardPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmMovement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmMovement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Movement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Palm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Palm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Movement of palm. Either right or left.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmOutwardPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmOutwardPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Pose"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Palm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Palm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmRightward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmRightward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmRightwardPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmRightwardPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmUpward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmUpward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#PalmUpwardPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#PalmUpwardPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Pose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Pose">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasPose"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasPosition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Position"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasRotation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Rotation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#timeStamp"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Position -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Position">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasLocalCoordinateSystem"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#LocalCoordinateSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#originPoint"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#xPosition"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#yPosition"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#zPosition"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Position of a pose in a particular time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Quaternion -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Quaternion">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#i-component"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#j-component"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#k-component"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#w-component"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The quaternion itself is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.
+
+The magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#RightForearm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#RightForearm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Forearm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Forearm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Right forearm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#RightIndexFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#RightIndexFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFinger"/>
+        <rdfs:comment>Right hand index finger</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#RightLittleFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#RightLittleFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFinger"/>
+        <rdfs:comment>Right hand little finger</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#RightMiddleFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#RightMiddleFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFinger"/>
+        <rdfs:comment>Right hand middle finger</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#RightPalm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#RightPalm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Palm"/>
+        <rdfs:comment>Right hand palm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#RightRingFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#RightRingFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFinger"/>
+        <rdfs:comment>Right hand ring finger</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#RightThumb -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#RightThumb">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Thumb"/>
+        <rdfs:comment>Thumb of right hand</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#RightUpperArm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#RightUpperArm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Right upper arm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#RingFinger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#RingFinger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
+        <rdfs:comment>Fourth finger or the fourth digit of hand</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Rotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Rotation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasLocalCoordinateSystem"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#LocalCoordinateSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasQuaternion"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Quaternion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#originPoint"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#xRotation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#yRotation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#zRotation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Rotation of a pose</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#Thumb -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#Thumb">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
+        <rdfs:comment>First digit of hand</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UnitOfMeasure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UnitOfMeasure">
+        <rdfs:comment>Defines units of measurement for position and rotation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The upper arm is the line between the shoulder and elbow joint.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmBackward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmBackward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmClockwiseRotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmClockwiseRotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmForward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmForward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmGesture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmGesture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Gesture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Gestures (movements) made with upper arm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmLeftward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmLeftward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmLeftwardAndBack -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmLeftwardAndBack">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmLeftwardAndFront -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmLeftwardAndFront">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmMovement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmMovement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Movement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmPose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmPose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Pose"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#involves"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#UpperArm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmRightward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmRightward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmRightwardAndBack -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmRightwardAndBack">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UpperArmRightwardAndFront -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmRightwardAndFront">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hdgi#UserContext -->
+
+
+    <owl:Class rdf:about="https://w3id.org/hdgi#UserContext">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Context"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
