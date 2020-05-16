@@ -8,9 +8,9 @@
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/hdgi#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/hdgi#","name":"Human Device Gesture Interaction Ontology ", "headline":"Gesture-controlled interfaces are becoming popular with the recent advent of IoT systems. Especially in the current automobiles, smart homes, computer games and AR/VR applications, gestures have become prevalent due to its accessibility to everyone. Designers, producers and vendors integrating gesture interfaces into their products have also increased in numbers, giving rise to a greater variation of standards in utilizing them. This could confuse the users who are accustomed to a set of conventional controls. This ontology formally describes human gestures and facilitate automated reasoning tasks which help systems to map gestures to corresponding affordances. This will be helpful for standardizing gesture designing and to bring interoperability across gesture-controlled interfaces.", "datePublished":"Sat May 16 22:21:26 AEST 2020", "license":"https://github.com/madhawap/human-device-interaction-ontology/blob/master/LICENSE", "author":[{"@type":"Person","name":"Madhawa Perera"},{"@type":"Person","name":"Armin Haller"},{"@type":"Person","name":"Sergio J. Rodríguez Méndez "}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
+<script src="resources/jquery.js"></script>
+<script src="resources/marked.min.js"></script>
+    <script>
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,13 +40,13 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
-  </head> 
+ };
+   </script>
+  </head>
 
 <body>
 <div class="container">
@@ -59,7 +59,7 @@ function loadTOC(){
 <dt>This version:</dt>
 <dd><a href="https://w3id.org/hdgi/v0.1">https://w3id.org/hdgi/v0.1</a></dd>
 <dt>Authors:</dt>
-<dd>Madhawa Perera</dd><dd>Armin Haller</dd><dd>Sergio J. Rodríguez Méndez </dd>
+<dd>Madhawa Perera</dd><dd>Armin Haller</dd><dd>Sergio J. Rodríguez Méndez</dd><dd>Matt Adcock</dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://github.com/madhawap/human-device-interaction-ontology/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="https://github.com/madhawap/human-device-interaction-ontology/blob/master/LICENSE" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
@@ -76,7 +76,7 @@ function loadTOC(){
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 Gesture-controlled interfaces are becoming popular with the recent advent of IoT systems. Especially in the current automobiles, smart homes, computer games and AR/VR applications, gestures have become prevalent due to its accessibility to everyone. Designers, producers and vendors integrating gesture interfaces into their products have also increased in numbers, giving rise to a greater variation of standards in utilizing them. This could confuse the users who are accustomed to a set of conventional controls. This ontology formally describes human gestures and facilitate automated reasoning tasks which help systems to map gestures to corresponding affordances. This will be helpful for standardizing gesture designing and to bring interoperability across gesture-controlled interfaces.</span>
 </div>
-<div id="toc"></div> 
+<div id="toc"></div>
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -101,7 +101,7 @@ This is a place holder text for the introduction. The introduction should briefl
 </div>
 </div>
 </div>
-  
+
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">Human Device Gesture Interaction Ontology ]: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -794,9 +794,9 @@ This ontology has the following classes and properties.</span>
          <span>z rotation</span>
       </a>
    </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe>
 </div>
-  
+
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">Human Device Gesture Interaction Ontology ]: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -804,7 +804,7 @@ This ontology has the following classes and properties.</span>
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
 </div>
-   
+
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Human Device Gesture Interaction Ontology ] classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -1526,7 +1526,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Duration</p>
       <div class="comment">
-         <span class="markdown">Duration is a temporal extent. 
+         <span class="markdown">Duration is a temporal extent.
 In this ontology, duration is used to measure a certain body part movement.</span>
       </div>
    </div>
@@ -3603,7 +3603,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#i-component</p>
       <div class="comment">
-         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x 
+         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x
 
 In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
       </div>
@@ -3624,7 +3624,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#j-component</p>
       <div class="comment">
-         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y 
+         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y
 
 In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
       </div>
@@ -3645,7 +3645,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#k-component</p>
       <div class="comment">
-         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z 
+         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z
 
 In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
       </div>
@@ -3666,7 +3666,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#originPoint</p>
       <div class="comment">
-         <span class="markdown">Frame of reference or the initial center. 
+         <span class="markdown">Frame of reference or the initial center.
 Location of the (0,0,0) postion related to the given coordinates.</span>
       </div>
       <div class="description">
@@ -3860,7 +3860,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
 </div>
 </div>
 </div>
-    
+
 
 <!--REFERENCES SECTION-->
   <div id="references">
