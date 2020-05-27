@@ -1,3 +1,3 @@
-Human Device Gesture Interaction Mapping Service
+# Human Device Gesture Interaction Mapping Service
 
-API documentation
+https://hdgi-mapping-service.ts.r.appspot.com
