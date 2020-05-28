@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/github/issues/madhawap/human-device-gesture-interaction-ontology?color=yellow&style=plastic)
 
-<img src="https://madhawap.github.io/human-device-interaction-ontology/v0.1/images/hdgiLogo.png" align="right"
+<img src="https://madhawap.github.io/human-device-gesture-interaction-ontology/v0.1/images/hdgiLogo.png" align="right"
      alt="hdgi logo" width="" height="120">
 
 ### What is HDGI ontology?
