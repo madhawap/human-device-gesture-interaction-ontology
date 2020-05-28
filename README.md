@@ -1,5 +1,7 @@
 # Human Device Gesture Interaction (HDGI) Ontology
 
+![](https://img.shields.io/github/issues/madhawap/human-device-gesture-interaction-ontology?color=yellow&style=plastic)
+
 <img src="https://madhawap.github.io/human-device-interaction-ontology/v0.1/images/hdgiLogo.png" align="right"
      alt="hdgi logo" width="" height="120">
 
@@ -20,7 +22,7 @@ This is the main ontology development repository of HDGI ontology.
 
 Please see below where to find relevent information
 
-- Up to date ontology .ttl file. 
+- Up-to-date ontology .ttl file. 
 https://github.com/madhawap/human-device-interaction-ontology/tree/master/v0.1/
 
 - Current ontology specifiacations
@@ -39,8 +41,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ### Support
 
-You can join [hdgi-ontology-dev](https://hdgi-ontology.slack.com/archives/C014C6GRWE9)
-Create an [issue](https://github.com/madhawap/human-device-interaction-ontology/issues)
+- You can join [hdgi-ontology-dev](https://hdgi-ontology.slack.com/archives/C014C6GRWE9)
+- Create an [issue](https://github.com/madhawap/human-device-interaction-ontology/issues)
 
 
 
