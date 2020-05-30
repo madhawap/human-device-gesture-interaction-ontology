@@ -1,6 +1,6 @@
-# hdgi - Human Device Gesture Interaction Ontology
+# HDGI - Human Device Gesture Interaction Ontology
 
-![](https://madhawap.github.io/human-device-interaction-ontology/v0.1/images/underConstructionSign.png)
+[](https://madhawap.github.io/human-device-interaction-ontology/v0.1/images/underConstructionSign.png)
 
 ![Licence](https://img.shields.io/github/license/madhawap/human-device-interaction-ontology?style=plastic) ![](https://img.shields.io/github/issues/madhawap/human-device-interaction-ontology?color=yellow&style=plastic)
 
