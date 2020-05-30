@@ -1,0 +1,6 @@
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix hdgi: <https://w3id.org/hdgi#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+hdgi:UnitOfMeasure
+  owl:equivalentClass qudt:Unit
