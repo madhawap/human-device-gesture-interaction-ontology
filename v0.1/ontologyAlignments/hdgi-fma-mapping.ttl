@@ -1,0 +1,81 @@
+@prefix fma: <http://purl.org/sig/ont/fma/> .
+@prefix hdgi: <https://w3id.org/hdgi#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+hdgi:Body
+  owl:equivalentClass fma:fma256135;
+
+hdgi:Finger
+  owl:equivalentClass fma:fma9666;
+
+hdgi:IndexFinger
+  owl:equivalentClass fma:fma24946;
+
+hdgi:LeftIndexFinger
+  owl:equivalentClass fma:fma60334;
+
+hdgi:RightIndexFinger
+  owl:equivalentClass fma:fma60333;
+
+hdgi:MiddleFinger
+  owl:equivalentClass fma:fma24947;
+
+hdgi:LeftMiddleFinger
+  owl:equivalentClass fma:fma60332;
+
+hdgi:RightMiddleFinger
+  owl:equivalentClass fma:fma60331;
+
+hdgi:RingFinger
+  owl:equivalentClass fma:fma24948;
+
+hdgi:LeftRingFinger
+  owl:equivalentClass fma:fma60330;
+
+hdgi:RightRingFinger
+  owl:equivalentClass fma:fma60329;
+
+hdgi:LittleFinger
+  owl:equivalentClass fma:fma24949;
+
+hdgi:LeftLittleFinger
+  owl:equivalentClass fma:fma60328;
+
+hdgi:RightLittleFinger
+  owl:equivalentClass fma:fma60327;
+
+hdgi:Thumb
+  owl:equivalentClass fma:fma24938;
+
+hdgi:LeftThumb
+  owl:equivalentClass fma:fma60326;
+
+hdgi:RightThumb
+  owl:equivalentClass fma:fma60325;
+
+hdgi:Forearm
+  owl:equivalentClass fma:fma9663;
+
+hdgi:LeftForearm
+  owl:equivalentClass fma:fma11346;
+
+hdgi:RightForearm
+  owl:equivalentClass fma:fma11345;
+
+hdgi:UpperArm
+  owl:equivalentClass fma:fma24890;
+
+hdgi:LeftUpperArm
+  owl:equivalentClass fma:fma24896;
+
+hdgi:RightUpperArm
+  owl:equivalentClass fma:fma24895;
+
+hdgi:Palm
+  owl:equivalentClass fma:fma24920;
+
+hdgi:LeftPalm
+  owl:equivalentClass fma:fma61071;
+
+hdgi:RightPalm
+  owl:equivalentClass fma:fma61070;
