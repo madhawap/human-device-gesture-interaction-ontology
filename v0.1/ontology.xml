@@ -58,7 +58,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#hasContext">
-        <rdfs:label>Relation from a Human to a User Context or from a Device to a Device Context.</rdfs:label>
+        <rdfs:comment>Relation from a Human to a User Context or from a Device to a Device Context.</rdfs:comment>
         <rdfs:label>hasContext</rdfs:label>
     </owl:ObjectProperty>
     
@@ -188,10 +188,6 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hdgi#involves">
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/hdgi#hasPose"/>
-            <rdf:Description rdf:about="https://w3id.org/hdgi#involves"/>
-        </owl:propertyChainAxiom>
         <rdfs:label>involves</rdfs:label>
     </owl:ObjectProperty>
     
@@ -282,7 +278,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#i-component">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment>In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x 
+        <rdfs:comment>In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x
 
 In the euqation &apos;i&apos; is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</rdfs:comment>
         <rdfs:label>i-component</rdfs:label>
@@ -295,7 +291,7 @@ In the euqation &apos;i&apos; is defined as sqrt(-1). With quaternions, i = j = 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#j-component">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment>In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y 
+        <rdfs:comment>In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y
 
 In the euqation &apos;i&apos; is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</rdfs:comment>
         <rdfs:label>j-component</rdfs:label>
@@ -308,7 +304,7 @@ In the euqation &apos;i&apos; is defined as sqrt(-1). With quaternions, i = j = 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#k-component">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment>In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z 
+        <rdfs:comment>In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z
 
 In the euqation &apos;i&apos; is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</rdfs:comment>
         <rdfs:label>k-component</rdfs:label>
@@ -321,7 +317,7 @@ In the euqation &apos;i&apos; is defined as sqrt(-1). With quaternions, i = j = 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hdgi#originPoint">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>Frame of reference or the initial center. 
+        <rdfs:comment>Frame of reference or the initial center.
 Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
         <rdfs:label>originPoint</rdfs:label>
     </owl:DatatypeProperty>
@@ -510,6 +506,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ActuatableAffordance">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Affordance"/>
+        <rdfs:label>ActuatableAffordance</rdfs:label>
     </owl:Class>
     
 
@@ -531,6 +528,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Affordances are all the type of properties that belong to devices. They indicate the possible actions users can take with it.</rdfs:comment>
+        <rdfs:label>Affordance</rdfs:label>
     </owl:Class>
     
 
@@ -546,6 +544,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Human body. A collection of body parts.</rdfs:comment>
+        <rdfs:label>Body</rdfs:label>
     </owl:Class>
     
 
@@ -555,6 +554,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#BodyPart">
         <rdfs:comment xml:lang="en">Parts of human body.</rdfs:comment>
+        <rdfs:label>BodyPart</rdfs:label>
         <skos:example>&quot;Head&quot;, &quot;Palm&quot;, &quot;Finger&quot; etc.</skos:example>
     </owl:Class>
     
@@ -563,7 +563,9 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <!-- https://w3id.org/hdgi#Context -->
 
 
-    <owl:Class rdf:about="https://w3id.org/hdgi#Context"/>
+    <owl:Class rdf:about="https://w3id.org/hdgi#Context">
+        <rdfs:label>Context</rdfs:label>
+    </owl:Class>
     
 
 
@@ -584,6 +586,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A device denotes a piece of hardware or software which consists of sensors or actuators or both.</rdfs:comment>
+        <rdfs:label>Device</rdfs:label>
     </owl:Class>
     
 
@@ -593,6 +596,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#DeviceContext">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Context"/>
+        <rdfs:label>DeviceContext</rdfs:label>
     </owl:Class>
     
 
@@ -602,6 +606,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#DeviceManufacturer">
         <rdfs:comment xml:lang="en">The company manufacturing a device.</rdfs:comment>
+        <rdfs:label>DeviceManufacturer</rdfs:label>
     </owl:Class>
     
 
@@ -611,6 +616,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#Duration">
         <rdfs:comment xml:lang="en">Duration is a temporal extent.</rdfs:comment>
+        <rdfs:label>Duration</rdfs:label>
     </owl:Class>
     
 
@@ -626,6 +632,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Face</rdfs:label>
     </owl:Class>
     
 
@@ -642,6 +649,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Face"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>FacialGesture</rdfs:label>
     </owl:Class>
     
 
@@ -658,6 +666,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A finger is a body part of the human body and a type of digit.</rdfs:comment>
+        <rdfs:label>Finger</rdfs:label>
         <skos:example>thumb, middle finger, left ring finger etc</skos:example>
     </owl:Class>
     
@@ -668,6 +677,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FingerAnticlcokwiseRotation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+        <rdfs:label>FingerAnticlcokwiseRotation</rdfs:label>
     </owl:Class>
     
 
@@ -677,6 +687,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FingerBackward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+        <rdfs:label>FingerBackward</rdfs:label>
     </owl:Class>
     
 
@@ -686,6 +697,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FingerClockwiseRotation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+        <rdfs:label>FingerClockwiseRotation</rdfs:label>
     </owl:Class>
     
 
@@ -695,6 +707,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FingerDownward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+        <rdfs:label>FingerDownward</rdfs:label>
     </owl:Class>
     
 
@@ -704,6 +717,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FingerForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+        <rdfs:label>FingerForward</rdfs:label>
     </owl:Class>
     
 
@@ -713,6 +727,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FingerLeftward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+        <rdfs:label>FingerLeftward</rdfs:label>
     </owl:Class>
     
 
@@ -736,6 +751,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Finger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>FingerMovement</rdfs:label>
     </owl:Class>
     
 
@@ -745,6 +761,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FingerPose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Pose"/>
+        <rdfs:label>FingerPose</rdfs:label>
     </owl:Class>
     
 
@@ -754,6 +771,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FingerRightward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+        <rdfs:label>FingerRightward</rdfs:label>
     </owl:Class>
     
 
@@ -763,6 +781,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FingerUpward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#FingerMovement"/>
+        <rdfs:label>FingerUpward</rdfs:label>
     </owl:Class>
     
 
@@ -778,6 +797,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Foot</rdfs:label>
     </owl:Class>
     
 
@@ -801,6 +821,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Foot"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>FootGesture</rdfs:label>
     </owl:Class>
     
 
@@ -810,6 +831,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#FootPose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Pose"/>
+        <rdfs:label>FootPose</rdfs:label>
     </owl:Class>
     
 
@@ -826,6 +848,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The forearm is the line between the elbow joint and the wrist.</rdfs:comment>
+        <rdfs:label>Forearm</rdfs:label>
     </owl:Class>
     
 
@@ -835,6 +858,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmAnticlockwiseRotation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmAnticlockwiseRotation</rdfs:label>
     </owl:Class>
     
 
@@ -844,6 +868,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmBackward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmBackward</rdfs:label>
     </owl:Class>
     
 
@@ -853,6 +878,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmClockwiseRotation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmClockwiseRotation</rdfs:label>
     </owl:Class>
     
 
@@ -862,6 +888,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmDownward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmDownward</rdfs:label>
     </owl:Class>
     
 
@@ -871,6 +898,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmForward</rdfs:label>
     </owl:Class>
     
 
@@ -895,6 +923,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Gestures (movements) made with forearm</rdfs:comment>
+        <rdfs:label>ForearmGesture</rdfs:label>
     </owl:Class>
     
 
@@ -904,6 +933,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmLeftward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmLeftward</rdfs:label>
     </owl:Class>
     
 
@@ -913,6 +943,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmLeftwardAndDown">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmLeftwardAndDown</rdfs:label>
     </owl:Class>
     
 
@@ -922,6 +953,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmLeftwardAndUp">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmLeftwardAndUp</rdfs:label>
     </owl:Class>
     
 
@@ -945,6 +977,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Forearm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>ForearmMovement</rdfs:label>
     </owl:Class>
     
 
@@ -968,6 +1001,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Forearm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>ForearmPose</rdfs:label>
     </owl:Class>
     
 
@@ -977,6 +1011,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmRightward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmRightward</rdfs:label>
     </owl:Class>
     
 
@@ -986,6 +1021,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmRightwardAndDown">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmRightwardAndDown</rdfs:label>
     </owl:Class>
     
 
@@ -995,6 +1031,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmRightwardAndUp">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmRightwardAndUp</rdfs:label>
     </owl:Class>
     
 
@@ -1004,6 +1041,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ForearmUpward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#ForearmMovement"/>
+        <rdfs:label>ForearmUpward</rdfs:label>
     </owl:Class>
     
 
@@ -1026,12 +1064,27 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasEndPose"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasStartPose"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/hdgi#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasMovement"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Movement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A gesture is a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm.</rdfs:comment>
+        <rdfs:label>Gesture</rdfs:label>
     </owl:Class>
     
 
@@ -1070,6 +1123,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Gestures (movements) made with fingers and palms</rdfs:comment>
+        <rdfs:label>HandGesture</rdfs:label>
     </owl:Class>
     
 
@@ -1085,6 +1139,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Head</rdfs:label>
     </owl:Class>
     
 
@@ -1101,6 +1156,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Head"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>HeadGesture</rdfs:label>
     </owl:Class>
     
 
@@ -1133,6 +1189,8 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>User who perform a gesture</rdfs:comment>
+        <rdfs:label>Human</rdfs:label>
     </owl:Class>
     
 
@@ -1143,6 +1201,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/hdgi#IndexFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
         <rdfs:comment xml:lang="en">Second finger or the second digit of hand.</rdfs:comment>
+        <rdfs:label>IndexFinger</rdfs:label>
     </owl:Class>
     
 
@@ -1152,6 +1211,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#IndexFingerCurled">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFingerPose"/>
+        <rdfs:label>IndexFingerCurled</rdfs:label>
     </owl:Class>
     
 
@@ -1161,6 +1221,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#IndexFingerFolded">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFingerPose"/>
+        <rdfs:label>IndexFingerFolded</rdfs:label>
     </owl:Class>
     
 
@@ -1184,6 +1245,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#RightIndexFinger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>IndexFingerPose</rdfs:label>
     </owl:Class>
     
 
@@ -1193,6 +1255,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#IndexFingerStraightandBackward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFingerPose"/>
+        <rdfs:label>IndexFingerStraightandBackward</rdfs:label>
     </owl:Class>
     
 
@@ -1202,6 +1265,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#IndexFingerStraightandDownward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFingerPose"/>
+        <rdfs:label>IndexFingerStraightandDownward</rdfs:label>
     </owl:Class>
     
 
@@ -1211,6 +1275,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#IndexFingerStraightandForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFingerPose"/>
+        <rdfs:label>IndexFingerStraightandForward</rdfs:label>
     </owl:Class>
     
 
@@ -1220,6 +1285,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#IndexFingerStraightandLeftward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFingerPose"/>
+        <rdfs:label>IndexFingerStraightandLeftward</rdfs:label>
     </owl:Class>
     
 
@@ -1229,6 +1295,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#IndexFingerStraightandRightward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFingerPose"/>
+        <rdfs:label>IndexFingerStraightandRightward</rdfs:label>
     </owl:Class>
     
 
@@ -1238,6 +1305,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#IndexFingerStraightandUpward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFingerPose"/>
+        <rdfs:label>IndexFingerStraightandUpward</rdfs:label>
     </owl:Class>
     
 
@@ -1253,6 +1321,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Forearm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>LeftForearm</rdfs:label>
     </owl:Class>
     
 
@@ -1263,6 +1332,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/hdgi#LeftIndexFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFinger"/>
         <rdfs:comment xml:lang="en">Left hand index finger.</rdfs:comment>
+        <rdfs:label>LeftIndexFinger</rdfs:label>
     </owl:Class>
     
 
@@ -1273,6 +1343,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/hdgi#LeftLittleFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFinger"/>
         <rdfs:comment xml:lang="en">Left hand little finger.</rdfs:comment>
+        <rdfs:label>LeftLittleFinger</rdfs:label>
     </owl:Class>
     
 
@@ -1283,6 +1354,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/hdgi#LeftMiddleFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFinger"/>
         <rdfs:comment xml:lang="en">Left hand middle finger.</rdfs:comment>
+        <rdfs:label>LeftMiddleFinger</rdfs:label>
     </owl:Class>
     
 
@@ -1293,6 +1365,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/hdgi#LeftPalm">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Palm"/>
         <rdfs:comment xml:lang="en">Left hand palm.</rdfs:comment>
+        <rdfs:label>LeftPalm</rdfs:label>
     </owl:Class>
     
 
@@ -1303,6 +1376,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/hdgi#LeftRingFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFinger"/>
         <rdfs:comment xml:lang="en">Left hand ring finger.</rdfs:comment>
+        <rdfs:label>LeftRingFinger</rdfs:label>
     </owl:Class>
     
 
@@ -1313,6 +1387,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/hdgi#LeftThumb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Thumb"/>
         <rdfs:comment xml:lang="en">Thumb of left hand.</rdfs:comment>
+        <rdfs:label>LeftThumb</rdfs:label>
     </owl:Class>
     
 
@@ -1328,6 +1403,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#UpperArm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>LeftUpperArm</rdfs:label>
     </owl:Class>
     
 
@@ -1343,6 +1419,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#BodyPart"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Leg</rdfs:label>
     </owl:Class>
     
 
@@ -1366,6 +1443,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Leg"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>LegGesture</rdfs:label>
     </owl:Class>
     
 
@@ -1375,6 +1453,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#LegPose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Pose"/>
+        <rdfs:label>LegPose</rdfs:label>
     </owl:Class>
     
 
@@ -1385,6 +1464,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/hdgi#LittleFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
         <rdfs:comment xml:lang="en">Fifth finger or the fifth digit of hand.</rdfs:comment>
+        <rdfs:label>LittleFinger</rdfs:label>
     </owl:Class>
     
 
@@ -1394,6 +1474,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#LittleFingerCurled">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFingerPose"/>
+        <rdfs:label>LittleFingerCurled</rdfs:label>
     </owl:Class>
     
 
@@ -1403,6 +1484,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#LittleFingerFolded">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFingerPose"/>
+        <rdfs:label>LittleFingerFolded</rdfs:label>
     </owl:Class>
     
 
@@ -1426,6 +1508,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#RightLittleFinger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>LittleFingerPose</rdfs:label>
     </owl:Class>
     
 
@@ -1435,6 +1518,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#LittleFingerStraightandBackward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFingerPose"/>
+        <rdfs:label>LittleFingerStraightandBackward</rdfs:label>
     </owl:Class>
     
 
@@ -1444,6 +1528,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#LittleFingerStraightandDownward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFingerPose"/>
+        <rdfs:label>LittleFingerStraightandDownward</rdfs:label>
     </owl:Class>
     
 
@@ -1453,6 +1538,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#LittleFingerStraightandForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFingerPose"/>
+        <rdfs:label>LittleFingerStraightandForward</rdfs:label>
     </owl:Class>
     
 
@@ -1462,6 +1548,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#LittleFingerStraightandLeftward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFingerPose"/>
+        <rdfs:label>LittleFingerStraightandLeftward</rdfs:label>
     </owl:Class>
     
 
@@ -1471,6 +1558,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#LittleFingerStraightandRightward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFingerPose"/>
+        <rdfs:label>LittleFingerStraightandRightward</rdfs:label>
     </owl:Class>
     
 
@@ -1480,6 +1568,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#LittleFingerStraightandUpward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFingerPose"/>
+        <rdfs:label>LittleFingerStraightandUpward</rdfs:label>
     </owl:Class>
     
 
@@ -1555,6 +1644,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The local coordinate system is the coordinate system that is convenient for a given entity (Finger, palm etc.), local space, or object space.</rdfs:comment>
+        <rdfs:label>LocalCoordinateSystem</rdfs:label>
     </owl:Class>
     
 
@@ -1565,6 +1655,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
         <rdfs:comment xml:lang="en">Third finger or the third digit of hand.</rdfs:comment>
+        <rdfs:label>MiddleFinger</rdfs:label>
     </owl:Class>
     
 
@@ -1574,6 +1665,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFingerCurled">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFingerPose"/>
+        <rdfs:label>MiddleFingerCurled</rdfs:label>
     </owl:Class>
     
 
@@ -1583,6 +1675,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFingerFolded">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFingerPose"/>
+        <rdfs:label>MiddleFingerFolded</rdfs:label>
     </owl:Class>
     
 
@@ -1606,6 +1699,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#RightMiddleFinger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>MiddleFingerPose</rdfs:label>
     </owl:Class>
     
 
@@ -1615,6 +1709,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFingerStraightandBackward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFingerPose"/>
+        <rdfs:label>MiddleFingerStraightandBackward</rdfs:label>
     </owl:Class>
     
 
@@ -1624,6 +1719,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFingerStraightandDownward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFingerPose"/>
+        <rdfs:label>MiddleFingerStraightandDownward</rdfs:label>
     </owl:Class>
     
 
@@ -1633,6 +1729,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFingerStraightandForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFingerPose"/>
+        <rdfs:label>MiddleFingerStraightandForward</rdfs:label>
     </owl:Class>
     
 
@@ -1642,6 +1739,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFingerStraightandLeftward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFingerPose"/>
+        <rdfs:label>MiddleFingerStraightandLeftward</rdfs:label>
     </owl:Class>
     
 
@@ -1651,6 +1749,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFingerStraightandRightward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFingerPose"/>
+        <rdfs:label>MiddleFingerStraightandRightward</rdfs:label>
     </owl:Class>
     
 
@@ -1660,6 +1759,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#MiddleFingerStraightandUpward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFingerPose"/>
+        <rdfs:label>MiddleFingerStraightandUpward</rdfs:label>
     </owl:Class>
     
 
@@ -1681,21 +1781,8 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Duration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasEndPose"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/hdgi#Pose"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasStartPose"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/hdgi#Pose"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The act of moving a certain body part towards a certain direction.</rdfs:comment>
+        <rdfs:label>Movement</rdfs:label>
     </owl:Class>
     
 
@@ -1705,6 +1792,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ObservableAffordance">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Affordance"/>
+        <rdfs:label>ObservableAffordance</rdfs:label>
     </owl:Class>
     
 
@@ -1725,6 +1813,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/hdgi#Pose"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Observer</rdfs:label>
     </owl:Class>
     
 
@@ -1741,6 +1830,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The area located at the end of the forearm (starting from wrist) up until the start of a finger which is the central region of the anterior part of the hand.</rdfs:comment>
+        <rdfs:label>Palm</rdfs:label>
     </owl:Class>
     
 
@@ -1750,6 +1840,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmAnticlockwiseRotation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+        <rdfs:label>PalmAnticlockwiseRotation</rdfs:label>
     </owl:Class>
     
 
@@ -1759,6 +1850,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmBackward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+        <rdfs:label>PalmBackward</rdfs:label>
     </owl:Class>
     
 
@@ -1768,6 +1860,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmClockwiseRotation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+        <rdfs:label>PalmClockwiseRotation</rdfs:label>
     </owl:Class>
     
 
@@ -1777,6 +1870,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmDownward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+        <rdfs:label>PalmDownward</rdfs:label>
     </owl:Class>
     
 
@@ -1786,6 +1880,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmDownwardPose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+        <rdfs:label>PalmDownwardPose</rdfs:label>
     </owl:Class>
     
 
@@ -1795,6 +1890,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+        <rdfs:label>PalmForward</rdfs:label>
     </owl:Class>
     
 
@@ -1804,6 +1900,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmInwardPose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+        <rdfs:label>PalmInwardPose</rdfs:label>
     </owl:Class>
     
 
@@ -1813,6 +1910,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmLeftward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+        <rdfs:label>PalmLeftward</rdfs:label>
     </owl:Class>
     
 
@@ -1822,6 +1920,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmLeftwardPose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+        <rdfs:label>PalmLeftwardPose</rdfs:label>
     </owl:Class>
     
 
@@ -1846,6 +1945,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Movement of palm. Either right or left.</rdfs:comment>
+        <rdfs:label>PalmMovement</rdfs:label>
     </owl:Class>
     
 
@@ -1855,6 +1955,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmOutwardPose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+        <rdfs:label>PalmOutwardPose</rdfs:label>
     </owl:Class>
     
 
@@ -1878,6 +1979,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#Palm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>PalmPose</rdfs:label>
     </owl:Class>
     
 
@@ -1887,6 +1989,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmRightward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+        <rdfs:label>PalmRightward</rdfs:label>
     </owl:Class>
     
 
@@ -1896,6 +1999,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmRightwardPose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+        <rdfs:label>PalmRightwardPose</rdfs:label>
     </owl:Class>
     
 
@@ -1905,6 +2009,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmUpward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmMovement"/>
+        <rdfs:label>PalmUpward</rdfs:label>
     </owl:Class>
     
 
@@ -1914,6 +2019,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/hdgi#PalmUpwardPose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#PalmPose"/>
+        <rdfs:label>PalmUpwardPose</rdfs:label>
     </owl:Class>
     
 
@@ -1922,12 +2028,6 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#Pose">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/hdgi#hasPose"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Pose"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/hdgi#used"/>
@@ -1955,6 +2055,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Pose</rdfs:label>
     </owl:Class>
     
 
@@ -1999,6 +2100,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Position of a pose in a particular time</rdfs:comment>
+        <rdfs:label>Position</rdfs:label>
     </owl:Class>
     
 
@@ -2038,6 +2140,7 @@ Location of the (0,0,0) postion related to the given coordinates.</rdfs:comment>
         <rdfs:comment xml:lang="en">A quaternion is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.
 
 The magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one.</rdfs:comment>
+        <rdfs:label>Quaternion</rdfs:label>
     </owl:Class>
     
 
@@ -2053,6 +2156,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
                 <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#Forearm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>RightForearm</rdfs:label>
     </owl:Class>
     
 
@@ -2063,6 +2167,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
     <owl:Class rdf:about="https://w3id.org/hdgi#RightIndexFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#IndexFinger"/>
         <rdfs:comment xml:lang="en">Right hand index finger.</rdfs:comment>
+        <rdfs:label>RightIndexFinger</rdfs:label>
     </owl:Class>
     
 
@@ -2073,6 +2178,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
     <owl:Class rdf:about="https://w3id.org/hdgi#RightLittleFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#LittleFinger"/>
         <rdfs:comment xml:lang="en">Right hand little finger.</rdfs:comment>
+        <rdfs:label>RightLittleFinger</rdfs:label>
     </owl:Class>
     
 
@@ -2083,6 +2189,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
     <owl:Class rdf:about="https://w3id.org/hdgi#RightMiddleFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#MiddleFinger"/>
         <rdfs:comment xml:lang="en">Right hand middle finger.</rdfs:comment>
+        <rdfs:label>RightMiddleFinger</rdfs:label>
     </owl:Class>
     
 
@@ -2093,6 +2200,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
     <owl:Class rdf:about="https://w3id.org/hdgi#RightPalm">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Palm"/>
         <rdfs:comment xml:lang="en">Right hand palm.</rdfs:comment>
+        <rdfs:label>RightPalm</rdfs:label>
     </owl:Class>
     
 
@@ -2103,6 +2211,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
     <owl:Class rdf:about="https://w3id.org/hdgi#RightRingFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFinger"/>
         <rdfs:comment xml:lang="en">Right hand ring finger.</rdfs:comment>
+        <rdfs:label>RightRingFinger</rdfs:label>
     </owl:Class>
     
 
@@ -2113,6 +2222,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
     <owl:Class rdf:about="https://w3id.org/hdgi#RightThumb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Thumb"/>
         <rdfs:comment xml:lang="en">Thumb of right hand.</rdfs:comment>
+        <rdfs:label>RightThumb</rdfs:label>
     </owl:Class>
     
 
@@ -2128,6 +2238,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
                 <owl:allValuesFrom rdf:resource="https://w3id.org/hdgi#UpperArm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>RightUpperArm</rdfs:label>
     </owl:Class>
     
 
@@ -2138,6 +2249,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
     <owl:Class rdf:about="https://w3id.org/hdgi#RingFinger">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
         <rdfs:comment xml:lang="en">Fourth finger or the fourth digit of hand.</rdfs:comment>
+        <rdfs:label>RingFinger</rdfs:label>
     </owl:Class>
     
 
@@ -2147,6 +2259,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#RingFingerCurled">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFingerPose"/>
+        <rdfs:label>RingFingerCurled</rdfs:label>
     </owl:Class>
     
 
@@ -2156,6 +2269,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#RingFingerFolded">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFingerPose"/>
+        <rdfs:label>RingFingerFolded</rdfs:label>
     </owl:Class>
     
 
@@ -2179,6 +2293,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#RightRingFinger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>RingFingerPose</rdfs:label>
     </owl:Class>
     
 
@@ -2188,6 +2303,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#RingFingerStraightandBackward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFingerPose"/>
+        <rdfs:label>RingFingerStraightandBackward</rdfs:label>
     </owl:Class>
     
 
@@ -2197,6 +2313,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#RingFingerStraightandDownward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFingerPose"/>
+        <rdfs:label>RingFingerStraightandDownward</rdfs:label>
     </owl:Class>
     
 
@@ -2206,6 +2323,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#RingFingerStraightandForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFingerPose"/>
+        <rdfs:label>RingFingerStraightandForward</rdfs:label>
     </owl:Class>
     
 
@@ -2215,6 +2333,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#RingFingerStraightandLeftward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFingerPose"/>
+        <rdfs:label>RingFingerStraightandLeftward</rdfs:label>
     </owl:Class>
     
 
@@ -2224,6 +2343,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#RingFingerStraightandRightward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFingerPose"/>
+        <rdfs:label>RingFingerStraightandRightward</rdfs:label>
     </owl:Class>
     
 
@@ -2233,6 +2353,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#RingFingerStraightandUpward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#RingFingerPose"/>
+        <rdfs:label>RingFingerStraightandUpward</rdfs:label>
     </owl:Class>
     
 
@@ -2284,6 +2405,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Rotation of a pose.</rdfs:comment>
+        <rdfs:label>Rotation</rdfs:label>
     </owl:Class>
     
 
@@ -2294,6 +2416,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
     <owl:Class rdf:about="https://w3id.org/hdgi#Thumb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Finger"/>
         <rdfs:comment xml:lang="en">First digit of hand.</rdfs:comment>
+        <rdfs:label>Thumb</rdfs:label>
     </owl:Class>
     
 
@@ -2303,6 +2426,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ThumbCurled">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#TumbPose"/>
+        <rdfs:label>ThumbCurled</rdfs:label>
     </owl:Class>
     
 
@@ -2312,6 +2436,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ThumbFolded">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#TumbPose"/>
+        <rdfs:label>ThumbFolded</rdfs:label>
     </owl:Class>
     
 
@@ -2321,6 +2446,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ThumbStraightandBackward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#TumbPose"/>
+        <rdfs:label>ThumbStraightandBackward</rdfs:label>
     </owl:Class>
     
 
@@ -2330,6 +2456,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ThumbStraightandDownward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#TumbPose"/>
+        <rdfs:label>ThumbStraightandDownward</rdfs:label>
     </owl:Class>
     
 
@@ -2339,6 +2466,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ThumbStraightandForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#TumbPose"/>
+        <rdfs:label>ThumbStraightandForward</rdfs:label>
     </owl:Class>
     
 
@@ -2348,6 +2476,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ThumbStraightandLeftward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#TumbPose"/>
+        <rdfs:label>ThumbStraightandLeftward</rdfs:label>
     </owl:Class>
     
 
@@ -2357,6 +2486,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ThumbStraightandRightward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#TumbPose"/>
+        <rdfs:label>ThumbStraightandRightward</rdfs:label>
     </owl:Class>
     
 
@@ -2366,6 +2496,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#ThumbStraightandUpward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#TumbPose"/>
+        <rdfs:label>ThumbStraightandUpward</rdfs:label>
     </owl:Class>
     
 
@@ -2389,6 +2520,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#RightThumb"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>TumbPose</rdfs:label>
     </owl:Class>
     
 
@@ -2398,6 +2530,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UnitOfMeasure">
         <rdfs:comment xml:lang="en">Defines units of measurement.</rdfs:comment>
+        <rdfs:label>UnitOfMeasure</rdfs:label>
     </owl:Class>
     
 
@@ -2414,6 +2547,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The upper arm is the line between the shoulder and elbow joint.</rdfs:comment>
+        <rdfs:label>UpperArm</rdfs:label>
     </owl:Class>
     
 
@@ -2423,6 +2557,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmAnticlcockwiseRotation</rdfs:label>
     </owl:Class>
     
 
@@ -2432,6 +2567,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmBackward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmBackward</rdfs:label>
     </owl:Class>
     
 
@@ -2441,6 +2577,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmClockwiseRotation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmClockwiseRotation</rdfs:label>
     </owl:Class>
     
 
@@ -2450,6 +2587,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmForward</rdfs:label>
     </owl:Class>
     
 
@@ -2474,6 +2612,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Gestures (movements) made with upper arm</rdfs:comment>
+        <rdfs:label>UpperArmGesture</rdfs:label>
     </owl:Class>
     
 
@@ -2483,6 +2622,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmLeftward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmLeftward</rdfs:label>
     </owl:Class>
     
 
@@ -2492,6 +2632,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmLeftwardAndBack">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmLeftwardAndBack</rdfs:label>
     </owl:Class>
     
 
@@ -2501,6 +2642,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmLeftwardAndFront">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmLeftwardAndFront</rdfs:label>
     </owl:Class>
     
 
@@ -2524,6 +2666,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#UpperArm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>UpperArmMovement</rdfs:label>
     </owl:Class>
     
 
@@ -2547,6 +2690,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
                 <owl:onClass rdf:resource="https://w3id.org/hdgi#UpperArm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>UpperArmPose</rdfs:label>
     </owl:Class>
     
 
@@ -2556,6 +2700,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmRightward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmRightward</rdfs:label>
     </owl:Class>
     
 
@@ -2565,6 +2710,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmRightwardAndBack">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmRightwardAndBack</rdfs:label>
     </owl:Class>
     
 
@@ -2574,6 +2720,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UpperArmRightwardAndFront">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#UpperArmMovement"/>
+        <rdfs:label>UpperArmRightwardAndFront</rdfs:label>
     </owl:Class>
     
 
@@ -2583,6 +2730,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
     <owl:Class rdf:about="https://w3id.org/hdgi#UserContext">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hdgi#Context"/>
+        <rdfs:label>UserContext</rdfs:label>
     </owl:Class>
     
 
