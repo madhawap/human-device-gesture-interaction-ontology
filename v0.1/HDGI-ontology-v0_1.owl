@@ -31,8 +31,8 @@ hdgi:affordedBy rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/hdgi#hasContext
 hdgi:hasContext rdf:type owl:ObjectProperty ;
-                rdfs:label "Relation from a Human to a User Context or from a Device to a Device Context." ,
-                           "hasContext" .
+                rdfs:comment "Relation from a Human to a User Context or from a Device to a Device Context." ;
+                rdfs:label "hasContext" .
 
 
 ###  https://w3id.org/hdgi#hasDuration
@@ -105,9 +105,6 @@ hdgi:includesGesture rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/hdgi#involves
 hdgi:involves rdf:type owl:ObjectProperty ;
-              owl:propertyChainAxiom ( hdgi:hasPose
-                                       hdgi:involves
-                                     ) ;
               rdfs:label "involves" .
 
 
@@ -157,7 +154,7 @@ hdgi:uses rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/hdgi#i-component
 hdgi:i-component rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:float ;
-                 rdfs:comment """In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x 
+                 rdfs:comment """In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x
 
 In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).""" ;
                  rdfs:label "i-component" .
@@ -166,7 +163,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
 ###  https://w3id.org/hdgi#j-component
 hdgi:j-component rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:float ;
-                 rdfs:comment """In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y 
+                 rdfs:comment """In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y
 
 In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).""" ;
                  rdfs:label "j-component" .
@@ -175,7 +172,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
 ###  https://w3id.org/hdgi#k-component
 hdgi:k-component rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:float ;
-                 rdfs:comment """In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z 
+                 rdfs:comment """In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z
 
 In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).""" ;
                  rdfs:label "k-component" .
@@ -184,7 +181,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
 ###  https://w3id.org/hdgi#originPoint
 hdgi:originPoint rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:string ;
-                 rdfs:comment """Frame of reference or the initial center. 
+                 rdfs:comment """Frame of reference or the initial center.
 Location of the (0,0,0) postion related to the given coordinates.""" ;
                  rdfs:label "originPoint" .
 
@@ -292,7 +289,8 @@ hdgi:zRotation rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/hdgi#ActuatableAffordance
 hdgi:ActuatableAffordance rdf:type owl:Class ;
-                          rdfs:subClassOf hdgi:Affordance .
+                          rdfs:subClassOf hdgi:Affordance ;
+                          rdfs:label "ActuatableAffordance" .
 
 
 ###  https://w3id.org/hdgi#Affordance
@@ -305,7 +303,8 @@ hdgi:Affordance rdf:type owl:Class ;
                                   owl:onProperty hdgi:supportsGesture ;
                                   owl:allValuesFrom hdgi:Gesture
                                 ] ;
-                rdfs:comment "Affordances are all the type of properties that belong to devices. They indicate the possible actions users can take with it."@en .
+                rdfs:comment "Affordances are all the type of properties that belong to devices. They indicate the possible actions users can take with it."@en ;
+                rdfs:label "Affordance" .
 
 
 ###  https://w3id.org/hdgi#Body
@@ -314,17 +313,20 @@ hdgi:Body rdf:type owl:Class ;
                             owl:onProperty hdgi:hasPart ;
                             owl:allValuesFrom hdgi:BodyPart
                           ] ;
-          rdfs:comment "Human body. A collection of body parts."@en .
+          rdfs:comment "Human body. A collection of body parts."@en ;
+          rdfs:label "Body" .
 
 
 ###  https://w3id.org/hdgi#BodyPart
 hdgi:BodyPart rdf:type owl:Class ;
               rdfs:comment "Parts of human body."@en ;
+              rdfs:label "BodyPart" ;
               skos:example "\"Head\", \"Palm\", \"Finger\" etc." .
 
 
 ###  https://w3id.org/hdgi#Context
-hdgi:Context rdf:type owl:Class .
+hdgi:Context rdf:type owl:Class ;
+             rdfs:label "Context" .
 
 
 ###  https://w3id.org/hdgi#Device
@@ -337,22 +339,26 @@ hdgi:Device rdf:type owl:Class ;
                               owl:onProperty hdgi:manufacturedBy ;
                               owl:allValuesFrom hdgi:DeviceManufacturer
                             ] ;
-            rdfs:comment "A device denotes a piece of hardware or software which consists of sensors or actuators or both."@en .
+            rdfs:comment "A device denotes a piece of hardware or software which consists of sensors or actuators or both."@en ;
+            rdfs:label "Device" .
 
 
 ###  https://w3id.org/hdgi#DeviceContext
 hdgi:DeviceContext rdf:type owl:Class ;
-                   rdfs:subClassOf hdgi:Context .
+                   rdfs:subClassOf hdgi:Context ;
+                   rdfs:label "DeviceContext" .
 
 
 ###  https://w3id.org/hdgi#DeviceManufacturer
 hdgi:DeviceManufacturer rdf:type owl:Class ;
-                        rdfs:comment "The company manufacturing a device."@en .
+                        rdfs:comment "The company manufacturing a device."@en ;
+                        rdfs:label "DeviceManufacturer" .
 
 
 ###  https://w3id.org/hdgi#Duration
 hdgi:Duration rdf:type owl:Class ;
-              rdfs:comment "Duration is a temporal extent."@en .
+              rdfs:comment "Duration is a temporal extent."@en ;
+              rdfs:label "Duration" .
 
 
 ###  https://w3id.org/hdgi#Face
@@ -361,7 +367,8 @@ hdgi:Face rdf:type owl:Class ;
                           [ rdf:type owl:Restriction ;
                             owl:onProperty hdgi:isPartOf ;
                             owl:someValuesFrom hdgi:BodyPart
-                          ] .
+                          ] ;
+          rdfs:label "Face" .
 
 
 ###  https://w3id.org/hdgi#FacialGesture
@@ -371,7 +378,8 @@ hdgi:FacialGesture rdf:type owl:Class ;
                                      owl:onProperty hdgi:involves ;
                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                      owl:onClass hdgi:Face
-                                   ] .
+                                   ] ;
+                   rdfs:label "FacialGesture" .
 
 
 ###  https://w3id.org/hdgi#Finger
@@ -382,37 +390,44 @@ hdgi:Finger rdf:type owl:Class ;
                               owl:someValuesFrom hdgi:BodyPart
                             ] ;
             rdfs:comment "A finger is a body part of the human body and a type of digit."@en ;
+            rdfs:label "Finger" ;
             skos:example "thumb, middle finger, left ring finger etc" .
 
 
 ###  https://w3id.org/hdgi#FingerAnticlcokwiseRotation
 hdgi:FingerAnticlcokwiseRotation rdf:type owl:Class ;
-                                 rdfs:subClassOf hdgi:FingerMovement .
+                                 rdfs:subClassOf hdgi:FingerMovement ;
+                                 rdfs:label "FingerAnticlcokwiseRotation" .
 
 
 ###  https://w3id.org/hdgi#FingerBackward
 hdgi:FingerBackward rdf:type owl:Class ;
-                    rdfs:subClassOf hdgi:FingerMovement .
+                    rdfs:subClassOf hdgi:FingerMovement ;
+                    rdfs:label "FingerBackward" .
 
 
 ###  https://w3id.org/hdgi#FingerClockwiseRotation
 hdgi:FingerClockwiseRotation rdf:type owl:Class ;
-                             rdfs:subClassOf hdgi:FingerMovement .
+                             rdfs:subClassOf hdgi:FingerMovement ;
+                             rdfs:label "FingerClockwiseRotation" .
 
 
 ###  https://w3id.org/hdgi#FingerDownward
 hdgi:FingerDownward rdf:type owl:Class ;
-                    rdfs:subClassOf hdgi:FingerMovement .
+                    rdfs:subClassOf hdgi:FingerMovement ;
+                    rdfs:label "FingerDownward" .
 
 
 ###  https://w3id.org/hdgi#FingerForward
 hdgi:FingerForward rdf:type owl:Class ;
-                   rdfs:subClassOf hdgi:FingerMovement .
+                   rdfs:subClassOf hdgi:FingerMovement ;
+                   rdfs:label "FingerForward" .
 
 
 ###  https://w3id.org/hdgi#FingerLeftward
 hdgi:FingerLeftward rdf:type owl:Class ;
-                    rdfs:subClassOf hdgi:FingerMovement .
+                    rdfs:subClassOf hdgi:FingerMovement ;
+                    rdfs:label "FingerLeftward" .
 
 
 ###  https://w3id.org/hdgi#FingerMovement
@@ -427,22 +442,26 @@ hdgi:FingerMovement rdf:type owl:Class ;
                                       owl:onProperty hdgi:involves ;
                                       owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
                                       owl:onClass hdgi:Finger
-                                    ] .
+                                    ] ;
+                    rdfs:label "FingerMovement" .
 
 
 ###  https://w3id.org/hdgi#FingerPose
 hdgi:FingerPose rdf:type owl:Class ;
-                rdfs:subClassOf hdgi:Pose .
+                rdfs:subClassOf hdgi:Pose ;
+                rdfs:label "FingerPose" .
 
 
 ###  https://w3id.org/hdgi#FingerRightward
 hdgi:FingerRightward rdf:type owl:Class ;
-                     rdfs:subClassOf hdgi:FingerMovement .
+                     rdfs:subClassOf hdgi:FingerMovement ;
+                     rdfs:label "FingerRightward" .
 
 
 ###  https://w3id.org/hdgi#FingerUpward
 hdgi:FingerUpward rdf:type owl:Class ;
-                  rdfs:subClassOf hdgi:FingerMovement .
+                  rdfs:subClassOf hdgi:FingerMovement ;
+                  rdfs:label "FingerUpward" .
 
 
 ###  https://w3id.org/hdgi#Foot
@@ -451,7 +470,8 @@ hdgi:Foot rdf:type owl:Class ;
                           [ rdf:type owl:Restriction ;
                             owl:onProperty hdgi:isPartOf ;
                             owl:someValuesFrom hdgi:BodyPart
-                          ] .
+                          ] ;
+          rdfs:label "Foot" .
 
 
 ###  https://w3id.org/hdgi#FootGesture
@@ -466,12 +486,14 @@ hdgi:FootGesture rdf:type owl:Class ;
                                    owl:onProperty hdgi:involves ;
                                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                    owl:onClass hdgi:Foot
-                                 ] .
+                                 ] ;
+                 rdfs:label "FootGesture" .
 
 
 ###  https://w3id.org/hdgi#FootPose
 hdgi:FootPose rdf:type owl:Class ;
-              rdfs:subClassOf hdgi:Pose .
+              rdfs:subClassOf hdgi:Pose ;
+              rdfs:label "FootPose" .
 
 
 ###  https://w3id.org/hdgi#Forearm
@@ -481,32 +503,38 @@ hdgi:Forearm rdf:type owl:Class ;
                                owl:onProperty hdgi:isPartOf ;
                                owl:someValuesFrom hdgi:BodyPart
                              ] ;
-             rdfs:comment "The forearm is the line between the elbow joint and the wrist."@en .
+             rdfs:comment "The forearm is the line between the elbow joint and the wrist."@en ;
+             rdfs:label "Forearm" .
 
 
 ###  https://w3id.org/hdgi#ForearmAnticlockwiseRotation
 hdgi:ForearmAnticlockwiseRotation rdf:type owl:Class ;
-                                  rdfs:subClassOf hdgi:ForearmMovement .
+                                  rdfs:subClassOf hdgi:ForearmMovement ;
+                                  rdfs:label "ForearmAnticlockwiseRotation" .
 
 
 ###  https://w3id.org/hdgi#ForearmBackward
 hdgi:ForearmBackward rdf:type owl:Class ;
-                     rdfs:subClassOf hdgi:ForearmMovement .
+                     rdfs:subClassOf hdgi:ForearmMovement ;
+                     rdfs:label "ForearmBackward" .
 
 
 ###  https://w3id.org/hdgi#ForearmClockwiseRotation
 hdgi:ForearmClockwiseRotation rdf:type owl:Class ;
-                              rdfs:subClassOf hdgi:ForearmMovement .
+                              rdfs:subClassOf hdgi:ForearmMovement ;
+                              rdfs:label "ForearmClockwiseRotation" .
 
 
 ###  https://w3id.org/hdgi#ForearmDownward
 hdgi:ForearmDownward rdf:type owl:Class ;
-                     rdfs:subClassOf hdgi:ForearmMovement .
+                     rdfs:subClassOf hdgi:ForearmMovement ;
+                     rdfs:label "ForearmDownward" .
 
 
 ###  https://w3id.org/hdgi#ForearmForward
 hdgi:ForearmForward rdf:type owl:Class ;
-                    rdfs:subClassOf hdgi:ForearmMovement .
+                    rdfs:subClassOf hdgi:ForearmMovement ;
+                    rdfs:label "ForearmForward" .
 
 
 ###  https://w3id.org/hdgi#ForearmGesture
@@ -522,22 +550,26 @@ hdgi:ForearmGesture rdf:type owl:Class ;
                                       owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                       owl:onClass hdgi:Forearm
                                     ] ;
-                    rdfs:comment "Gestures (movements) made with forearm" .
+                    rdfs:comment "Gestures (movements) made with forearm" ;
+                    rdfs:label "ForearmGesture" .
 
 
 ###  https://w3id.org/hdgi#ForearmLeftward
 hdgi:ForearmLeftward rdf:type owl:Class ;
-                     rdfs:subClassOf hdgi:ForearmMovement .
+                     rdfs:subClassOf hdgi:ForearmMovement ;
+                     rdfs:label "ForearmLeftward" .
 
 
 ###  https://w3id.org/hdgi#ForearmLeftwardAndDown
 hdgi:ForearmLeftwardAndDown rdf:type owl:Class ;
-                            rdfs:subClassOf hdgi:ForearmMovement .
+                            rdfs:subClassOf hdgi:ForearmMovement ;
+                            rdfs:label "ForearmLeftwardAndDown" .
 
 
 ###  https://w3id.org/hdgi#ForearmLeftwardAndUp
 hdgi:ForearmLeftwardAndUp rdf:type owl:Class ;
-                          rdfs:subClassOf hdgi:ForearmMovement .
+                          rdfs:subClassOf hdgi:ForearmMovement ;
+                          rdfs:label "ForearmLeftwardAndUp" .
 
 
 ###  https://w3id.org/hdgi#ForearmMovement
@@ -552,7 +584,8 @@ hdgi:ForearmMovement rdf:type owl:Class ;
                                        owl:onProperty hdgi:involves ;
                                        owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                        owl:onClass hdgi:Forearm
-                                     ] .
+                                     ] ;
+                     rdfs:label "ForearmMovement" .
 
 
 ###  https://w3id.org/hdgi#ForearmPose
@@ -567,27 +600,32 @@ hdgi:ForearmPose rdf:type owl:Class ;
                                    owl:onProperty hdgi:used ;
                                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                    owl:onClass hdgi:Forearm
-                                 ] .
+                                 ] ;
+                 rdfs:label "ForearmPose" .
 
 
 ###  https://w3id.org/hdgi#ForearmRightward
 hdgi:ForearmRightward rdf:type owl:Class ;
-                      rdfs:subClassOf hdgi:ForearmMovement .
+                      rdfs:subClassOf hdgi:ForearmMovement ;
+                      rdfs:label "ForearmRightward" .
 
 
 ###  https://w3id.org/hdgi#ForearmRightwardAndDown
 hdgi:ForearmRightwardAndDown rdf:type owl:Class ;
-                             rdfs:subClassOf hdgi:ForearmMovement .
+                             rdfs:subClassOf hdgi:ForearmMovement ;
+                             rdfs:label "ForearmRightwardAndDown" .
 
 
 ###  https://w3id.org/hdgi#ForearmRightwardAndUp
 hdgi:ForearmRightwardAndUp rdf:type owl:Class ;
-                           rdfs:subClassOf hdgi:ForearmMovement .
+                           rdfs:subClassOf hdgi:ForearmMovement ;
+                           rdfs:label "ForearmRightwardAndUp" .
 
 
 ###  https://w3id.org/hdgi#ForearmUpward
 hdgi:ForearmUpward rdf:type owl:Class ;
-                   rdfs:subClassOf hdgi:ForearmMovement .
+                   rdfs:subClassOf hdgi:ForearmMovement ;
+                   rdfs:label "ForearmUpward" .
 
 
 ###  https://w3id.org/hdgi#Gesture
@@ -601,11 +639,32 @@ hdgi:Gesture rdf:type owl:Class ;
                                owl:allValuesFrom hdgi:BodyPart
                              ] ,
                              [ rdf:type owl:Restriction ;
+                               owl:onProperty hdgi:hasEndPose ;
+                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                               owl:onClass hdgi:Pose
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty hdgi:hasStartPose ;
+                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                               owl:onClass hdgi:Pose
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty hdgi:hasEndPose ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass hdgi:Pose
+                             ] ,
+                             [ rdf:type owl:Restriction ;
                                owl:onProperty hdgi:hasMovement ;
                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onClass hdgi:Movement
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty hdgi:hasStartPose ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass hdgi:Pose
                              ] ;
-             rdfs:comment "A gesture is a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm."@en .
+             rdfs:comment "A gesture is a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm."@en ;
+             rdfs:label "Gesture" .
 
 
 ###  https://w3id.org/hdgi#HandGesture
@@ -631,7 +690,8 @@ hdgi:HandGesture rdf:type owl:Class ;
                                    owl:maxQualifiedCardinality "10"^^xsd:nonNegativeInteger ;
                                    owl:onClass hdgi:Finger
                                  ] ;
-                 rdfs:comment "Gestures (movements) made with fingers and palms" .
+                 rdfs:comment "Gestures (movements) made with fingers and palms" ;
+                 rdfs:label "HandGesture" .
 
 
 ###  https://w3id.org/hdgi#Head
@@ -640,7 +700,8 @@ hdgi:Head rdf:type owl:Class ;
                           [ rdf:type owl:Restriction ;
                             owl:onProperty hdgi:isPartOf ;
                             owl:someValuesFrom hdgi:BodyPart
-                          ] .
+                          ] ;
+          rdfs:label "Head" .
 
 
 ###  https://w3id.org/hdgi#HeadGesture
@@ -650,7 +711,8 @@ hdgi:HeadGesture rdf:type owl:Class ;
                                    owl:onProperty hdgi:involves ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass hdgi:Head
-                                 ] .
+                                 ] ;
+                 rdfs:label "HeadGesture" .
 
 
 ###  https://w3id.org/hdgi#Human
@@ -670,23 +732,28 @@ hdgi:Human rdf:type owl:Class ;
                            [ rdf:type owl:Restriction ;
                              owl:onProperty hdgi:uses ;
                              owl:allValuesFrom hdgi:BodyPart
-                           ] .
+                           ] ;
+           rdfs:comment "User who perform a gesture" ;
+           rdfs:label "Human" .
 
 
 ###  https://w3id.org/hdgi#IndexFinger
 hdgi:IndexFinger rdf:type owl:Class ;
                  rdfs:subClassOf hdgi:Finger ;
-                 rdfs:comment "Second finger or the second digit of hand."@en .
+                 rdfs:comment "Second finger or the second digit of hand."@en ;
+                 rdfs:label "IndexFinger" .
 
 
 ###  https://w3id.org/hdgi#IndexFingerCurled
 hdgi:IndexFingerCurled rdf:type owl:Class ;
-                       rdfs:subClassOf hdgi:IndexFingerPose .
+                       rdfs:subClassOf hdgi:IndexFingerPose ;
+                       rdfs:label "IndexFingerCurled" .
 
 
 ###  https://w3id.org/hdgi#IndexFingerFolded
 hdgi:IndexFingerFolded rdf:type owl:Class ;
-                       rdfs:subClassOf hdgi:IndexFingerPose .
+                       rdfs:subClassOf hdgi:IndexFingerPose ;
+                       rdfs:label "IndexFingerFolded" .
 
 
 ###  https://w3id.org/hdgi#IndexFingerPose
@@ -701,37 +768,44 @@ hdgi:IndexFingerPose rdf:type owl:Class ;
                                        owl:onProperty hdgi:used ;
                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                        owl:onClass hdgi:RightIndexFinger
-                                     ] .
+                                     ] ;
+                     rdfs:label "IndexFingerPose" .
 
 
 ###  https://w3id.org/hdgi#IndexFingerStraightandBackward
 hdgi:IndexFingerStraightandBackward rdf:type owl:Class ;
-                                    rdfs:subClassOf hdgi:IndexFingerPose .
+                                    rdfs:subClassOf hdgi:IndexFingerPose ;
+                                    rdfs:label "IndexFingerStraightandBackward" .
 
 
 ###  https://w3id.org/hdgi#IndexFingerStraightandDownward
 hdgi:IndexFingerStraightandDownward rdf:type owl:Class ;
-                                    rdfs:subClassOf hdgi:IndexFingerPose .
+                                    rdfs:subClassOf hdgi:IndexFingerPose ;
+                                    rdfs:label "IndexFingerStraightandDownward" .
 
 
 ###  https://w3id.org/hdgi#IndexFingerStraightandForward
 hdgi:IndexFingerStraightandForward rdf:type owl:Class ;
-                                   rdfs:subClassOf hdgi:IndexFingerPose .
+                                   rdfs:subClassOf hdgi:IndexFingerPose ;
+                                   rdfs:label "IndexFingerStraightandForward" .
 
 
 ###  https://w3id.org/hdgi#IndexFingerStraightandLeftward
 hdgi:IndexFingerStraightandLeftward rdf:type owl:Class ;
-                                    rdfs:subClassOf hdgi:IndexFingerPose .
+                                    rdfs:subClassOf hdgi:IndexFingerPose ;
+                                    rdfs:label "IndexFingerStraightandLeftward" .
 
 
 ###  https://w3id.org/hdgi#IndexFingerStraightandRightward
 hdgi:IndexFingerStraightandRightward rdf:type owl:Class ;
-                                     rdfs:subClassOf hdgi:IndexFingerPose .
+                                     rdfs:subClassOf hdgi:IndexFingerPose ;
+                                     rdfs:label "IndexFingerStraightandRightward" .
 
 
 ###  https://w3id.org/hdgi#IndexFingerStraightandUpward
 hdgi:IndexFingerStraightandUpward rdf:type owl:Class ;
-                                  rdfs:subClassOf hdgi:IndexFingerPose .
+                                  rdfs:subClassOf hdgi:IndexFingerPose ;
+                                  rdfs:label "IndexFingerStraightandUpward" .
 
 
 ###  https://w3id.org/hdgi#LeftForearm
@@ -740,43 +814,50 @@ hdgi:LeftForearm rdf:type owl:Class ;
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty hdgi:isPartOf ;
                                    owl:allValuesFrom hdgi:Forearm
-                                 ] .
+                                 ] ;
+                 rdfs:label "LeftForearm" .
 
 
 ###  https://w3id.org/hdgi#LeftIndexFinger
 hdgi:LeftIndexFinger rdf:type owl:Class ;
                      rdfs:subClassOf hdgi:IndexFinger ;
-                     rdfs:comment "Left hand index finger."@en .
+                     rdfs:comment "Left hand index finger."@en ;
+                     rdfs:label "LeftIndexFinger" .
 
 
 ###  https://w3id.org/hdgi#LeftLittleFinger
 hdgi:LeftLittleFinger rdf:type owl:Class ;
                       rdfs:subClassOf hdgi:LittleFinger ;
-                      rdfs:comment "Left hand little finger."@en .
+                      rdfs:comment "Left hand little finger."@en ;
+                      rdfs:label "LeftLittleFinger" .
 
 
 ###  https://w3id.org/hdgi#LeftMiddleFinger
 hdgi:LeftMiddleFinger rdf:type owl:Class ;
                       rdfs:subClassOf hdgi:MiddleFinger ;
-                      rdfs:comment "Left hand middle finger."@en .
+                      rdfs:comment "Left hand middle finger."@en ;
+                      rdfs:label "LeftMiddleFinger" .
 
 
 ###  https://w3id.org/hdgi#LeftPalm
 hdgi:LeftPalm rdf:type owl:Class ;
               rdfs:subClassOf hdgi:Palm ;
-              rdfs:comment "Left hand palm."@en .
+              rdfs:comment "Left hand palm."@en ;
+              rdfs:label "LeftPalm" .
 
 
 ###  https://w3id.org/hdgi#LeftRingFinger
 hdgi:LeftRingFinger rdf:type owl:Class ;
                     rdfs:subClassOf hdgi:RingFinger ;
-                    rdfs:comment "Left hand ring finger."@en .
+                    rdfs:comment "Left hand ring finger."@en ;
+                    rdfs:label "LeftRingFinger" .
 
 
 ###  https://w3id.org/hdgi#LeftThumb
 hdgi:LeftThumb rdf:type owl:Class ;
                rdfs:subClassOf hdgi:Thumb ;
-               rdfs:comment "Thumb of left hand."@en .
+               rdfs:comment "Thumb of left hand."@en ;
+               rdfs:label "LeftThumb" .
 
 
 ###  https://w3id.org/hdgi#LeftUpperArm
@@ -785,7 +866,8 @@ hdgi:LeftUpperArm rdf:type owl:Class ;
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty hdgi:isPartOf ;
                                     owl:allValuesFrom hdgi:UpperArm
-                                  ] .
+                                  ] ;
+                  rdfs:label "LeftUpperArm" .
 
 
 ###  https://w3id.org/hdgi#Leg
@@ -794,7 +876,8 @@ hdgi:Leg rdf:type owl:Class ;
                          [ rdf:type owl:Restriction ;
                            owl:onProperty hdgi:isPartOf ;
                            owl:someValuesFrom hdgi:BodyPart
-                         ] .
+                         ] ;
+         rdfs:label "Leg" .
 
 
 ###  https://w3id.org/hdgi#LegGesture
@@ -809,28 +892,33 @@ hdgi:LegGesture rdf:type owl:Class ;
                                   owl:onProperty hdgi:involves ;
                                   owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                   owl:onClass hdgi:Leg
-                                ] .
+                                ] ;
+                rdfs:label "LegGesture" .
 
 
 ###  https://w3id.org/hdgi#LegPose
 hdgi:LegPose rdf:type owl:Class ;
-             rdfs:subClassOf hdgi:Pose .
+             rdfs:subClassOf hdgi:Pose ;
+             rdfs:label "LegPose" .
 
 
 ###  https://w3id.org/hdgi#LittleFinger
 hdgi:LittleFinger rdf:type owl:Class ;
                   rdfs:subClassOf hdgi:Finger ;
-                  rdfs:comment "Fifth finger or the fifth digit of hand."@en .
+                  rdfs:comment "Fifth finger or the fifth digit of hand."@en ;
+                  rdfs:label "LittleFinger" .
 
 
 ###  https://w3id.org/hdgi#LittleFingerCurled
 hdgi:LittleFingerCurled rdf:type owl:Class ;
-                        rdfs:subClassOf hdgi:LittleFingerPose .
+                        rdfs:subClassOf hdgi:LittleFingerPose ;
+                        rdfs:label "LittleFingerCurled" .
 
 
 ###  https://w3id.org/hdgi#LittleFingerFolded
 hdgi:LittleFingerFolded rdf:type owl:Class ;
-                        rdfs:subClassOf hdgi:LittleFingerPose .
+                        rdfs:subClassOf hdgi:LittleFingerPose ;
+                        rdfs:label "LittleFingerFolded" .
 
 
 ###  https://w3id.org/hdgi#LittleFingerPose
@@ -845,37 +933,44 @@ hdgi:LittleFingerPose rdf:type owl:Class ;
                                         owl:onProperty hdgi:used ;
                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass hdgi:RightLittleFinger
-                                      ] .
+                                      ] ;
+                      rdfs:label "LittleFingerPose" .
 
 
 ###  https://w3id.org/hdgi#LittleFingerStraightandBackward
 hdgi:LittleFingerStraightandBackward rdf:type owl:Class ;
-                                     rdfs:subClassOf hdgi:LittleFingerPose .
+                                     rdfs:subClassOf hdgi:LittleFingerPose ;
+                                     rdfs:label "LittleFingerStraightandBackward" .
 
 
 ###  https://w3id.org/hdgi#LittleFingerStraightandDownward
 hdgi:LittleFingerStraightandDownward rdf:type owl:Class ;
-                                     rdfs:subClassOf hdgi:LittleFingerPose .
+                                     rdfs:subClassOf hdgi:LittleFingerPose ;
+                                     rdfs:label "LittleFingerStraightandDownward" .
 
 
 ###  https://w3id.org/hdgi#LittleFingerStraightandForward
 hdgi:LittleFingerStraightandForward rdf:type owl:Class ;
-                                    rdfs:subClassOf hdgi:LittleFingerPose .
+                                    rdfs:subClassOf hdgi:LittleFingerPose ;
+                                    rdfs:label "LittleFingerStraightandForward" .
 
 
 ###  https://w3id.org/hdgi#LittleFingerStraightandLeftward
 hdgi:LittleFingerStraightandLeftward rdf:type owl:Class ;
-                                     rdfs:subClassOf hdgi:LittleFingerPose .
+                                     rdfs:subClassOf hdgi:LittleFingerPose ;
+                                     rdfs:label "LittleFingerStraightandLeftward" .
 
 
 ###  https://w3id.org/hdgi#LittleFingerStraightandRightward
 hdgi:LittleFingerStraightandRightward rdf:type owl:Class ;
-                                      rdfs:subClassOf hdgi:LittleFingerPose .
+                                      rdfs:subClassOf hdgi:LittleFingerPose ;
+                                      rdfs:label "LittleFingerStraightandRightward" .
 
 
 ###  https://w3id.org/hdgi#LittleFingerStraightandUpward
 hdgi:LittleFingerStraightandUpward rdf:type owl:Class ;
-                                   rdfs:subClassOf hdgi:LittleFingerPose .
+                                   rdfs:subClassOf hdgi:LittleFingerPose ;
+                                   rdfs:label "LittleFingerStraightandUpward" .
 
 
 ###  https://w3id.org/hdgi#LocalCoordinateSystem
@@ -916,23 +1011,27 @@ hdgi:LocalCoordinateSystem rdf:type owl:Class ;
                                                                             ]
                                                                 ]
                                            ] ;
-                           rdfs:comment "The local coordinate system is the coordinate system that is convenient for a given entity (Finger, palm etc.), local space, or object space."@en .
+                           rdfs:comment "The local coordinate system is the coordinate system that is convenient for a given entity (Finger, palm etc.), local space, or object space."@en ;
+                           rdfs:label "LocalCoordinateSystem" .
 
 
 ###  https://w3id.org/hdgi#MiddleFinger
 hdgi:MiddleFinger rdf:type owl:Class ;
                   rdfs:subClassOf hdgi:Finger ;
-                  rdfs:comment "Third finger or the third digit of hand."@en .
+                  rdfs:comment "Third finger or the third digit of hand."@en ;
+                  rdfs:label "MiddleFinger" .
 
 
 ###  https://w3id.org/hdgi#MiddleFingerCurled
 hdgi:MiddleFingerCurled rdf:type owl:Class ;
-                        rdfs:subClassOf hdgi:MiddleFingerPose .
+                        rdfs:subClassOf hdgi:MiddleFingerPose ;
+                        rdfs:label "MiddleFingerCurled" .
 
 
 ###  https://w3id.org/hdgi#MiddleFingerFolded
 hdgi:MiddleFingerFolded rdf:type owl:Class ;
-                        rdfs:subClassOf hdgi:MiddleFingerPose .
+                        rdfs:subClassOf hdgi:MiddleFingerPose ;
+                        rdfs:label "MiddleFingerFolded" .
 
 
 ###  https://w3id.org/hdgi#MiddleFingerPose
@@ -947,42 +1046,53 @@ hdgi:MiddleFingerPose rdf:type owl:Class ;
                                         owl:onProperty hdgi:used ;
                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass hdgi:RightMiddleFinger
-                                      ] .
+                                      ] ;
+                      rdfs:label "MiddleFingerPose" .
 
 
 ###  https://w3id.org/hdgi#MiddleFingerStraightandBackward
 hdgi:MiddleFingerStraightandBackward rdf:type owl:Class ;
-                                     rdfs:subClassOf hdgi:MiddleFingerPose .
+                                     rdfs:subClassOf hdgi:MiddleFingerPose ;
+                                     rdfs:label "MiddleFingerStraightandBackward" .
 
 
 ###  https://w3id.org/hdgi#MiddleFingerStraightandDownward
 hdgi:MiddleFingerStraightandDownward rdf:type owl:Class ;
-                                     rdfs:subClassOf hdgi:MiddleFingerPose .
+                                     rdfs:subClassOf hdgi:MiddleFingerPose ;
+                                     rdfs:label "MiddleFingerStraightandDownward" .
 
 
 ###  https://w3id.org/hdgi#MiddleFingerStraightandForward
 hdgi:MiddleFingerStraightandForward rdf:type owl:Class ;
-                                    rdfs:subClassOf hdgi:MiddleFingerPose .
+                                    rdfs:subClassOf hdgi:MiddleFingerPose ;
+                                    rdfs:label "MiddleFingerStraightandForward" .
 
 
 ###  https://w3id.org/hdgi#MiddleFingerStraightandLeftward
 hdgi:MiddleFingerStraightandLeftward rdf:type owl:Class ;
-                                     rdfs:subClassOf hdgi:MiddleFingerPose .
+                                     rdfs:subClassOf hdgi:MiddleFingerPose ;
+                                     rdfs:label "MiddleFingerStraightandLeftward" .
 
 
 ###  https://w3id.org/hdgi#MiddleFingerStraightandRightward
 hdgi:MiddleFingerStraightandRightward rdf:type owl:Class ;
-                                      rdfs:subClassOf hdgi:MiddleFingerPose .
+                                      rdfs:subClassOf hdgi:MiddleFingerPose ;
+                                      rdfs:label "MiddleFingerStraightandRightward" .
 
 
 ###  https://w3id.org/hdgi#MiddleFingerStraightandUpward
 hdgi:MiddleFingerStraightandUpward rdf:type owl:Class ;
-                                   rdfs:subClassOf hdgi:MiddleFingerPose .
+                                   rdfs:subClassOf hdgi:MiddleFingerPose ;
+                                   rdfs:label "MiddleFingerStraightandUpward" .
 
 
 ###  https://w3id.org/hdgi#Movement
 hdgi:Movement rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty hdgi:hasPose ;
+                                owl:someValuesFrom hdgi:Pose
+                              ] ,
+                              [ rdf:type owl:Restriction ;
                                 owl:onProperty hdgi:involves ;
                                 owl:allValuesFrom hdgi:BodyPart
                               ] ,
@@ -990,23 +1100,15 @@ hdgi:Movement rdf:type owl:Class ;
                                 owl:onProperty hdgi:hasDuration ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass hdgi:Duration
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty hdgi:hasEndPose ;
-                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                owl:onClass hdgi:Pose
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty hdgi:hasStartPose ;
-                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                owl:onClass hdgi:Pose
                               ] ;
-              rdfs:comment "The act of moving a certain body part towards a certain direction."@en .
+              rdfs:comment "The act of moving a certain body part towards a certain direction."@en ;
+              rdfs:label "Movement" .
 
 
 ###  https://w3id.org/hdgi#ObservableAffordance
 hdgi:ObservableAffordance rdf:type owl:Class ;
-                          rdfs:subClassOf hdgi:Affordance .
+                          rdfs:subClassOf hdgi:Affordance ;
+                          rdfs:label "ObservableAffordance" .
 
 
 ###  https://w3id.org/hdgi#Observer
@@ -1018,7 +1120,8 @@ hdgi:Observer rdf:type owl:Class ;
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty hdgi:observes ;
                                 owl:someValuesFrom hdgi:Pose
-                              ] .
+                              ] ;
+              rdfs:label "Observer" .
 
 
 ###  https://w3id.org/hdgi#Palm
@@ -1028,52 +1131,62 @@ hdgi:Palm rdf:type owl:Class ;
                             owl:onProperty hdgi:isPartOf ;
                             owl:someValuesFrom hdgi:BodyPart
                           ] ;
-          rdfs:comment "The area located at the end of the forearm (starting from wrist) up until the start of a finger which is the central region of the anterior part of the hand."@en .
+          rdfs:comment "The area located at the end of the forearm (starting from wrist) up until the start of a finger which is the central region of the anterior part of the hand."@en ;
+          rdfs:label "Palm" .
 
 
 ###  https://w3id.org/hdgi#PalmAnticlockwiseRotation
 hdgi:PalmAnticlockwiseRotation rdf:type owl:Class ;
-                               rdfs:subClassOf hdgi:PalmMovement .
+                               rdfs:subClassOf hdgi:PalmMovement ;
+                               rdfs:label "PalmAnticlockwiseRotation" .
 
 
 ###  https://w3id.org/hdgi#PalmBackward
 hdgi:PalmBackward rdf:type owl:Class ;
-                  rdfs:subClassOf hdgi:PalmMovement .
+                  rdfs:subClassOf hdgi:PalmMovement ;
+                  rdfs:label "PalmBackward" .
 
 
 ###  https://w3id.org/hdgi#PalmClockwiseRotation
 hdgi:PalmClockwiseRotation rdf:type owl:Class ;
-                           rdfs:subClassOf hdgi:PalmMovement .
+                           rdfs:subClassOf hdgi:PalmMovement ;
+                           rdfs:label "PalmClockwiseRotation" .
 
 
 ###  https://w3id.org/hdgi#PalmDownward
 hdgi:PalmDownward rdf:type owl:Class ;
-                  rdfs:subClassOf hdgi:PalmMovement .
+                  rdfs:subClassOf hdgi:PalmMovement ;
+                  rdfs:label "PalmDownward" .
 
 
 ###  https://w3id.org/hdgi#PalmDownwardPose
 hdgi:PalmDownwardPose rdf:type owl:Class ;
-                      rdfs:subClassOf hdgi:PalmPose .
+                      rdfs:subClassOf hdgi:PalmPose ;
+                      rdfs:label "PalmDownwardPose" .
 
 
 ###  https://w3id.org/hdgi#PalmForward
 hdgi:PalmForward rdf:type owl:Class ;
-                 rdfs:subClassOf hdgi:PalmMovement .
+                 rdfs:subClassOf hdgi:PalmMovement ;
+                 rdfs:label "PalmForward" .
 
 
 ###  https://w3id.org/hdgi#PalmInwardPose
 hdgi:PalmInwardPose rdf:type owl:Class ;
-                    rdfs:subClassOf hdgi:PalmPose .
+                    rdfs:subClassOf hdgi:PalmPose ;
+                    rdfs:label "PalmInwardPose" .
 
 
 ###  https://w3id.org/hdgi#PalmLeftward
 hdgi:PalmLeftward rdf:type owl:Class ;
-                  rdfs:subClassOf hdgi:PalmMovement .
+                  rdfs:subClassOf hdgi:PalmMovement ;
+                  rdfs:label "PalmLeftward" .
 
 
 ###  https://w3id.org/hdgi#PalmLeftwardPose
 hdgi:PalmLeftwardPose rdf:type owl:Class ;
-                      rdfs:subClassOf hdgi:PalmPose .
+                      rdfs:subClassOf hdgi:PalmPose ;
+                      rdfs:label "PalmLeftwardPose" .
 
 
 ###  https://w3id.org/hdgi#PalmMovement
@@ -1089,12 +1202,14 @@ hdgi:PalmMovement rdf:type owl:Class ;
                                     owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                     owl:onClass hdgi:Palm
                                   ] ;
-                  rdfs:comment "Movement of palm. Either right or left." .
+                  rdfs:comment "Movement of palm. Either right or left." ;
+                  rdfs:label "PalmMovement" .
 
 
 ###  https://w3id.org/hdgi#PalmOutwardPose
 hdgi:PalmOutwardPose rdf:type owl:Class ;
-                     rdfs:subClassOf hdgi:PalmPose .
+                     rdfs:subClassOf hdgi:PalmPose ;
+                     rdfs:label "PalmOutwardPose" .
 
 
 ###  https://w3id.org/hdgi#PalmPose
@@ -1109,36 +1224,37 @@ hdgi:PalmPose rdf:type owl:Class ;
                                 owl:onProperty hdgi:used ;
                                 owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                 owl:onClass hdgi:Palm
-                              ] .
+                              ] ;
+              rdfs:label "PalmPose" .
 
 
 ###  https://w3id.org/hdgi#PalmRightward
 hdgi:PalmRightward rdf:type owl:Class ;
-                   rdfs:subClassOf hdgi:PalmMovement .
+                   rdfs:subClassOf hdgi:PalmMovement ;
+                   rdfs:label "PalmRightward" .
 
 
 ###  https://w3id.org/hdgi#PalmRightwardPose
 hdgi:PalmRightwardPose rdf:type owl:Class ;
-                       rdfs:subClassOf hdgi:PalmPose .
+                       rdfs:subClassOf hdgi:PalmPose ;
+                       rdfs:label "PalmRightwardPose" .
 
 
 ###  https://w3id.org/hdgi#PalmUpward
 hdgi:PalmUpward rdf:type owl:Class ;
-                rdfs:subClassOf hdgi:PalmMovement .
+                rdfs:subClassOf hdgi:PalmMovement ;
+                rdfs:label "PalmUpward" .
 
 
 ###  https://w3id.org/hdgi#PalmUpwardPose
 hdgi:PalmUpwardPose rdf:type owl:Class ;
-                    rdfs:subClassOf hdgi:PalmPose .
+                    rdfs:subClassOf hdgi:PalmPose ;
+                    rdfs:label "PalmUpwardPose" .
 
 
 ###  https://w3id.org/hdgi#Pose
 hdgi:Pose rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty hdgi:hasPose ;
-                            owl:allValuesFrom hdgi:Pose
-                          ] ,
-                          [ rdf:type owl:Restriction ;
                             owl:onProperty hdgi:used ;
                             owl:allValuesFrom hdgi:BodyPart
                           ] ,
@@ -1154,9 +1270,15 @@ hdgi:Pose rdf:type owl:Class ;
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty hdgi:timeStamp ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                             owl:onDataRange xsd:dateTimeStamp
-                          ] .
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty hdgi:timeStamp ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:dateTimeStamp
+                          ] ;
+          rdfs:label "Pose" .
 
 
 ###  https://w3id.org/hdgi#Position
@@ -1186,7 +1308,8 @@ hdgi:Position rdf:type owl:Class ;
                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onDataRange xsd:decimal
                               ] ;
-              rdfs:comment "Position of a pose in a particular time" .
+              rdfs:comment "Position of a pose in a particular time" ;
+              rdfs:label "Position" .
 
 
 ###  https://w3id.org/hdgi#Quaternion
@@ -1213,7 +1336,8 @@ hdgi:Quaternion rdf:type owl:Class ;
                                 ] ;
                 rdfs:comment """A quaternion is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.
 
-The magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one."""@en .
+The magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one."""@en ;
+                rdfs:label "Quaternion" .
 
 
 ###  https://w3id.org/hdgi#RightForearm
@@ -1222,43 +1346,50 @@ hdgi:RightForearm rdf:type owl:Class ;
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty hdgi:isPartOf ;
                                     owl:allValuesFrom hdgi:Forearm
-                                  ] .
+                                  ] ;
+                  rdfs:label "RightForearm" .
 
 
 ###  https://w3id.org/hdgi#RightIndexFinger
 hdgi:RightIndexFinger rdf:type owl:Class ;
                       rdfs:subClassOf hdgi:IndexFinger ;
-                      rdfs:comment "Right hand index finger."@en .
+                      rdfs:comment "Right hand index finger."@en ;
+                      rdfs:label "RightIndexFinger" .
 
 
 ###  https://w3id.org/hdgi#RightLittleFinger
 hdgi:RightLittleFinger rdf:type owl:Class ;
                        rdfs:subClassOf hdgi:LittleFinger ;
-                       rdfs:comment "Right hand little finger."@en .
+                       rdfs:comment "Right hand little finger."@en ;
+                       rdfs:label "RightLittleFinger" .
 
 
 ###  https://w3id.org/hdgi#RightMiddleFinger
 hdgi:RightMiddleFinger rdf:type owl:Class ;
                        rdfs:subClassOf hdgi:MiddleFinger ;
-                       rdfs:comment "Right hand middle finger."@en .
+                       rdfs:comment "Right hand middle finger."@en ;
+                       rdfs:label "RightMiddleFinger" .
 
 
 ###  https://w3id.org/hdgi#RightPalm
 hdgi:RightPalm rdf:type owl:Class ;
                rdfs:subClassOf hdgi:Palm ;
-               rdfs:comment "Right hand palm."@en .
+               rdfs:comment "Right hand palm."@en ;
+               rdfs:label "RightPalm" .
 
 
 ###  https://w3id.org/hdgi#RightRingFinger
 hdgi:RightRingFinger rdf:type owl:Class ;
                      rdfs:subClassOf hdgi:RingFinger ;
-                     rdfs:comment "Right hand ring finger."@en .
+                     rdfs:comment "Right hand ring finger."@en ;
+                     rdfs:label "RightRingFinger" .
 
 
 ###  https://w3id.org/hdgi#RightThumb
 hdgi:RightThumb rdf:type owl:Class ;
                 rdfs:subClassOf hdgi:Thumb ;
-                rdfs:comment "Thumb of right hand."@en .
+                rdfs:comment "Thumb of right hand."@en ;
+                rdfs:label "RightThumb" .
 
 
 ###  https://w3id.org/hdgi#RightUpperArm
@@ -1267,23 +1398,27 @@ hdgi:RightUpperArm rdf:type owl:Class ;
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty hdgi:isPartOf ;
                                      owl:allValuesFrom hdgi:UpperArm
-                                   ] .
+                                   ] ;
+                   rdfs:label "RightUpperArm" .
 
 
 ###  https://w3id.org/hdgi#RingFinger
 hdgi:RingFinger rdf:type owl:Class ;
                 rdfs:subClassOf hdgi:Finger ;
-                rdfs:comment "Fourth finger or the fourth digit of hand."@en .
+                rdfs:comment "Fourth finger or the fourth digit of hand."@en ;
+                rdfs:label "RingFinger" .
 
 
 ###  https://w3id.org/hdgi#RingFingerCurled
 hdgi:RingFingerCurled rdf:type owl:Class ;
-                      rdfs:subClassOf hdgi:RingFingerPose .
+                      rdfs:subClassOf hdgi:RingFingerPose ;
+                      rdfs:label "RingFingerCurled" .
 
 
 ###  https://w3id.org/hdgi#RingFingerFolded
 hdgi:RingFingerFolded rdf:type owl:Class ;
-                      rdfs:subClassOf hdgi:RingFingerPose .
+                      rdfs:subClassOf hdgi:RingFingerPose ;
+                      rdfs:label "RingFingerFolded" .
 
 
 ###  https://w3id.org/hdgi#RingFingerPose
@@ -1298,37 +1433,44 @@ hdgi:RingFingerPose rdf:type owl:Class ;
                                       owl:onProperty hdgi:used ;
                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                       owl:onClass hdgi:RightRingFinger
-                                    ] .
+                                    ] ;
+                    rdfs:label "RingFingerPose" .
 
 
 ###  https://w3id.org/hdgi#RingFingerStraightandBackward
 hdgi:RingFingerStraightandBackward rdf:type owl:Class ;
-                                   rdfs:subClassOf hdgi:RingFingerPose .
+                                   rdfs:subClassOf hdgi:RingFingerPose ;
+                                   rdfs:label "RingFingerStraightandBackward" .
 
 
 ###  https://w3id.org/hdgi#RingFingerStraightandDownward
 hdgi:RingFingerStraightandDownward rdf:type owl:Class ;
-                                   rdfs:subClassOf hdgi:RingFingerPose .
+                                   rdfs:subClassOf hdgi:RingFingerPose ;
+                                   rdfs:label "RingFingerStraightandDownward" .
 
 
 ###  https://w3id.org/hdgi#RingFingerStraightandForward
 hdgi:RingFingerStraightandForward rdf:type owl:Class ;
-                                  rdfs:subClassOf hdgi:RingFingerPose .
+                                  rdfs:subClassOf hdgi:RingFingerPose ;
+                                  rdfs:label "RingFingerStraightandForward" .
 
 
 ###  https://w3id.org/hdgi#RingFingerStraightandLeftward
 hdgi:RingFingerStraightandLeftward rdf:type owl:Class ;
-                                   rdfs:subClassOf hdgi:RingFingerPose .
+                                   rdfs:subClassOf hdgi:RingFingerPose ;
+                                   rdfs:label "RingFingerStraightandLeftward" .
 
 
 ###  https://w3id.org/hdgi#RingFingerStraightandRightward
 hdgi:RingFingerStraightandRightward rdf:type owl:Class ;
-                                    rdfs:subClassOf hdgi:RingFingerPose .
+                                    rdfs:subClassOf hdgi:RingFingerPose ;
+                                    rdfs:label "RingFingerStraightandRightward" .
 
 
 ###  https://w3id.org/hdgi#RingFingerStraightandUpward
 hdgi:RingFingerStraightandUpward rdf:type owl:Class ;
-                                 rdfs:subClassOf hdgi:RingFingerPose .
+                                 rdfs:subClassOf hdgi:RingFingerPose ;
+                                 rdfs:label "RingFingerStraightandUpward" .
 
 
 ###  https://w3id.org/hdgi#Rotation
@@ -1363,53 +1505,63 @@ hdgi:Rotation rdf:type owl:Class ;
                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onDataRange xsd:decimal
                               ] ;
-              rdfs:comment "Rotation of a pose."@en .
+              rdfs:comment "Rotation of a pose."@en ;
+              rdfs:label "Rotation" .
 
 
 ###  https://w3id.org/hdgi#Thumb
 hdgi:Thumb rdf:type owl:Class ;
            rdfs:subClassOf hdgi:Finger ;
-           rdfs:comment "First digit of hand."@en .
+           rdfs:comment "First digit of hand."@en ;
+           rdfs:label "Thumb" .
 
 
 ###  https://w3id.org/hdgi#ThumbCurled
 hdgi:ThumbCurled rdf:type owl:Class ;
-                 rdfs:subClassOf hdgi:TumbPose .
+                 rdfs:subClassOf hdgi:TumbPose ;
+                 rdfs:label "ThumbCurled" .
 
 
 ###  https://w3id.org/hdgi#ThumbFolded
 hdgi:ThumbFolded rdf:type owl:Class ;
-                 rdfs:subClassOf hdgi:TumbPose .
+                 rdfs:subClassOf hdgi:TumbPose ;
+                 rdfs:label "ThumbFolded" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandBackward
 hdgi:ThumbStraightandBackward rdf:type owl:Class ;
-                              rdfs:subClassOf hdgi:TumbPose .
+                              rdfs:subClassOf hdgi:TumbPose ;
+                              rdfs:label "ThumbStraightandBackward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandDownward
 hdgi:ThumbStraightandDownward rdf:type owl:Class ;
-                              rdfs:subClassOf hdgi:TumbPose .
+                              rdfs:subClassOf hdgi:TumbPose ;
+                              rdfs:label "ThumbStraightandDownward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandForward
 hdgi:ThumbStraightandForward rdf:type owl:Class ;
-                             rdfs:subClassOf hdgi:TumbPose .
+                             rdfs:subClassOf hdgi:TumbPose ;
+                             rdfs:label "ThumbStraightandForward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandLeftward
 hdgi:ThumbStraightandLeftward rdf:type owl:Class ;
-                              rdfs:subClassOf hdgi:TumbPose .
+                              rdfs:subClassOf hdgi:TumbPose ;
+                              rdfs:label "ThumbStraightandLeftward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandRightward
 hdgi:ThumbStraightandRightward rdf:type owl:Class ;
-                               rdfs:subClassOf hdgi:TumbPose .
+                               rdfs:subClassOf hdgi:TumbPose ;
+                               rdfs:label "ThumbStraightandRightward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandUpward
 hdgi:ThumbStraightandUpward rdf:type owl:Class ;
-                            rdfs:subClassOf hdgi:TumbPose .
+                            rdfs:subClassOf hdgi:TumbPose ;
+                            rdfs:label "ThumbStraightandUpward" .
 
 
 ###  https://w3id.org/hdgi#TumbPose
@@ -1424,12 +1576,14 @@ hdgi:TumbPose rdf:type owl:Class ;
                                 owl:onProperty hdgi:used ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass hdgi:RightThumb
-                              ] .
+                              ] ;
+              rdfs:label "TumbPose" .
 
 
 ###  https://w3id.org/hdgi#UnitOfMeasure
 hdgi:UnitOfMeasure rdf:type owl:Class ;
-                   rdfs:comment "Defines units of measurement."@en .
+                   rdfs:comment "Defines units of measurement."@en ;
+                   rdfs:label "UnitOfMeasure" .
 
 
 ###  https://w3id.org/hdgi#UpperArm
@@ -1439,27 +1593,32 @@ hdgi:UpperArm rdf:type owl:Class ;
                                 owl:onProperty hdgi:isPartOf ;
                                 owl:someValuesFrom hdgi:BodyPart
                               ] ;
-              rdfs:comment "The upper arm is the line between the shoulder and elbow joint."@en .
+              rdfs:comment "The upper arm is the line between the shoulder and elbow joint."@en ;
+              rdfs:label "UpperArm" .
 
 
 ###  https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation
 hdgi:UpperArmAnticlcockwiseRotation rdf:type owl:Class ;
-                                    rdfs:subClassOf hdgi:UpperArmMovement .
+                                    rdfs:subClassOf hdgi:UpperArmMovement ;
+                                    rdfs:label "UpperArmAnticlcockwiseRotation" .
 
 
 ###  https://w3id.org/hdgi#UpperArmBackward
 hdgi:UpperArmBackward rdf:type owl:Class ;
-                      rdfs:subClassOf hdgi:UpperArmMovement .
+                      rdfs:subClassOf hdgi:UpperArmMovement ;
+                      rdfs:label "UpperArmBackward" .
 
 
 ###  https://w3id.org/hdgi#UpperArmClockwiseRotation
 hdgi:UpperArmClockwiseRotation rdf:type owl:Class ;
-                               rdfs:subClassOf hdgi:UpperArmMovement .
+                               rdfs:subClassOf hdgi:UpperArmMovement ;
+                               rdfs:label "UpperArmClockwiseRotation" .
 
 
 ###  https://w3id.org/hdgi#UpperArmForward
 hdgi:UpperArmForward rdf:type owl:Class ;
-                     rdfs:subClassOf hdgi:UpperArmMovement .
+                     rdfs:subClassOf hdgi:UpperArmMovement ;
+                     rdfs:label "UpperArmForward" .
 
 
 ###  https://w3id.org/hdgi#UpperArmGesture
@@ -1475,22 +1634,26 @@ hdgi:UpperArmGesture rdf:type owl:Class ;
                                        owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                        owl:onClass hdgi:UpperArm
                                      ] ;
-                     rdfs:comment "Gestures (movements) made with upper arm" .
+                     rdfs:comment "Gestures (movements) made with upper arm" ;
+                     rdfs:label "UpperArmGesture" .
 
 
 ###  https://w3id.org/hdgi#UpperArmLeftward
 hdgi:UpperArmLeftward rdf:type owl:Class ;
-                      rdfs:subClassOf hdgi:UpperArmMovement .
+                      rdfs:subClassOf hdgi:UpperArmMovement ;
+                      rdfs:label "UpperArmLeftward" .
 
 
 ###  https://w3id.org/hdgi#UpperArmLeftwardAndBack
 hdgi:UpperArmLeftwardAndBack rdf:type owl:Class ;
-                             rdfs:subClassOf hdgi:UpperArmMovement .
+                             rdfs:subClassOf hdgi:UpperArmMovement ;
+                             rdfs:label "UpperArmLeftwardAndBack" .
 
 
 ###  https://w3id.org/hdgi#UpperArmLeftwardAndFront
 hdgi:UpperArmLeftwardAndFront rdf:type owl:Class ;
-                              rdfs:subClassOf hdgi:UpperArmMovement .
+                              rdfs:subClassOf hdgi:UpperArmMovement ;
+                              rdfs:label "UpperArmLeftwardAndFront" .
 
 
 ###  https://w3id.org/hdgi#UpperArmMovement
@@ -1505,7 +1668,8 @@ hdgi:UpperArmMovement rdf:type owl:Class ;
                                         owl:onProperty hdgi:involves ;
                                         owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                         owl:onClass hdgi:UpperArm
-                                      ] .
+                                      ] ;
+                      rdfs:label "UpperArmMovement" .
 
 
 ###  https://w3id.org/hdgi#UpperArmPose
@@ -1520,27 +1684,32 @@ hdgi:UpperArmPose rdf:type owl:Class ;
                                     owl:onProperty hdgi:used ;
                                     owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                     owl:onClass hdgi:UpperArm
-                                  ] .
+                                  ] ;
+                  rdfs:label "UpperArmPose" .
 
 
 ###  https://w3id.org/hdgi#UpperArmRightward
 hdgi:UpperArmRightward rdf:type owl:Class ;
-                       rdfs:subClassOf hdgi:UpperArmMovement .
+                       rdfs:subClassOf hdgi:UpperArmMovement ;
+                       rdfs:label "UpperArmRightward" .
 
 
 ###  https://w3id.org/hdgi#UpperArmRightwardAndBack
 hdgi:UpperArmRightwardAndBack rdf:type owl:Class ;
-                              rdfs:subClassOf hdgi:UpperArmMovement .
+                              rdfs:subClassOf hdgi:UpperArmMovement ;
+                              rdfs:label "UpperArmRightwardAndBack" .
 
 
 ###  https://w3id.org/hdgi#UpperArmRightwardAndFront
 hdgi:UpperArmRightwardAndFront rdf:type owl:Class ;
-                               rdfs:subClassOf hdgi:UpperArmMovement .
+                               rdfs:subClassOf hdgi:UpperArmMovement ;
+                               rdfs:label "UpperArmRightwardAndFront" .
 
 
 ###  https://w3id.org/hdgi#UserContext
 hdgi:UserContext rdf:type owl:Class ;
-                 rdfs:subClassOf hdgi:Context .
+                 rdfs:subClassOf hdgi:Context ;
+                 rdfs:label "UserContext" .
 
 
 #################################################################
