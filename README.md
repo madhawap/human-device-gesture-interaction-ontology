@@ -15,6 +15,12 @@ This ontology formally describes human gestures and facilitate automated reasoni
 ### Vocabulary Usage
 
     @prefix hdgi: <https://w3id.org/hdgi#>
+    
+### What is in this repository?
+
+This repository contains all versions of the ontology. Inside v0.1 directory, you can find the Turtle syntax, JSON-LD, RDF/XML and N-Triples formatted files of the ontology. 
+
+We moved the ontology mapping service implementation to a [new repository](https://github.com/madhawap/hdgi-ontology-mappings/tree/master) to make things modular and clean. Thus, 'api' directory will no longer hold the implementation for the ontology mapping service. However, we will be keeping the directory ('api') to avoid breaking any links in the documentation. Inside the 'api' directory, there is a '[README.md](https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/api/README.md)' file which provides relevant information of the new repository.
 
 ### About the HDGI project
 
