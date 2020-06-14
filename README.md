@@ -10,7 +10,7 @@ This ontology formally describes human gestures and facilitate automated reasoni
 
 ### Homepage
 
-- [Human Device Gesture Interaction (hdgi) Ontology: ](https://madhawap.github.io/human-device-interaction-ontology/v0.1/index-en.html)
+- [Human Device Gesture Interaction (hdgi) Ontology: ](https://w3id.org/hdgi)
 
 ### Vocabulary Usage
 
