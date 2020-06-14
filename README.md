@@ -18,9 +18,13 @@ This ontology formally describes human gestures and facilitate automated reasoni
     
 ### What is in this repository?
 
-This repository contains all versions of the ontology. Inside v0.1 directory, you can find the Turtle syntax, JSON-LD, RDF/XML and N-Triples formatted files of the ontology. 
+This repository contains two major branches. 
 
-We moved the ontology mapping service implementation to a [new repository](https://github.com/madhawap/hdgi-ontology-mappings/tree/master) to make things modular and clean. Thus, 'api' directory will no longer hold the implementation for the ontology mapping service. However, we will be keeping the directory ('api') to avoid breaking any links in the documentation. Inside the 'api' directory, there is a '[README.md](https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/api/README.md)' file which provides relevant information of the new repository.
+`master branch` : This is the dev branch of the ontology. You can find all the versions of the ontology here. E.g. Inside v0.1 directory, you can find the Turtle syntax, JSON-LD, RDF/XML and N-Triples formatted files of the ontology version 1.0. 
+
+`gh-pages branch` : This contains the ontology homepage implementation. 
+
+We moved the ontology mapping service implementation to a [new repository](https://github.com/madhawap/hdgi-ontology-mappings/tree/master) to make things modular and clean. Thus, 'api' directory will no longer hold the implementation for the ontology mapping service. However, we will be keeping the directory ('api') to avoid breaking any links in the documentation. Inside the 'api' directory, there is a '[README.md](https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/api/README.md)' file which provides relevant information of the new repository. 
 
 ### About the HDGI project
 
