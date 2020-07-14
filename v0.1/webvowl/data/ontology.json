@@ -37,10 +37,10 @@
     "id" : "69",
     "type" : "owl:Class"
   }, {
-    "id" : "70",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "70",
     "type" : "owl:Class"
   }, {
     "id" : "72",
@@ -52,7 +52,7 @@
     "id" : "71",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "36",
     "type" : "owl:Class"
   }, {
     "id" : "97",
@@ -79,7 +79,7 @@
     "id" : "28",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "34",
     "type" : "owl:Class"
   }, {
     "id" : "115",
@@ -226,19 +226,19 @@
     "id" : "228",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "110",
+    "id" : "111",
     "type" : "owl:Class"
   }, {
-    "id" : "111",
+    "id" : "110",
     "type" : "owl:Class"
   }, {
     "id" : "229",
     "type" : "owl:Class"
   }, {
-    "id" : "207",
+    "id" : "232",
     "type" : "owl:Class"
   }, {
-    "id" : "232",
+    "id" : "207",
     "type" : "owl:Class"
   }, {
     "id" : "234",
@@ -313,10 +313,10 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "231",
+    "id" : "211",
     "type" : "owl:Class"
   }, {
-    "id" : "211",
+    "id" : "231",
     "type" : "owl:Class"
   }, {
     "id" : "213",
@@ -406,10 +406,10 @@
     "id" : "91",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "164",
     "type" : "owl:Class"
   }, {
-    "id" : "164",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
     "id" : "205",
@@ -454,13 +454,13 @@
     "id" : "79",
     "type" : "owl:Class"
   }, {
-    "id" : "282",
+    "id" : "140",
     "type" : "owl:Class"
   }, {
     "id" : "120",
     "type" : "owl:Class"
   }, {
-    "id" : "140",
+    "id" : "282",
     "type" : "owl:Class"
   }, {
     "id" : "84",
@@ -478,10 +478,10 @@
     "id" : "285",
     "type" : "owl:Class"
   }, {
-    "id" : "265",
+    "id" : "298",
     "type" : "owl:Class"
   }, {
-    "id" : "298",
+    "id" : "265",
     "type" : "owl:Class"
   }, {
     "id" : "301",
@@ -545,6 +545,16 @@
     "id" : "12",
     "superClasses" : [ "13" ]
   }, {
+    "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandRightward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MiddleFingerStraightandRightward",
+      "undefined" : "MiddleFingerStraightandRightward"
+    },
+    "id" : "33",
+    "superClasses" : [ "34" ]
+  }, {
     "iri" : "https://w3id.org/hdgi#RightRingFinger",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
@@ -554,16 +564,6 @@
     },
     "comment" : {
       "en" : "Right hand ring finger."
-    },
-    "id" : "33",
-    "superClasses" : [ "34" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandRightward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MiddleFingerStraightandRightward",
-      "undefined" : "MiddleFingerStraightandRightward"
     },
     "id" : "35",
     "superClasses" : [ "36" ]
@@ -631,16 +631,6 @@
     "id" : "69",
     "superClasses" : [ "64" ]
   }, {
-    "iri" : "https://w3id.org/hdgi#Head",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Head",
-      "undefined" : "Head"
-    },
-    "id" : "70",
-    "superClasses" : [ "71" ]
-  }, {
     "iri" : "https://w3id.org/hdgi#RightThumb",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
@@ -653,6 +643,16 @@
     },
     "id" : "3",
     "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#Head",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Head",
+      "undefined" : "Head"
+    },
+    "id" : "70",
+    "superClasses" : [ "71" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FingerMovement",
     "baseIri" : "https://w3id.org/hdgi",
@@ -706,11 +706,11 @@
       "IRI-based" : "RingFinger",
       "undefined" : "RingFinger"
     },
-    "subClasses" : [ "96", "33" ],
+    "subClasses" : [ "96", "35" ],
     "comment" : {
       "en" : "Fourth finger or the fourth digit of hand."
     },
-    "id" : "34",
+    "id" : "36",
     "superClasses" : [ "48" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ActuatableAffordance",
@@ -808,8 +808,8 @@
       "IRI-based" : "MiddleFingerPose",
       "undefined" : "MiddleFingerPose"
     },
-    "subClasses" : [ "108", "109", "110", "111", "112", "113", "35", "114" ],
-    "id" : "36",
+    "subClasses" : [ "108", "109", "110", "111", "112", "113", "33", "114" ],
+    "id" : "34",
     "superClasses" : [ "13" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RightForearm",
@@ -928,16 +928,6 @@
     "id" : "118",
     "superClasses" : [ "50" ]
   }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmRightwardAndFront",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmRightwardAndFront",
-      "undefined" : "UpperArmRightwardAndFront"
-    },
-    "id" : "132",
-    "superClasses" : [ "126" ]
-  }, {
     "iri" : "https://w3id.org/hdgi#HeadGesture",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
@@ -945,8 +935,18 @@
       "IRI-based" : "HeadGesture",
       "undefined" : "HeadGesture"
     },
-    "id" : "133",
+    "id" : "132",
     "superClasses" : [ "106" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmRightwardAndFront",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmRightwardAndFront",
+      "undefined" : "UpperArmRightwardAndFront"
+    },
+    "id" : "133",
+    "superClasses" : [ "126" ]
   }, {
     "iri" : "https://w3id.org/hdgi#IndexFingerPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1030,7 +1030,7 @@
       "undefined" : "MiddleFingerStraightandDownward"
     },
     "id" : "113",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FingerForward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1042,6 +1042,16 @@
     "id" : "81",
     "superClasses" : [ "72" ]
   }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmLeftward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmLeftward",
+      "undefined" : "UpperArmLeftward"
+    },
+    "id" : "169",
+    "superClasses" : [ "126" ]
+  }, {
     "iri" : "https://w3id.org/hdgi#Quaternion",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
@@ -1052,17 +1062,7 @@
     "comment" : {
       "en" : "A quaternion is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.\n\nThe magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one."
     },
-    "id" : "169"
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmLeftward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmLeftward",
-      "undefined" : "UpperArmLeftward"
-    },
-    "id" : "170",
-    "superClasses" : [ "126" ]
+    "id" : "170"
   }, {
     "iri" : "https://w3id.org/hdgi#Face",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1225,7 +1225,7 @@
       "undefined" : "MiddleFingerStraightandLeftward"
     },
     "id" : "109",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LeftForearm",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1262,7 +1262,7 @@
       "IRI-based" : "Finger",
       "undefined" : "Finger"
     },
-    "subClasses" : [ "34", "67", "4", "47", "50" ],
+    "subClasses" : [ "36", "67", "4", "47", "50" ],
     "comment" : {
       "en" : "A finger is a body part of the human body and a type of digit."
     },
@@ -1320,16 +1320,6 @@
       "IRI-based" : "float"
     }
   }, {
-    "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandBackward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MiddleFingerStraightandBackward",
-      "undefined" : "MiddleFingerStraightandBackward"
-    },
-    "id" : "110",
-    "superClasses" : [ "36" ]
-  }, {
     "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandUpward",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
@@ -1338,7 +1328,17 @@
       "undefined" : "MiddleFingerStraightandUpward"
     },
     "id" : "111",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandBackward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MiddleFingerStraightandBackward",
+      "undefined" : "MiddleFingerStraightandBackward"
+    },
+    "id" : "110",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Device",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1352,16 +1352,6 @@
     },
     "id" : "229"
   }, {
-    "iri" : "https://w3id.org/hdgi#RingFingerStraightandForward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RingFingerStraightandForward",
-      "undefined" : "RingFingerStraightandForward"
-    },
-    "id" : "207",
-    "superClasses" : [ "1" ]
-  }, {
     "iri" : "https://w3id.org/hdgi#Duration",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
@@ -1373,6 +1363,16 @@
       "en" : "Duration is a temporal extent."
     },
     "id" : "232"
+  }, {
+    "iri" : "https://w3id.org/hdgi#RingFingerStraightandForward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RingFingerStraightandForward",
+      "undefined" : "RingFingerStraightandForward"
+    },
+    "id" : "207",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1451,7 +1451,7 @@
       "undefined" : "MiddleFingerCurled"
     },
     "id" : "114",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ThumbStraightandUpward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1545,7 +1545,7 @@
       "undefined" : "MiddleFingerFolded"
     },
     "id" : "112",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LeftRingFinger",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1558,7 +1558,7 @@
       "en" : "Left hand ring finger."
     },
     "id" : "96",
-    "superClasses" : [ "34" ]
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FootPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1627,16 +1627,6 @@
     "id" : "4",
     "superClasses" : [ "48" ]
   }, {
-    "iri" : "https://w3id.org/hdgi#RightUpperArm",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RightUpperArm",
-      "undefined" : "RightUpperArm"
-    },
-    "id" : "231",
-    "superClasses" : [ "86" ]
-  }, {
     "iri" : "https://w3id.org/hdgi#RingFingerCurled",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
@@ -1646,6 +1636,16 @@
     },
     "id" : "211",
     "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#RightUpperArm",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RightUpperArm",
+      "undefined" : "RightUpperArm"
+    },
+    "id" : "231",
+    "superClasses" : [ "86" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "213",
@@ -1917,6 +1917,16 @@
     "id" : "91",
     "superClasses" : [ "60" ]
   }, {
+    "iri" : "https://w3id.org/hdgi#ForearmAnticlockwiseRotation",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmAnticlockwiseRotation",
+      "undefined" : "ForearmAnticlockwiseRotation"
+    },
+    "id" : "164",
+    "superClasses" : [ "43" ]
+  }, {
     "iri" : "https://w3id.org/hdgi#PalmMovement",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
@@ -1930,16 +1940,6 @@
     },
     "id" : "64",
     "superClasses" : [ "73" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmAnticlockwiseRotation",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmAnticlockwiseRotation",
-      "undefined" : "ForearmAnticlockwiseRotation"
-    },
-    "id" : "164",
-    "superClasses" : [ "43" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RingFingerStraightandDownward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2056,7 +2056,7 @@
       "undefined" : "MiddleFingerStraightandForward"
     },
     "id" : "108",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LegPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2088,15 +2088,15 @@
     "id" : "79",
     "superClasses" : [ "72" ]
   }, {
-    "iri" : "https://w3id.org/hdgi#FootGesture",
+    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandRightward",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "FootGesture",
-      "undefined" : "FootGesture"
+      "IRI-based" : "IndexFingerStraightandRightward",
+      "undefined" : "IndexFingerStraightandRightward"
     },
-    "id" : "282",
-    "superClasses" : [ "106" ]
+    "id" : "140",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RightLittleFinger",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2111,15 +2111,15 @@
     "id" : "120",
     "superClasses" : [ "67" ]
   }, {
-    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandRightward",
+    "iri" : "https://w3id.org/hdgi#FootGesture",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "IndexFingerStraightandRightward",
-      "undefined" : "IndexFingerStraightandRightward"
+      "IRI-based" : "FootGesture",
+      "undefined" : "FootGesture"
     },
-    "id" : "140",
-    "superClasses" : [ "134" ]
+    "id" : "282",
+    "superClasses" : [ "106" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Leg",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2138,7 +2138,7 @@
       "IRI-based" : "UpperArmMovement",
       "undefined" : "UpperArmMovement"
     },
-    "subClasses" : [ "125", "129", "291", "132", "244", "216", "170", "298", "301", "287" ],
+    "subClasses" : [ "125", "129", "291", "133", "244", "216", "169", "298", "301", "287" ],
     "id" : "126",
     "superClasses" : [ "73" ]
   }, {
@@ -2149,7 +2149,7 @@
       "IRI-based" : "FingerPose",
       "undefined" : "FingerPose"
     },
-    "subClasses" : [ "12", "134", "36", "1", "9" ],
+    "subClasses" : [ "12", "134", "34", "1", "9" ],
     "id" : "13",
     "superClasses" : [ "52" ]
   }, {
@@ -2160,7 +2160,7 @@
       "IRI-based" : "Gesture",
       "undefined" : "Gesture"
     },
-    "subClasses" : [ "105", "133", "168", "282", "285", "265", "247" ],
+    "subClasses" : [ "105", "132", "168", "282", "285", "265", "247" ],
     "comment" : {
       "en" : "A gesture is a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm."
     },
@@ -2179,6 +2179,16 @@
     "id" : "285",
     "superClasses" : [ "106" ]
   }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmBackward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmBackward",
+      "undefined" : "UpperArmBackward"
+    },
+    "id" : "298",
+    "superClasses" : [ "126" ]
+  }, {
     "iri" : "https://w3id.org/hdgi#HandGesture",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
@@ -2191,16 +2201,6 @@
     },
     "id" : "265",
     "superClasses" : [ "106" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmBackward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmBackward",
-      "undefined" : "UpperArmBackward"
-    },
-    "id" : "298",
-    "superClasses" : [ "126" ]
   }, {
     "iri" : "https://w3id.org/hdgi#UpperArmLeftwardAndBack",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2838,10 +2838,10 @@
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "339",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "340",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "341",
     "type" : "owl:someValuesFrom"
@@ -3023,7 +3023,7 @@
     "id" : "61"
   }, {
     "range" : "48",
-    "domain" : "34",
+    "domain" : "36",
     "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
@@ -3435,7 +3435,7 @@
       "undefined" : "isPartOf"
     },
     "domain" : "231",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "230"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
@@ -3446,7 +3446,7 @@
       "undefined" : "isPartOf"
     },
     "domain" : "115",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "233"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
@@ -3490,7 +3490,7 @@
       "undefined" : "used"
     },
     "domain" : "52",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "239"
   }, {
     "iri" : "https://w3id.org/hdgi#zPosition",
@@ -3550,7 +3550,7 @@
       "undefined" : "isPartOf"
     },
     "domain" : "251",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "250"
   }, {
     "iri" : "https://w3id.org/hdgi#involves",
@@ -3561,7 +3561,7 @@
       "undefined" : "involves"
     },
     "domain" : "73",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "253"
   }, {
     "range" : "86",
@@ -3569,17 +3569,14 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "254"
   }, {
-    "iri" : "https://w3id.org/hdgi#hasContext",
+    "iri" : "https://w3id.org/hdgi#performs",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "41",
+    "range" : "106",
     "label" : {
-      "IRI-based" : "hasContext",
-      "undefined" : "hasContext"
+      "IRI-based" : "performs",
+      "undefined" : "performs"
     },
     "domain" : "248",
-    "comment" : {
-      "undefined" : "Relation from a Human to a User Context or from a Device to a Device Context."
-    },
     "attributes" : [ "someValues", "object" ],
     "id" : "255"
   }, {
@@ -3596,7 +3593,7 @@
       "undefined" : "uses"
     },
     "domain" : "248",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "257"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
@@ -3607,29 +3604,32 @@
       "undefined" : "isPartOf"
     },
     "domain" : "130",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "258"
   }, {
-    "iri" : "https://w3id.org/hdgi#performs",
+    "iri" : "https://w3id.org/hdgi#hasContext",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "106",
+    "range" : "41",
     "label" : {
-      "IRI-based" : "performs",
-      "undefined" : "performs"
+      "IRI-based" : "hasContext",
+      "undefined" : "hasContext"
     },
     "domain" : "248",
+    "comment" : {
+      "undefined" : "Relation from a Human to a User Context or from a Device to a Device Context."
+    },
     "attributes" : [ "someValues", "object" ],
     "id" : "259"
   }, {
-    "iri" : "https://w3id.org/hdgi#includesGesture",
+    "iri" : "https://w3id.org/hdgi#used",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "106",
+    "range" : "71",
     "label" : {
-      "IRI-based" : "includesGesture",
-      "undefined" : "includesGesture"
+      "IRI-based" : "used",
+      "undefined" : "used"
     },
     "domain" : "106",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "260"
   }, {
     "iri" : "https://w3id.org/hdgi#performs",
@@ -3685,7 +3685,7 @@
     "id" : "269"
   }, {
     "range" : "13",
-    "domain" : "36",
+    "domain" : "34",
     "attributes" : [ "anonymous", "object" ],
     "id" : "270"
   }, {
@@ -3725,7 +3725,7 @@
     "id" : "277"
   }, {
     "range" : "106",
-    "domain" : "133",
+    "domain" : "132",
     "attributes" : [ "anonymous", "object" ],
     "id" : "278"
   }, {
@@ -3787,7 +3787,7 @@
     "id" : "290"
   }, {
     "range" : "126",
-    "domain" : "132",
+    "domain" : "133",
     "attributes" : [ "anonymous", "object" ],
     "id" : "293"
   }, {
@@ -3802,7 +3802,7 @@
     "id" : "295"
   }, {
     "range" : "126",
-    "domain" : "170",
+    "domain" : "169",
     "attributes" : [ "anonymous", "object" ],
     "id" : "296"
   }, {
@@ -3816,22 +3816,22 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "300"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "109",
     "attributes" : [ "anonymous", "object" ],
     "id" : "302"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "108",
     "attributes" : [ "anonymous", "object" ],
     "id" : "303"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "111",
     "attributes" : [ "anonymous", "object" ],
     "id" : "304"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "110",
     "attributes" : [ "anonymous", "object" ],
     "id" : "305"
@@ -3851,8 +3851,8 @@
     "attributes" : [ "datatype" ],
     "id" : "306"
   }, {
-    "range" : "34",
-    "domain" : "33",
+    "range" : "36",
+    "domain" : "35",
     "attributes" : [ "anonymous", "object" ],
     "id" : "307"
   }, {
@@ -3868,7 +3868,7 @@
     "attributes" : [ "datatype" ],
     "id" : "308"
   }, {
-    "range" : "34",
+    "range" : "36",
     "domain" : "96",
     "attributes" : [ "anonymous", "object" ],
     "id" : "309"
@@ -4034,8 +4034,19 @@
       "undefined" : "hasPart"
     },
     "domain" : "337",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "336"
+  }, {
+    "iri" : "https://w3id.org/hdgi#manufacturedBy",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "243",
+    "label" : {
+      "IRI-based" : "manufacturedBy",
+      "undefined" : "manufacturedBy"
+    },
+    "domain" : "229",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "339"
   }, {
     "iri" : "https://w3id.org/hdgi#hasContext",
     "baseIri" : "https://w3id.org/hdgi",
@@ -4049,17 +4060,6 @@
       "undefined" : "Relation from a Human to a User Context or from a Device to a Device Context."
     },
     "attributes" : [ "someValues", "object" ],
-    "id" : "339"
-  }, {
-    "iri" : "https://w3id.org/hdgi#manufacturedBy",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "243",
-    "label" : {
-      "IRI-based" : "manufacturedBy",
-      "undefined" : "manufacturedBy"
-    },
-    "domain" : "229",
-    "attributes" : [ "object", "allValues" ],
     "id" : "340"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
@@ -4106,15 +4106,15 @@
     "attributes" : [ "someValues", "object" ],
     "id" : "344"
   }, {
-    "iri" : "https://w3id.org/hdgi#used",
+    "iri" : "https://w3id.org/hdgi#includesGesture",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "106",
     "label" : {
-      "IRI-based" : "used",
-      "undefined" : "used"
+      "IRI-based" : "includesGesture",
+      "undefined" : "includesGesture"
     },
     "domain" : "106",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "345"
   }, {
     "iri" : "https://w3id.org/hdgi#hasPosition",
@@ -4128,6 +4128,17 @@
     "attributes" : [ "object" ],
     "id" : "346"
   }, {
+    "iri" : "https://w3id.org/hdgi#supportsGesture",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "supportsGesture",
+      "undefined" : "supportsGesture"
+    },
+    "domain" : "98",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "347"
+  }, {
     "iri" : "https://w3id.org/hdgi#affordedBy",
     "baseIri" : "https://w3id.org/hdgi",
     "range" : "229",
@@ -4139,18 +4150,7 @@
     "comment" : {
       "undefined" : "Relation from a Affordance to a Device describing the affordances of a device."
     },
-    "attributes" : [ "object", "allValues" ],
-    "id" : "347"
-  }, {
-    "iri" : "https://w3id.org/hdgi#supportsGesture",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "106",
-    "label" : {
-      "IRI-based" : "supportsGesture",
-      "undefined" : "supportsGesture"
-    },
-    "domain" : "98",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "allValues", "object" ],
     "id" : "348"
   }, {
     "range" : "134",
@@ -4223,23 +4223,23 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "360"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "113",
     "attributes" : [ "anonymous", "object" ],
     "id" : "361"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "112",
     "attributes" : [ "anonymous", "object" ],
     "id" : "362"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "114",
     "attributes" : [ "anonymous", "object" ],
     "id" : "363"
   }, {
-    "range" : "36",
-    "domain" : "35",
+    "range" : "34",
+    "domain" : "33",
     "attributes" : [ "anonymous", "object" ],
     "id" : "364"
   } ]

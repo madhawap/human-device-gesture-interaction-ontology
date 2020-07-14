@@ -2555,27 +2555,6 @@
     "@id" : "_:genid101"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Left_Index_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Left_Middle_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Left_Ring_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Left_Thumb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Right_Index_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Right_Middle_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Right_Thumb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
   "@id" : "https://w3id.org/hdgi#Thumb",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {

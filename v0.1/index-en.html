@@ -6,11 +6,11 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/hdgi#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/hdgi#","name":"Human Device Gesture Interaction Ontology ", "headline":"Gesture-controlled interfaces are becoming popular with the recent advent of IoT systems. Especially in the current automobiles, smart homes, computer games and AR/VR applications, gestures have become prevalent due to its accessibility to everyone. Designers, producers and vendors integrating gesture interfaces into their products have also increased in numbers, giving rise to a greater variation of standards in utilizing them. This could confuse the users who are accustomed to a set of conventional controls. This ontology formally describes human gestures and facilitate automated reasoning tasks which help systems to map gestures to corresponding affordances. This will be helpful for standardizing gesture designing and to bring interoperability across gesture-controlled interfaces.", "datePublished":"Fri Jun 12 02:01:20 AEST 2020", "license":"https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE", "author":[{"@type":"Person","name":"Madhawa Perera"},{"@type":"Person","name":"Armin Haller"},{"@type":"Person","name":"Sergio J. Rodríguez Méndez"},{"@type":"Person","name":"Matt Adcock"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/hdgi#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/hdgi#","name":"Human Device Gesture Interaction Ontology ", "headline":"Gesture-controlled interfaces are becoming popular with the recent advent of IoT systems. Especially in the current automobiles, smart homes, computer games and AR/VR applications, gestures have become prevalent due to its accessibility to everyone. Designers, producers and vendors integrating gesture interfaces into their products have also increased in numbers, giving rise to a greater variation of standards in utilizing them. This could confuse the users who are accustomed to a set of conventional controls. This ontology formally describes human gestures and facilitate automated reasoning tasks which help systems to map gestures to corresponding affordances. This will be helpful for standardizing gesture designing and to bring interoperability across gesture-controlled interfaces.", "datePublished":"Tue Jul 14 15:19:15 AEST 2020", "license":"https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE", "author":[{"@type":"Person","name":"Madhawa Perera"},{"@type":"Person","name":"Armin Haller"},{"@type":"Person","name":"Sergio J. Rodríguez Méndez"},{"@type":"Person","name":"Matt Adcock"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
+<script src="resources/jquery.js"></script>
+<script src="resources/marked.min.js"></script>
+    <script>
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,13 +40,13 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
-  </head> 
+ };
+   </script>
+  </head>
 
 <body>
 <div class="container">
@@ -57,14 +57,18 @@ function loadTOC(){
 
 <dl>
 <dt>This version:</dt>
-<dd><a href="https://w3id.org/hdgi/v0.1">https://w3id.org/hdgi/v0.1</a></dd>
+<dd><a href="https://w3id.org/hdgi">https://w3id.org/hdgi</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="https://w3id.org/hdgi">https://w3id.org/hdgi</a></dd>
+<!-- <dt>Previous version:</dt>
+<dd><a href="https://w3id.org/hdgi/v0.1">https://w3id.org/hdgi/v0.1</a></dd> -->
 <dt>Authors:</dt>
-<dd>Madhawa Perera, (<a href="https://cecs.anu.edu.au/">Australian National University</a>)</dd><dd>Armin Haller, (<a href="https://cecs.anu.edu.au/">Australian National University</a>)</dd><dd>Sergio J. Rodríguez Méndez, (<a href="https://cecs.anu.edu.au/">Australian National University</a>)</dd><dd>Matt Adcock, (<a href="https://csiro.au/">CSIRO</a>)</dd>
+<dd>Madhawa Perera, (<a href="https://cecs.anu.edu.au/">Australian National University</a>)</dd><dd>Armin Haller, (<a href="https://cecs.anu.edu.au/">Australian National University</a>)</dd><dd>Sergio J. Rodríguez Méndez, (<a href="https://cecs.anu.edu.au/">Australian National University</a>)</dd><dd>Matt Adcock, (<a href="https://www.csiro.au/">CSIRO</a>)</dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd> Retrieved from: https://w3id.org/hdgi/v0.1</dd>
+<dd> Retrieved from: https://w3id.org/hdgi</dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
@@ -76,19 +80,19 @@ function loadTOC(){
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 Gesture-controlled interfaces are becoming popular with the recent advent of IoT systems. Especially in the current automobiles, smart homes, computer games and AR/VR applications, gestures have become prevalent due to its accessibility to everyone. Designers, producers and vendors integrating gesture interfaces into their products have also increased in numbers, giving rise to a greater variation of standards in utilizing them. This could confuse the users who are accustomed to a set of conventional controls. This ontology formally describes human gestures and facilitate automated reasoning tasks which help systems to map gestures to corresponding affordances. This will be helpful for standardizing gesture designing and to bring interoperability across gesture-controlled interfaces.</span>
 </div>
-<div id="toc"></div> 
+<div id="toc"></div>
 
 <!--INTRODUCTION SECTION-->
-    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+The HDGI ontology aims to model the pose and/or movement of human upper limbs that are used to interact with devices (particularly with device affordances). It is mapped around gestures performed by human's upper limb region to interact with these affordances. While allowing these mapping the ontology is also developed to be used as a dictionary for manufacturers, designers and developer community to browse and locate commonly used gestures to command certain affordances, or/and to understand the connections and dynamics around it. This ontology is made accessible, flexible and extendable enabling device manufacturers, designers and users to incorporate new gestures and map the relations to corresponding affordances accordingly. The ontology is geared at mapping the ubiquitousness in gesture vocabularies by linking them appropriately and does not enforce designers and manufacturers to follow a standard.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<tr><td><b>hdgi</b></td><td>&lt;https://w3id.org/hdgi#&gt;</td></tr>
+<!-- <tr><td><b>https://w3id.org/hdgi#</b></td><td>&lt;https://w3id.org/hdgi#&gt;</td></tr> -->
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
@@ -101,10 +105,10 @@ This is a place holder text for the introduction. The introduction should briefl
 </div>
 </div>
 </div>
-  
+
 
 <!--OVERVIEW SECTION-->
-    <div id="overview"><h2 id="overv" class="list">Human Device Gesture Interaction Ontology : Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <div id="overview"><h2 id="overv" class="list">Human Device Gesture Interaction Ontology : Overview <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
@@ -720,20 +724,20 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#zRotation" title="https://w3id.org/hdgi#zRotation">zRotation</a>
    </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe>
 </div>
-  
+
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Human Device Gesture Interaction Ontology : Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <!-- <div id="description"><h2 id="desc" class="list">Human Device Gesture Interaction Ontology : Description <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
 <span class="markdown">
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
-</div>
-   
+</div> -->
+
 
 <!--CROSSREF SECTION-->
-   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Human Device Gesture Interaction Ontology  classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Human Device Gesture Interaction Ontology  classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
 This section provides details for each class and property defined by Human Device Gesture Interaction Ontology .
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
@@ -1236,7 +1240,7 @@ This section provides details for each class and property defined by Human Devic
    </ul>
    <div class="entity" id="ActuatableAffordance">
       <h3>ActuatableAffordance<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1251,7 +1255,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Affordance">
       <h3>Affordance<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1272,7 +1276,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Body">
       <h3>Body<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1287,7 +1291,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="BodyPart">
       <h3>BodyPart<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1318,7 +1322,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Context">
       <h3>Context<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1334,7 +1338,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Device">
       <h3>Device<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1349,7 +1353,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="DeviceContext">
       <h3>DeviceContext<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1364,7 +1368,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="DeviceManufacturer">
       <h3>DeviceManufacturer<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1375,7 +1379,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Duration">
       <h3>Duration<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1386,7 +1390,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Face">
       <h3>Face<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1401,7 +1405,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FacialGesture">
       <h3>FacialGesture<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1416,7 +1420,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Finger">
       <h3>Finger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1449,7 +1453,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerAnticlcokwiseRotation">
       <h3>FingerAnticlcokwiseRotation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1464,7 +1468,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerBackward">
       <h3>FingerBackward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1479,7 +1483,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerClockwiseRotation">
       <h3>FingerClockwiseRotation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1494,7 +1498,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerDownward">
       <h3>FingerDownward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1509,7 +1513,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerForward">
       <h3>FingerForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1524,7 +1528,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerLeftward">
       <h3>FingerLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1539,7 +1543,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerMovement">
       <h3>FingerMovement<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1567,7 +1571,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerPose">
       <h3>FingerPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1591,7 +1595,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerRightward">
       <h3>FingerRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1606,7 +1610,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FingerUpward">
       <h3>FingerUpward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1621,7 +1625,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Foot">
       <h3>Foot<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1636,7 +1640,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FootGesture">
       <h3>FootGesture<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1651,7 +1655,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="FootPose">
       <h3>FootPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1666,7 +1670,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Forearm">
       <h3>Forearm<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1690,7 +1694,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmAnticlockwiseRotation">
       <h3>ForearmAnticlockwiseRotation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1705,7 +1709,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmBackward">
       <h3>ForearmBackward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1720,7 +1724,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmClockwiseRotation">
       <h3>ForearmClockwiseRotation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1735,7 +1739,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmDownward">
       <h3>ForearmDownward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1750,7 +1754,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmForward">
       <h3>ForearmForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1765,7 +1769,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmGesture">
       <h3>ForearmGesture<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1783,7 +1787,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmLeftward">
       <h3>ForearmLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1798,7 +1802,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmLeftwardAndDown">
       <h3>ForearmLeftwardAndDown<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1813,7 +1817,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmLeftwardAndUp">
       <h3>ForearmLeftwardAndUp<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1828,7 +1832,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmMovement">
       <h3>ForearmMovement<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1860,7 +1864,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmPose">
       <h3>ForearmPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1875,7 +1879,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmRightward">
       <h3>ForearmRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1890,7 +1894,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmRightwardAndDown">
       <h3>ForearmRightwardAndDown<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1905,7 +1909,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmRightwardAndUp">
       <h3>ForearmRightwardAndUp<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1920,7 +1924,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ForearmUpward">
       <h3>ForearmUpward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1935,7 +1939,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Gesture">
       <h3>Gesture<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1961,7 +1965,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="HandGesture">
       <h3>HandGesture<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1979,7 +1983,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Head">
       <h3>Head<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -1994,7 +1998,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="HeadGesture">
       <h3>HeadGesture<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2009,7 +2013,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Human">
       <h3>Human<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2024,7 +2028,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFinger">
       <h3>IndexFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2048,7 +2052,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFingerCurled">
       <h3>IndexFingerCurled<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2063,7 +2067,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFingerFolded">
       <h3>IndexFingerFolded<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2078,7 +2082,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFingerPose">
       <h3>IndexFingerPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2111,7 +2115,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFingerStraightandBackward">
       <h3>IndexFingerStraightandBackward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2126,7 +2130,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFingerStraightandDownward">
       <h3>IndexFingerStraightandDownward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2141,7 +2145,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFingerStraightandForward">
       <h3>IndexFingerStraightandForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2156,7 +2160,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFingerStraightandLeftward">
       <h3>IndexFingerStraightandLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2171,7 +2175,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFingerStraightandRightward">
       <h3>IndexFingerStraightandRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2186,7 +2190,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="IndexFingerStraightandUpward">
       <h3>IndexFingerStraightandUpward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2201,7 +2205,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LeftForearm">
       <h3>LeftForearm<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2216,7 +2220,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LeftIndexFinger">
       <h3>LeftIndexFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2234,7 +2238,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LeftLittleFinger">
       <h3>LeftLittleFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2252,7 +2256,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LeftMiddleFinger">
       <h3>LeftMiddleFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2270,7 +2274,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LeftPalm">
       <h3>LeftPalm<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2288,7 +2292,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LeftRingFinger">
       <h3>LeftRingFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2306,7 +2310,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LeftThumb">
       <h3>LeftThumb<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2324,7 +2328,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LeftUpperArm">
       <h3>LeftUpperArm<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2339,7 +2343,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Leg">
       <h3>Leg<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2354,7 +2358,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LegGesture">
       <h3>LegGesture<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2369,7 +2373,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LegPose">
       <h3>LegPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2384,7 +2388,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFinger">
       <h3>LittleFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2408,7 +2412,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFingerCurled">
       <h3>LittleFingerCurled<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2423,7 +2427,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFingerFolded">
       <h3>LittleFingerFolded<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2438,7 +2442,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFingerPose">
       <h3>LittleFingerPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2471,7 +2475,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFingerStraightandBackward">
       <h3>LittleFingerStraightandBackward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2486,7 +2490,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFingerStraightandDownward">
       <h3>LittleFingerStraightandDownward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2501,7 +2505,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFingerStraightandForward">
       <h3>LittleFingerStraightandForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2516,7 +2520,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFingerStraightandLeftward">
       <h3>LittleFingerStraightandLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2531,7 +2535,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFingerStraightandRightward">
       <h3>LittleFingerStraightandRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2546,7 +2550,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LittleFingerStraightandUpward">
       <h3>LittleFingerStraightandUpward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2561,7 +2565,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="LocalCoordinateSystem">
       <h3>LocalCoordinateSystem<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2576,7 +2580,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFinger">
       <h3>MiddleFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2600,7 +2604,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFingerCurled">
       <h3>MiddleFingerCurled<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2615,7 +2619,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFingerFolded">
       <h3>MiddleFingerFolded<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2630,7 +2634,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFingerPose">
       <h3>MiddleFingerPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2663,7 +2667,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFingerStraightandBackward">
       <h3>MiddleFingerStraightandBackward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2678,7 +2682,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFingerStraightandDownward">
       <h3>MiddleFingerStraightandDownward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2693,7 +2697,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFingerStraightandForward">
       <h3>MiddleFingerStraightandForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2708,7 +2712,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFingerStraightandLeftward">
       <h3>MiddleFingerStraightandLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2723,7 +2727,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFingerStraightandRightward">
       <h3>MiddleFingerStraightandRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2738,7 +2742,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="MiddleFingerStraightandUpward">
       <h3>MiddleFingerStraightandUpward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2753,7 +2757,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Movement">
       <h3>Movement<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2776,7 +2780,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="ObservableAffordance">
       <h3>ObservableAffordance<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2791,7 +2795,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Observer">
       <h3>Observer<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2803,7 +2807,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Palm">
       <h3>Palm<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2827,7 +2831,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmAnticlockwiseRotation">
       <h3>PalmAnticlockwiseRotation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2842,7 +2846,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmBackward">
       <h3>PalmBackward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2857,7 +2861,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmClockwiseRotation">
       <h3>PalmClockwiseRotation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2872,7 +2876,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmDownward">
       <h3>PalmDownward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2887,7 +2891,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmDownwardPose">
       <h3>PalmDownwardPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2902,7 +2906,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmForward">
       <h3>PalmForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2917,7 +2921,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmInwardPose">
       <h3>PalmInwardPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2932,7 +2936,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmLeftward">
       <h3>PalmLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2947,7 +2951,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmLeftwardPose">
       <h3>PalmLeftwardPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2962,7 +2966,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmMovement">
       <h3>PalmMovement<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -2992,7 +2996,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmOutwardPose">
       <h3>PalmOutwardPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3007,7 +3011,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmPose">
       <h3>PalmPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3032,7 +3036,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmRightward">
       <h3>PalmRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3047,7 +3051,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmRightwardPose">
       <h3>PalmRightwardPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3062,7 +3066,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmUpward">
       <h3>PalmUpward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3077,7 +3081,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="PalmUpwardPose">
       <h3>PalmUpwardPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3092,7 +3096,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Pose">
       <h3>Pose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3114,7 +3118,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Position">
       <h3>Position<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3129,7 +3133,7 @@ This section provides details for each class and property defined by Human Devic
    </div>
    <div class="entity" id="Quaternion">
       <h3>Quaternion<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3146,7 +3150,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RightForearm">
       <h3>RightForearm<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3161,7 +3165,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RightIndexFinger">
       <h3>RightIndexFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3179,7 +3183,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RightLittleFinger">
       <h3>RightLittleFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3197,7 +3201,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RightMiddleFinger">
       <h3>RightMiddleFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3215,7 +3219,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RightPalm">
       <h3>RightPalm<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3233,7 +3237,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RightRingFinger">
       <h3>RightRingFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3251,7 +3255,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RightThumb">
       <h3>RightThumb<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3269,7 +3273,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RightUpperArm">
       <h3>RightUpperArm<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3284,7 +3288,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFinger">
       <h3>RingFinger<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3308,7 +3312,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFingerCurled">
       <h3>RingFingerCurled<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3323,7 +3327,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFingerFolded">
       <h3>RingFingerFolded<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3338,7 +3342,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFingerPose">
       <h3>RingFingerPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3371,7 +3375,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFingerStraightandBackward">
       <h3>RingFingerStraightandBackward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3386,7 +3390,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFingerStraightandDownward">
       <h3>RingFingerStraightandDownward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3401,7 +3405,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFingerStraightandForward">
       <h3>RingFingerStraightandForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3416,7 +3420,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFingerStraightandLeftward">
       <h3>RingFingerStraightandLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3431,7 +3435,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFingerStraightandRightward">
       <h3>RingFingerStraightandRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3446,7 +3450,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="RingFingerStraightandUpward">
       <h3>RingFingerStraightandUpward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3461,7 +3465,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="Rotation">
       <h3>Rotation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3476,7 +3480,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="Thumb">
       <h3>Thumb<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3500,7 +3504,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="ThumbCurled">
       <h3>ThumbCurled<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3515,7 +3519,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="ThumbFolded">
       <h3>ThumbFolded<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3530,7 +3534,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="ThumbStraightandBackward">
       <h3>ThumbStraightandBackward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3545,7 +3549,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="ThumbStraightandDownward">
       <h3>ThumbStraightandDownward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3560,7 +3564,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="ThumbStraightandForward">
       <h3>ThumbStraightandForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3575,7 +3579,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="ThumbStraightandLeftward">
       <h3>ThumbStraightandLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3590,7 +3594,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="ThumbStraightandRightward">
       <h3>ThumbStraightandRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3605,7 +3609,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="ThumbStraightandUpward">
       <h3>ThumbStraightandUpward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3620,7 +3624,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="TumbPose">
       <h3>TumbPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3647,7 +3651,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UnitOfMeasure">
       <h3>UnitOfMeasure<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3658,7 +3662,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArm">
       <h3>UpperArm<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3682,7 +3686,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmAnticlcockwiseRotation">
       <h3>UpperArmAnticlcockwiseRotation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3697,7 +3701,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmBackward">
       <h3>UpperArmBackward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3712,7 +3716,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmClockwiseRotation">
       <h3>UpperArmClockwiseRotation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3727,7 +3731,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmForward">
       <h3>UpperArmForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3742,7 +3746,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmGesture">
       <h3>UpperArmGesture<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3760,7 +3764,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmLeftward">
       <h3>UpperArmLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3775,7 +3779,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmLeftwardAndBack">
       <h3>UpperArmLeftwardAndBack<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3790,7 +3794,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmLeftwardAndFront">
       <h3>UpperArmLeftwardAndFront<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3805,7 +3809,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmMovement">
       <h3>UpperArmMovement<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3835,7 +3839,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmPose">
       <h3>UpperArmPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3850,7 +3854,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmRightward">
       <h3>UpperArmRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3865,7 +3869,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmRightwardAndBack">
       <h3>UpperArmRightwardAndBack<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3880,7 +3884,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UpperArmRightwardAndFront">
       <h3>UpperArmRightwardAndFront<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3895,7 +3899,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="UserContext">
       <h3>UserContext<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
@@ -3983,7 +3987,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </ul>
    <div class="entity" id="affordedBy">
       <h3>affordedBy<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -3994,7 +3998,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasContext">
       <h3>hasContext<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4005,7 +4009,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasDuration">
       <h3>hasDuration<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4013,7 +4017,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasEndPose">
       <h3>hasEndPose<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4030,7 +4034,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasLocalCoordinateSystem">
       <h3>hasLocalCoordinateSystem<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4038,7 +4042,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasMovement">
       <h3>hasMovement<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4046,7 +4050,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasPart">
       <h3>hasPart<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4063,7 +4067,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasPose">
       <h3>hasPose<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4081,7 +4085,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasPosition">
       <h3>hasPosition<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4089,7 +4093,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasQuaternion">
       <h3>hasQuaternion<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4097,7 +4101,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasRotation">
       <h3>hasRotation<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4105,7 +4109,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasStartPose">
       <h3>hasStartPose<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4122,7 +4126,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasTimeStamp">
       <h3>hasTimeStamp<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4130,7 +4134,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="hasUnitOfMeasure">
       <h3>hasUnitOfMeasure<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4138,7 +4142,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="includesGesture">
       <h3>includesGesture<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4146,7 +4150,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="involves">
       <h3>involves<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4154,7 +4158,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="isPartOf">
       <h3>isPartOf<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4171,7 +4175,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="manufacturedBy">
       <h3>manufacturedBy<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4179,7 +4183,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="observes">
       <h3>observes<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4187,7 +4191,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="performs">
       <h3>performs<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4195,7 +4199,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="supportsGesture">
       <h3>supportsGesture<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4203,7 +4207,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="used">
       <h3>used<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4213,8 +4217,8 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
             <dt>has sub-property chains</dt>
             <dd>
                <a href="#hasPose" title="https://w3id.org/hdgi#hasPose">hasPose</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
+               <sup class="type-op" title="object property">op</sup>
+               <span class="logic">o</span>
                <a href="#used" title="https://w3id.org/hdgi#used">used</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -4223,7 +4227,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </div>
    <div class="entity" id="uses">
       <h3>uses<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#objectproperties">Object Properties</a>
          </span>
       </h3>
       <p>
@@ -4280,7 +4284,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    </ul>
    <div class="entity" id="i-component">
       <h3>i-component<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4301,7 +4305,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
    </div>
    <div class="entity" id="j-component">
       <h3>j-component<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4322,7 +4326,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
    </div>
    <div class="entity" id="k-component">
       <h3>k-component<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4343,7 +4347,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
    </div>
    <div class="entity" id="originPoint">
       <h3>originPoint<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4363,7 +4367,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="timeStamp">
       <h3>timeStamp<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4379,7 +4383,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="w-component">
       <h3>w-component<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4398,7 +4402,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="x-axisDirection">
       <h3>x-axisDirection<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4414,7 +4418,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="xPosition">
       <h3>xPosition<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4430,7 +4434,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="xRotation">
       <h3>xRotation<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4449,7 +4453,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="y-axisDirection">
       <h3>y-axisDirection<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4465,7 +4469,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="yPosition">
       <h3>yPosition<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4481,7 +4485,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="yRotation">
       <h3>yRotation<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4500,7 +4504,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="z-axisDirection">
       <h3>z-axisDirection<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4516,7 +4520,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="zPosition">
       <h3>zPosition<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4532,7 +4536,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
    </div>
    <div class="entity" id="zRotation">
       <h3>zRotation<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
@@ -4550,7 +4554,7 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
       </div>
    </div>
 </div><div id="legend">
-<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2>Legend <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
@@ -4559,17 +4563,17 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
 </div>
 </div>
 </div>
-    
+
 
 <!--REFERENCES SECTION-->
   <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
 <span class="markdown">
 Add your references here. It is recommended to have them as a list.</span>
 
 </div>
 <div id="acknowledgements">
-<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
 <p>
 The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
 </div>
