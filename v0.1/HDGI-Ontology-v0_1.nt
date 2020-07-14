@@ -1,5 +1,15 @@
 <https://w3id.org/hdgi#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/hdgi#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/hdgi/v0.1> .
+<https://w3id.org/hdgi#> <http://creativecommons.org/ns#attributionURL> <https://w3id.org/hdgi> .
+<https://w3id.org/hdgi#> <http://purl.org/dc/terms/description> "The HDGI ontology aims to model the pose and/or movement of human upper limbs that are used to interact with devices (particularly with device affordances). It is mapped around gestures performed by human's upper limb region to interact with these affordances. While allowing these mapping the ontology is also developed to be used as a dictionary for manufacturers, designers and developer community to browse and locate commonly used gestures to command certain affordances, or/and to understand the connections and dynamics around it. This ontology is made accessible, flexible and extendable enabling device manufacturers, designers and users to incorporate new gestures and map the relations to corresponding affordances accordingly. The ontology is geared at mapping the ubiquitousness in gesture vocabularies by linking them appropriately and does not enforce designers and manufacturers to follow a standard."@en .
+<https://w3id.org/hdgi#> <http://purl.org/dc/terms/issued> "2020-05-22" .
+<https://w3id.org/hdgi#> <http://purl.org/dc/terms/license> <https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE> .
+<https://w3id.org/hdgi#> <http://purl.org/dc/terms/rights> "Copyright © 2020 Madhawa Perera, Armin Haller"@en .
+<https://w3id.org/hdgi#> <http://purl.org/dc/terms/title> "Human Device Gesture Interaction Ontology"@en .
+<https://w3id.org/hdgi#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "hdgi" .
+<https://w3id.org/hdgi#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "https://w3id.org/hdgi#" .
+<https://w3id.org/hdgi#> <http://www.w3.org/2000/01/rdf-schema#label> "Human Device Gesture Interaction Ontology"@en .
+<https://w3id.org/hdgi#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -9,8 +19,40 @@
 # #################################################################
 # 
 # 
+# http://creativecommons.org/ns#attributionURL
+<http://creativecommons.org/ns#attributionURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
+# 
 # http://www.w3.org/2004/02/skos/core#example
 <http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/creator
+<https://schema.org/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://schema.org/creator> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
 # 
 # 
@@ -1506,30 +1548,23 @@ _:genid110 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperA
 # 
 # #################################################################
 # #
-# #    Individuals
+# #    Annotations
 # #
 # #################################################################
 # 
 # 
-# https://w3id.org/hdgi#Sofia's_Folded_Left_Index_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Left_Index_Finger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://creativecommons.org/ns#attributionURL> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
-# https://w3id.org/hdgi#Sofia's_Folded_Left_Middle_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Left_Middle_Finger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/dc/terms/description> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
-# https://w3id.org/hdgi#Sofia's_Folded_Left_Ring_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Left_Ring_Finger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/dc/terms/issued> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
-# https://w3id.org/hdgi#Sofia's_Folded_Left_Thumb
-<https://w3id.org/hdgi#Sofia's_Folded_Left_Thumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/dc/terms/license> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
-# https://w3id.org/hdgi#Sofia's_Folded_Right_Index_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Right_Index_Finger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/dc/terms/rights> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
-# https://w3id.org/hdgi#Sofia's_Folded_Right_Middle_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Right_Middle_Finger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/dc/terms/title> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
-# https://w3id.org/hdgi#Sofia's_Folded_Right_Thumb
-<https://w3id.org/hdgi#Sofia's_Folded_Right_Thumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

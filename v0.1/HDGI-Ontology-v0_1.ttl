@@ -7,14 +7,66 @@
 @base <https://w3id.org/hdgi#> .
 
 <https://w3id.org/hdgi#> rdf:type owl:Ontology ;
-                          owl:versionIRI <https://w3id.org/hdgi/v0.1> .
+                          owl:versionIRI <https://w3id.org/hdgi/v0.1> ;
+                          <http://creativecommons.org/ns#attributionURL> <https://w3id.org/hdgi> ;
+                          <http://purl.org/dc/terms/description> "The HDGI ontology aims to model the pose and/or movement of human upper limbs that are used to interact with devices (particularly with device affordances). It is mapped around gestures performed by human's upper limb region to interact with these affordances. While allowing these mapping the ontology is also developed to be used as a dictionary for manufacturers, designers and developer community to browse and locate commonly used gestures to command certain affordances, or/and to understand the connections and dynamics around it. This ontology is made accessible, flexible and extendable enabling device manufacturers, designers and users to incorporate new gestures and map the relations to corresponding affordances accordingly. The ontology is geared at mapping the ubiquitousness in gesture vocabularies by linking them appropriately and does not enforce designers and manufacturers to follow a standard."@en ;
+                          <http://purl.org/dc/terms/issued> "2020-05-22" ;
+                          <http://purl.org/dc/terms/license> <https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE> ;
+                          <http://purl.org/dc/terms/rights> "Copyright © 2020 Madhawa Perera, Armin Haller"@en ;
+                          <http://purl.org/dc/terms/title> "Human Device Gesture Interaction Ontology"@en ;
+                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "hdgi" ,
+                                                                                "https://w3id.org/hdgi#" ;
+                          rdfs:label "Human Device Gesture Interaction Ontology"@en ;
+                          owl:versionInfo 0.1 .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://creativecommons.org/ns#attributionURL
+<http://creativecommons.org/ns#attributionURL> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty ;
+                                                   <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
+
+
 ###  http://www.w3.org/2004/02/skos/core#example
 <http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/creator
+<https://schema.org/creator> rdf:type owl:AnnotationProperty ;
+                             <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 
 
 #################################################################
@@ -1692,35 +1744,28 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
 
 #################################################################
-#    Individuals
+#    Annotations
 #################################################################
 
-###  https://w3id.org/hdgi#Sofia's_Folded_Left_Index_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Left_Index_Finger> rdf:type owl:NamedIndividual .
+<http://creativecommons.org/ns#attributionURL> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 
 
-###  https://w3id.org/hdgi#Sofia's_Folded_Left_Middle_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Left_Middle_Finger> rdf:type owl:NamedIndividual .
+<http://purl.org/dc/terms/description> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 
 
-###  https://w3id.org/hdgi#Sofia's_Folded_Left_Ring_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Left_Ring_Finger> rdf:type owl:NamedIndividual .
+<http://purl.org/dc/terms/issued> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 
 
-###  https://w3id.org/hdgi#Sofia's_Folded_Left_Thumb
-<https://w3id.org/hdgi#Sofia's_Folded_Left_Thumb> rdf:type owl:NamedIndividual .
+<http://purl.org/dc/terms/license> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 
 
-###  https://w3id.org/hdgi#Sofia's_Folded_Right_Index_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Right_Index_Finger> rdf:type owl:NamedIndividual .
+<http://purl.org/dc/terms/rights> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 
 
-###  https://w3id.org/hdgi#Sofia's_Folded_Right_Middle_Finger
-<https://w3id.org/hdgi#Sofia's_Folded_Right_Middle_Finger> rdf:type owl:NamedIndividual .
+<http://purl.org/dc/terms/title> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 
 
-###  https://w3id.org/hdgi#Sofia's_Folded_Right_Thumb
-<https://w3id.org/hdgi#Sofia's_Folded_Right_Thumb> rdf:type owl:NamedIndividual .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

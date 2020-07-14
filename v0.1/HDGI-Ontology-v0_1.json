@@ -1109,13 +1109,104 @@
     "@id" : "https://w3id.org/hdgi#xRotation"
   } ]
 }, {
+  "@id" : "http://creativecommons.org/ns#attributionURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "madhawaperera"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "madhawaperera"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "madhawaperera"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "madhawaperera"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "madhawaperera"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "madhawaperera"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "madhawaperera"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "madhawaperera"
+  } ]
+}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#example",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://schema.org/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "madhawaperera"
+  } ]
+}, {
   "@id" : "https://w3id.org/hdgi#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#attributionURL" : [ {
+    "@id" : "https://w3id.org/hdgi"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The HDGI ontology aims to model the pose and/or movement of human upper limbs that are used to interact with devices (particularly with device affordances). It is mapped around gestures performed by human's upper limb region to interact with these affordances. While allowing these mapping the ontology is also developed to be used as a dictionary for manufacturers, designers and developer community to browse and locate commonly used gestures to command certain affordances, or/and to understand the connections and dynamics around it. This ontology is made accessible, flexible and extendable enabling device manufacturers, designers and users to incorporate new gestures and map the relations to corresponding affordances accordingly. The ontology is geared at mapping the ubiquitousness in gesture vocabularies by linking them appropriately and does not enforce designers and manufacturers to follow a standard."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-05-22"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright © 2020 Madhawa Perera, Armin Haller"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Human Device Gesture Interaction Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "hdgi"
+  }, {
+    "@value" : "https://w3id.org/hdgi#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Human Device Gesture Interaction Ontology"
+  } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/hdgi/v0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.1"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ActuatableAffordance",
@@ -2554,27 +2645,6 @@
   }, {
     "@id" : "_:genid101"
   } ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Left_Index_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Left_Middle_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Left_Ring_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Left_Thumb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Right_Index_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Right_Middle_Finger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Sofia's_Folded_Right_Thumb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/hdgi#Thumb",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
