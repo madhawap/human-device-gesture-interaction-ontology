@@ -2665,7 +2665,7 @@
     "@value" : "ThumbCurled"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbFolded",
@@ -2674,7 +2674,7 @@
     "@value" : "ThumbFolded"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandBackward",
@@ -2683,7 +2683,7 @@
     "@value" : "ThumbStraightandBackward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandDownward",
@@ -2692,7 +2692,7 @@
     "@value" : "ThumbStraightandDownward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandForward",
@@ -2701,7 +2701,7 @@
     "@value" : "ThumbStraightandForward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandLeftward",
@@ -2710,7 +2710,7 @@
     "@value" : "ThumbStraightandLeftward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandRightward",
@@ -2719,7 +2719,7 @@
     "@value" : "ThumbStraightandRightward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandUpward",
@@ -2728,13 +2728,13 @@
     "@value" : "ThumbStraightandUpward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#TumbPose",
+  "@id" : "https://w3id.org/hdgi#ThumbPose",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TumbPose"
+    "@value" : "ThumbPose"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#FingerPose"
@@ -3012,7 +3012,7 @@
   "@id" : "https://w3id.org/hdgi#i-component",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
+    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x\n\nIn the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "i-component"
@@ -3042,7 +3042,7 @@
   "@id" : "https://w3id.org/hdgi#j-component",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
+    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y\n\nIn the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "j-component"
@@ -3054,7 +3054,7 @@
   "@id" : "https://w3id.org/hdgi#k-component",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
+    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z\n\nIn the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "k-component"

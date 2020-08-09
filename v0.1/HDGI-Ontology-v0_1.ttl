@@ -206,7 +206,7 @@
              rdfs:range xsd:float ;
              rdfs:comment """In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x
 
-In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).""" ;
+In the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).""" ;
              rdfs:label "i-component" .
 
 
@@ -215,7 +215,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
              rdfs:range xsd:float ;
              rdfs:comment """In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y
 
-In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).""" ;
+In the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).""" ;
              rdfs:label "j-component" .
 
 
@@ -224,7 +224,7 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
              rdfs:range xsd:float ;
              rdfs:comment """In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z
 
-In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).""" ;
+In the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).""" ;
              rdfs:label "k-component" .
 
 
@@ -1549,54 +1549,54 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
 
 ###  https://w3id.org/hdgi#ThumbCurled
 :ThumbCurled rdf:type owl:Class ;
-             rdfs:subClassOf :TumbPose ;
+             rdfs:subClassOf :ThumbPose ;
              rdfs:label "ThumbCurled" .
 
 
 ###  https://w3id.org/hdgi#ThumbFolded
 :ThumbFolded rdf:type owl:Class ;
-             rdfs:subClassOf :TumbPose ;
+             rdfs:subClassOf :ThumbPose ;
              rdfs:label "ThumbFolded" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandBackward
 :ThumbStraightandBackward rdf:type owl:Class ;
-                          rdfs:subClassOf :TumbPose ;
+                          rdfs:subClassOf :ThumbPose ;
                           rdfs:label "ThumbStraightandBackward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandDownward
 :ThumbStraightandDownward rdf:type owl:Class ;
-                          rdfs:subClassOf :TumbPose ;
+                          rdfs:subClassOf :ThumbPose ;
                           rdfs:label "ThumbStraightandDownward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandForward
 :ThumbStraightandForward rdf:type owl:Class ;
-                         rdfs:subClassOf :TumbPose ;
+                         rdfs:subClassOf :ThumbPose ;
                          rdfs:label "ThumbStraightandForward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandLeftward
 :ThumbStraightandLeftward rdf:type owl:Class ;
-                          rdfs:subClassOf :TumbPose ;
+                          rdfs:subClassOf :ThumbPose ;
                           rdfs:label "ThumbStraightandLeftward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandRightward
 :ThumbStraightandRightward rdf:type owl:Class ;
-                           rdfs:subClassOf :TumbPose ;
+                           rdfs:subClassOf :ThumbPose ;
                            rdfs:label "ThumbStraightandRightward" .
 
 
 ###  https://w3id.org/hdgi#ThumbStraightandUpward
 :ThumbStraightandUpward rdf:type owl:Class ;
-                        rdfs:subClassOf :TumbPose ;
+                        rdfs:subClassOf :ThumbPose ;
                         rdfs:label "ThumbStraightandUpward" .
 
 
-###  https://w3id.org/hdgi#TumbPose
-:TumbPose rdf:type owl:Class ;
+###  https://w3id.org/hdgi#ThumbPose
+:ThumbPose rdf:type owl:Class ;
           rdfs:subClassOf :FingerPose ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :used ;
@@ -1608,7 +1608,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :RightThumb
                           ] ;
-          rdfs:label "TumbPose" .
+          rdfs:label "ThumbPose" .
 
 
 ###  https://w3id.org/hdgi#UnitOfMeasure
