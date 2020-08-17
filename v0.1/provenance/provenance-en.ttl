@@ -1,16 +1,17 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<https://w3id.org/hdgi> a prov:Entity;
+@prefix : <> .
+<https://w3id.org/hdgi/v0.1> a prov:Entity;
 	 dc:title "Human Device Gesture Interaction Ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <https://w3id.org/hdgi>;
+	 prov:specializationOf <https://w3id.org/hdgi#>;
 .
 :agent0 a prov:Agent; foaf:name "Madhawa Perera".
 :agent1 a prov:Agent; foaf:name "Armin Haller".
-:agent2 a prov:Agent; foaf:name "Sergio J. Rodríguez Méndez".
+:agent2 a prov:Agent; foaf:name "Sergio J. Rodríguez Méndez,".
 :agent3 a prov:Agent; foaf:name "Matt Adcock".

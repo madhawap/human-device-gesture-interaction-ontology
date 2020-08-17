@@ -21,21 +21,16 @@
         "value" : "https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE",
         "type" : "iri"
       } ],
-      "rights" : [ {
-        "identifier" : "rights",
-        "language" : "en",
-        "value" : "Copyright Â© 2020 Madhawa Perera, Armin Haller",
-        "type" : "label"
-      } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
         "value" : "hdgi",
         "type" : "label"
-      }, {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "https://w3id.org/hdgi#",
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright © 2020 Madhawa Perera, Armin Haller",
         "type" : "label"
       } ],
       "attributionURL" : [ {
@@ -48,6 +43,12 @@
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hdgi#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -69,391 +70,316 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "37",
-    "type" : "owl:Class"
-  }, {
-    "id" : "39",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
-    "type" : "owl:Class"
-  }, {
-    "id" : "70",
-    "type" : "owl:Class"
-  }, {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "72",
-    "type" : "owl:Class"
-  }, {
-    "id" : "82",
-    "type" : "owl:Class"
-  }, {
-    "id" : "71",
-    "type" : "owl:Class"
-  }, {
-    "id" : "36",
-    "type" : "owl:Class"
-  }, {
-    "id" : "97",
-    "type" : "owl:Class"
-  }, {
-    "id" : "99",
-    "type" : "owl:Class"
-  }, {
-    "id" : "93",
-    "type" : "owl:Class"
-  }, {
-    "id" : "102",
-    "type" : "owl:Class"
-  }, {
-    "id" : "89",
-    "type" : "owl:Class"
-  }, {
-    "id" : "105",
-    "type" : "owl:Class"
-  }, {
-    "id" : "107",
-    "type" : "owl:Class"
-  }, {
-    "id" : "28",
-    "type" : "owl:Class"
-  }, {
-    "id" : "34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "115",
-    "type" : "owl:Class"
-  }, {
-    "id" : "116",
-    "type" : "owl:Class"
-  }, {
-    "id" : "50",
-    "type" : "owl:Class"
-  }, {
-    "id" : "123",
-    "type" : "owl:Class"
-  }, {
-    "id" : "127",
-    "type" : "owl:Class"
-  }, {
-    "id" : "85",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "131",
-    "type" : "owl:Class"
-  }, {
-    "id" : "118",
-    "type" : "owl:Class"
-  }, {
-    "id" : "132",
-    "type" : "owl:Class"
-  }, {
-    "id" : "133",
-    "type" : "owl:Class"
-  }, {
-    "id" : "134",
-    "type" : "owl:Class"
-  }, {
-    "id" : "143",
-    "type" : "owl:Class"
-  }, {
-    "id" : "62",
-    "type" : "owl:Class"
-  }, {
-    "id" : "157",
-    "type" : "owl:Class"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "168",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "113",
-    "type" : "owl:Class"
-  }, {
-    "id" : "81",
-    "type" : "owl:Class"
-  }, {
-    "id" : "169",
-    "type" : "owl:Class"
-  }, {
-    "id" : "170",
-    "type" : "owl:Class"
-  }, {
-    "id" : "87",
-    "type" : "owl:Class"
-  }, {
-    "id" : "171",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "83",
-    "type" : "owl:Class"
-  }, {
-    "id" : "129",
-    "type" : "owl:Class"
-  }, {
-    "id" : "185",
-    "type" : "owl:Class"
-  }, {
-    "id" : "78",
-    "type" : "owl:Class"
-  }, {
-    "id" : "138",
+    "id" : "30",
     "type" : "owl:Class"
   }, {
     "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "60",
-    "type" : "owl:Class"
-  }, {
-    "id" : "80",
-    "type" : "owl:Class"
-  }, {
-    "id" : "193",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "184",
-    "type" : "owl:Class"
-  }, {
-    "id" : "216",
-    "type" : "owl:Class"
-  }, {
-    "id" : "109",
-    "type" : "owl:Class"
-  }, {
-    "id" : "130",
-    "type" : "owl:Class"
-  }, {
-    "id" : "167",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "203",
-    "type" : "owl:Class"
-  }, {
-    "id" : "40",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "160",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "228",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "110",
-    "type" : "owl:Class"
-  }, {
-    "id" : "111",
-    "type" : "owl:Class"
-  }, {
-    "id" : "229",
-    "type" : "owl:Class"
-  }, {
-    "id" : "207",
-    "type" : "owl:Class"
-  }, {
-    "id" : "232",
-    "type" : "owl:Class"
-  }, {
-    "id" : "234",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "141",
-    "type" : "owl:Class"
-  }, {
-    "id" : "176",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "243",
-    "type" : "owl:Class"
-  }, {
-    "id" : "244",
-    "type" : "owl:Class"
-  }, {
-    "id" : "139",
-    "type" : "owl:Class"
-  }, {
-    "id" : "114",
-    "type" : "owl:Class"
-  }, {
-    "id" : "224",
-    "type" : "owl:Class"
-  }, {
-    "id" : "247",
-    "type" : "owl:Class"
-  }, {
-    "id" : "248",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "77",
-    "type" : "owl:Class"
-  }, {
-    "id" : "252",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "182",
-    "type" : "owl:Class"
-  }, {
-    "id" : "112",
-    "type" : "owl:Class"
-  }, {
-    "id" : "96",
+    "id" : "34",
     "type" : "owl:Class"
   }, {
     "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "117",
+    "id" : "59",
     "type" : "owl:Class"
   }, {
-    "id" : "125",
+    "id" : "61",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
+    "id" : "71",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "158",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "181",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "231",
+    "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "211",
+    "id" : "189",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "213",
+    "id" : "192",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "199",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "227",
+    "type" : "owl:Class"
+  }, {
+    "id" : "228",
+    "type" : "owl:Class"
+  }, {
+    "id" : "233",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "142",
-    "type" : "owl:Class"
-  }, {
-    "id" : "162",
-    "type" : "owl:Class"
-  }, {
-    "id" : "190",
+    "id" : "234",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "26",
+    "id" : "236",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "238",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "16",
-    "type" : "owl:Class"
+    "id" : "80",
+    "type" : "owl:Thing"
   }, {
-    "id" : "196",
-    "type" : "owl:Class"
-  }, {
-    "id" : "147",
-    "type" : "owl:Class"
-  }, {
-    "id" : "122",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "215",
+    "id" : "166",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "145",
-    "type" : "owl:Class"
-  }, {
-    "id" : "209",
+    "id" : "239",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "104",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "47",
+    "id" : "122",
     "type" : "owl:Class"
   }, {
-    "id" : "292",
+    "id" : "240",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "241",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "222",
+    "id" : "207",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "95",
+    "id" : "176",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "243",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "245",
     "type" : "owl:Class"
   }, {
-    "id" : "101",
-    "type" : "rdfs:Datatype"
+    "id" : "33",
+    "type" : "owl:Class"
   }, {
-    "id" : "246",
-    "type" : "rdfs:Datatype"
+    "id" : "133",
+    "type" : "owl:Class"
   }, {
-    "id" : "299",
-    "type" : "rdfs:Datatype"
+    "id" : "42",
+    "type" : "owl:Class"
   }, {
-    "id" : "135",
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "251",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "186",
+    "type" : "owl:Class"
+  }, {
+    "id" : "203",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "265",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "284",
+    "type" : "owl:Class"
+  }, {
+    "id" : "283",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "294",
+    "type" : "owl:Class"
+  }, {
+    "id" : "285",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "320",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "287",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
     "type" : "owl:Class"
   }, {
     "id" : "156",
@@ -462,124 +388,208 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "91",
+    "id" : "153",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "171",
     "type" : "owl:Class"
   }, {
-    "id" : "164",
+    "id" : "288",
     "type" : "owl:Class"
   }, {
-    "id" : "205",
+    "id" : "90",
     "type" : "owl:Class"
   }, {
-    "id" : "98",
-    "type" : "owl:Class"
-  }, {
-    "id" : "192",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "291",
-    "type" : "owl:Class"
-  }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "67",
-    "type" : "owl:Class"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "237",
-    "type" : "owl:Class"
-  }, {
-    "id" : "251",
-    "type" : "owl:Class"
-  }, {
-    "id" : "108",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
-    "type" : "owl:Class"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "79",
-    "type" : "owl:Class"
-  }, {
-    "id" : "140",
+    "id" : "70",
     "type" : "owl:Class"
   }, {
     "id" : "282",
     "type" : "owl:Class"
   }, {
-    "id" : "120",
+    "id" : "326",
     "type" : "owl:Class"
   }, {
-    "id" : "84",
+    "id" : "263",
     "type" : "owl:Class"
   }, {
-    "id" : "126",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "106",
-    "type" : "owl:Class"
-  }, {
-    "id" : "285",
-    "type" : "owl:Class"
-  }, {
-    "id" : "265",
-    "type" : "owl:Class"
-  }, {
-    "id" : "298",
-    "type" : "owl:Class"
-  }, {
-    "id" : "301",
-    "type" : "owl:Class"
-  }, {
-    "id" : "200",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "151",
+    "id" : "221",
     "type" : "owl:Class"
   }, {
     "id" : "178",
     "type" : "owl:Class"
   }, {
-    "id" : "136",
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
     "type" : "owl:Class"
   }, {
     "id" : "86",
     "type" : "owl:Class"
   }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "328",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "329",
+    "type" : "owl:Class"
+  }, {
+    "id" : "281",
+    "type" : "owl:Class"
+  }, {
+    "id" : "278",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "292",
+    "type" : "owl:Class"
+  }, {
+    "id" : "215",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "331",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
     "id" : "74",
     "type" : "owl:Class"
   }, {
-    "id" : "337",
+    "id" : "94",
     "type" : "owl:Class"
   }, {
-    "id" : "137",
+    "id" : "65",
     "type" : "owl:Class"
   }, {
-    "id" : "188",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "154",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "287",
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "266",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "316",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "280",
+    "type" : "owl:Class"
+  }, {
+    "id" : "210",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "289",
+    "type" : "owl:Class"
+  }, {
+    "id" : "276",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "290",
+    "type" : "owl:Class"
+  }, {
+    "id" : "291",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "297",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -600,118 +610,74 @@
       "IRI-based" : "LittleFingerPose",
       "undefined" : "LittleFingerPose"
     },
-    "subClasses" : [ "14", "15", "16", "17", "18", "19", "20", "21" ],
-    "id" : "12",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandRightward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MiddleFingerStraightandRightward",
-      "undefined" : "MiddleFingerStraightandRightward"
-    },
-    "id" : "33",
-    "superClasses" : [ "34" ]
+    "subClasses" : [ "13", "14", "15", "16", "17", "18", "19", "20" ],
+    "id" : "11",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RightRingFinger",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "RightRingFinger",
-      "undefined" : "RightRingFinger"
+      "en" : "RightRingFinger"
     },
     "comment" : {
-      "en" : "Right hand ring finger."
+      "en" : "RightRingFinger is the RingFinger on RightHand. This is an owl:equivalentClass fma:fma60329."
     },
-    "id" : "35",
-    "superClasses" : [ "36" ]
+    "id" : "30",
+    "superClasses" : [ "31" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LeftPalm",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "LeftPalm",
-      "undefined" : "LeftPalm"
+      "en" : "LeftPalm"
     },
     "comment" : {
-      "en" : "Left hand palm."
+      "en" : "LeftPalm is the area located at the end of the LeftForearm (starting from left wrist) up until the start of a LeftHand Fingers which is the central region of the anterior part of the LeftHand. This is an owl:equivalentClass fma:fma61071."
     },
-    "id" : "37",
-    "superClasses" : [ "38" ]
+    "id" : "32",
+    "superClasses" : [ "33" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Context",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Context",
-      "undefined" : "Context"
+      "en" : "Context"
     },
-    "subClasses" : [ "40", "41" ],
-    "id" : "39"
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmLeftward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmLeftward",
-      "undefined" : "ForearmLeftward"
+    "subClasses" : [ "35", "36" ],
+    "comment" : {
+      "en" : "Context describes details of a situation."
     },
-    "id" : "42",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#PalmLeftward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PalmLeftward",
-      "undefined" : "PalmLeftward"
-    },
-    "id" : "63",
-    "superClasses" : [ "64" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmPose",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmPose",
-      "undefined" : "UpperArmPose"
-    },
-    "id" : "56",
-    "superClasses" : [ "52" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#PalmClockwiseRotation",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PalmClockwiseRotation",
-      "undefined" : "PalmClockwiseRotation"
-    },
-    "id" : "69",
-    "superClasses" : [ "64" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Head",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Head",
-      "undefined" : "Head"
-    },
-    "id" : "70",
-    "superClasses" : [ "71" ]
+    "id" : "34"
   }, {
     "iri" : "https://w3id.org/hdgi#RightThumb",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "RightThumb",
-      "undefined" : "RightThumb"
+      "en" : "RightThumb"
     },
     "comment" : {
-      "en" : "Thumb of right hand."
+      "en" : "RightThumb is the Thumb on RightHand. This is an owl:equivalentClass fma:fma60325."
     },
-    "id" : "3",
-    "superClasses" : [ "4" ]
+    "id" : "58",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#Head",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Head",
+      "en" : "Head"
+    },
+    "comment" : {
+      "en" : "Head is a BodyPart. It is the upper part of the HumanBody which starts from the upper end of the neck. This is an owl:equivalentClass fma:fma7154."
+    },
+    "id" : "59",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FingerMovement",
     "baseIri" : "https://w3id.org/hdgi",
@@ -720,22 +686,936 @@
       "IRI-based" : "FingerMovement",
       "undefined" : "FingerMovement"
     },
-    "subClasses" : [ "74", "75", "76", "77", "78", "79", "80", "81" ],
-    "id" : "72",
-    "superClasses" : [ "73" ]
+    "subClasses" : [ "63", "64", "65", "66", "67", "68", "69", "70" ],
+    "id" : "61",
+    "superClasses" : [ "62" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LeftMiddleFinger",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "LeftMiddleFinger",
-      "undefined" : "LeftMiddleFinger"
+      "en" : "LeftMiddleFinger"
     },
     "comment" : {
-      "en" : "Left hand middle finger."
+      "en" : "LeftMiddleFinger is the MiddleFinger on LeftHand. This is an owl:equivalentClass fma:fma60332."
+    },
+    "id" : "71",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#RingFinger",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RingFinger",
+      "en" : "RingFinger"
+    },
+    "subClasses" : [ "74", "30" ],
+    "comment" : {
+      "en" : "RingFinger is the fourth Finger on Hand. Also known as fourth Digit of hand. This is an owl:equivalentClass fma:fma24948."
+    },
+    "id" : "31",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ActuatableAffordance",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "TV is a Device that can change the state to “on” or “off”. This is a property of a TV which a human could act upon. Thus, ability to “turn on” is an ActuatableAffordance of a TV.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActuatableAffordance",
+      "en" : "ActuatableAffordance"
+    },
+    "comment" : {
+      "en" : "An actuatable Affordance of a Device. This is rdfs:subClassOf ssn:ActuatableProperty."
+    },
+    "id" : "75",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#HumanBody",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HumanBody",
+      "en" : "HumanBody"
+    },
+    "comment" : {
+      "en" : "HumanBody holds a collection of BodyParts of a Human."
+    },
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/hdgi#RightPalm",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RightPalm",
+      "en" : "RightPalm"
+    },
+    "comment" : {
+      "en" : "RightPalm is the area located at the end of the RightForearm (starting from right wrist) up until the start of a RightHand Fingers which is the central region of the anterior part of the RightHand. This is an owl:equivalentClass fma:fma61070."
+    },
+    "id" : "78",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ForearmForward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmForward",
+      "undefined" : "ForearmForward"
     },
     "id" : "82",
-    "superClasses" : [ "47" ]
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#MiddleFingerPose",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MiddleFingerPose",
+      "undefined" : "MiddleFingerPose"
+    },
+    "subClasses" : [ "85", "86", "87", "88", "89", "90", "91", "92" ],
+    "id" : "84",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ForearmLeftwardAndUp",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmLeftwardAndUp",
+      "undefined" : "ForearmLeftwardAndUp"
+    },
+    "id" : "93",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#IndexFinger",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndexFinger",
+      "en" : "IndexFinger"
+    },
+    "subClasses" : [ "94", "95" ],
+    "comment" : {
+      "en" : "IndexFinger is the second Finger on Hand. Also known as second Digit of hand. This is an owl:equivalentClass fma:fma24946."
+    },
+    "id" : "10",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#PalmForward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalmForward",
+      "undefined" : "PalmForward"
+    },
+    "id" : "100",
+    "superClasses" : [ "101" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#Rotation",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rotation",
+      "undefined" : "Rotation"
+    },
+    "comment" : {
+      "en" : "Rotation of a pose."
+    },
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/hdgi#Forearm",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Forearm",
+      "en" : "Forearm"
+    },
+    "subClasses" : [ "107", "108" ],
+    "comment" : {
+      "en" : "Forearm is a BodyPart. It is the region of the upper limb between the elbow and the wrist. This is an owl:equivalentClass fma:fma9663."
+    },
+    "id" : "106",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LittleFingerCurled",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LittleFingerCurled",
+      "undefined" : "LittleFingerCurled"
+    },
+    "id" : "20",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LeftIndexFinger",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeftIndexFinger",
+      "en" : "LeftIndexFinger"
+    },
+    "comment" : {
+      "en" : "LeftIndexFinger is the IndexFinger on the LeftHand. This is an owl:equivalentClass fma:fma60334."
+    },
+    "id" : "95",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmRightwardAndFront",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmRightwardAndFront",
+      "undefined" : "UpperArmRightwardAndFront"
+    },
+    "id" : "109",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#HeadGesture",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HeadGesture",
+      "en" : "HeadGesture"
+    },
+    "comment" : {
+      "en" : "HeadGesture is a Gesture executed with a Movement or a Pose using the BodayPart Head."
+    },
+    "id" : "111",
+    "superClasses" : [ "112" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ThumbStraightandForward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThumbStraightandForward",
+      "undefined" : "ThumbStraightandForward"
+    },
+    "id" : "113",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LittleFingerFolded",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LittleFingerFolded",
+      "undefined" : "LittleFingerFolded"
+    },
+    "id" : "17",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#Quaternion",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quaternion",
+      "undefined" : "Quaternion"
+    },
+    "comment" : {
+      "en" : "A quaternion is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.\r\n\r\nThe magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one."
+    },
+    "id" : "134"
+  }, {
+    "iri" : "https://w3id.org/hdgi#Face",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Face",
+      "en" : "Face"
+    },
+    "comment" : {
+      "en" : "Face is a BodyPart which represents the front side of a Head."
+    },
+    "id" : "135",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LittleFingerStraightandBackward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LittleFingerStraightandBackward",
+      "undefined" : "LittleFingerStraightandBackward"
+    },
+    "id" : "19",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmForward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmForward",
+      "undefined" : "UpperArmForward"
+    },
+    "id" : "150",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandBackward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndexFingerStraightandBackward",
+      "undefined" : "IndexFingerStraightandBackward"
+    },
+    "id" : "155",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#FingerRightward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FingerRightward",
+      "undefined" : "FingerRightward"
+    },
+    "id" : "67",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ThumbStraightandRightward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThumbStraightandRightward",
+      "undefined" : "ThumbStraightandRightward"
+    },
+    "id" : "158",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#PalmInwardPose",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalmInwardPose",
+      "undefined" : "PalmInwardPose"
+    },
+    "id" : "73",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmRightwardAndBack",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmRightwardAndBack",
+      "undefined" : "UpperArmRightwardAndBack"
+    },
+    "id" : "181",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LeftForearm",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeftForearm",
+      "en" : "LeftForearm"
+    },
+    "comment" : {
+      "en" : "LeftForearm is the region of the left upper limb between the left elbow and the left wrist. This is an owl:equivalentClass fma:fma11346."
+    },
+    "id" : "107",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#Finger",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Thumb, MiddleFinger, RingFinger etc.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Finger",
+      "en" : "Finger"
+    },
+    "subClasses" : [ "31", "3", "6", "8", "10" ],
+    "comment" : {
+      "en" : "Finger is a BodyPart of the HumanBody. Also know as Digits of hand. This is an owl:equivalentClass fma:fma9666."
+    },
+    "id" : "4",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#DeviceContext",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceContext",
+      "en" : "DeviceContext"
+    },
+    "comment" : {
+      "en" : "DeviceContext describes the data that is specifically related to a Device in a certain Context that is Device specific data in a Context."
+    },
+    "id" : "35",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "189",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "https://w3id.org/hdgi#ThumbStraightandBackward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThumbStraightandBackward",
+      "undefined" : "ThumbStraightandBackward"
+    },
+    "id" : "25",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "192",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "193",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "https://w3id.org/hdgi#Device",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Device"
+    },
+    "comment" : {
+      "en" : "Device denotes a piece of hardware or software which consists of sensors or actuators or both."
+    },
+    "id" : "194"
+  }, {
+    "iri" : "https://w3id.org/hdgi#IndexFingerFolded",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndexFingerFolded",
+      "undefined" : "IndexFingerFolded"
+    },
+    "id" : "199",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ObservableAffordance",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Thermostat is a Device that can sense/measure a temperature of a certain location at a given point of time and display it. Thus, “display measured temperature” is an ObservableAffordance of a thermostat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ObservableAffordance",
+      "en" : "ObservableAffordance"
+    },
+    "comment" : {
+      "en" : "An observable Affordance of a Device. This is rdfs:subClassOf ssn:ObservableProperty."
+    },
+    "id" : "129",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#PalmRightward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalmRightward",
+      "undefined" : "PalmRightward"
+    },
+    "id" : "137",
+    "superClasses" : [ "101" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LeftHand",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeftHand",
+      "en" : "LeftHand"
+    },
+    "comment" : {
+      "en" : "LeftHand is the terminal segmant of left upper limb which starts at end of the LeftForearm and consists of Fingers. This is an owl:equivalentClass fma:fma9714."
+    },
+    "id" : "227",
+    "superClasses" : [ "221" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmRightward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmRightward",
+      "undefined" : "UpperArmRightward"
+    },
+    "id" : "228",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "233",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "234",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandForward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndexFingerStraightandForward",
+      "undefined" : "IndexFingerStraightandForward"
+    },
+    "id" : "236",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ForearmLeftwardAndDown",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmLeftwardAndDown",
+      "undefined" : "ForearmLeftwardAndDown"
+    },
+    "id" : "116",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "238",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "80",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/hdgi#LittleFingerStraightandForward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LittleFingerStraightandForward",
+      "undefined" : "LittleFingerStraightandForward"
+    },
+    "id" : "15",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#RingFingerPose",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RingFingerPose",
+      "undefined" : "RingFingerPose"
+    },
+    "subClasses" : [ "0", "174", "178", "180", "160", "162", "164", "166" ],
+    "id" : "1",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#RingFingerStraightandBackward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RingFingerStraightandBackward",
+      "undefined" : "RingFingerStraightandBackward"
+    },
+    "id" : "166",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "239",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://w3id.org/hdgi#ForearmBackward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmBackward",
+      "undefined" : "ForearmBackward"
+    },
+    "id" : "122",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "240",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "241",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "176",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "242",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "243",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "244",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandUpward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndexFingerStraightandUpward",
+      "undefined" : "IndexFingerStraightandUpward"
+    },
+    "id" : "245",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#Palm",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Palm",
+      "en" : "Palm"
+    },
+    "subClasses" : [ "78", "32" ],
+    "comment" : {
+      "en" : "Palm is a BodyPart. It is the area located at the end of the Forearm (starting from wrist) up until the start of a Finger which is the central region of the anterior part of the Hand. This is an owl:equivalentClass fma:fma24920."
+    },
+    "id" : "33",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ForearmDownward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmDownward",
+      "undefined" : "ForearmDownward"
+    },
+    "id" : "133",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#PalmDownwardPose",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalmDownwardPose",
+      "undefined" : "PalmDownwardPose"
+    },
+    "id" : "42",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ForearmAnticlockwiseRotation",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmAnticlockwiseRotation",
+      "undefined" : "ForearmAnticlockwiseRotation"
+    },
+    "id" : "118",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#RingFingerStraightandDownward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RingFingerStraightandDownward",
+      "undefined" : "RingFingerStraightandDownward"
+    },
+    "id" : "160",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#PalmLeftwardPose",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalmLeftwardPose",
+      "undefined" : "PalmLeftwardPose"
+    },
+    "id" : "251",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ForearmMovement",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmMovement",
+      "undefined" : "ForearmMovement"
+    },
+    "subClasses" : [ "131", "133", "82", "116", "118", "120", "122", "124", "97", "99", "93", "105" ],
+    "id" : "83",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LittleFinger",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LittleFinger",
+      "en" : "LittleFinger"
+    },
+    "subClasses" : [ "265", "266" ],
+    "comment" : {
+      "en" : "LittleFinger is the fifth Finger on Hand. Also known as fifth Digit of hand. This is an owl:equivalentClass fma:fma24949."
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ThumbStraightandDownward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThumbStraightandDownward",
+      "undefined" : "ThumbStraightandDownward"
+    },
+    "id" : "186",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#Observer",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Observer",
+      "undefined" : "Observer"
+    },
+    "id" : "203"
+  }, {
+    "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandForward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MiddleFingerStraightandForward",
+      "undefined" : "MiddleFingerStraightandForward"
+    },
+    "id" : "85",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LittleFingerStraightandRightward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LittleFingerStraightandRightward",
+      "undefined" : "LittleFingerStraightandRightward"
+    },
+    "id" : "16",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#FingerLeftward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FingerLeftward",
+      "undefined" : "FingerLeftward"
+    },
+    "id" : "68",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#RightLittleFinger",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RightLittleFinger",
+      "en" : "RightLittleFinger"
+    },
+    "comment" : {
+      "en" : "RightLittleFinger is the LittleFinger on RightHand. This is an owl:equivalentClass fma:fma60327."
+    },
+    "id" : "265",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmMovement",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmMovement",
+      "undefined" : "UpperArmMovement"
+    },
+    "subClasses" : [ "228", "150", "280", "109", "281", "181", "282", "283", "284", "285" ],
+    "id" : "110",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#Gesture",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gesture",
+      "en" : "Gesture"
+    },
+    "subClasses" : [ "287", "111", "288", "289", "290", "291", "292" ],
+    "comment" : {
+      "en" : "Gesture is a Movement or a Pose of a BodyPart."
+    },
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmLeftwardAndBack",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmLeftwardAndBack",
+      "undefined" : "UpperArmLeftwardAndBack"
+    },
+    "id" : "284",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmBackward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmBackward",
+      "undefined" : "UpperArmBackward"
+    },
+    "id" : "283",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#RingFingerStraightandRightward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RingFingerStraightandRightward",
+      "undefined" : "RingFingerStraightandRightward"
+    },
+    "id" : "174",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LittleFingerStraightandLeftward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LittleFingerStraightandLeftward",
+      "undefined" : "LittleFingerStraightandLeftward"
+    },
+    "id" : "18",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ForearmClockwiseRotation",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmClockwiseRotation",
+      "undefined" : "ForearmClockwiseRotation"
+    },
+    "id" : "131",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandLeftward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndexFingerStraightandLeftward",
+      "undefined" : "IndexFingerStraightandLeftward"
+    },
+    "id" : "294",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmAnticlcockwiseRotation",
+      "undefined" : "UpperArmAnticlcockwiseRotation"
+    },
+    "id" : "285",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandRightward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MiddleFingerStraightandRightward",
+      "undefined" : "MiddleFingerStraightandRightward"
+    },
+    "id" : "91",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#ForearmLeftward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForearmLeftward",
+      "undefined" : "ForearmLeftward"
+    },
+    "id" : "97",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#PalmLeftward",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalmLeftward",
+      "undefined" : "PalmLeftward"
+    },
+    "id" : "141",
+    "superClasses" : [ "101" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#UpperArmPose",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperArmPose",
+      "undefined" : "UpperArmPose"
+    },
+    "id" : "54",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#PalmClockwiseRotation",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalmClockwiseRotation",
+      "undefined" : "PalmClockwiseRotation"
+    },
+    "id" : "145",
+    "superClasses" : [ "101" ]
   }, {
     "iri" : "https://w3id.org/hdgi#BodyPart",
     "baseIri" : "https://w3id.org/hdgi",
@@ -750,50 +1630,13 @@
     },
     "label" : {
       "IRI-based" : "BodyPart",
-      "undefined" : "BodyPart"
+      "en" : "BodyPart"
     },
-    "subClasses" : [ "70", "83", "84", "38", "48", "85", "86", "87" ],
+    "subClasses" : [ "59", "263", "213", "33", "221", "4", "106", "198", "135" ],
     "comment" : {
-      "en" : "Parts of human body."
+      "en" : "BodyPart is any part of HumanBody such as an Face, Leg etc."
     },
-    "id" : "71"
-  }, {
-    "iri" : "https://w3id.org/hdgi#RingFinger",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RingFinger",
-      "undefined" : "RingFinger"
-    },
-    "subClasses" : [ "96", "35" ],
-    "comment" : {
-      "en" : "Fourth finger or the fourth digit of hand."
-    },
-    "id" : "36",
-    "superClasses" : [ "48" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ActuatableAffordance",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ActuatableAffordance",
-      "undefined" : "ActuatableAffordance"
-    },
-    "id" : "97",
-    "superClasses" : [ "98" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#RightPalm",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RightPalm",
-      "undefined" : "RightPalm"
-    },
-    "comment" : {
-      "en" : "Right hand palm."
-    },
-    "id" : "99",
-    "superClasses" : [ "38" ]
+    "id" : "60"
   }, {
     "iri" : "https://w3id.org/hdgi#PalmRightwardPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -802,8 +1645,8 @@
       "IRI-based" : "PalmRightwardPose",
       "undefined" : "PalmRightwardPose"
     },
-    "id" : "93",
-    "superClasses" : [ "60" ]
+    "id" : "47",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LocalCoordinateSystem",
     "baseIri" : "https://w3id.org/hdgi",
@@ -815,7 +1658,7 @@
     "comment" : {
       "en" : "The local coordinate system is the coordinate system that is convenient for a given entity (Finger, palm etc.), local space, or object space."
     },
-    "id" : "102"
+    "id" : "320"
   }, {
     "iri" : "https://w3id.org/hdgi#PalmOutwardPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -824,31 +1667,21 @@
       "IRI-based" : "PalmOutwardPose",
       "undefined" : "PalmOutwardPose"
     },
-    "id" : "89",
-    "superClasses" : [ "60" ]
+    "id" : "45",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "https://w3id.org/hdgi#UpperArmGesture",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "UpperArmGesture",
-      "undefined" : "UpperArmGesture"
+      "en" : "UpperArmGesture"
     },
     "comment" : {
-      "undefined" : "Gestures (movements) made with upper arm"
+      "en" : "UpperArmGesture is a Gesture executed with a Movement or a Pose using the BodayPart UpperArm."
     },
-    "id" : "105",
-    "superClasses" : [ "106" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmForward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmForward",
-      "undefined" : "ForearmForward"
-    },
-    "id" : "107",
-    "superClasses" : [ "43" ]
+    "id" : "287",
+    "superClasses" : [ "112" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ThumbStraightandLeftward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -857,89 +1690,21 @@
       "IRI-based" : "ThumbStraightandLeftward",
       "undefined" : "ThumbStraightandLeftward"
     },
-    "id" : "28",
-    "superClasses" : [ "9" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#MiddleFingerPose",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MiddleFingerPose",
-      "undefined" : "MiddleFingerPose"
-    },
-    "subClasses" : [ "108", "109", "110", "111", "112", "113", "33", "114" ],
-    "id" : "34",
-    "superClasses" : [ "13" ]
+    "id" : "29",
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RightForearm",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "RightForearm",
-      "undefined" : "RightForearm"
-    },
-    "id" : "115",
-    "superClasses" : [ "85" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmLeftwardAndUp",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmLeftwardAndUp",
-      "undefined" : "ForearmLeftwardAndUp"
-    },
-    "id" : "116",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#IndexFinger",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IndexFinger",
-      "undefined" : "IndexFinger"
-    },
-    "subClasses" : [ "117", "118" ],
-    "comment" : {
-      "en" : "Second finger or the second digit of hand."
-    },
-    "id" : "50",
-    "superClasses" : [ "48" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#PalmForward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PalmForward",
-      "undefined" : "PalmForward"
-    },
-    "id" : "123",
-    "superClasses" : [ "64" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Rotation",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Rotation",
-      "undefined" : "Rotation"
+      "en" : "RightForearm"
     },
     "comment" : {
-      "en" : "Rotation of a pose."
+      "en" : "RightForearm is the region of the right upper limb between the right elbow and the right wrist. This is an owl:equivalentClass fma:fma11345."
     },
-    "id" : "127"
-  }, {
-    "iri" : "https://w3id.org/hdgi#Forearm",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Forearm",
-      "undefined" : "Forearm"
-    },
-    "subClasses" : [ "130", "115" ],
-    "comment" : {
-      "en" : "The forearm is the line between the elbow joint and the wrist."
-    },
-    "id" : "85",
-    "superClasses" : [ "71" ]
+    "id" : "108",
+    "superClasses" : [ "106" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Movement",
     "baseIri" : "https://w3id.org/hdgi",
@@ -948,21 +1713,11 @@
       "IRI-based" : "Movement",
       "undefined" : "Movement"
     },
-    "subClasses" : [ "72", "126", "64", "43" ],
+    "subClasses" : [ "61", "110", "101", "83" ],
     "comment" : {
       "en" : "The act of moving a certain body part towards a certain direction."
     },
-    "id" : "73"
-  }, {
-    "iri" : "https://w3id.org/hdgi#LittleFingerCurled",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LittleFingerCurled",
-      "undefined" : "LittleFingerCurled"
-    },
-    "id" : "21",
-    "superClasses" : [ "12" ]
+    "id" : "62"
   }, {
     "iri" : "https://w3id.org/hdgi#PalmUpward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -971,41 +1726,8 @@
       "IRI-based" : "PalmUpward",
       "undefined" : "PalmUpward"
     },
-    "id" : "131",
-    "superClasses" : [ "64" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#LeftIndexFinger",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LeftIndexFinger",
-      "undefined" : "LeftIndexFinger"
-    },
-    "comment" : {
-      "en" : "Left hand index finger."
-    },
-    "id" : "118",
-    "superClasses" : [ "50" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmRightwardAndFront",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmRightwardAndFront",
-      "undefined" : "UpperArmRightwardAndFront"
-    },
-    "id" : "132",
-    "superClasses" : [ "126" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#HeadGesture",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "HeadGesture",
-      "undefined" : "HeadGesture"
-    },
-    "id" : "133",
-    "superClasses" : [ "106" ]
+    "id" : "126",
+    "superClasses" : [ "101" ]
   }, {
     "iri" : "https://w3id.org/hdgi#IndexFingerPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1014,19 +1736,9 @@
       "IRI-based" : "IndexFingerPose",
       "undefined" : "IndexFingerPose"
     },
-    "subClasses" : [ "135", "136", "137", "138", "139", "140", "141", "142" ],
-    "id" : "134",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ThumbStraightandForward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ThumbStraightandForward",
-      "undefined" : "ThumbStraightandForward"
-    },
-    "id" : "143",
-    "superClasses" : [ "9" ]
+    "subClasses" : [ "245", "294", "297", "155", "278", "276", "199", "236" ],
+    "id" : "156",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ForearmPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1035,8 +1747,8 @@
       "IRI-based" : "ForearmPose",
       "undefined" : "ForearmPose"
     },
-    "id" : "62",
-    "superClasses" : [ "52" ]
+    "id" : "38",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "https://w3id.org/hdgi#PalmAnticlockwiseRotation",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1045,41 +1757,34 @@
       "IRI-based" : "PalmAnticlockwiseRotation",
       "undefined" : "PalmAnticlockwiseRotation"
     },
-    "id" : "157",
-    "superClasses" : [ "64" ]
+    "id" : "153",
+    "superClasses" : [ "101" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LeftThumb",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "LeftThumb",
-      "undefined" : "LeftThumb"
+      "en" : "LeftThumb"
     },
     "comment" : {
-      "en" : "Thumb of left hand."
+      "en" : "LeftThumb is the Thumb on LeftHand. This is an owl:equivalentClass fma:fma60326."
     },
-    "id" : "6",
-    "superClasses" : [ "4" ]
+    "id" : "171",
+    "superClasses" : [ "6" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LegGesture",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "LegGesture",
-      "undefined" : "LegGesture"
+      "en" : "LegGesture"
     },
-    "id" : "168",
-    "superClasses" : [ "106" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#LittleFingerFolded",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LittleFingerFolded",
-      "undefined" : "LittleFingerFolded"
+    "comment" : {
+      "en" : "LegGesture is a Gesture executed with a Movement or a Pose using the BodayPart Leg."
     },
-    "id" : "18",
-    "superClasses" : [ "12" ]
+    "id" : "288",
+    "superClasses" : [ "112" ]
   }, {
     "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandDownward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1088,8 +1793,8 @@
       "IRI-based" : "MiddleFingerStraightandDownward",
       "undefined" : "MiddleFingerStraightandDownward"
     },
-    "id" : "113",
-    "superClasses" : [ "34" ]
+    "id" : "90",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FingerForward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1098,20 +1803,8 @@
       "IRI-based" : "FingerForward",
       "undefined" : "FingerForward"
     },
-    "id" : "81",
-    "superClasses" : [ "72" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Quaternion",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Quaternion",
-      "undefined" : "Quaternion"
-    },
-    "comment" : {
-      "en" : "A quaternion is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.\n\nThe magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one."
-    },
-    "id" : "169"
+    "id" : "70",
+    "superClasses" : [ "61" ]
   }, {
     "iri" : "https://w3id.org/hdgi#UpperArmLeftward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1120,60 +1813,52 @@
       "IRI-based" : "UpperArmLeftward",
       "undefined" : "UpperArmLeftward"
     },
-    "id" : "170",
-    "superClasses" : [ "126" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Face",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Face",
-      "undefined" : "Face"
-    },
-    "id" : "87",
-    "superClasses" : [ "71" ]
+    "id" : "282",
+    "superClasses" : [ "110" ]
   }, {
     "iri" : "https://w3id.org/hdgi#UnitOfMeasure",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "UnitOfMeasure",
-      "undefined" : "UnitOfMeasure"
+      "en" : "UnitOfMeasure"
     },
     "comment" : {
-      "en" : "Defines units of measurement."
+      "en" : "Defines units of measurement. This is an equivalent class to qudt:Unit"
     },
-    "id" : "171"
-  }, {
-    "iri" : "https://w3id.org/hdgi#LittleFingerStraightandBackward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LittleFingerStraightandBackward",
-      "undefined" : "LittleFingerStraightandBackward"
-    },
-    "id" : "20",
-    "superClasses" : [ "12" ]
+    "id" : "326"
   }, {
     "iri" : "https://w3id.org/hdgi#Foot",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "Foot is a BodyPart. It is the terminal segmant of lower limb. This is an owl:equivalentClass fma:fma9664.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Foot",
-      "undefined" : "Foot"
+      "en" : "Foot"
     },
-    "id" : "83",
-    "superClasses" : [ "71" ]
+    "id" : "263",
+    "superClasses" : [ "60" ]
   }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmForward",
+    "iri" : "https://w3id.org/hdgi#Hand",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "UpperArmForward",
-      "undefined" : "UpperArmForward"
+      "IRI-based" : "Hand",
+      "en" : "Hand"
     },
-    "id" : "129",
-    "superClasses" : [ "126" ]
+    "subClasses" : [ "227", "316" ],
+    "comment" : {
+      "en" : "Hand is a BodyPart. It is the terminal segmant of upper limb which starts at end of the Forearm and consists of Fingers. This is an owl:equivalentClass fma:fma9712."
+    },
+    "id" : "221",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RingFingerStraightandUpward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1182,38 +1867,8 @@
       "IRI-based" : "RingFingerStraightandUpward",
       "undefined" : "RingFingerStraightandUpward"
     },
-    "id" : "185",
+    "id" : "178",
     "superClasses" : [ "1" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#FingerRightward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FingerRightward",
-      "undefined" : "FingerRightward"
-    },
-    "id" : "78",
-    "superClasses" : [ "72" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandBackward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IndexFingerStraightandBackward",
-      "undefined" : "IndexFingerStraightandBackward"
-    },
-    "id" : "138",
-    "superClasses" : [ "134" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ThumbStraightandRightward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ThumbStraightandRightward",
-      "undefined" : "ThumbStraightandRightward"
-    },
-    "id" : "32",
-    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://w3id.org/hdgi#PalmPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1222,9 +1877,9 @@
       "IRI-based" : "PalmPose",
       "undefined" : "PalmPose"
     },
-    "subClasses" : [ "192", "193", "91", "89", "93", "95" ],
-    "id" : "60",
-    "superClasses" : [ "52" ]
+    "subClasses" : [ "251", "73", "42", "45", "47", "49" ],
+    "id" : "43",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FingerBackward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1233,18 +1888,8 @@
       "IRI-based" : "FingerBackward",
       "undefined" : "FingerBackward"
     },
-    "id" : "80",
-    "superClasses" : [ "72" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#PalmInwardPose",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PalmInwardPose",
-      "undefined" : "PalmInwardPose"
-    },
-    "id" : "193",
-    "superClasses" : [ "60" ]
+    "id" : "69",
+    "superClasses" : [ "61" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Pose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1253,8 +1898,8 @@
       "IRI-based" : "Pose",
       "undefined" : "Pose"
     },
-    "subClasses" : [ "13", "54", "56", "58", "60", "62" ],
-    "id" : "52"
+    "subClasses" : [ "12", "52", "54", "56", "43", "38" ],
+    "id" : "39"
   }, {
     "iri" : "https://w3id.org/hdgi#PalmDownward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1263,18 +1908,8 @@
       "IRI-based" : "PalmDownward",
       "undefined" : "PalmDownward"
     },
-    "id" : "184",
-    "superClasses" : [ "64" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmRightwardAndBack",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmRightwardAndBack",
-      "undefined" : "UpperArmRightwardAndBack"
-    },
-    "id" : "216",
-    "superClasses" : [ "126" ]
+    "id" : "139",
+    "superClasses" : [ "101" ]
   }, {
     "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandLeftward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1283,18 +1918,8 @@
       "IRI-based" : "MiddleFingerStraightandLeftward",
       "undefined" : "MiddleFingerStraightandLeftward"
     },
-    "id" : "109",
-    "superClasses" : [ "34" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#LeftForearm",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LeftForearm",
-      "undefined" : "LeftForearm"
-    },
-    "id" : "130",
-    "superClasses" : [ "85" ]
+    "id" : "86",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ForearmRightwardAndDown",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1303,30 +1928,8 @@
       "IRI-based" : "ForearmRightwardAndDown",
       "undefined" : "ForearmRightwardAndDown"
     },
-    "id" : "167",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Finger",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "thumb, middle finger, left ring finger etc",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Finger",
-      "undefined" : "Finger"
-    },
-    "subClasses" : [ "36", "67", "4", "47", "50" ],
-    "comment" : {
-      "en" : "A finger is a body part of the human body and a type of digit."
-    },
-    "id" : "48",
-    "superClasses" : [ "71" ]
+    "id" : "120",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RingFingerFolded",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1335,49 +1938,19 @@
       "IRI-based" : "RingFingerFolded",
       "undefined" : "RingFingerFolded"
     },
-    "id" : "203",
+    "id" : "180",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "https://w3id.org/hdgi#DeviceContext",
+    "iri" : "https://w3id.org/hdgi#ThumbPose",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "DeviceContext",
-      "undefined" : "DeviceContext"
+      "IRI-based" : "ThumbPose",
+      "undefined" : "ThumbPose"
     },
-    "id" : "40",
-    "superClasses" : [ "39" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "45",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "https://w3id.org/hdgi#ThumbStraightandBackward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ThumbStraightandBackward",
-      "undefined" : "ThumbStraightandBackward"
-    },
-    "id" : "11",
-    "superClasses" : [ "9" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "160",
-    "label" : {
-      "IRI-based" : "float"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "228",
-    "label" : {
-      "IRI-based" : "float"
-    }
+    "subClasses" : [ "22", "25", "27", "29", "186", "158", "113", "168" ],
+    "id" : "23",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandBackward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1386,8 +1959,8 @@
       "IRI-based" : "MiddleFingerStraightandBackward",
       "undefined" : "MiddleFingerStraightandBackward"
     },
-    "id" : "110",
-    "superClasses" : [ "34" ]
+    "id" : "87",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandUpward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1396,20 +1969,8 @@
       "IRI-based" : "MiddleFingerStraightandUpward",
       "undefined" : "MiddleFingerStraightandUpward"
     },
-    "id" : "111",
-    "superClasses" : [ "34" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Device",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Device",
-      "undefined" : "Device"
-    },
-    "comment" : {
-      "en" : "A device denotes a piece of hardware or software which consists of sensors or actuators or both."
-    },
-    "id" : "229"
+    "id" : "88",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RingFingerStraightandForward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1418,7 +1979,7 @@
       "IRI-based" : "RingFingerStraightandForward",
       "undefined" : "RingFingerStraightandForward"
     },
-    "id" : "207",
+    "id" : "162",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Duration",
@@ -1426,39 +1987,12 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "Duration",
-      "undefined" : "Duration"
+      "en" : "Duration"
     },
     "comment" : {
-      "en" : "Duration is a temporal extent."
+      "en" : "Duration of a temporal extent expressed as a decimal number scaled by a temporal unit. This is an owl:equivalentClass time:Duration."
     },
-    "id" : "232"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "234",
-    "label" : {
-      "IRI-based" : "float"
-    }
-  }, {
-    "iri" : "https://w3id.org/hdgi#IndexFingerFolded",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IndexFingerFolded",
-      "undefined" : "IndexFingerFolded"
-    },
-    "id" : "141",
-    "superClasses" : [ "134" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ObservableAffordance",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ObservableAffordance",
-      "undefined" : "ObservableAffordance"
-    },
-    "id" : "176",
-    "superClasses" : [ "98" ]
+    "id" : "328"
   }, {
     "iri" : "https://w3id.org/hdgi#ThumbFolded",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1467,20 +2001,20 @@
       "IRI-based" : "ThumbFolded",
       "undefined" : "ThumbFolded"
     },
-    "id" : "8",
-    "superClasses" : [ "9" ]
+    "id" : "22",
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "https://w3id.org/hdgi#DeviceManufacturer",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "DeviceManufacturer",
-      "undefined" : "DeviceManufacturer"
+      "en" : "DeviceManufacturer"
     },
     "comment" : {
-      "en" : "The company manufacturing a device."
+      "en" : "DeviceManufacturer is the company/vendor manufactures a Device."
     },
-    "id" : "243"
+    "id" : "329"
   }, {
     "iri" : "https://w3id.org/hdgi#UpperArmLeftwardAndFront",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1489,8 +2023,8 @@
       "IRI-based" : "UpperArmLeftwardAndFront",
       "undefined" : "UpperArmLeftwardAndFront"
     },
-    "id" : "244",
-    "superClasses" : [ "126" ]
+    "id" : "281",
+    "superClasses" : [ "110" ]
   }, {
     "iri" : "https://w3id.org/hdgi#IndexFingerStraightandDownward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1499,8 +2033,8 @@
       "IRI-based" : "IndexFingerStraightandDownward",
       "undefined" : "IndexFingerStraightandDownward"
     },
-    "id" : "139",
-    "superClasses" : [ "134" ]
+    "id" : "278",
+    "superClasses" : [ "156" ]
   }, {
     "iri" : "https://w3id.org/hdgi#MiddleFingerCurled",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1509,8 +2043,8 @@
       "IRI-based" : "MiddleFingerCurled",
       "undefined" : "MiddleFingerCurled"
     },
-    "id" : "114",
-    "superClasses" : [ "34" ]
+    "id" : "92",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ThumbStraightandUpward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1519,18 +2053,21 @@
       "IRI-based" : "ThumbStraightandUpward",
       "undefined" : "ThumbStraightandUpward"
     },
-    "id" : "224",
-    "superClasses" : [ "9" ]
+    "id" : "168",
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FacialGesture",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "FacialGesture",
-      "undefined" : "FacialGesture"
+      "en" : "FacialGesture"
     },
-    "id" : "247",
-    "superClasses" : [ "106" ]
+    "comment" : {
+      "en" : "FacialGesture is a Gesture executed with a Movement or a Pose using the BodayPart Face."
+    },
+    "id" : "292",
+    "superClasses" : [ "112" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Human",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1542,7 +2079,7 @@
     "comment" : {
       "undefined" : "User who perform a gesture"
     },
-    "id" : "248"
+    "id" : "215"
   }, {
     "iri" : "https://w3id.org/hdgi#LittleFingerStraightandUpward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1551,8 +2088,8 @@
       "IRI-based" : "LittleFingerStraightandUpward",
       "undefined" : "LittleFingerStraightandUpward"
     },
-    "id" : "15",
-    "superClasses" : [ "12" ]
+    "id" : "14",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FingerClockwiseRotation",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1561,8 +2098,8 @@
       "IRI-based" : "FingerClockwiseRotation",
       "undefined" : "FingerClockwiseRotation"
     },
-    "id" : "77",
-    "superClasses" : [ "72" ]
+    "id" : "66",
+    "superClasses" : [ "61" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Position",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1574,7 +2111,7 @@
     "comment" : {
       "undefined" : "Position of a pose in a particular time"
     },
-    "id" : "252"
+    "id" : "331"
   }, {
     "iri" : "https://w3id.org/hdgi#LittleFingerStraightandDownward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1583,18 +2120,8 @@
       "IRI-based" : "LittleFingerStraightandDownward",
       "undefined" : "LittleFingerStraightandDownward"
     },
-    "id" : "14",
-    "superClasses" : [ "12" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#PalmRightward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PalmRightward",
-      "undefined" : "PalmRightward"
-    },
-    "id" : "182",
-    "superClasses" : [ "64" ]
+    "id" : "13",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://w3id.org/hdgi#MiddleFingerFolded",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1603,21 +2130,8 @@
       "IRI-based" : "MiddleFingerFolded",
       "undefined" : "MiddleFingerFolded"
     },
-    "id" : "112",
-    "superClasses" : [ "34" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#LeftRingFinger",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LeftRingFinger",
-      "undefined" : "LeftRingFinger"
-    },
-    "comment" : {
-      "en" : "Left hand ring finger."
-    },
-    "id" : "96",
-    "superClasses" : [ "36" ]
+    "id" : "89",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FootPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1626,31 +2140,34 @@
       "IRI-based" : "FootPose",
       "undefined" : "FootPose"
     },
-    "id" : "58",
-    "superClasses" : [ "52" ]
+    "id" : "56",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "https://w3id.org/hdgi#LeftRingFinger",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeftRingFinger",
+      "en" : "LeftRingFinger"
+    },
+    "comment" : {
+      "en" : "LeftRingFinger is the RingFinger on LeftHand. This is an owl:equivalentClass fma:fma60330."
+    },
+    "id" : "74",
+    "superClasses" : [ "31" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RightIndexFinger",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "RightIndexFinger",
-      "undefined" : "RightIndexFinger"
+      "en" : "RightIndexFinger"
     },
     "comment" : {
-      "en" : "Right hand index finger."
+      "en" : "RightIndexFinger is the IndexFinger on the RightHand. This is an owl:equivalentClass fma:fma60333."
     },
-    "id" : "117",
-    "superClasses" : [ "50" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmRightward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmRightward",
-      "undefined" : "UpperArmRightward"
-    },
-    "id" : "125",
-    "superClasses" : [ "126" ]
+    "id" : "94",
+    "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FingerAnticlcokwiseRotation",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1659,8 +2176,8 @@
       "IRI-based" : "FingerAnticlcokwiseRotation",
       "undefined" : "FingerAnticlcokwiseRotation"
     },
-    "id" : "76",
-    "superClasses" : [ "72" ]
+    "id" : "65",
+    "superClasses" : [ "61" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ThumbCurled",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1669,32 +2186,35 @@
       "IRI-based" : "ThumbCurled",
       "undefined" : "ThumbCurled"
     },
-    "id" : "23",
-    "superClasses" : [ "9" ]
+    "id" : "27",
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Thumb",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Thumb",
-      "undefined" : "Thumb"
+      "en" : "Thumb"
     },
-    "subClasses" : [ "3", "6" ],
+    "subClasses" : [ "58", "171" ],
     "comment" : {
-      "en" : "First digit of hand."
+      "en" : "Thumb is the first Finger on Hand. Also known as first Digit of hand. This is an owl:equivalentClass fma:fma24938."
     },
-    "id" : "4",
-    "superClasses" : [ "48" ]
+    "id" : "6",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RightUpperArm",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "RightUpperArm",
-      "undefined" : "RightUpperArm"
+      "en" : "RightUpperArm"
     },
-    "id" : "231",
-    "superClasses" : [ "86" ]
+    "comment" : {
+      "en" : "RightUpperArm is the region of the right upper limb between the right shoulder and right elbow joint. This is an owl:equivalentClass fma:fma24895."
+    },
+    "id" : "201",
+    "superClasses" : [ "198" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RingFingerCurled",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1703,83 +2223,21 @@
       "IRI-based" : "RingFingerCurled",
       "undefined" : "RingFingerCurled"
     },
-    "id" : "211",
+    "id" : "164",
     "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "213",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "https://w3id.org/hdgi#TumbPose",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TumbPose",
-      "undefined" : "TumbPose"
-    },
-    "subClasses" : [ "8", "11", "23", "28", "30", "32", "143", "224" ],
-    "id" : "9",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandForward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IndexFingerStraightandForward",
-      "undefined" : "IndexFingerStraightandForward"
-    },
-    "id" : "142",
-    "superClasses" : [ "134" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmLeftwardAndDown",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmLeftwardAndDown",
-      "undefined" : "ForearmLeftwardAndDown"
-    },
-    "id" : "162",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "190",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "26",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "https://w3id.org/hdgi#LittleFingerStraightandForward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LittleFingerStraightandForward",
-      "undefined" : "LittleFingerStraightandForward"
-    },
-    "id" : "16",
-    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/hdgi#RightMiddleFinger",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "RightMiddleFinger",
-      "undefined" : "RightMiddleFinger"
+      "en" : "RightMiddleFinger"
     },
     "comment" : {
-      "en" : "Right hand middle finger."
+      "en" : "RightMiddleFinger is the MiddleFinger on RightHand. This is an owl:equivalentClass fma:fma60331."
     },
-    "id" : "196",
-    "superClasses" : [ "47" ]
+    "id" : "148",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ForearmRightward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1788,118 +2246,61 @@
       "IRI-based" : "ForearmRightward",
       "undefined" : "ForearmRightward"
     },
-    "id" : "147",
-    "superClasses" : [ "43" ]
+    "id" : "124",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LeftLittleFinger",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "LeftLittleFinger",
-      "undefined" : "LeftLittleFinger"
+      "en" : "LeftLittleFinger"
     },
     "comment" : {
-      "en" : "Left hand little finger."
+      "en" : "LeftLittleFinger is the LittleFinger on LeftHand. This is an owl:equivalentClass fma:fma60328."
     },
-    "id" : "122",
-    "superClasses" : [ "67" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#RingFingerPose",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RingFingerPose",
-      "undefined" : "RingFingerPose"
-    },
-    "subClasses" : [ "0", "200", "185", "203", "205", "207", "211", "215" ],
-    "id" : "1",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#RingFingerStraightandBackward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RingFingerStraightandBackward",
-      "undefined" : "RingFingerStraightandBackward"
-    },
-    "id" : "215",
-    "superClasses" : [ "1" ]
+    "id" : "266",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://w3id.org/hdgi#UserContext",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "UserContext",
-      "undefined" : "UserContext"
+      "en" : "UserContext"
     },
-    "id" : "41",
-    "superClasses" : [ "39" ]
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "25",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmBackward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmBackward",
-      "undefined" : "ForearmBackward"
+    "comment" : {
+      "en" : "UserContext describes the data that is specifically related to a Human in a certain Context that is Human specific data in a Context."
     },
-    "id" : "145",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "209",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "104",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
+    "id" : "36",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/hdgi#MiddleFinger",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "MiddleFinger",
-      "undefined" : "MiddleFinger"
+      "en" : "MiddleFinger"
     },
-    "subClasses" : [ "82", "196" ],
+    "subClasses" : [ "71", "148" ],
     "comment" : {
-      "en" : "Third finger or the third digit of hand."
+      "en" : "MiddleFinger is the third Finger on Hand. Also known as third Digit of hand. This is an owl:equivalentClass fma:fma24947."
     },
-    "id" : "47",
-    "superClasses" : [ "48" ]
+    "id" : "8",
+    "superClasses" : [ "4" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "292",
+    "iri" : "https://w3id.org/hdgi#RightHand",
+    "baseIri" : "https://w3id.org/hdgi",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "241",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "222",
-    "label" : {
-      "IRI-based" : "float"
-    }
+      "IRI-based" : "RightHand",
+      "en" : "RightHand"
+    },
+    "comment" : {
+      "en" : "RightHand is the terminal segmant of right upper limb which starts at end of the RightForearm and consists of Fingers. This is an owl:equivalentClass fma:fma9713."
+    },
+    "id" : "316",
+    "superClasses" : [ "221" ]
   }, {
     "iri" : "https://w3id.org/hdgi#PalmUpwardPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1908,73 +2309,8 @@
       "IRI-based" : "PalmUpwardPose",
       "undefined" : "PalmUpwardPose"
     },
-    "id" : "95",
-    "superClasses" : [ "60" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "101",
-    "label" : {
-      "IRI-based" : "dateTimeStamp"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "246",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "299",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandUpward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IndexFingerStraightandUpward",
-      "undefined" : "IndexFingerStraightandUpward"
-    },
-    "id" : "135",
-    "superClasses" : [ "134" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmDownward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmDownward",
-      "undefined" : "ForearmDownward"
-    },
-    "id" : "156",
+    "id" : "49",
     "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Palm",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Palm",
-      "undefined" : "Palm"
-    },
-    "subClasses" : [ "99", "37" ],
-    "comment" : {
-      "en" : "The area located at the end of the forearm (starting from wrist) up until the start of a finger which is the central region of the anterior part of the hand."
-    },
-    "id" : "38",
-    "superClasses" : [ "71" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#PalmDownwardPose",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PalmDownwardPose",
-      "undefined" : "PalmDownwardPose"
-    },
-    "id" : "91",
-    "superClasses" : [ "60" ]
   }, {
     "iri" : "https://w3id.org/hdgi#PalmMovement",
     "baseIri" : "https://w3id.org/hdgi",
@@ -1983,55 +2319,25 @@
       "IRI-based" : "PalmMovement",
       "undefined" : "PalmMovement"
     },
-    "subClasses" : [ "157", "123", "182", "184", "63", "188", "69", "131" ],
+    "subClasses" : [ "153", "100", "137", "139", "141", "143", "145", "126" ],
     "comment" : {
       "undefined" : "Movement of palm. Either right or left."
     },
-    "id" : "64",
-    "superClasses" : [ "73" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmAnticlockwiseRotation",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmAnticlockwiseRotation",
-      "undefined" : "ForearmAnticlockwiseRotation"
-    },
-    "id" : "164",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#RingFingerStraightandDownward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RingFingerStraightandDownward",
-      "undefined" : "RingFingerStraightandDownward"
-    },
-    "id" : "205",
-    "superClasses" : [ "1" ]
+    "id" : "101",
+    "superClasses" : [ "62" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Affordance",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Affordance",
-      "undefined" : "Affordance"
+      "en" : "Affordance"
     },
-    "subClasses" : [ "97", "176" ],
+    "subClasses" : [ "75", "129" ],
     "comment" : {
-      "en" : "Affordances are all the type of properties that belong to devices. They indicate the possible actions users can take with it."
+      "en" : "Affordance is a quality or characteristic of Devices that indicates the possible action a Human can take with it. This is rdfs:subClassOf ssn:Property."
     },
-    "id" : "98"
-  }, {
-    "iri" : "https://w3id.org/hdgi#PalmLeftwardPose",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PalmLeftwardPose",
-      "undefined" : "PalmLeftwardPose"
-    },
-    "id" : "192",
-    "superClasses" : [ "60" ]
+    "id" : "76"
   }, {
     "iri" : "https://w3id.org/hdgi#FingerUpward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2040,8 +2346,8 @@
       "IRI-based" : "FingerUpward",
       "undefined" : "FingerUpward"
     },
-    "id" : "75",
-    "superClasses" : [ "72" ]
+    "id" : "64",
+    "superClasses" : [ "61" ]
   }, {
     "iri" : "https://w3id.org/hdgi#UpperArmClockwiseRotation",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2050,72 +2356,21 @@
       "IRI-based" : "UpperArmClockwiseRotation",
       "undefined" : "UpperArmClockwiseRotation"
     },
-    "id" : "291",
-    "superClasses" : [ "126" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmMovement",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmMovement",
-      "undefined" : "ForearmMovement"
-    },
-    "subClasses" : [ "178", "156", "107", "162", "164", "167", "145", "147", "42", "151", "116", "154" ],
-    "id" : "43",
-    "superClasses" : [ "73" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#LittleFinger",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LittleFinger",
-      "undefined" : "LittleFinger"
-    },
-    "subClasses" : [ "120", "122" ],
-    "comment" : {
-      "en" : "Fifth finger or the fifth digit of hand."
-    },
-    "id" : "67",
-    "superClasses" : [ "48" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ThumbStraightandDownward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ThumbStraightandDownward",
-      "undefined" : "ThumbStraightandDownward"
-    },
-    "id" : "30",
-    "superClasses" : [ "9" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Observer",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Observer",
-      "undefined" : "Observer"
-    },
-    "id" : "237"
+    "id" : "280",
+    "superClasses" : [ "110" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LeftUpperArm",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "LeftUpperArm",
-      "undefined" : "LeftUpperArm"
+      "en" : "LeftUpperArm"
     },
-    "id" : "251",
-    "superClasses" : [ "86" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#MiddleFingerStraightandForward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MiddleFingerStraightandForward",
-      "undefined" : "MiddleFingerStraightandForward"
+    "comment" : {
+      "en" : "LeftUpperArm is the region of the left upper limb between the left shoulder and left elbow joint. This is an owl:equivalentClass fma:fma24896."
     },
-    "id" : "108",
-    "superClasses" : [ "34" ]
+    "id" : "210",
+    "superClasses" : [ "198" ]
   }, {
     "iri" : "https://w3id.org/hdgi#LegPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2124,28 +2379,21 @@
       "IRI-based" : "LegPose",
       "undefined" : "LegPose"
     },
-    "id" : "54",
-    "superClasses" : [ "52" ]
+    "id" : "52",
+    "superClasses" : [ "39" ]
   }, {
-    "iri" : "https://w3id.org/hdgi#LittleFingerStraightandRightward",
+    "iri" : "https://w3id.org/hdgi#FootGesture",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "LittleFingerStraightandRightward",
-      "undefined" : "LittleFingerStraightandRightward"
+      "IRI-based" : "FootGesture",
+      "en" : "FootGesture"
     },
-    "id" : "17",
-    "superClasses" : [ "12" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#FingerLeftward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FingerLeftward",
-      "undefined" : "FingerLeftward"
+    "comment" : {
+      "en" : "FootGesture is a Gesture executed with a Movement or a Pose using the BodayPart Foot."
     },
-    "id" : "79",
-    "superClasses" : [ "72" ]
+    "id" : "289",
+    "superClasses" : [ "112" ]
   }, {
     "iri" : "https://w3id.org/hdgi#IndexFingerStraightandRightward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2154,52 +2402,21 @@
       "IRI-based" : "IndexFingerStraightandRightward",
       "undefined" : "IndexFingerStraightandRightward"
     },
-    "id" : "140",
-    "superClasses" : [ "134" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#FootGesture",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FootGesture",
-      "undefined" : "FootGesture"
-    },
-    "id" : "282",
-    "superClasses" : [ "106" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#RightLittleFinger",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RightLittleFinger",
-      "undefined" : "RightLittleFinger"
-    },
-    "comment" : {
-      "en" : "Right hand little finger."
-    },
-    "id" : "120",
-    "superClasses" : [ "67" ]
+    "id" : "276",
+    "superClasses" : [ "156" ]
   }, {
     "iri" : "https://w3id.org/hdgi#Leg",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Leg",
-      "undefined" : "Leg"
+      "en" : "Leg"
     },
-    "id" : "84",
-    "superClasses" : [ "71" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmMovement",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmMovement",
-      "undefined" : "UpperArmMovement"
+    "comment" : {
+      "en" : "Leg is a BodyPart and it is the intermediate segment of lower limb. This is an owl:equivalentClass fma:fma24979."
     },
-    "subClasses" : [ "125", "129", "291", "132", "244", "216", "170", "298", "301", "287" ],
-    "id" : "126",
-    "superClasses" : [ "73" ]
+    "id" : "213",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FingerPose",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2208,88 +2425,35 @@
       "IRI-based" : "FingerPose",
       "undefined" : "FingerPose"
     },
-    "subClasses" : [ "12", "134", "34", "1", "9" ],
-    "id" : "13",
-    "superClasses" : [ "52" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Gesture",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Gesture",
-      "undefined" : "Gesture"
-    },
-    "subClasses" : [ "105", "133", "168", "282", "285", "265", "247" ],
-    "comment" : {
-      "en" : "A gesture is a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm."
-    },
-    "id" : "106"
+    "subClasses" : [ "11", "156", "84", "23", "1" ],
+    "id" : "12",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ForearmGesture",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ForearmGesture",
-      "undefined" : "ForearmGesture"
+      "en" : "ForearmGesture"
     },
     "comment" : {
-      "undefined" : "Gestures (movements) made with forearm"
+      "en" : "ForearmGesture is a Gesture executed with a Movement or a Pose using the BodyPart Forearm."
     },
-    "id" : "285",
-    "superClasses" : [ "106" ]
+    "id" : "290",
+    "superClasses" : [ "112" ]
   }, {
     "iri" : "https://w3id.org/hdgi#HandGesture",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "HandGesture",
-      "undefined" : "HandGesture"
+      "en" : "HandGesture"
     },
     "comment" : {
-      "undefined" : "Gestures (movements) made with fingers and palms"
+      "en" : "HandGesture is a Gesture executed with a Movement or a Pose using the BodayParts Hand, Palm and/or Fingers."
     },
-    "id" : "265",
-    "superClasses" : [ "106" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmBackward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmBackward",
-      "undefined" : "UpperArmBackward"
-    },
-    "id" : "298",
-    "superClasses" : [ "126" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmLeftwardAndBack",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmLeftwardAndBack",
-      "undefined" : "UpperArmLeftwardAndBack"
-    },
-    "id" : "301",
-    "superClasses" : [ "126" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#RingFingerStraightandRightward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RingFingerStraightandRightward",
-      "undefined" : "RingFingerStraightandRightward"
-    },
-    "id" : "200",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#LittleFingerStraightandLeftward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LittleFingerStraightandLeftward",
-      "undefined" : "LittleFingerStraightandLeftward"
-    },
-    "id" : "19",
-    "superClasses" : [ "12" ]
+    "id" : "291",
+    "superClasses" : [ "112" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ForearmUpward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2298,42 +2462,22 @@
       "IRI-based" : "ForearmUpward",
       "undefined" : "ForearmUpward"
     },
-    "id" : "151",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#ForearmClockwiseRotation",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForearmClockwiseRotation",
-      "undefined" : "ForearmClockwiseRotation"
-    },
-    "id" : "178",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#IndexFingerStraightandLeftward",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IndexFingerStraightandLeftward",
-      "undefined" : "IndexFingerStraightandLeftward"
-    },
-    "id" : "136",
-    "superClasses" : [ "134" ]
+    "id" : "99",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "https://w3id.org/hdgi#UpperArm",
     "baseIri" : "https://w3id.org/hdgi",
     "instances" : 0,
     "label" : {
       "IRI-based" : "UpperArm",
-      "undefined" : "UpperArm"
+      "en" : "UpperArm"
     },
-    "subClasses" : [ "231", "251" ],
+    "subClasses" : [ "201", "210" ],
     "comment" : {
-      "en" : "The upper arm is the line between the shoulder and elbow joint."
+      "en" : "UpperArm is a BodyPart. It is the region of the upper limb between the shoulder and elbow joint. This is an owl:equivalentClass fma:fma24890."
     },
-    "id" : "86",
-    "superClasses" : [ "71" ]
+    "id" : "198",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "https://w3id.org/hdgi#FingerDownward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2342,20 +2486,8 @@
       "IRI-based" : "FingerDownward",
       "undefined" : "FingerDownward"
     },
-    "id" : "74",
-    "superClasses" : [ "72" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#Body",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Body",
-      "undefined" : "Body"
-    },
-    "comment" : {
-      "en" : "Human body. A collection of body parts."
-    },
-    "id" : "337"
+    "id" : "63",
+    "superClasses" : [ "61" ]
   }, {
     "iri" : "https://w3id.org/hdgi#IndexFingerCurled",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2364,8 +2496,8 @@
       "IRI-based" : "IndexFingerCurled",
       "undefined" : "IndexFingerCurled"
     },
-    "id" : "137",
-    "superClasses" : [ "134" ]
+    "id" : "297",
+    "superClasses" : [ "156" ]
   }, {
     "iri" : "https://w3id.org/hdgi#PalmBackward",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2374,8 +2506,8 @@
       "IRI-based" : "PalmBackward",
       "undefined" : "PalmBackward"
     },
-    "id" : "188",
-    "superClasses" : [ "64" ]
+    "id" : "143",
+    "superClasses" : [ "101" ]
   }, {
     "iri" : "https://w3id.org/hdgi#ForearmRightwardAndUp",
     "baseIri" : "https://w3id.org/hdgi",
@@ -2384,18 +2516,8 @@
       "IRI-based" : "ForearmRightwardAndUp",
       "undefined" : "ForearmRightwardAndUp"
     },
-    "id" : "154",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation",
-    "baseIri" : "https://w3id.org/hdgi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UpperArmAnticlcockwiseRotation",
-      "undefined" : "UpperArmAnticlcockwiseRotation"
-    },
-    "id" : "287",
-    "superClasses" : [ "126" ]
+    "id" : "105",
+    "superClasses" : [ "83" ]
   } ],
   "property" : [ {
     "id" : "2",
@@ -2407,31 +2529,40 @@
     "id" : "7",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "10",
+    "id" : "9",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
+    "id" : "21",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "24",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "27",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "29",
+    "id" : "26",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "31",
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "44",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "46",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "49",
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "51",
@@ -2446,38 +2577,32 @@
     "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "59",
+    "id" : "72",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "61",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "65",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "66",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "68",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "88",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "90",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "92",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "94",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "100",
+    "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "103",
-    "type" : "owl:datatypeProperty"
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "119",
     "type" : "rdfs:SubClassOf"
@@ -2485,10 +2610,34 @@
     "id" : "121",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "124",
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "144",
@@ -2497,29 +2646,26 @@
     "id" : "146",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "148",
-    "type" : "owl:objectProperty"
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "149",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "150",
+    "id" : "151",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "152",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "153",
+    "id" : "154",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "155",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "158",
-    "type" : "rdfs:SubClassOf"
+    "id" : "157",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "159",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "161",
     "type" : "rdfs:SubClassOf"
@@ -2528,9 +2674,15 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "165",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "166",
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "172",
@@ -2539,11 +2691,8 @@
     "id" : "173",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "174",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "175",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "177",
     "type" : "rdfs:SubClassOf"
@@ -2551,160 +2700,160 @@
     "id" : "179",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "180",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "181",
-    "type" : "rdfs:SubClassOf"
+    "id" : "182",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "183",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "186",
+    "id" : "185",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "187",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "189",
-    "type" : "owl:datatypeProperty"
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "191",
+    "id" : "190",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "194",
-    "type" : "rdfs:SubClassOf"
+    "id" : "184",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "195",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "196",
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "197",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "198",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "199",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "201",
-    "type" : "rdfs:SubClassOf"
+    "id" : "200",
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "202",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "204",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "205",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "206",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "208",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "210",
-    "type" : "rdfs:SubClassOf"
+    "id" : "209",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "211",
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "212",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "214",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "216",
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "217",
-    "type" : "owl:objectProperty"
+    "type" : "owl:allValuesFrom"
   }, {
-    "id" : "218",
-    "type" : "owl:objectProperty"
+    "id" : "219",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "220",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "221",
-    "type" : "owl:datatypeProperty"
+    "id" : "222",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "223",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "224",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "225",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "226",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "219",
-    "type" : "owl:objectProperty"
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "230",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "233",
-    "type" : "owl:allValuesFrom"
+    "id" : "231",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "235",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "236",
-    "type" : "owl:someValuesFrom"
+    "id" : "237",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "238",
-    "type" : "owl:someValuesFrom"
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "239",
-    "type" : "owl:allValuesFrom"
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "240",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "242",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "245",
-    "type" : "owl:datatypeProperty"
+    "id" : "248",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "249",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "250",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "252",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "253",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "254",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "255",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "256",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "257",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "258",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "259",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "260",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "261",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "262",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "263",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "264",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "266",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "267",
@@ -2714,7 +2863,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "269",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "270",
     "type" : "rdfs:SubClassOf"
@@ -2734,49 +2883,16 @@
     "id" : "275",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "276",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "277",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "278",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "279",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "280",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "281",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "283",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "284",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "286",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "288",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "289",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "227",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "290",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "293",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "294",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "295",
@@ -2785,10 +2901,16 @@
     "id" : "296",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "297",
+    "id" : "298",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "299",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "300",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "301",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "302",
@@ -2804,13 +2926,13 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "306",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "307",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "308",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "309",
     "type" : "rdfs:SubClassOf"
@@ -2825,15 +2947,12 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "313",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "314",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "315",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "316",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "317",
@@ -2843,43 +2962,28 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "319",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "320",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "321",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "322",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "323",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "324",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "325",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "326",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "327",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "328",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "329",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "330",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "331",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "332",
     "type" : "rdfs:SubClassOf"
@@ -2894,43 +2998,52 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "336",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "339",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "340",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "341",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "342",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "343",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "344",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "345",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "346",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "347",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "348",
-    "type" : "owl:allValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "349",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "350",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "351",
     "type" : "rdfs:SubClassOf"
@@ -2954,25 +3067,46 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "358",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "359",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "359",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "360",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "361",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "362",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "363",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "364",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "365",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "366",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "367",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "368",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "369",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "370",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "371",
+    "type" : "owl:allValuesFrom"
   } ],
   "propertyAttribute" : [ {
     "range" : "4",
@@ -2985,1321 +3119,1353 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "5"
   }, {
-    "range" : "9",
+    "range" : "4",
     "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
     "id" : "7"
   }, {
-    "range" : "9",
-    "domain" : "11",
+    "range" : "4",
+    "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "10"
+    "id" : "9"
   }, {
-    "range" : "9",
-    "domain" : "23",
+    "range" : "23",
+    "domain" : "22",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "22"
+    "id" : "21"
   }, {
-    "iri" : "https://w3id.org/hdgi#x-axisDirection",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "x-axisDirection",
-      "undefined" : "x-axisDirection"
-    },
+    "range" : "23",
     "domain" : "25",
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
-    "range" : "9",
-    "domain" : "28",
+    "range" : "23",
+    "domain" : "27",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "27"
+    "id" : "26"
   }, {
-    "range" : "9",
-    "domain" : "30",
+    "range" : "23",
+    "domain" : "29",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
+    "id" : "28"
   }, {
-    "range" : "9",
-    "domain" : "32",
+    "range" : "39",
+    "domain" : "38",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "31"
+    "id" : "37"
   }, {
-    "iri" : "https://w3id.org/hdgi#originPoint",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "originPoint",
-      "undefined" : "originPoint"
-    },
-    "cardinality" : "1",
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "Frame of reference or the initial center.\nLocation of the (0,0,0) postion related to the given coordinates."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "44"
-  }, {
-    "range" : "48",
-    "domain" : "47",
+    "range" : "4",
+    "domain" : "31",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "46"
-  }, {
-    "range" : "48",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "49"
-  }, {
-    "range" : "52",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "51"
-  }, {
-    "range" : "52",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
-  }, {
-    "range" : "52",
-    "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "55"
-  }, {
-    "range" : "52",
-    "domain" : "58",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "57"
-  }, {
-    "range" : "52",
-    "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "59"
-  }, {
-    "range" : "52",
-    "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "61"
-  }, {
-    "range" : "48",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "65"
-  }, {
-    "range" : "48",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "66"
-  }, {
-    "range" : "48",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "68"
-  }, {
-    "range" : "60",
-    "domain" : "89",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "88"
-  }, {
-    "range" : "60",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "90"
-  }, {
-    "range" : "60",
-    "domain" : "93",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "92"
-  }, {
-    "range" : "60",
-    "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "94"
-  }, {
-    "iri" : "https://w3id.org/hdgi#timeStamp",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "101",
-    "label" : {
-      "IRI-based" : "timeStamp",
-      "undefined" : "timeStamp"
-    },
-    "cardinality" : "1",
-    "domain" : "25",
-    "attributes" : [ "datatype" ],
-    "id" : "100"
-  }, {
-    "iri" : "https://w3id.org/hdgi#yPosition",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "104",
-    "label" : {
-      "IRI-based" : "yPosition",
-      "undefined" : "yPosition"
-    },
-    "maxCardinality" : "1",
-    "domain" : "25",
-    "attributes" : [ "datatype" ],
-    "id" : "103"
-  }, {
-    "range" : "67",
-    "domain" : "120",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "119"
-  }, {
-    "range" : "67",
-    "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "121"
-  }, {
-    "range" : "126",
-    "domain" : "125",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "124"
-  }, {
-    "range" : "126",
-    "domain" : "129",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "128"
-  }, {
-    "range" : "43",
-    "domain" : "145",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "144"
-  }, {
-    "range" : "43",
-    "domain" : "147",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "146"
-  }, {
-    "iri" : "https://w3id.org/hdgi#hasMovement",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "hasMovement",
-      "undefined" : "hasMovement"
-    },
-    "domain" : "25",
-    "attributes" : [ "object" ],
-    "id" : "148"
+    "id" : "40"
   }, {
     "range" : "43",
     "domain" : "42",
     "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "43",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "43",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "43",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "39",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "39",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "39",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "39",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "39",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "43",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/hdgi#timestamp",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "timestamp",
+      "en" : "timestamp"
+    },
+    "cardinality" : "1",
+    "domain" : "80",
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "range" : "83",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "83",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "83",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "83",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "83",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "83",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "83",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "83",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "83",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "83",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "101",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "76",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "76",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "83",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "83",
+    "domain" : "133",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "101",
+    "domain" : "137",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "101",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "101",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "101",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "101",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "8",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "8",
+    "domain" : "148",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "33",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "149"
   }, {
-    "range" : "43",
-    "domain" : "151",
+    "range" : "33",
+    "domain" : "32",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "150"
+    "id" : "151"
   }, {
-    "range" : "43",
-    "domain" : "116",
+    "range" : "101",
+    "domain" : "153",
     "attributes" : [ "anonymous", "object" ],
     "id" : "152"
   }, {
-    "range" : "43",
-    "domain" : "154",
+    "range" : "101",
+    "domain" : "100",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "153"
-  }, {
-    "range" : "43",
-    "domain" : "156",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "155"
-  }, {
-    "range" : "43",
-    "domain" : "107",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "158"
-  }, {
-    "iri" : "https://w3id.org/hdgi#k-component",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "160",
-    "label" : {
-      "IRI-based" : "k-component",
-      "undefined" : "k-component"
-    },
-    "cardinality" : "1",
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "159"
-  }, {
-    "range" : "43",
-    "domain" : "162",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "161"
-  }, {
-    "range" : "43",
-    "domain" : "164",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "163"
-  }, {
-    "iri" : "https://w3id.org/hdgi#hasRotation",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "hasRotation",
-      "undefined" : "hasRotation"
-    },
-    "domain" : "25",
-    "attributes" : [ "object" ],
-    "id" : "165"
-  }, {
-    "range" : "43",
-    "domain" : "167",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "166"
-  }, {
-    "range" : "64",
-    "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "172"
-  }, {
-    "range" : "64",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "173"
-  }, {
-    "range" : "98",
-    "domain" : "97",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "174"
-  }, {
-    "range" : "98",
-    "domain" : "176",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "175"
-  }, {
-    "range" : "43",
-    "domain" : "178",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "177"
-  }, {
-    "range" : "64",
-    "domain" : "157",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "179"
-  }, {
-    "range" : "64",
-    "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "180"
-  }, {
-    "range" : "64",
-    "domain" : "182",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "181"
-  }, {
-    "range" : "64",
-    "domain" : "184",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "183"
-  }, {
-    "range" : "64",
-    "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "186"
-  }, {
-    "range" : "64",
-    "domain" : "188",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "187"
-  }, {
-    "iri" : "https://w3id.org/hdgi#z-axisDirection",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "190",
-    "label" : {
-      "IRI-based" : "z-axisDirection",
-      "undefined" : "z-axisDirection"
-    },
-    "domain" : "25",
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "189"
+    "id" : "154"
   }, {
     "iri" : "https://w3id.org/hdgi#hasUnitOfMeasure",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
+    "range" : "80",
     "label" : {
       "IRI-based" : "hasUnitOfMeasure",
       "undefined" : "hasUnitOfMeasure"
     },
-    "domain" : "25",
+    "domain" : "80",
     "attributes" : [ "object" ],
-    "id" : "191"
-  }, {
-    "range" : "47",
-    "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "194"
-  }, {
-    "range" : "47",
-    "domain" : "196",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "195"
-  }, {
-    "range" : "38",
-    "domain" : "99",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "197"
-  }, {
-    "range" : "38",
-    "domain" : "37",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "198"
+    "id" : "157"
   }, {
     "range" : "1",
-    "domain" : "200",
+    "domain" : "160",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "199"
+    "id" : "159"
   }, {
     "range" : "1",
-    "domain" : "185",
+    "domain" : "162",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "201"
+    "id" : "161"
   }, {
     "range" : "1",
-    "domain" : "203",
+    "domain" : "164",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "202"
+    "id" : "163"
   }, {
     "range" : "1",
-    "domain" : "205",
+    "domain" : "166",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "204"
+    "id" : "165"
+  }, {
+    "range" : "23",
+    "domain" : "168",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "6",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "6",
+    "domain" : "171",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
   }, {
     "range" : "1",
-    "domain" : "207",
+    "domain" : "0",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "206"
+    "id" : "172"
+  }, {
+    "range" : "1",
+    "domain" : "174",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
   }, {
     "iri" : "https://w3id.org/hdgi#yRotation",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "209",
+    "range" : "176",
     "label" : {
       "IRI-based" : "yRotation",
       "undefined" : "yRotation"
     },
     "maxCardinality" : "1",
-    "domain" : "25",
+    "domain" : "80",
     "comment" : {
       "undefined" : "Angle around the y-axis"
     },
     "attributes" : [ "datatype" ],
-    "id" : "208"
+    "id" : "175"
   }, {
     "range" : "1",
-    "domain" : "211",
+    "domain" : "178",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "210"
-  }, {
-    "iri" : "https://w3id.org/hdgi#y-axisDirection",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "213",
-    "label" : {
-      "IRI-based" : "y-axisDirection",
-      "undefined" : "y-axisDirection"
-    },
-    "domain" : "25",
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "212"
+    "id" : "177"
   }, {
     "range" : "1",
-    "domain" : "215",
+    "domain" : "180",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "214"
+    "id" : "179"
   }, {
     "iri" : "https://w3id.org/hdgi#hasDuration",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
+    "range" : "80",
     "label" : {
       "IRI-based" : "hasDuration",
       "undefined" : "hasDuration"
     },
-    "domain" : "25",
+    "domain" : "80",
+    "comment" : {
+      "en" : "Relation between a Movement and a Duration describing the time duration of a movement."
+    },
     "attributes" : [ "object" ],
-    "id" : "217"
+    "id" : "182"
   }, {
     "iri" : "https://w3id.org/hdgi#hasStartPose",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
+    "range" : "80",
     "label" : {
       "IRI-based" : "hasStartPose",
       "undefined" : "hasStartPose"
     },
-    "superproperty" : [ "219" ],
-    "domain" : "25",
+    "superproperty" : [ "184" ],
+    "domain" : "80",
     "attributes" : [ "object" ],
-    "id" : "218"
+    "id" : "183"
   }, {
-    "range" : "9",
-    "domain" : "143",
+    "range" : "23",
+    "domain" : "186",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "220"
+    "id" : "185"
   }, {
-    "iri" : "https://w3id.org/hdgi#w-component",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "222",
-    "label" : {
-      "IRI-based" : "w-component",
-      "undefined" : "w-component"
-    },
-    "cardinality" : "1",
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "Represents the amount of rotation which will occur about this axis defined by (i-component, j-component, k-component). Known as scalar component."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "221"
-  }, {
-    "range" : "9",
-    "domain" : "224",
+    "range" : "23",
+    "domain" : "158",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "223"
+    "id" : "187"
   }, {
-    "range" : "1",
-    "domain" : "0",
+    "range" : "23",
+    "domain" : "113",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "225"
+    "id" : "188"
   }, {
     "iri" : "https://w3id.org/hdgi#hasTimeStamp",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
+    "range" : "80",
     "label" : {
       "IRI-based" : "hasTimeStamp",
       "undefined" : "hasTimeStamp"
     },
-    "domain" : "25",
+    "domain" : "80",
     "attributes" : [ "object" ],
-    "id" : "226"
+    "id" : "190"
   }, {
     "iri" : "https://w3id.org/hdgi#hasPose",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
+    "range" : "80",
     "label" : {
       "IRI-based" : "hasPose",
       "undefined" : "hasPose"
     },
-    "domain" : "25",
-    "subproperty" : [ "227", "218" ],
+    "domain" : "80",
+    "subproperty" : [ "191", "183" ],
     "attributes" : [ "object" ],
-    "id" : "219"
+    "id" : "184"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "86",
-    "label" : {
-      "IRI-based" : "isPartOf",
-      "undefined" : "isPartOf"
-    },
-    "domain" : "231",
-    "attributes" : [ "allValues", "object" ],
-    "id" : "230"
-  }, {
-    "iri" : "https://w3id.org/hdgi#isPartOf",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "85",
-    "label" : {
-      "IRI-based" : "isPartOf",
-      "undefined" : "isPartOf"
-    },
-    "domain" : "115",
-    "attributes" : [ "allValues", "object" ],
-    "id" : "233"
-  }, {
-    "iri" : "https://w3id.org/hdgi#isPartOf",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "isPartOf",
-      "undefined" : "isPartOf"
-    },
-    "domain" : "86",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "235"
-  }, {
-    "iri" : "https://w3id.org/hdgi#observes",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "52",
-    "label" : {
-      "IRI-based" : "observes",
-      "undefined" : "observes"
-    },
-    "domain" : "237",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "236"
-  }, {
-    "iri" : "https://w3id.org/hdgi#observes",
     "baseIri" : "https://w3id.org/hdgi",
     "range" : "106",
     "label" : {
-      "IRI-based" : "observes",
-      "undefined" : "observes"
+      "IRI-based" : "isPartOf",
+      "undefined" : "isPartOf"
     },
-    "domain" : "237",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "238"
+    "domain" : "108",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "195"
   }, {
     "iri" : "https://w3id.org/hdgi#used",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "60",
     "label" : {
       "IRI-based" : "used",
       "undefined" : "used"
     },
-    "domain" : "52",
+    "domain" : "39",
     "attributes" : [ "allValues", "object" ],
-    "id" : "239"
+    "id" : "196"
+  }, {
+    "iri" : "https://w3id.org/hdgi#isPartOf",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "isPartOf"
+    },
+    "domain" : "198",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://w3id.org/hdgi#isPartOf",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "198",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "isPartOf"
+    },
+    "domain" : "201",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "200"
+  }, {
+    "iri" : "https://w3id.org/hdgi#observes",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "observes",
+      "undefined" : "observes"
+    },
+    "domain" : "203",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "202"
+  }, {
+    "iri" : "https://w3id.org/hdgi#involves",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "involves",
+      "undefined" : "involves"
+    },
+    "domain" : "62",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "204"
+  }, {
+    "iri" : "https://w3id.org/hdgi#isPartOf",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "isPartOf"
+    },
+    "domain" : "33",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "205"
   }, {
     "iri" : "https://w3id.org/hdgi#zPosition",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "241",
+    "range" : "207",
     "label" : {
       "IRI-based" : "zPosition",
       "undefined" : "zPosition"
     },
     "maxCardinality" : "1",
-    "domain" : "25",
+    "domain" : "80",
     "attributes" : [ "datatype" ],
-    "id" : "240"
+    "id" : "206"
+  }, {
+    "iri" : "https://w3id.org/hdgi#observes",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "observes",
+      "undefined" : "observes"
+    },
+    "domain" : "203",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "208"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "198",
     "label" : {
       "IRI-based" : "isPartOf",
       "undefined" : "isPartOf"
     },
-    "domain" : "38",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "242"
-  }, {
-    "iri" : "https://w3id.org/hdgi#xRotation",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "246",
-    "label" : {
-      "IRI-based" : "xRotation",
-      "undefined" : "xRotation"
-    },
-    "maxCardinality" : "1",
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "Angle around the x-axis"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "245"
-  }, {
-    "iri" : "https://w3id.org/hdgi#isPartOf",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "isPartOf",
-      "undefined" : "isPartOf"
-    },
-    "domain" : "84",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "249"
-  }, {
-    "iri" : "https://w3id.org/hdgi#isPartOf",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "86",
-    "label" : {
-      "IRI-based" : "isPartOf",
-      "undefined" : "isPartOf"
-    },
-    "domain" : "251",
+    "domain" : "210",
     "attributes" : [ "allValues", "object" ],
-    "id" : "250"
+    "id" : "209"
   }, {
-    "iri" : "https://w3id.org/hdgi#involves",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "involves",
-      "undefined" : "involves"
-    },
-    "domain" : "73",
-    "attributes" : [ "allValues", "object" ],
-    "id" : "253"
-  }, {
-    "range" : "86",
-    "domain" : "231",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "254"
-  }, {
-    "iri" : "https://w3id.org/hdgi#performs",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "52",
-    "label" : {
-      "IRI-based" : "performs",
-      "undefined" : "performs"
-    },
-    "domain" : "248",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "255"
-  }, {
-    "range" : "86",
-    "domain" : "251",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "256"
-  }, {
-    "iri" : "https://w3id.org/hdgi#performs",
+    "iri" : "https://w3id.org/hdgi#isPartOf",
     "baseIri" : "https://w3id.org/hdgi",
     "range" : "106",
     "label" : {
-      "IRI-based" : "performs",
-      "undefined" : "performs"
+      "IRI-based" : "isPartOf",
+      "undefined" : "isPartOf"
     },
-    "domain" : "248",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "257"
+    "domain" : "107",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "211"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "85",
+    "range" : "60",
     "label" : {
       "IRI-based" : "isPartOf",
       "undefined" : "isPartOf"
     },
-    "domain" : "130",
-    "attributes" : [ "allValues", "object" ],
-    "id" : "258"
+    "domain" : "213",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "212"
+  }, {
+    "iri" : "https://w3id.org/hdgi#performs",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "performs",
+      "undefined" : "performs"
+    },
+    "domain" : "215",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "214"
   }, {
     "iri" : "https://w3id.org/hdgi#uses",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "60",
     "label" : {
       "IRI-based" : "uses",
       "undefined" : "uses"
     },
-    "domain" : "248",
+    "domain" : "215",
     "attributes" : [ "allValues", "object" ],
-    "id" : "259"
+    "id" : "216"
   }, {
-    "iri" : "https://w3id.org/hdgi#used",
+    "iri" : "https://w3id.org/hdgi#hasPart",
+    "inverse" : "218",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "60",
     "label" : {
-      "IRI-based" : "used",
-      "undefined" : "used"
+      "IRI-based" : "hasPart",
+      "undefined" : "hasPart"
     },
-    "domain" : "106",
+    "domain" : "77",
     "attributes" : [ "allValues", "object" ],
-    "id" : "260"
+    "id" : "217"
   }, {
     "iri" : "https://w3id.org/hdgi#hasContext",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "41",
+    "range" : "36",
     "label" : {
       "IRI-based" : "hasContext",
       "undefined" : "hasContext"
     },
-    "domain" : "248",
+    "domain" : "215",
     "comment" : {
       "undefined" : "Relation from a Human to a User Context or from a Device to a Device Context."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "261"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "219"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "60",
     "label" : {
       "IRI-based" : "isPartOf",
       "undefined" : "isPartOf"
     },
-    "domain" : "70",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "262"
+    "domain" : "221",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "220"
   }, {
-    "range" : "12",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "263"
+    "iri" : "https://w3id.org/hdgi#performs",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "performs",
+      "undefined" : "performs"
+    },
+    "domain" : "215",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "222"
   }, {
-    "range" : "106",
-    "domain" : "265",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "264"
+    "iri" : "https://w3id.org/hdgi#isPartOf",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "isPartOf"
+    },
+    "domain" : "59",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "223"
   }, {
-    "range" : "106",
-    "domain" : "247",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "266"
-  }, {
-    "range" : "39",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "267"
-  }, {
-    "range" : "39",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "268"
-  }, {
-    "range" : "12",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "269"
-  }, {
-    "range" : "13",
-    "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "270"
-  }, {
-    "range" : "12",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "271"
-  }, {
-    "range" : "13",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "272"
-  }, {
-    "range" : "12",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "273"
-  }, {
-    "range" : "13",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "274"
-  }, {
-    "range" : "12",
+    "range" : "11",
     "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "275"
-  }, {
-    "range" : "106",
-    "domain" : "105",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "276"
-  }, {
-    "range" : "12",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "277"
-  }, {
-    "range" : "106",
-    "domain" : "133",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "278"
-  }, {
-    "range" : "106",
-    "domain" : "168",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "279"
-  }, {
-    "range" : "12",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "280"
-  }, {
-    "range" : "106",
-    "domain" : "282",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "281"
-  }, {
-    "range" : "12",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "283"
-  }, {
-    "range" : "106",
-    "domain" : "285",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "284"
-  }, {
-    "range" : "126",
-    "domain" : "287",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "286"
-  }, {
-    "range" : "13",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "288"
-  }, {
-    "range" : "13",
-    "domain" : "134",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "289"
-  }, {
-    "iri" : "https://w3id.org/hdgi#hasEndPose",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "hasEndPose",
-      "undefined" : "hasEndPose"
-    },
-    "superproperty" : [ "219" ],
-    "domain" : "25",
-    "attributes" : [ "object" ],
-    "id" : "227"
-  }, {
-    "range" : "126",
-    "domain" : "291",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "290"
-  }, {
-    "range" : "126",
-    "domain" : "132",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "293"
-  }, {
-    "range" : "126",
-    "domain" : "244",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "294"
-  }, {
-    "range" : "126",
-    "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "295"
-  }, {
-    "range" : "126",
-    "domain" : "170",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "296"
-  }, {
-    "range" : "126",
-    "domain" : "298",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "297"
-  }, {
-    "range" : "126",
-    "domain" : "301",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "300"
+    "id" : "224"
   }, {
     "range" : "34",
-    "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "302"
-  }, {
-    "range" : "34",
-    "domain" : "108",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "303"
-  }, {
-    "range" : "34",
-    "domain" : "111",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "304"
-  }, {
-    "range" : "34",
-    "domain" : "110",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "305"
-  }, {
-    "iri" : "https://w3id.org/hdgi#j-component",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "228",
-    "label" : {
-      "IRI-based" : "j-component",
-      "undefined" : "j-component"
-    },
-    "cardinality" : "1",
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "306"
-  }, {
-    "range" : "36",
     "domain" : "35",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "307"
+    "id" : "225"
   }, {
-    "iri" : "https://w3id.org/hdgi#xPosition",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "299",
-    "label" : {
-      "IRI-based" : "xPosition",
-      "undefined" : "xPosition"
-    },
-    "maxCardinality" : "1",
-    "domain" : "25",
-    "attributes" : [ "datatype" ],
-    "id" : "308"
-  }, {
-    "range" : "36",
-    "domain" : "96",
+    "range" : "11",
+    "domain" : "20",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "309"
+    "id" : "226"
   }, {
-    "range" : "71",
-    "domain" : "87",
+    "range" : "11",
+    "domain" : "16",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "310"
+    "id" : "229"
   }, {
-    "range" : "71",
-    "domain" : "48",
+    "range" : "11",
+    "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "311"
+    "id" : "230"
   }, {
-    "range" : "71",
-    "domain" : "38",
+    "range" : "11",
+    "domain" : "18",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "312"
+    "id" : "231"
   }, {
-    "range" : "71",
+    "range" : "11",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "range" : "11",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "235"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "31",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
+  }, {
+    "range" : "84",
     "domain" : "86",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "313"
+    "id" : "248"
   }, {
-    "range" : "71",
+    "range" : "84",
     "domain" : "85",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "314"
+    "id" : "249"
+  }, {
+    "range" : "60",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "250"
+  }, {
+    "iri" : "https://w3id.org/hdgi#kComponent",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "189",
+    "label" : {
+      "IRI-based" : "kComponent",
+      "undefined" : "kComponent"
+    },
+    "cardinality" : "1",
+    "domain" : "80",
+    "comment" : {
+      "undefined" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z\r\n\r\nIn the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "252"
+  }, {
+    "range" : "60",
+    "domain" : "198",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "253"
+  }, {
+    "range" : "60",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "254"
+  }, {
+    "range" : "60",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "255"
+  }, {
+    "range" : "60",
+    "domain" : "213",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "256"
+  }, {
+    "range" : "60",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "257"
+  }, {
+    "range" : "60",
+    "domain" : "221",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "258"
   }, {
     "iri" : "https://w3id.org/hdgi#hasLocalCoordinateSystem",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
+    "range" : "80",
     "label" : {
       "IRI-based" : "hasLocalCoordinateSystem",
       "undefined" : "hasLocalCoordinateSystem"
     },
-    "domain" : "25",
+    "domain" : "80",
     "attributes" : [ "object" ],
-    "id" : "315"
+    "id" : "259"
   }, {
-    "range" : "71",
+    "range" : "61",
     "domain" : "70",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "316"
+    "id" : "260"
   }, {
-    "range" : "72",
-    "domain" : "81",
+    "range" : "61",
+    "domain" : "69",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "317"
+    "id" : "261"
   }, {
-    "range" : "71",
-    "domain" : "84",
+    "range" : "60",
+    "domain" : "263",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "318"
+    "id" : "262"
   }, {
-    "range" : "71",
-    "domain" : "83",
+    "range" : "60",
+    "domain" : "59",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "319"
+    "id" : "264"
   }, {
-    "iri" : "https://w3id.org/hdgi#hasQuaternion",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "hasQuaternion",
-      "undefined" : "hasQuaternion"
-    },
-    "domain" : "25",
-    "attributes" : [ "object" ],
-    "id" : "320"
-  }, {
-    "range" : "72",
-    "domain" : "79",
+    "range" : "61",
+    "domain" : "67",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "321"
+    "id" : "267"
   }, {
-    "range" : "72",
-    "domain" : "78",
+    "range" : "61",
+    "domain" : "66",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "322"
+    "id" : "268"
   }, {
     "iri" : "https://w3id.org/hdgi#zRotation",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "292",
+    "range" : "239",
     "label" : {
       "IRI-based" : "zRotation",
       "undefined" : "zRotation"
     },
     "maxCardinality" : "1",
-    "domain" : "25",
+    "domain" : "80",
     "comment" : {
       "undefined" : "Angle around the z-axis"
     },
     "attributes" : [ "datatype" ],
+    "id" : "269"
+  }, {
+    "range" : "61",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
+  }, {
+    "range" : "61",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "271"
+  }, {
+    "range" : "34",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
+  }, {
+    "range" : "61",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "273"
+  }, {
+    "range" : "61",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "274"
+  }, {
+    "range" : "156",
+    "domain" : "276",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "275"
+  }, {
+    "range" : "156",
+    "domain" : "278",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "277"
+  }, {
+    "range" : "156",
+    "domain" : "236",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "range" : "156",
+    "domain" : "199",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "286"
+  }, {
+    "range" : "156",
+    "domain" : "294",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "293"
+  }, {
+    "range" : "156",
+    "domain" : "155",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "295"
+  }, {
+    "range" : "156",
+    "domain" : "297",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "296"
+  }, {
+    "range" : "62",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "298"
+  }, {
+    "range" : "62",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
+  }, {
+    "range" : "156",
+    "domain" : "245",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "300"
+  }, {
+    "range" : "62",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "301"
+  }, {
+    "range" : "106",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "302"
+  }, {
+    "range" : "10",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "303"
+  }, {
+    "range" : "62",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "304"
+  }, {
+    "range" : "106",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "305"
+  }, {
+    "range" : "10",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "306"
+  }, {
+    "range" : "84",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "307"
+  }, {
+    "range" : "84",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "308"
+  }, {
+    "range" : "84",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "309"
+  }, {
+    "range" : "84",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "310"
+  }, {
+    "range" : "84",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "311"
+  }, {
+    "range" : "84",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "312"
+  }, {
+    "iri" : "https://w3id.org/hdgi#yAxisDirection",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "238",
+    "label" : {
+      "IRI-based" : "yAxisDirection",
+      "undefined" : "yAxisDirection"
+    },
+    "domain" : "80",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "313"
+  }, {
+    "iri" : "https://w3id.org/hdgi#originPoint",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "242",
+    "label" : {
+      "IRI-based" : "originPoint",
+      "undefined" : "originPoint"
+    },
+    "cardinality" : "1",
+    "domain" : "80",
+    "comment" : {
+      "undefined" : "Frame of reference or the initial center.\r\nLocation of the (0,0,0) postion related to the given coordinates."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "314"
+  }, {
+    "range" : "221",
+    "domain" : "316",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "315"
+  }, {
+    "range" : "221",
+    "domain" : "227",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "317"
+  }, {
+    "range" : "43",
+    "domain" : "251",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "318"
+  }, {
+    "iri" : "https://w3id.org/hdgi#xAxisDirection",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "234",
+    "label" : {
+      "IRI-based" : "xAxisDirection",
+      "undefined" : "xAxisDirection"
+    },
+    "domain" : "80",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "319"
+  }, {
+    "iri" : "https://w3id.org/hdgi#zAxisDirection",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "233",
+    "label" : {
+      "IRI-based" : "zAxisDirection",
+      "undefined" : "zAxisDirection"
+    },
+    "domain" : "80",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "321"
+  }, {
+    "iri" : "https://w3id.org/hdgi#yPosition",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "240",
+    "label" : {
+      "IRI-based" : "yPosition",
+      "undefined" : "yPosition"
+    },
+    "maxCardinality" : "1",
+    "domain" : "80",
+    "attributes" : [ "datatype" ],
+    "id" : "322"
+  }, {
+    "iri" : "https://w3id.org/hdgi#wComponent",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "244",
+    "label" : {
+      "IRI-based" : "wComponent",
+      "undefined" : "wComponent"
+    },
+    "cardinality" : "1",
+    "domain" : "80",
+    "comment" : {
+      "undefined" : "Represents the amount of rotation which will occur about this axis defined by (i-component, j-component, k-component). Known as scalar component."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "323"
   }, {
-    "range" : "72",
+    "iri" : "https://w3id.org/hdgi#hasMovement",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasMovement",
+      "undefined" : "hasMovement"
+    },
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object" ],
     "id" : "324"
   }, {
-    "range" : "72",
-    "domain" : "75",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/hdgi#hasRotation",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasRotation",
+      "undefined" : "hasRotation"
+    },
+    "domain" : "80",
+    "attributes" : [ "object" ],
     "id" : "325"
   }, {
-    "range" : "72",
-    "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "326"
-  }, {
-    "range" : "72",
-    "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/hdgi#iComponent",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "193",
+    "label" : {
+      "IRI-based" : "iComponent",
+      "undefined" : "iComponent"
+    },
+    "cardinality" : "1",
+    "domain" : "80",
+    "comment" : {
+      "en" : "A quaternion “q” can be defined as (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers. The jComponent is the component of j which equals to y. In the equation 'j' is defined as ?-1. With quaternions, i = j = k = ?-1."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "327"
   }, {
-    "range" : "72",
-    "domain" : "76",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "328"
-  }, {
-    "range" : "134",
-    "domain" : "142",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "329"
-  }, {
-    "range" : "134",
-    "domain" : "141",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/hdgi#xRotation",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "241",
+    "label" : {
+      "IRI-based" : "xRotation",
+      "undefined" : "xRotation"
+    },
+    "maxCardinality" : "1",
+    "domain" : "80",
+    "comment" : {
+      "undefined" : "Angle around the x-axis"
+    },
+    "attributes" : [ "datatype" ],
     "id" : "330"
   }, {
-    "range" : "60",
-    "domain" : "193",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "331"
-  }, {
-    "range" : "60",
-    "domain" : "192",
+    "range" : "112",
+    "domain" : "289",
     "attributes" : [ "anonymous", "object" ],
     "id" : "332"
   }, {
-    "range" : "134",
-    "domain" : "138",
+    "range" : "112",
+    "domain" : "290",
     "attributes" : [ "anonymous", "object" ],
     "id" : "333"
   }, {
-    "range" : "134",
-    "domain" : "140",
+    "range" : "112",
+    "domain" : "291",
     "attributes" : [ "anonymous", "object" ],
     "id" : "334"
   }, {
-    "range" : "134",
-    "domain" : "139",
+    "range" : "112",
+    "domain" : "292",
     "attributes" : [ "anonymous", "object" ],
     "id" : "335"
   }, {
-    "iri" : "https://w3id.org/hdgi#hasPart",
-    "inverse" : "338",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "hasPart",
-      "undefined" : "hasPart"
-    },
-    "domain" : "337",
-    "attributes" : [ "allValues", "object" ],
+    "range" : "198",
+    "domain" : "201",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "336"
   }, {
-    "iri" : "https://w3id.org/hdgi#hasContext",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "40",
-    "label" : {
-      "IRI-based" : "hasContext",
-      "undefined" : "hasContext"
-    },
-    "domain" : "229",
-    "comment" : {
-      "undefined" : "Relation from a Human to a User Context or from a Device to a Device Context."
-    },
-    "attributes" : [ "someValues", "object" ],
+    "range" : "198",
+    "domain" : "210",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "337"
+  }, {
+    "range" : "112",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "338"
+  }, {
+    "range" : "112",
+    "domain" : "288",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "339"
+  }, {
+    "range" : "110",
+    "domain" : "284",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "340"
+  }, {
+    "range" : "110",
+    "domain" : "285",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "341"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "342"
+  }, {
+    "range" : "12",
+    "domain" : "156",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "343"
+  }, {
+    "range" : "12",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "344"
+  }, {
+    "range" : "12",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "345"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "346"
+  }, {
+    "range" : "112",
+    "domain" : "287",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "347"
+  }, {
+    "range" : "110",
+    "domain" : "181",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "348"
+  }, {
+    "range" : "110",
+    "domain" : "282",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "349"
+  }, {
+    "range" : "110",
+    "domain" : "283",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "350"
+  }, {
+    "iri" : "https://w3id.org/hdgi#hasEndPose",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasEndPose",
+      "undefined" : "hasEndPose"
+    },
+    "superproperty" : [ "184" ],
+    "domain" : "80",
+    "attributes" : [ "object" ],
+    "id" : "191"
+  }, {
+    "range" : "3",
+    "domain" : "265",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
+  }, {
+    "range" : "3",
+    "domain" : "266",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "352"
+  }, {
+    "range" : "110",
+    "domain" : "228",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "353"
+  }, {
+    "range" : "110",
+    "domain" : "150",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "354"
+  }, {
+    "range" : "110",
+    "domain" : "280",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "355"
+  }, {
+    "range" : "110",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "356"
+  }, {
+    "range" : "110",
+    "domain" : "281",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "357"
+  }, {
+    "iri" : "https://w3id.org/hdgi#xPosition",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "243",
+    "label" : {
+      "IRI-based" : "xPosition",
+      "undefined" : "xPosition"
+    },
+    "maxCardinality" : "1",
+    "domain" : "80",
+    "comment" : {
+      "en" : "In a three-dimensional Cartesian coordinate system where coordinates of any point in space are determined by three real numbers: x, y, z, the xPosition is the value of the real number x. Known as abscissa or x-coordinate in mathematics."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "358"
+  }, {
+    "iri" : "https://w3id.org/hdgi#hasQuaternion",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasQuaternion",
+      "undefined" : "hasQuaternion"
+    },
+    "domain" : "80",
+    "attributes" : [ "object" ],
+    "id" : "359"
+  }, {
+    "iri" : "https://w3id.org/hdgi#jComponent",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "192",
+    "label" : {
+      "IRI-based" : "jComponent",
+      "undefined" : "jComponent"
+    },
+    "cardinality" : "1",
+    "domain" : "80",
+    "comment" : {
+      "undefined" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y\r\n\r\nIn the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "360"
   }, {
     "iri" : "https://w3id.org/hdgi#manufacturedBy",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "243",
+    "range" : "329",
     "label" : {
       "IRI-based" : "manufacturedBy",
       "undefined" : "manufacturedBy"
     },
-    "domain" : "229",
+    "domain" : "194",
     "attributes" : [ "allValues", "object" ],
-    "id" : "340"
+    "id" : "361"
+  }, {
+    "iri" : "https://w3id.org/hdgi#hasContext",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasContext",
+      "undefined" : "hasContext"
+    },
+    "domain" : "194",
+    "comment" : {
+      "undefined" : "Relation from a Human to a User Context or from a Device to a Device Context."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "362"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "60",
     "label" : {
       "IRI-based" : "isPartOf",
       "undefined" : "isPartOf"
     },
-    "domain" : "87",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "341"
+    "domain" : "135",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "363"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "60",
     "label" : {
       "IRI-based" : "isPartOf",
       "undefined" : "isPartOf"
     },
-    "domain" : "48",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "342"
+    "domain" : "4",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "364"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "60",
     "label" : {
       "IRI-based" : "isPartOf",
       "undefined" : "isPartOf"
     },
-    "domain" : "83",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "343"
+    "domain" : "263",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "365"
   }, {
     "iri" : "https://w3id.org/hdgi#isPartOf",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "71",
+    "range" : "60",
     "label" : {
       "IRI-based" : "isPartOf",
       "undefined" : "isPartOf"
     },
-    "domain" : "85",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "344"
+    "domain" : "106",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "366"
   }, {
     "iri" : "https://w3id.org/hdgi#includesGesture",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "106",
+    "range" : "112",
     "label" : {
       "IRI-based" : "includesGesture",
       "undefined" : "includesGesture"
     },
-    "domain" : "106",
+    "domain" : "112",
     "attributes" : [ "allValues", "object" ],
-    "id" : "345"
+    "id" : "367"
+  }, {
+    "iri" : "https://w3id.org/hdgi#used",
+    "baseIri" : "https://w3id.org/hdgi",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "used",
+      "undefined" : "used"
+    },
+    "domain" : "112",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "368"
   }, {
     "iri" : "https://w3id.org/hdgi#hasPosition",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "25",
+    "range" : "80",
     "label" : {
       "IRI-based" : "hasPosition",
       "undefined" : "hasPosition"
     },
-    "domain" : "25",
+    "domain" : "80",
     "attributes" : [ "object" ],
-    "id" : "346"
-  }, {
-    "iri" : "https://w3id.org/hdgi#affordedBy",
-    "baseIri" : "https://w3id.org/hdgi",
-    "range" : "229",
-    "label" : {
-      "IRI-based" : "affordedBy",
-      "undefined" : "affordedBy"
-    },
-    "domain" : "98",
-    "comment" : {
-      "undefined" : "Relation from a Affordance to a Device describing the affordances of a device."
-    },
-    "attributes" : [ "allValues", "object" ],
-    "id" : "347"
+    "id" : "369"
   }, {
     "iri" : "https://w3id.org/hdgi#supportsGesture",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "106",
+    "range" : "112",
     "label" : {
       "IRI-based" : "supportsGesture",
       "undefined" : "supportsGesture"
     },
-    "domain" : "98",
+    "domain" : "76",
     "attributes" : [ "allValues", "object" ],
-    "id" : "348"
+    "id" : "370"
   }, {
-    "range" : "134",
-    "domain" : "135",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "349"
-  }, {
-    "range" : "73",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "350"
-  }, {
-    "range" : "134",
-    "domain" : "137",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "351"
-  }, {
-    "range" : "134",
-    "domain" : "136",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "352"
-  }, {
-    "range" : "73",
-    "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "353"
-  }, {
-    "range" : "85",
-    "domain" : "115",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "354"
-  }, {
-    "range" : "73",
-    "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "355"
-  }, {
-    "range" : "73",
-    "domain" : "126",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "356"
-  }, {
-    "range" : "85",
-    "domain" : "130",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "357"
-  }, {
-    "range" : "50",
-    "domain" : "118",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "358"
-  }, {
-    "iri" : "https://w3id.org/hdgi#i-component",
+    "iri" : "https://w3id.org/hdgi#affordedBy",
     "baseIri" : "https://w3id.org/hdgi",
-    "range" : "234",
+    "range" : "194",
     "label" : {
-      "IRI-based" : "i-component",
-      "undefined" : "i-component"
+      "IRI-based" : "affordedBy",
+      "undefined" : "affordedBy"
     },
-    "cardinality" : "1",
-    "domain" : "25",
+    "domain" : "76",
     "comment" : {
-      "undefined" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
+      "en" : "Relation from an Affordance to a Device describing an affordance of a device."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "359"
-  }, {
-    "range" : "50",
-    "domain" : "117",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "360"
-  }, {
-    "range" : "34",
-    "domain" : "113",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "361"
-  }, {
-    "range" : "34",
-    "domain" : "112",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "362"
-  }, {
-    "range" : "34",
-    "domain" : "114",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "363"
-  }, {
-    "range" : "34",
-    "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "364"
+    "attributes" : [ "allValues", "object" ],
+    "id" : "371"
   } ]
 }

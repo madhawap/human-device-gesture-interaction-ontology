@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/hdgi#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/hdgi#","name":"Human Device Gesture Interaction Ontology", "headline":"Gesture-controlled interfaces are becoming popular with the recent advent of IoT systems. Especially in the current automobiles, smart homes, computer games and AR/VR applications, gestures have become prevalent due to its accessibility to everyone. Designers, producers and vendors integrating gesture interfaces into their products have also increased in numbers, giving rise to a greater variation of standards in utilizing them. This could confuse the users who are accustomed to a set of conventional controls. This ontology formally describes human gestures and facilitate automated reasoning tasks which help systems to map gestures to corresponding affordances. This will be helpful for standardizing gesture designing and to bring interoperability across gesture-controlled interfaces.", "datePublished":"Tue Jul 14 19:30:20 AEST 2020", "version":"0.1", "license":"https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE", "author":[{"@type":"Person","name":"Madhawa Perera"},{"@type":"Person","name":"Armin Haller"},{"@type":"Person","name":"Sergio J. Rodríguez Méndez"},{"@type":"Person","name":"Matt Adcock"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/hdgi#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/hdgi#","name":"Human Device Gesture Interaction Ontology", "headline":"The HDGI ontology aims to model the pose and/or movement of human upper limbs that are used to interact with devices (particularly with device affordances). It is mapped around gestures performed by human's upper limb region to interact with these affordances. While allowing these mapping the ontology is also developed to be used as a dictionary for manufacturers, designers and developer community to browse and locate commonly used gestures to command certain affordances, or/and to understand the connections and dynamics around it. This ontology is made accessible, flexible and extendable enabling device manufacturers, designers and users to incorporate new gestures and map the relations to corresponding affordances accordingly. The ontology is geared at mapping the ubiquitousness in gesture vocabularies by linking them appropriately and does not enforce designers and manufacturers to follow a standard.", "datePublished":"Tue Aug 18 02:47:42 AEST 2020", "version":"0.1", "license":"https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE", "author":[{"@type":"Person","name":"Madhawa Perera"},{"@type":"Person","name":"Armin Haller"},{"@type":"Person","name":"Sergio J. Rodríguez Méndez,"},{"@type":"Person","name":"Matt Adcock"}]}</script>
 
 <script src="resources/jquery.js"></script>
 <script src="resources/marked.min.js"></script>
@@ -57,9 +57,9 @@ function loadTOC(){
 
 <dl>
 <dt>This version:</dt>
-<dd><a href="https://w3id.org/hdgi">https://w3id.org/hdgi</a></dd>
+<dd><a href="https://w3id.org/hdgi/v0.1">https://w3id.org/hdgi/v0.1</a></dd>
 <dt>Latest version:</dt>
-<dd><a href="https://w3id.org/hdgi">https://w3id.org/hdgi</a></dd>
+<dd><a href="https://w3id.org/hdgi#">https://w3id.org/hdgi</a></dd>
 <dt>Revision:</dt>
 <dd>0.1</dd>
 <dt>Authors:</dt>
@@ -68,7 +68,7 @@ function loadTOC(){
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Human Device Gesture Interaction Ontology. Revision: 0.1. Retrieved from: https://w3id.org/hdgi</dd>
+<dd> Human Device Gesture Interaction Ontology. Revision: 0.1. Retrieved from: https://w3id.org/hdgi/v0.1</dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
@@ -92,21 +92,22 @@ The HDGI ontology aims to model the pose and/or movement of human upper limbs th
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<!-- <tr><td><b>https://w3id.org/hdgi#</b></td><td>&lt;https://w3id.org/hdgi#&gt;</td></tr> -->
-<tr><td><b>schema</b></td><td>&lt;https://schema.org&gt;</td></tr>
-<tr><td><b>w3id-org</b></td><td>&lt;https://w3id.org&gt;</td></tr>
-<tr><td><b>ns</b></td><td>&lt;http://creativecommons.org/ns&gt;</td></tr>
-<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
-<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>hdgi</b></td><td>&lt;https://w3id.org/hdgi#&gt;</td></tr>
+<tr><td><b>cc</b></td><td>&lt;http://creativecommons.org/ns#&gt;</td></tr>
+<tr><td><b>fma</b></td><td>&lt;http://purl.org/sig/ont/fma/;</td></tr>
+<tr><td><b>dcterms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>qudt</b></td><td>&lt;http://qudt.org/schema/qudt#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
 <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-<tr><td><b>hdgi</b></td><td>&lt;https://w3id.org/hdgi&gt;</td></tr>
-<tr><td><b>master</b></td><td>&lt;https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master&gt;</td></tr>
-<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
-<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>schema</b></td><td>&lt;https://schema.org&gt;</td></tr>
+<tr><td><b>time</b></td><td>&lt;http://www.w3.org/2006/time&gt;</td></tr>
 <tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
 <tr><td><b>default namespace</b></td><td>&lt;https://w3id.org/hdgi&gt;</td></tr>
-<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+<tr><td><b>w3id-org</b></td><td>&lt;https://w3id.org&gt;</td></tr>
 </tbody>
 </table>
 </div>
@@ -125,9 +126,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#Affordance" title="https://w3id.org/hdgi#Affordance">Affordance</a>
-   </li>
-   <li>
-      <a href="#Body" title="https://w3id.org/hdgi#Body">Body</a>
    </li>
    <li>
       <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">BodyPart</a>
@@ -249,6 +247,9 @@ This ontology has the following classes and properties.</span>
       <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">Gesture</a>
    </li>
    <li>
+      <a href="#Hand" title="https://w3id.org/hdgi#Hand">Hand</a>
+   </li>
+   <li>
       <a href="#HandGesture" title="https://w3id.org/hdgi#HandGesture">HandGesture</a>
    </li>
    <li>
@@ -259,6 +260,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#Human" title="https://w3id.org/hdgi#Human">Human</a>
+   </li>
+   <li>
+      <a href="#HumanBody" title="https://w3id.org/hdgi#HumanBody">HumanBody</a>
    </li>
    <li>
       <a href="#IndexFinger" title="https://w3id.org/hdgi#IndexFinger">IndexFinger</a>
@@ -298,6 +302,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#LeftForearm" title="https://w3id.org/hdgi#LeftForearm">LeftForearm</a>
+   </li>
+   <li>
+      <a href="#LeftHand" title="https://w3id.org/hdgi#LeftHand">LeftHand</a>
    </li>
    <li>
       <a href="#LeftIndexFinger" title="https://w3id.org/hdgi#LeftIndexFinger">LeftIndexFinger</a>
@@ -477,6 +484,9 @@ This ontology has the following classes and properties.</span>
       <a href="#RightForearm" title="https://w3id.org/hdgi#RightForearm">RightForearm</a>
    </li>
    <li>
+      <a href="#RightHand" title="https://w3id.org/hdgi#RightHand">RightHand</a>
+   </li>
+   <li>
       <a href="#RightIndexFinger" title="https://w3id.org/hdgi#RightIndexFinger">RightIndexFinger</a>
    </li>
    <li>
@@ -546,6 +556,9 @@ This ontology has the following classes and properties.</span>
       <a href="#ThumbFolded" title="https://w3id.org/hdgi#ThumbFolded">ThumbFolded</a>
    </li>
    <li>
+      <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
+   </li>
+   <li>
       <a href="#ThumbStraightandBackward" title="https://w3id.org/hdgi#ThumbStraightandBackward">ThumbStraightandBackward</a>
    </li>
    <li>
@@ -562,9 +575,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#ThumbStraightandUpward" title="https://w3id.org/hdgi#ThumbStraightandUpward">ThumbStraightandUpward</a>
-   </li>
-   <li>
-      <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
    </li>
    <li>
       <a href="#UnitOfMeasure" title="https://w3id.org/hdgi#UnitOfMeasure">UnitOfMeasure</a>
@@ -687,25 +697,25 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><h4>Data Properties</h4><ul class="hlist">
    <li>
-      <a href="#i-component" title="https://w3id.org/hdgi#i-component">i-component</a>
+      <a href="#iComponent" title="https://w3id.org/hdgi#iComponent">iComponent</a>
    </li>
    <li>
-      <a href="#j-component" title="https://w3id.org/hdgi#j-component">j-component</a>
+      <a href="#jComponent" title="https://w3id.org/hdgi#jComponent">jComponent</a>
    </li>
    <li>
-      <a href="#k-component" title="https://w3id.org/hdgi#k-component">k-component</a>
+      <a href="#kComponent" title="https://w3id.org/hdgi#kComponent">kComponent</a>
    </li>
    <li>
       <a href="#originPoint" title="https://w3id.org/hdgi#originPoint">originPoint</a>
    </li>
    <li>
-      <a href="#timeStamp" title="https://w3id.org/hdgi#timeStamp">timeStamp</a>
+      <a href="#timestamp" title="https://w3id.org/hdgi#timestamp">timestamp</a>
    </li>
    <li>
-      <a href="#w-component" title="https://w3id.org/hdgi#w-component">w-component</a>
+      <a href="#wComponent" title="https://w3id.org/hdgi#wComponent">wComponent</a>
    </li>
    <li>
-      <a href="#x-axisDirection" title="https://w3id.org/hdgi#x-axisDirection">x-axisDirection</a>
+      <a href="#xAxisDirection" title="https://w3id.org/hdgi#xAxisDirection">xAxisDirection</a>
    </li>
    <li>
       <a href="#xPosition" title="https://w3id.org/hdgi#xPosition">xPosition</a>
@@ -714,7 +724,7 @@ This ontology has the following classes and properties.</span>
       <a href="#xRotation" title="https://w3id.org/hdgi#xRotation">xRotation</a>
    </li>
    <li>
-      <a href="#y-axisDirection" title="https://w3id.org/hdgi#y-axisDirection">y-axisDirection</a>
+      <a href="#yAxisDirection" title="https://w3id.org/hdgi#yAxisDirection">yAxisDirection</a>
    </li>
    <li>
       <a href="#yPosition" title="https://w3id.org/hdgi#yPosition">yPosition</a>
@@ -723,7 +733,7 @@ This ontology has the following classes and properties.</span>
       <a href="#yRotation" title="https://w3id.org/hdgi#yRotation">yRotation</a>
    </li>
    <li>
-      <a href="#z-axisDirection" title="https://w3id.org/hdgi#z-axisDirection">z-axisDirection</a>
+      <a href="#zAxisDirection" title="https://w3id.org/hdgi#zAxisDirection">zAxisDirection</a>
    </li>
    <li>
       <a href="#zPosition" title="https://w3id.org/hdgi#zPosition">zPosition</a>
@@ -731,16 +741,56 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#zRotation" title="https://w3id.org/hdgi#zRotation">zRotation</a>
    </li>
+</ul><h4>Annotation Properties</h4><ul class="hlist">
+   <li>
+      <a href="#http://creativecommons.org/ns#attributionURL" title="http://creativecommons.org/ns#attributionURL">
+         <span>attribution u r l</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+         <span>description</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
+         <span>example</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">
+         <span>issued</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespacePrefix"
+         title="http://purl.org/vocab/vann/preferredNamespacePrefix">
+         <span>preferred namespace prefix</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+         <span>preferred namespace uri</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights">
+         <span>rights</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe>
 </div>
 
-
-<!--DESCRIPTION SECTION-->
-    <!-- <div id="description"><h2 id="desc" class="list">Human Device Gesture Interaction Ontology: Description <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
-<span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
-
-</div> -->
 
 
 <!--CROSSREF SECTION-->
@@ -754,9 +804,6 @@ This section provides details for each class and property defined by Human Devic
       </li>
       <li>
          <a href="#Affordance" title="https://w3id.org/hdgi#Affordance">Affordance</a>
-      </li>
-      <li>
-         <a href="#Body" title="https://w3id.org/hdgi#Body">Body</a>
       </li>
       <li>
          <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">BodyPart</a>
@@ -878,6 +925,9 @@ This section provides details for each class and property defined by Human Devic
          <a href="#Gesture" title="https://w3id.org/hdgi#Gesture">Gesture</a>
       </li>
       <li>
+         <a href="#Hand" title="https://w3id.org/hdgi#Hand">Hand</a>
+      </li>
+      <li>
          <a href="#HandGesture" title="https://w3id.org/hdgi#HandGesture">HandGesture</a>
       </li>
       <li>
@@ -888,6 +938,9 @@ This section provides details for each class and property defined by Human Devic
       </li>
       <li>
          <a href="#Human" title="https://w3id.org/hdgi#Human">Human</a>
+      </li>
+      <li>
+         <a href="#HumanBody" title="https://w3id.org/hdgi#HumanBody">HumanBody</a>
       </li>
       <li>
          <a href="#IndexFinger" title="https://w3id.org/hdgi#IndexFinger">IndexFinger</a>
@@ -927,6 +980,9 @@ This section provides details for each class and property defined by Human Devic
       </li>
       <li>
          <a href="#LeftForearm" title="https://w3id.org/hdgi#LeftForearm">LeftForearm</a>
+      </li>
+      <li>
+         <a href="#LeftHand" title="https://w3id.org/hdgi#LeftHand">LeftHand</a>
       </li>
       <li>
          <a href="#LeftIndexFinger" title="https://w3id.org/hdgi#LeftIndexFinger">LeftIndexFinger</a>
@@ -1106,6 +1162,9 @@ This section provides details for each class and property defined by Human Devic
          <a href="#RightForearm" title="https://w3id.org/hdgi#RightForearm">RightForearm</a>
       </li>
       <li>
+         <a href="#RightHand" title="https://w3id.org/hdgi#RightHand">RightHand</a>
+      </li>
+      <li>
          <a href="#RightIndexFinger" title="https://w3id.org/hdgi#RightIndexFinger">RightIndexFinger</a>
       </li>
       <li>
@@ -1175,6 +1234,9 @@ This section provides details for each class and property defined by Human Devic
          <a href="#ThumbFolded" title="https://w3id.org/hdgi#ThumbFolded">ThumbFolded</a>
       </li>
       <li>
+         <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
+      </li>
+      <li>
          <a href="#ThumbStraightandBackward" title="https://w3id.org/hdgi#ThumbStraightandBackward">ThumbStraightandBackward</a>
       </li>
       <li>
@@ -1191,9 +1253,6 @@ This section provides details for each class and property defined by Human Devic
       </li>
       <li>
          <a href="#ThumbStraightandUpward" title="https://w3id.org/hdgi#ThumbStraightandUpward">ThumbStraightandUpward</a>
-      </li>
-      <li>
-         <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
       </li>
       <li>
          <a href="#UnitOfMeasure" title="https://w3id.org/hdgi#UnitOfMeasure">UnitOfMeasure</a>
@@ -1252,6 +1311,15 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#ActuatableAffordance</p>
+      <div class="comment">
+         <span class="markdown">An actuatable Affordance of a Device. This is rdfs:subClassOf ssn:ActuatableProperty.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>TV is a Device that can change the state to “on” or “off”. This is a property of a TV which a human could act upon. Thus, ability to “turn on” is an ActuatableAffordance of a TV.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1268,7 +1336,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Affordance</p>
       <div class="comment">
-         <span class="markdown">Affordances are all the type of properties that belong to devices. They indicate the possible actions users can take with it.</span>
+         <span class="markdown">Affordance is a quality or characteristic of Devices that indicates the possible action a Human can take with it. This is rdfs:subClassOf ssn:Property.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -1281,21 +1349,6 @@ This section provides details for each class and property defined by Human Devic
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Body">
-      <h3>Body<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#Body</p>
-      <div class="comment">
-         <span class="markdown">Human body. A collection of body parts.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
-      </dl>
-   </div>
    <div class="entity" id="BodyPart">
       <h3>BodyPart<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
@@ -1304,7 +1357,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#BodyPart</p>
       <div class="comment">
-         <span class="markdown">Parts of human body.</span>
+         <span class="markdown">BodyPart is any part of HumanBody such as an Face, Leg etc.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1319,6 +1372,7 @@ This section provides details for each class and property defined by Human Devic
             <sup class="type-c" title="class">c</sup>, <a href="#Finger" title="https://w3id.org/hdgi#Finger">Finger</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Foot" title="https://w3id.org/hdgi#Foot">Foot</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Forearm" title="https://w3id.org/hdgi#Forearm">Forearm</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Hand" title="https://w3id.org/hdgi#Hand">Hand</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Head" title="https://w3id.org/hdgi#Head">Head</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Leg" title="https://w3id.org/hdgi#Leg">Leg</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Palm" title="https://w3id.org/hdgi#Palm">Palm</a>
@@ -1334,6 +1388,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Context</p>
+      <div class="comment">
+         <span class="markdown">Context describes details of a situation.</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -1351,7 +1408,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Device</p>
       <div class="comment">
-         <span class="markdown">A device denotes a piece of hardware or software which consists of sensors or actuators or both.</span>
+         <span class="markdown">Device denotes a piece of hardware or software which consists of sensors or actuators or both.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -1365,6 +1422,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#DeviceContext</p>
+      <div class="comment">
+         <span class="markdown">DeviceContext describes the data that is specifically related to a Device in a certain Context that is Device specific data in a Context.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1381,7 +1441,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#DeviceManufacturer</p>
       <div class="comment">
-         <span class="markdown">The company manufacturing a device.</span>
+         <span class="markdown">DeviceManufacturer is the company/vendor manufactures a Device.</span>
       </div>
    </div>
    <div class="entity" id="Duration">
@@ -1392,7 +1452,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Duration</p>
       <div class="comment">
-         <span class="markdown">Duration is a temporal extent.</span>
+         <span class="markdown">Duration of a temporal extent expressed as a decimal number scaled by a temporal unit. This is an owl:equivalentClass time:Duration.</span>
       </div>
    </div>
    <div class="entity" id="Face">
@@ -1402,6 +1462,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Face</p>
+      <div class="comment">
+         <span class="markdown">Face is a BodyPart which represents the front side of a Head.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1417,6 +1480,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#FacialGesture</p>
+      <div class="comment">
+         <span class="markdown">FacialGesture is a Gesture executed with a Movement or a Pose using the BodayPart Face.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1433,12 +1499,12 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Finger</p>
       <div class="comment">
-         <span class="markdown">A finger is a body part of the human body and a type of digit.</span>
+         <span class="markdown">Finger is a BodyPart of the HumanBody. Also know as Digits of hand. This is an owl:equivalentClass fma:fma9666.</span>
       </div>
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>thumb, middle finger, left ring finger etc</pre>
+            <pre>Thumb, MiddleFinger, RingFinger etc.</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1595,7 +1661,7 @@ This section provides details for each class and property defined by Human Devic
             <sup class="type-c" title="class">c</sup>, <a href="#LittleFingerPose" title="https://w3id.org/hdgi#LittleFingerPose">LittleFingerPose</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MiddleFingerPose" title="https://w3id.org/hdgi#MiddleFingerPose">MiddleFingerPose</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RingFingerPose" title="https://w3id.org/hdgi#RingFingerPose">RingFingerPose</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1652,6 +1718,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#FootGesture</p>
+      <div class="comment">
+         <span class="markdown">FootGesture is a Gesture executed with a Movement or a Pose using the BodayPart Foot.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1683,7 +1752,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Forearm</p>
       <div class="comment">
-         <span class="markdown">The forearm is the line between the elbow joint and the wrist.</span>
+         <span class="markdown">Forearm is a BodyPart. It is the region of the upper limb between the elbow and the wrist. This is an owl:equivalentClass fma:fma9663.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -1782,7 +1851,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#ForearmGesture</p>
       <div class="comment">
-         <span class="markdown">Gestures (movements) made with forearm</span>
+         <span class="markdown">ForearmGesture is a Gesture executed with a Movement or a Pose using the BodyPart Forearm.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -1952,7 +2021,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Gesture</p>
       <div class="comment">
-         <span class="markdown">A gesture is a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm.</span>
+         <span class="markdown">Gesture is a Movement or a Pose of a BodyPart.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -1970,6 +2039,30 @@ This section provides details for each class and property defined by Human Devic
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Hand">
+      <h3>Hand<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#Hand</p>
+      <div class="comment">
+         <span class="markdown">Hand is a BodyPart. It is the terminal segmant of upper limb which starts at end of the Forearm and consists of Fingers. This is an owl:equivalentClass fma:fma9712.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BodyPart" title="https://w3id.org/hdgi#BodyPart">BodyPart</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LeftHand" title="https://w3id.org/hdgi#LeftHand">LeftHand</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RightHand" title="https://w3id.org/hdgi#RightHand">RightHand</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="HandGesture">
       <h3>HandGesture<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
@@ -1978,7 +2071,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#HandGesture</p>
       <div class="comment">
-         <span class="markdown">Gestures (movements) made with fingers and palms</span>
+         <span class="markdown">HandGesture is a Gesture executed with a Movement or a Pose using the BodayParts Hand, Palm and/or Fingers.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -1995,6 +2088,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Head</p>
+      <div class="comment">
+         <span class="markdown">Head is a BodyPart. It is the upper part of the HumanBody which starts from the upper end of the neck. This is an owl:equivalentClass fma:fma7154.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -2010,6 +2106,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#HeadGesture</p>
+      <div class="comment">
+         <span class="markdown">HeadGesture is a Gesture executed with a Movement or a Pose using the BodayPart Head.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -2033,6 +2132,21 @@ This section provides details for each class and property defined by Human Devic
          <dd/>
       </dl>
    </div>
+   <div class="entity" id="HumanBody">
+      <h3>HumanBody<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#HumanBody</p>
+      <div class="comment">
+         <span class="markdown">HumanBody holds a collection of BodyParts of a Human.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
    <div class="entity" id="IndexFinger">
       <h3>IndexFinger<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
@@ -2041,7 +2155,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#IndexFinger</p>
       <div class="comment">
-         <span class="markdown">Second finger or the second digit of hand.</span>
+         <span class="markdown">IndexFinger is the second Finger on Hand. Also known as second Digit of hand. This is an owl:equivalentClass fma:fma24946.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2217,10 +2331,31 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LeftForearm</p>
+      <div class="comment">
+         <span class="markdown">LeftForearm is the region of the left upper limb between the left elbow and the left wrist. This is an owl:equivalentClass fma:fma11346.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#Forearm" title="https://w3id.org/hdgi#Forearm">Forearm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeftHand">
+      <h3>LeftHand<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#LeftHand</p>
+      <div class="comment">
+         <span class="markdown">LeftHand is the terminal segmant of left upper limb which starts at end of the LeftForearm and consists of Fingers. This is an owl:equivalentClass fma:fma9714.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Hand" title="https://w3id.org/hdgi#Hand">Hand</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2233,7 +2368,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LeftIndexFinger</p>
       <div class="comment">
-         <span class="markdown">Left hand index finger.</span>
+         <span class="markdown">LeftIndexFinger is the IndexFinger on the LeftHand. This is an owl:equivalentClass fma:fma60334.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2251,7 +2386,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LeftLittleFinger</p>
       <div class="comment">
-         <span class="markdown">Left hand little finger.</span>
+         <span class="markdown">LeftLittleFinger is the LittleFinger on LeftHand. This is an owl:equivalentClass fma:fma60328.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2269,7 +2404,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LeftMiddleFinger</p>
       <div class="comment">
-         <span class="markdown">Left hand middle finger.</span>
+         <span class="markdown">LeftMiddleFinger is the MiddleFinger on LeftHand. This is an owl:equivalentClass fma:fma60332.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2287,7 +2422,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LeftPalm</p>
       <div class="comment">
-         <span class="markdown">Left hand palm.</span>
+         <span class="markdown">LeftPalm is the area located at the end of the LeftForearm (starting from left wrist) up until the start of a LeftHand Fingers which is the central region of the anterior part of the LeftHand. This is an owl:equivalentClass fma:fma61071.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2305,7 +2440,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LeftRingFinger</p>
       <div class="comment">
-         <span class="markdown">Left hand ring finger.</span>
+         <span class="markdown">LeftRingFinger is the RingFinger on LeftHand. This is an owl:equivalentClass fma:fma60330.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2323,7 +2458,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LeftThumb</p>
       <div class="comment">
-         <span class="markdown">Thumb of left hand.</span>
+         <span class="markdown">LeftThumb is the Thumb on LeftHand. This is an owl:equivalentClass fma:fma60326.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2340,6 +2475,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LeftUpperArm</p>
+      <div class="comment">
+         <span class="markdown">LeftUpperArm is the region of the left upper limb between the left shoulder and left elbow joint. This is an owl:equivalentClass fma:fma24896.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -2355,6 +2493,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Leg</p>
+      <div class="comment">
+         <span class="markdown">Leg is a BodyPart and it is the intermediate segment of lower limb. This is an owl:equivalentClass fma:fma24979.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -2370,6 +2511,9 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LegGesture</p>
+      <div class="comment">
+         <span class="markdown">LegGesture is a Gesture executed with a Movement or a Pose using the BodayPart Leg.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -2401,7 +2545,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#LittleFinger</p>
       <div class="comment">
-         <span class="markdown">Fifth finger or the fifth digit of hand.</span>
+         <span class="markdown">LittleFinger is the fifth Finger on Hand. Also known as fifth Digit of hand. This is an owl:equivalentClass fma:fma24949.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2593,7 +2737,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#MiddleFinger</p>
       <div class="comment">
-         <span class="markdown">Third finger or the third digit of hand.</span>
+         <span class="markdown">MiddleFinger is the third Finger on Hand. Also known as third Digit of hand. This is an owl:equivalentClass fma:fma24947.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2792,6 +2936,15 @@ This section provides details for each class and property defined by Human Devic
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#ObservableAffordance</p>
+      <div class="comment">
+         <span class="markdown">An observable Affordance of a Device. This is rdfs:subClassOf ssn:ObservableProperty.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Thermostat is a Device that can sense/measure a temperature of a certain location at a given point of time and display it. Thus, “display measured temperature” is an ObservableAffordance of a thermostat.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -2820,7 +2973,7 @@ This section provides details for each class and property defined by Human Devic
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Palm</p>
       <div class="comment">
-         <span class="markdown">The area located at the end of the forearm (starting from wrist) up until the start of a finger which is the central region of the anterior part of the hand.</span>
+         <span class="markdown">Palm is a BodyPart. It is the area located at the end of the Forearm (starting from wrist) up until the start of a Finger which is the central region of the anterior part of the Hand. This is an owl:equivalentClass fma:fma24920.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3162,10 +3315,31 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#RightForearm</p>
+      <div class="comment">
+         <span class="markdown">RightForearm is the region of the right upper limb between the right elbow and the right wrist. This is an owl:equivalentClass fma:fma11345.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#Forearm" title="https://w3id.org/hdgi#Forearm">Forearm</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RightHand">
+      <h3>RightHand<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#RightHand</p>
+      <div class="comment">
+         <span class="markdown">RightHand is the terminal segmant of right upper limb which starts at end of the RightForearm and consists of Fingers. This is an owl:equivalentClass fma:fma9713.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Hand" title="https://w3id.org/hdgi#Hand">Hand</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3178,7 +3352,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#RightIndexFinger</p>
       <div class="comment">
-         <span class="markdown">Right hand index finger.</span>
+         <span class="markdown">RightIndexFinger is the IndexFinger on the RightHand. This is an owl:equivalentClass fma:fma60333.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3196,7 +3370,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#RightLittleFinger</p>
       <div class="comment">
-         <span class="markdown">Right hand little finger.</span>
+         <span class="markdown">RightLittleFinger is the LittleFinger on RightHand. This is an owl:equivalentClass fma:fma60327.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3214,7 +3388,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#RightMiddleFinger</p>
       <div class="comment">
-         <span class="markdown">Right hand middle finger.</span>
+         <span class="markdown">RightMiddleFinger is the MiddleFinger on RightHand. This is an owl:equivalentClass fma:fma60331.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3232,7 +3406,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#RightPalm</p>
       <div class="comment">
-         <span class="markdown">Right hand palm.</span>
+         <span class="markdown">RightPalm is the area located at the end of the RightForearm (starting from right wrist) up until the start of a RightHand Fingers which is the central region of the anterior part of the RightHand. This is an owl:equivalentClass fma:fma61070.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3250,7 +3424,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#RightRingFinger</p>
       <div class="comment">
-         <span class="markdown">Right hand ring finger.</span>
+         <span class="markdown">RightRingFinger is the RingFinger on RightHand. This is an owl:equivalentClass fma:fma60329.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3268,7 +3442,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#RightThumb</p>
       <div class="comment">
-         <span class="markdown">Thumb of right hand.</span>
+         <span class="markdown">RightThumb is the Thumb on RightHand. This is an owl:equivalentClass fma:fma60325.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3285,6 +3459,9 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#RightUpperArm</p>
+      <div class="comment">
+         <span class="markdown">RightUpperArm is the region of the right upper limb between the right shoulder and right elbow joint. This is an owl:equivalentClass fma:fma24895.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -3301,7 +3478,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#RingFinger</p>
       <div class="comment">
-         <span class="markdown">Fourth finger or the fourth digit of hand.</span>
+         <span class="markdown">RingFinger is the fourth Finger on Hand. Also known as fourth Digit of hand. This is an owl:equivalentClass fma:fma24948.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3493,7 +3670,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#Thumb</p>
       <div class="comment">
-         <span class="markdown">First digit of hand.</span>
+         <span class="markdown">Thumb is the first Finger on Hand. Also known as first Digit of hand. This is an owl:equivalentClass fma:fma24938.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3519,7 +3696,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
+            <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3534,108 +3711,18 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
+            <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="ThumbStraightandBackward">
-      <h3>ThumbStraightandBackward<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="ThumbPose">
+      <h3>ThumbPose<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandBackward</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ThumbStraightandDownward">
-      <h3>ThumbStraightandDownward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandDownward</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ThumbStraightandForward">
-      <h3>ThumbStraightandForward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandForward</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ThumbStraightandLeftward">
-      <h3>ThumbStraightandLeftward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandLeftward</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ThumbStraightandRightward">
-      <h3>ThumbStraightandRightward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandRightward</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ThumbStraightandUpward">
-      <h3>ThumbStraightandUpward<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandUpward</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TumbPose" title="https://w3id.org/hdgi#TumbPose">TumbPose</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TumbPose">
-      <h3>TumbPose<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#TumbPose</p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbPose</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -3656,6 +3743,96 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="ThumbStraightandBackward">
+      <h3>ThumbStraightandBackward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandBackward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ThumbStraightandDownward">
+      <h3>ThumbStraightandDownward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandDownward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ThumbStraightandForward">
+      <h3>ThumbStraightandForward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandForward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ThumbStraightandLeftward">
+      <h3>ThumbStraightandLeftward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandLeftward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ThumbStraightandRightward">
+      <h3>ThumbStraightandRightward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandRightward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ThumbStraightandUpward">
+      <h3>ThumbStraightandUpward<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#ThumbStraightandUpward</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ThumbPose" title="https://w3id.org/hdgi#ThumbPose">ThumbPose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="UnitOfMeasure">
       <h3>UnitOfMeasure<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#classes">Classes</a>
@@ -3664,7 +3841,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#UnitOfMeasure</p>
       <div class="comment">
-         <span class="markdown">Defines units of measurement.</span>
+         <span class="markdown">Defines units of measurement. This is an equivalent class to qudt:Unit</span>
       </div>
    </div>
    <div class="entity" id="UpperArm">
@@ -3675,7 +3852,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#UpperArm</p>
       <div class="comment">
-         <span class="markdown">The upper arm is the line between the shoulder and elbow joint.</span>
+         <span class="markdown">UpperArm is a BodyPart. It is the region of the upper limb between the shoulder and elbow joint. This is an owl:equivalentClass fma:fma24890.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3759,7 +3936,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#UpperArmGesture</p>
       <div class="comment">
-         <span class="markdown">Gestures (movements) made with upper arm</span>
+         <span class="markdown">UpperArmGesture is a Gesture executed with a Movement or a Pose using the BodayPart UpperArm.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3911,6 +4088,9 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#UserContext</p>
+      <div class="comment">
+         <span class="markdown">UserContext describes the data that is specifically related to a Human in a certain Context that is Human specific data in a Context.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -4000,7 +4180,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#affordedBy</p>
       <div class="comment">
-         <span class="markdown">Relation from a Affordance to a Device describing the affordances of a device.</span>
+         <span class="markdown">Relation from an Affordance to a Device describing an affordance of a device.</span>
       </div>
    </div>
    <div class="entity" id="hasContext">
@@ -4021,6 +4201,9 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#hasDuration</p>
+      <div class="comment">
+         <span class="markdown">Relation between a Movement and a Duration describing the time duration of a movement.</span>
+      </div>
    </div>
    <div class="entity" id="hasEndPose">
       <h3>hasEndPose<sup class="type-op" title="object property">op</sup>
@@ -4219,18 +4402,6 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#used</p>
-      <div class="description">
-         <dl>
-            <dt>has sub-property chains</dt>
-            <dd>
-               <a href="#hasPose" title="https://w3id.org/hdgi#hasPose">hasPose</a>
-               <sup class="type-op" title="object property">op</sup>
-               <span class="logic">o</span>
-               <a href="#used" title="https://w3id.org/hdgi#used">used</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
    </div>
    <div class="entity" id="uses">
       <h3>uses<sup class="type-op" title="object property">op</sup>
@@ -4244,25 +4415,25 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#i-component" title="https://w3id.org/hdgi#i-component">i-component</a>
+         <a href="#iComponent" title="https://w3id.org/hdgi#iComponent">iComponent</a>
       </li>
       <li>
-         <a href="#j-component" title="https://w3id.org/hdgi#j-component">j-component</a>
+         <a href="#jComponent" title="https://w3id.org/hdgi#jComponent">jComponent</a>
       </li>
       <li>
-         <a href="#k-component" title="https://w3id.org/hdgi#k-component">k-component</a>
+         <a href="#kComponent" title="https://w3id.org/hdgi#kComponent">kComponent</a>
       </li>
       <li>
          <a href="#originPoint" title="https://w3id.org/hdgi#originPoint">originPoint</a>
       </li>
       <li>
-         <a href="#timeStamp" title="https://w3id.org/hdgi#timeStamp">timeStamp</a>
+         <a href="#timestamp" title="https://w3id.org/hdgi#timestamp">timestamp</a>
       </li>
       <li>
-         <a href="#w-component" title="https://w3id.org/hdgi#w-component">w-component</a>
+         <a href="#wComponent" title="https://w3id.org/hdgi#wComponent">wComponent</a>
       </li>
       <li>
-         <a href="#x-axisDirection" title="https://w3id.org/hdgi#x-axisDirection">x-axisDirection</a>
+         <a href="#xAxisDirection" title="https://w3id.org/hdgi#xAxisDirection">xAxisDirection</a>
       </li>
       <li>
          <a href="#xPosition" title="https://w3id.org/hdgi#xPosition">xPosition</a>
@@ -4271,7 +4442,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
          <a href="#xRotation" title="https://w3id.org/hdgi#xRotation">xRotation</a>
       </li>
       <li>
-         <a href="#y-axisDirection" title="https://w3id.org/hdgi#y-axisDirection">y-axisDirection</a>
+         <a href="#yAxisDirection" title="https://w3id.org/hdgi#yAxisDirection">yAxisDirection</a>
       </li>
       <li>
          <a href="#yPosition" title="https://w3id.org/hdgi#yPosition">yPosition</a>
@@ -4280,7 +4451,7 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
          <a href="#yRotation" title="https://w3id.org/hdgi#yRotation">yRotation</a>
       </li>
       <li>
-         <a href="#z-axisDirection" title="https://w3id.org/hdgi#z-axisDirection">z-axisDirection</a>
+         <a href="#zAxisDirection" title="https://w3id.org/hdgi#zAxisDirection">zAxisDirection</a>
       </li>
       <li>
          <a href="#zPosition" title="https://w3id.org/hdgi#zPosition">zPosition</a>
@@ -4289,17 +4460,15 @@ The magnitude of a quaternion is calculated by magnitude = square root of (w2 + 
          <a href="#zRotation" title="https://w3id.org/hdgi#zRotation">zRotation</a>
       </li>
    </ul>
-   <div class="entity" id="i-component">
-      <h3>i-component<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="iComponent">
+      <h3>iComponent<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#i-component</p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#iComponent</p>
       <div class="comment">
-         <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x
-
-In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
+         <span class="markdown">A quaternion “q” can be defined as (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers. The jComponent is the component of j which equals to y. In the equation 'j' is defined as √-1. With quaternions, i = j = k = √-1.</span>
       </div>
       <div class="description">
          <dl>
@@ -4310,17 +4479,17 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
          </dl>
       </div>
    </div>
-   <div class="entity" id="j-component">
-      <h3>j-component<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="jComponent">
+      <h3>jComponent<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#j-component</p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#jComponent</p>
       <div class="comment">
          <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y
 
-In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
+In the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
       </div>
       <div class="description">
          <dl>
@@ -4331,17 +4500,17 @@ In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-
          </dl>
       </div>
    </div>
-   <div class="entity" id="k-component">
-      <h3>k-component<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="kComponent">
+      <h3>kComponent<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#k-component</p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#kComponent</p>
       <div class="comment">
          <span class="markdown">In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z
 
-In the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
+In the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1).</span>
       </div>
       <div class="description">
          <dl>
@@ -4372,13 +4541,13 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="timeStamp">
-      <h3>timeStamp<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="timestamp">
+      <h3>timestamp<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#timeStamp</p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#timestamp</p>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -4388,13 +4557,13 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="w-component">
-      <h3>w-component<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="wComponent">
+      <h3>wComponent<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#w-component</p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#wComponent</p>
       <div class="comment">
          <span class="markdown">Represents the amount of rotation which will occur about this axis defined by (i-component, j-component, k-component). Known as scalar component.</span>
       </div>
@@ -4407,13 +4576,13 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="x-axisDirection">
-      <h3>x-axisDirection<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="xAxisDirection">
+      <h3>xAxisDirection<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#x-axisDirection</p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#xAxisDirection</p>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -4430,6 +4599,9 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/hdgi#xPosition</p>
+      <div class="comment">
+         <span class="markdown">In a three-dimensional Cartesian coordinate system where coordinates of any point in space are determined by three real numbers: x, y, z, the xPosition is the value of the real number x. Known as abscissa or x-coordinate in mathematics.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -4458,13 +4630,13 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="y-axisDirection">
-      <h3>y-axisDirection<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="yAxisDirection">
+      <h3>yAxisDirection<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#y-axisDirection</p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#yAxisDirection</p>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -4509,13 +4681,13 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="z-axisDirection">
-      <h3>z-axisDirection<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="zAxisDirection">
+      <h3>zAxisDirection<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#dataproperties">Data Properties</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/hdgi#z-axisDirection</p>
+         <strong>IRI:</strong> https://w3id.org/hdgi#zAxisDirection</p>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -4560,6 +4732,128 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
          </dl>
       </div>
    </div>
+</div><div id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://creativecommons.org/ns#attributionURL" title="http://creativecommons.org/ns#attributionURL">
+            <span>attribution u r l</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
+            <span>example</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">
+            <span>issued</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+            <span>license</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/vann/preferredNamespacePrefix"
+            title="http://purl.org/vocab/vann/preferredNamespacePrefix">
+            <span>preferred namespace prefix</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+            <span>preferred namespace uri</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights">
+            <span>rights</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+            <span>title</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://creativecommons.org/ns#attributionURL">
+      <h3>attribution u r l<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#annotationproperties">Annotation Properties</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://creativecommons.org/ns#attributionURL</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/description">
+      <h3>description<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#annotationproperties">Annotation Properties</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#example">
+      <h3>example<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#annotationproperties">Annotation Properties</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#example</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/issued">
+      <h3>issued<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#annotationproperties">Annotation Properties</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/issued</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/license">
+      <h3>license<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#annotationproperties">Annotation Properties</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+      <h3>preferred namespace prefix<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#annotationproperties">Annotation Properties</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+      <h3>preferred namespace uri<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#annotationproperties">Annotation Properties</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/rights">
+      <h3>rights<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#annotationproperties">Annotation Properties</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/rights</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">Top</a> or <a href="#annotationproperties">Annotation Properties</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+   </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
 <div   class="entity">
@@ -4573,10 +4867,10 @@ Location of the (0,0,0) postion related to the given coordinates.</span>
 
 
 <!--REFERENCES SECTION-->
-  <!-- <div id="references">
+  <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">Top</a></span></h2>
 <span class="markdown">
-Add your references here. It is recommended to have them as a list.</span> -->
+Add your references here. It is recommended to have them as a list.</span>
 
 </div>
 <div id="acknowledgements">

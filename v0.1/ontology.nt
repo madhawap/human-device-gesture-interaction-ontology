@@ -7,7 +7,7 @@
 <https://w3id.org/hdgi#> <http://purl.org/dc/terms/rights> "Copyright © 2020 Madhawa Perera, Armin Haller"@en .
 <https://w3id.org/hdgi#> <http://purl.org/dc/terms/title> "Human Device Gesture Interaction Ontology"@en .
 <https://w3id.org/hdgi#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "hdgi" .
-<https://w3id.org/hdgi#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "https://w3id.org/hdgi#" .
+<https://w3id.org/hdgi#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/hdgi#" .
 <https://w3id.org/hdgi#> <http://www.w3.org/2000/01/rdf-schema#label> "Human Device Gesture Interaction Ontology"@en .
 <https://w3id.org/hdgi#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
@@ -21,9 +21,6 @@
 # 
 # http://creativecommons.org/ns#attributionURL
 <http://creativecommons.org/ns#attributionURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -45,14 +42,9 @@
 # 
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
 # http://www.w3.org/2004/02/skos/core#example
 <http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://schema.org/creator
-<https://schema.org/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://schema.org/creator> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
 # 
 # 
 # 
@@ -65,7 +57,7 @@
 # 
 # https://w3id.org/hdgi#affordedBy
 <https://w3id.org/hdgi#affordedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/hdgi#affordedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a Affordance to a Device describing the affordances of a device." .
+<https://w3id.org/hdgi#affordedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from an Affordance to a Device describing an affordance of a device."@en .
 <https://w3id.org/hdgi#affordedBy> <http://www.w3.org/2000/01/rdf-schema#label> "affordedBy" .
 # 
 # https://w3id.org/hdgi#hasContext
@@ -75,6 +67,7 @@
 # 
 # https://w3id.org/hdgi#hasDuration
 <https://w3id.org/hdgi#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/hdgi#hasDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Movement and a Duration describing the time duration of a movement."@en .
 <https://w3id.org/hdgi#hasDuration> <http://www.w3.org/2000/01/rdf-schema#label> "hasDuration" .
 # 
 # https://w3id.org/hdgi#hasEndPose
@@ -155,13 +148,6 @@
 # 
 # https://w3id.org/hdgi#used
 <https://w3id.org/hdgi#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/hdgi#used> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/hdgi#hasPose> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/hdgi#used> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/hdgi#used> <http://www.w3.org/2000/01/rdf-schema#label> "used" .
 # 
 # https://w3id.org/hdgi#uses
@@ -177,58 +163,59 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # #################################################################
 # 
 # 
-# https://w3id.org/hdgi#i-component
-<https://w3id.org/hdgi#i-component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/hdgi#i-component> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/hdgi#i-component> <http://www.w3.org/2000/01/rdf-schema#comment> "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)." .
-<https://w3id.org/hdgi#i-component> <http://www.w3.org/2000/01/rdf-schema#label> "i-component" .
+# https://w3id.org/hdgi#iComponent
+<https://w3id.org/hdgi#iComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/hdgi#iComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/hdgi#iComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "A quaternion “q” can be defined as (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers. The jComponent is the component of j which equals to y. In the equation 'j' is defined as √-1. With quaternions, i = j = k = √-1."@en .
+<https://w3id.org/hdgi#iComponent> <http://www.w3.org/2000/01/rdf-schema#label> "iComponent" .
 # 
-# https://w3id.org/hdgi#j-component
-<https://w3id.org/hdgi#j-component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/hdgi#j-component> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/hdgi#j-component> <http://www.w3.org/2000/01/rdf-schema#comment> "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)." .
-<https://w3id.org/hdgi#j-component> <http://www.w3.org/2000/01/rdf-schema#label> "j-component" .
+# https://w3id.org/hdgi#jComponent
+<https://w3id.org/hdgi#jComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/hdgi#jComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/hdgi#jComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y\r\n\r\nIn the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)." .
+<https://w3id.org/hdgi#jComponent> <http://www.w3.org/2000/01/rdf-schema#label> "jComponent" .
 # 
-# https://w3id.org/hdgi#k-component
-<https://w3id.org/hdgi#k-component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/hdgi#k-component> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/hdgi#k-component> <http://www.w3.org/2000/01/rdf-schema#comment> "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)." .
-<https://w3id.org/hdgi#k-component> <http://www.w3.org/2000/01/rdf-schema#label> "k-component" .
+# https://w3id.org/hdgi#kComponent
+<https://w3id.org/hdgi#kComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/hdgi#kComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/hdgi#kComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z\r\n\r\nIn the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)." .
+<https://w3id.org/hdgi#kComponent> <http://www.w3.org/2000/01/rdf-schema#label> "kComponent" .
 # 
 # https://w3id.org/hdgi#originPoint
 <https://w3id.org/hdgi#originPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/hdgi#originPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/hdgi#originPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Frame of reference or the initial center.\nLocation of the (0,0,0) postion related to the given coordinates." .
+<https://w3id.org/hdgi#originPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Frame of reference or the initial center.\r\nLocation of the (0,0,0) postion related to the given coordinates." .
 <https://w3id.org/hdgi#originPoint> <http://www.w3.org/2000/01/rdf-schema#label> "originPoint" .
 # 
-# https://w3id.org/hdgi#timeStamp
-<https://w3id.org/hdgi#timeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/hdgi#timeStamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<https://w3id.org/hdgi#timeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "timeStamp" .
+# https://w3id.org/hdgi#timestamp
+<https://w3id.org/hdgi#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/hdgi#timestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<https://w3id.org/hdgi#timestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en .
 # 
-# https://w3id.org/hdgi#w-component
-<https://w3id.org/hdgi#w-component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/hdgi#w-component> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/hdgi#w-component> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the amount of rotation which will occur about this axis defined by (i-component, j-component, k-component). Known as scalar component." .
-<https://w3id.org/hdgi#w-component> <http://www.w3.org/2000/01/rdf-schema#label> "w-component" .
+# https://w3id.org/hdgi#wComponent
+<https://w3id.org/hdgi#wComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/hdgi#wComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/hdgi#wComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the amount of rotation which will occur about this axis defined by (i-component, j-component, k-component). Known as scalar component." .
+<https://w3id.org/hdgi#wComponent> <http://www.w3.org/2000/01/rdf-schema#label> "wComponent" .
 # 
-# https://w3id.org/hdgi#x-axisDirection
-<https://w3id.org/hdgi#x-axisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/hdgi#x-axisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/hdgi#x-axisDirection> <http://www.w3.org/2000/01/rdf-schema#range> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid3 <http://www.w3.org/2002/07/owl#oneOf> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "leftward" .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "rightward" .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/hdgi#x-axisDirection> <http://www.w3.org/2000/01/rdf-schema#label> "x-axisDirection" .
+# https://w3id.org/hdgi#xAxisDirection
+<https://w3id.org/hdgi#xAxisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/hdgi#xAxisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/hdgi#xAxisDirection> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "leftward" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "rightward" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/hdgi#xAxisDirection> <http://www.w3.org/2000/01/rdf-schema#label> "xAxisDirection" .
 # 
 # https://w3id.org/hdgi#xPosition
 <https://w3id.org/hdgi#xPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/hdgi#xPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/hdgi#xPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "In a three-dimensional Cartesian coordinate system where coordinates of any point in space are determined by three real numbers: x, y, z, the xPosition is the value of the real number x. Known as abscissa or x-coordinate in mathematics."@en .
 <https://w3id.org/hdgi#xPosition> <http://www.w3.org/2000/01/rdf-schema#label> "xPosition" .
 # 
 # https://w3id.org/hdgi#xRotation
@@ -237,19 +224,19 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/hdgi#xRotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Angle around the x-axis" .
 <https://w3id.org/hdgi#xRotation> <http://www.w3.org/2000/01/rdf-schema#label> "xRotation" .
 # 
-# https://w3id.org/hdgi#y-axisDirection
-<https://w3id.org/hdgi#y-axisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/hdgi#y-axisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/hdgi#y-axisDirection> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "downward" .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "upward" .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/hdgi#y-axisDirection> <http://www.w3.org/2000/01/rdf-schema#label> "y-axisDirection" .
+# https://w3id.org/hdgi#yAxisDirection
+<https://w3id.org/hdgi#yAxisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/hdgi#yAxisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/hdgi#yAxisDirection> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid4 <http://www.w3.org/2002/07/owl#oneOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "downward" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "upward" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/hdgi#yAxisDirection> <http://www.w3.org/2000/01/rdf-schema#label> "yAxisDirection" .
 # 
 # https://w3id.org/hdgi#yPosition
 <https://w3id.org/hdgi#yPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -262,19 +249,19 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/hdgi#yRotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Angle around the y-axis" .
 <https://w3id.org/hdgi#yRotation> <http://www.w3.org/2000/01/rdf-schema#label> "yRotation" .
 # 
-# https://w3id.org/hdgi#z-axisDirection
-<https://w3id.org/hdgi#z-axisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/hdgi#z-axisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/hdgi#z-axisDirection> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid9 <http://www.w3.org/2002/07/owl#oneOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "inward" .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "outward" .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/hdgi#z-axisDirection> <http://www.w3.org/2000/01/rdf-schema#label> "z-axisDirection" .
+# https://w3id.org/hdgi#zAxisDirection
+<https://w3id.org/hdgi#zAxisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/hdgi#zAxisDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/hdgi#zAxisDirection> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid7 <http://www.w3.org/2002/07/owl#oneOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "inward" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "outward" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/hdgi#zAxisDirection> <http://www.w3.org/2000/01/rdf-schema#label> "zAxisDirection" .
 # 
 # https://w3id.org/hdgi#zPosition
 <https://w3id.org/hdgi#zPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -299,97 +286,94 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://w3id.org/hdgi#ActuatableAffordance
 <https://w3id.org/hdgi#ActuatableAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#ActuatableAffordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Affordance> .
-<https://w3id.org/hdgi#ActuatableAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "ActuatableAffordance" .
+<https://w3id.org/hdgi#ActuatableAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuatable Affordance of a Device. This is rdfs:subClassOf ssn:ActuatableProperty."@en .
+<https://w3id.org/hdgi#ActuatableAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "ActuatableAffordance"@en .
+<https://w3id.org/hdgi#ActuatableAffordance> <http://www.w3.org/2004/02/skos/core#example> "TV is a Device that can change the state to “on” or “off”. This is a property of a TV which a human could act upon. Thus, ability to “turn on” is an ActuatableAffordance of a TV."@en .
 # 
 # https://w3id.org/hdgi#Affordance
 <https://w3id.org/hdgi#Affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#Affordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#affordedBy> .
-_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Device> .
-<https://w3id.org/hdgi#Affordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#supportsGesture> .
-_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Gesture> .
-<https://w3id.org/hdgi#Affordance> <http://www.w3.org/2000/01/rdf-schema#comment> "Affordances are all the type of properties that belong to devices. They indicate the possible actions users can take with it."@en .
-<https://w3id.org/hdgi#Affordance> <http://www.w3.org/2000/01/rdf-schema#label> "Affordance" .
-# 
-# https://w3id.org/hdgi#Body
-<https://w3id.org/hdgi#Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasPart> .
-_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Body> <http://www.w3.org/2000/01/rdf-schema#comment> "Human body. A collection of body parts."@en .
-<https://w3id.org/hdgi#Body> <http://www.w3.org/2000/01/rdf-schema#label> "Body" .
+<https://w3id.org/hdgi#Affordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#affordedBy> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Device> .
+<https://w3id.org/hdgi#Affordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#supportsGesture> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Gesture> .
+<https://w3id.org/hdgi#Affordance> <http://www.w3.org/2000/01/rdf-schema#comment> "Affordance is a quality or characteristic of Devices that indicates the possible action a Human can take with it. This is rdfs:subClassOf ssn:Property."@en .
+<https://w3id.org/hdgi#Affordance> <http://www.w3.org/2000/01/rdf-schema#label> "Affordance"@en .
 # 
 # https://w3id.org/hdgi#BodyPart
 <https://w3id.org/hdgi#BodyPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#BodyPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Parts of human body."@en .
-<https://w3id.org/hdgi#BodyPart> <http://www.w3.org/2000/01/rdf-schema#label> "BodyPart" .
+<https://w3id.org/hdgi#BodyPart> <http://www.w3.org/2000/01/rdf-schema#comment> "BodyPart is any part of HumanBody such as an Face, Leg etc."@en .
+<https://w3id.org/hdgi#BodyPart> <http://www.w3.org/2000/01/rdf-schema#label> "BodyPart"@en .
 <https://w3id.org/hdgi#BodyPart> <http://www.w3.org/2004/02/skos/core#example> "\"Head\", \"Palm\", \"Finger\" etc." .
 # 
 # https://w3id.org/hdgi#Context
 <https://w3id.org/hdgi#Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#Context> <http://www.w3.org/2000/01/rdf-schema#label> "Context" .
+<https://w3id.org/hdgi#Context> <http://www.w3.org/2000/01/rdf-schema#comment> "Context describes details of a situation."@en .
+<https://w3id.org/hdgi#Context> <http://www.w3.org/2000/01/rdf-schema#label> "Context"@en .
 # 
 # https://w3id.org/hdgi#Device
 <https://w3id.org/hdgi#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasContext> .
-_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#DeviceContext> .
-<https://w3id.org/hdgi#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#manufacturedBy> .
-_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#DeviceManufacturer> .
-<https://w3id.org/hdgi#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A device denotes a piece of hardware or software which consists of sensors or actuators or both."@en .
-<https://w3id.org/hdgi#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+<https://w3id.org/hdgi#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasContext> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#DeviceContext> .
+<https://w3id.org/hdgi#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#manufacturedBy> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#DeviceManufacturer> .
+<https://w3id.org/hdgi#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Device denotes a piece of hardware or software which consists of sensors or actuators or both."@en .
+<https://w3id.org/hdgi#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
 # 
 # https://w3id.org/hdgi#DeviceContext
 <https://w3id.org/hdgi#DeviceContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#DeviceContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Context> .
-<https://w3id.org/hdgi#DeviceContext> <http://www.w3.org/2000/01/rdf-schema#label> "DeviceContext" .
+<https://w3id.org/hdgi#DeviceContext> <http://www.w3.org/2000/01/rdf-schema#comment> "DeviceContext describes the data that is specifically related to a Device in a certain Context that is Device specific data in a Context."@en .
+<https://w3id.org/hdgi#DeviceContext> <http://www.w3.org/2000/01/rdf-schema#label> "DeviceContext"@en .
 # 
 # https://w3id.org/hdgi#DeviceManufacturer
 <https://w3id.org/hdgi#DeviceManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#DeviceManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "The company manufacturing a device."@en .
-<https://w3id.org/hdgi#DeviceManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "DeviceManufacturer" .
+<https://w3id.org/hdgi#DeviceManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "DeviceManufacturer is the company/vendor manufactures a Device."@en .
+<https://w3id.org/hdgi#DeviceManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "DeviceManufacturer"@en .
 # 
 # https://w3id.org/hdgi#Duration
 <https://w3id.org/hdgi#Duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#Duration> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration is a temporal extent."@en .
-<https://w3id.org/hdgi#Duration> <http://www.w3.org/2000/01/rdf-schema#label> "Duration" .
+<https://w3id.org/hdgi#Duration> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of a temporal extent expressed as a decimal number scaled by a temporal unit. This is an owl:equivalentClass time:Duration."@en .
+<https://w3id.org/hdgi#Duration> <http://www.w3.org/2000/01/rdf-schema#label> "Duration"@en .
 # 
 # https://w3id.org/hdgi#Face
 <https://w3id.org/hdgi#Face> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#Face> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Face> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Face> <http://www.w3.org/2000/01/rdf-schema#label> "Face" .
+<https://w3id.org/hdgi#Face> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Face> <http://www.w3.org/2000/01/rdf-schema#comment> "Face is a BodyPart which represents the front side of a Head."@en .
+<https://w3id.org/hdgi#Face> <http://www.w3.org/2000/01/rdf-schema#label> "Face"@en .
 # 
 # https://w3id.org/hdgi#FacialGesture
 <https://w3id.org/hdgi#FacialGesture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#FacialGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Gesture> .
-<https://w3id.org/hdgi#FacialGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid18 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Face> .
-<https://w3id.org/hdgi#FacialGesture> <http://www.w3.org/2000/01/rdf-schema#label> "FacialGesture" .
+<https://w3id.org/hdgi#FacialGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Face> .
+<https://w3id.org/hdgi#FacialGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "FacialGesture is a Gesture executed with a Movement or a Pose using the BodayPart Face."@en .
+<https://w3id.org/hdgi#FacialGesture> <http://www.w3.org/2000/01/rdf-schema#label> "FacialGesture"@en .
 # 
 # https://w3id.org/hdgi#Finger
 <https://w3id.org/hdgi#Finger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#Finger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Finger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Finger> <http://www.w3.org/2000/01/rdf-schema#comment> "A finger is a body part of the human body and a type of digit."@en .
-<https://w3id.org/hdgi#Finger> <http://www.w3.org/2000/01/rdf-schema#label> "Finger" .
-<https://w3id.org/hdgi#Finger> <http://www.w3.org/2004/02/skos/core#example> "thumb, middle finger, left ring finger etc" .
+<https://w3id.org/hdgi#Finger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Finger> <http://www.w3.org/2000/01/rdf-schema#comment> "Finger is a BodyPart of the HumanBody. Also know as Digits of hand. This is an owl:equivalentClass fma:fma9666."@en .
+<https://w3id.org/hdgi#Finger> <http://www.w3.org/2000/01/rdf-schema#label> "Finger"@en .
+<https://w3id.org/hdgi#Finger> <http://www.w3.org/2004/02/skos/core#example> "Thumb, MiddleFinger, RingFinger etc."@en .
 # 
 # https://w3id.org/hdgi#FingerAnticlcokwiseRotation
 <https://w3id.org/hdgi#FingerAnticlcokwiseRotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -424,16 +408,16 @@ _:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#
 # https://w3id.org/hdgi#FingerMovement
 <https://w3id.org/hdgi#FingerMovement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#FingerMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Movement> .
-<https://w3id.org/hdgi#FingerMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid20 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid20 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Finger> .
-<https://w3id.org/hdgi#FingerMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid21 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid21 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Finger> .
+<https://w3id.org/hdgi#FingerMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid17 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Finger> .
+<https://w3id.org/hdgi#FingerMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid18 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Finger> .
 <https://w3id.org/hdgi#FingerMovement> <http://www.w3.org/2000/01/rdf-schema#label> "FingerMovement" .
 # 
 # https://w3id.org/hdgi#FingerPose
@@ -454,26 +438,28 @@ _:genid21 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Finger>
 # https://w3id.org/hdgi#Foot
 <https://w3id.org/hdgi#Foot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#Foot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Foot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Foot> <http://www.w3.org/2000/01/rdf-schema#label> "Foot" .
+<https://w3id.org/hdgi#Foot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Foot> <http://www.w3.org/2000/01/rdf-schema#label> "Foot"@en .
+<https://w3id.org/hdgi#Foot> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "Foot is a BodyPart. It is the terminal segmant of lower limb. This is an owl:equivalentClass fma:fma9664."@en .
 # 
 # https://w3id.org/hdgi#FootGesture
 <https://w3id.org/hdgi#FootGesture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#FootGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Gesture> .
-<https://w3id.org/hdgi#FootGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid23 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid23 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Foot> .
-<https://w3id.org/hdgi#FootGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid24 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid24 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Foot> .
-<https://w3id.org/hdgi#FootGesture> <http://www.w3.org/2000/01/rdf-schema#label> "FootGesture" .
+<https://w3id.org/hdgi#FootGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid20 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Foot> .
+<https://w3id.org/hdgi#FootGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid21 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Foot> .
+<https://w3id.org/hdgi#FootGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "FootGesture is a Gesture executed with a Movement or a Pose using the BodayPart Foot."@en .
+<https://w3id.org/hdgi#FootGesture> <http://www.w3.org/2000/01/rdf-schema#label> "FootGesture"@en .
 # 
 # https://w3id.org/hdgi#FootPose
 <https://w3id.org/hdgi#FootPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -483,12 +469,12 @@ _:genid24 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Foot> .
 # https://w3id.org/hdgi#Forearm
 <https://w3id.org/hdgi#Forearm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#Forearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Forearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Forearm> <http://www.w3.org/2000/01/rdf-schema#comment> "The forearm is the line between the elbow joint and the wrist."@en .
-<https://w3id.org/hdgi#Forearm> <http://www.w3.org/2000/01/rdf-schema#label> "Forearm" .
+<https://w3id.org/hdgi#Forearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Forearm> <http://www.w3.org/2000/01/rdf-schema#comment> "Forearm is a BodyPart. It is the region of the upper limb between the elbow and the wrist. This is an owl:equivalentClass fma:fma9663."@en .
+<https://w3id.org/hdgi#Forearm> <http://www.w3.org/2000/01/rdf-schema#label> "Forearm"@en .
 # 
 # https://w3id.org/hdgi#ForearmAnticlockwiseRotation
 <https://w3id.org/hdgi#ForearmAnticlockwiseRotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -518,18 +504,18 @@ _:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#
 # https://w3id.org/hdgi#ForearmGesture
 <https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Gesture> .
-<https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid26 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid26 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
-<https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid27 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid27 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
-<https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "Gestures (movements) made with forearm" .
-<https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/2000/01/rdf-schema#label> "ForearmGesture" .
+<https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid23 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
+<https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid24 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
+<https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "ForearmGesture is a Gesture executed with a Movement or a Pose using the BodyPart Forearm."@en .
+<https://w3id.org/hdgi#ForearmGesture> <http://www.w3.org/2000/01/rdf-schema#label> "ForearmGesture"@en .
 # 
 # https://w3id.org/hdgi#ForearmLeftward
 <https://w3id.org/hdgi#ForearmLeftward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -549,31 +535,31 @@ _:genid27 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm
 # https://w3id.org/hdgi#ForearmMovement
 <https://w3id.org/hdgi#ForearmMovement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#ForearmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Movement> .
-<https://w3id.org/hdgi#ForearmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid28 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
-<https://w3id.org/hdgi#ForearmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid29 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid29 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
+<https://w3id.org/hdgi#ForearmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid25 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
+<https://w3id.org/hdgi#ForearmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
 <https://w3id.org/hdgi#ForearmMovement> <http://www.w3.org/2000/01/rdf-schema#label> "ForearmMovement" .
 # 
 # https://w3id.org/hdgi#ForearmPose
 <https://w3id.org/hdgi#ForearmPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#ForearmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Pose> .
-<https://w3id.org/hdgi#ForearmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid30 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid30 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
-<https://w3id.org/hdgi#ForearmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid31 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
+<https://w3id.org/hdgi#ForearmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid27 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
+<https://w3id.org/hdgi#ForearmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid28 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm> .
 <https://w3id.org/hdgi#ForearmPose> <http://www.w3.org/2000/01/rdf-schema#label> "ForearmPose" .
 # 
 # https://w3id.org/hdgi#ForearmRightward
@@ -598,103 +584,124 @@ _:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Forearm
 # 
 # https://w3id.org/hdgi#Gesture
 <https://w3id.org/hdgi#Gesture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#includesGesture> .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Gesture> .
+<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasEndPose> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Pose> .
 <https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#includesGesture> .
-_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Gesture> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasStartPose> .
+_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Pose> .
 <https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasMovement> .
+_:genid33 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Movement> .
+<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#comment> "Gesture is a Movement or a Pose of a BodyPart."@en .
+<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#label> "Gesture"@en .
+# 
+# https://w3id.org/hdgi#Hand
+<https://w3id.org/hdgi#Hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#Hand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Hand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasEndPose> .
-_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid34 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Pose> .
-<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasStartPose> .
-_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid35 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Pose> .
-<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasMovement> .
-_:genid36 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid36 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Movement> .
-<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#comment> "A gesture is a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm."@en .
-<https://w3id.org/hdgi#Gesture> <http://www.w3.org/2000/01/rdf-schema#label> "Gesture" .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Hand> <http://www.w3.org/2000/01/rdf-schema#comment> "Hand is a BodyPart. It is the terminal segmant of upper limb which starts at end of the Forearm and consists of Fingers. This is an owl:equivalentClass fma:fma9712."@en .
+<https://w3id.org/hdgi#Hand> <http://www.w3.org/2000/01/rdf-schema#label> "Hand"@en .
 # 
 # https://w3id.org/hdgi#HandGesture
 <https://w3id.org/hdgi#HandGesture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Gesture> .
+<https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid35 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Finger> .
+<https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid36 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
 <https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid37 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid37 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Finger> .
+_:genid37 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
 <https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid38 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid38 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
-<https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid39 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid39 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
-<https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid40 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "10"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid40 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Finger> .
-<https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "Gestures (movements) made with fingers and palms" .
-<https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#label> "HandGesture" .
+_:genid38 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "10"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Finger> .
+<https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "HandGesture is a Gesture executed with a Movement or a Pose using the BodayParts Hand, Palm and/or Fingers."@en .
+<https://w3id.org/hdgi#HandGesture> <http://www.w3.org/2000/01/rdf-schema#label> "HandGesture"@en .
 # 
 # https://w3id.org/hdgi#Head
 <https://w3id.org/hdgi#Head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#Head> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Head> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Head> <http://www.w3.org/2000/01/rdf-schema#label> "Head" .
+<https://w3id.org/hdgi#Head> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Head> <http://www.w3.org/2000/01/rdf-schema#comment> "Head is a BodyPart. It is the upper part of the HumanBody which starts from the upper end of the neck. This is an owl:equivalentClass fma:fma7154."@en .
+<https://w3id.org/hdgi#Head> <http://www.w3.org/2000/01/rdf-schema#label> "Head"@en .
 # 
 # https://w3id.org/hdgi#HeadGesture
 <https://w3id.org/hdgi#HeadGesture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#HeadGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Gesture> .
-<https://w3id.org/hdgi#HeadGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid42 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Head> .
-<https://w3id.org/hdgi#HeadGesture> <http://www.w3.org/2000/01/rdf-schema#label> "HeadGesture" .
+<https://w3id.org/hdgi#HeadGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Head> .
+<https://w3id.org/hdgi#HeadGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "HeadGesture is a Gesture executed with a Movement or a Pose using the BodayPart Head."@en .
+<https://w3id.org/hdgi#HeadGesture> <http://www.w3.org/2000/01/rdf-schema#label> "HeadGesture"@en .
 # 
 # https://w3id.org/hdgi#Human
 <https://w3id.org/hdgi#Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasContext> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#UserContext> .
+<https://w3id.org/hdgi#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#performs> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#Gesture> .
 <https://w3id.org/hdgi#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasContext> .
-_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#UserContext> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#performs> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#Pose> .
 <https://w3id.org/hdgi#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#performs> .
-_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#Gesture> .
-<https://w3id.org/hdgi#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#performs> .
-_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#Pose> .
-<https://w3id.org/hdgi#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#uses> .
-_:genid46 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#uses> .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
 <https://w3id.org/hdgi#Human> <http://www.w3.org/2000/01/rdf-schema#comment> "User who perform a gesture" .
 <https://w3id.org/hdgi#Human> <http://www.w3.org/2000/01/rdf-schema#label> "Human" .
+# 
+# https://w3id.org/hdgi#HumanBody
+<https://w3id.org/hdgi#HumanBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#HumanBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasPart> .
+_:genid45 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#HumanBody> <http://www.w3.org/2000/01/rdf-schema#comment> "HumanBody holds a collection of BodyParts of a Human."@en .
+<https://w3id.org/hdgi#HumanBody> <http://www.w3.org/2000/01/rdf-schema#label> "HumanBody"@en .
 # 
 # https://w3id.org/hdgi#IndexFinger
 <https://w3id.org/hdgi#IndexFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#IndexFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Finger> .
-<https://w3id.org/hdgi#IndexFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Second finger or the second digit of hand."@en .
-<https://w3id.org/hdgi#IndexFinger> <http://www.w3.org/2000/01/rdf-schema#label> "IndexFinger" .
+<https://w3id.org/hdgi#IndexFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "IndexFinger is the second Finger on Hand. Also known as second Digit of hand. This is an owl:equivalentClass fma:fma24946."@en .
+<https://w3id.org/hdgi#IndexFinger> <http://www.w3.org/2000/01/rdf-schema#label> "IndexFinger"@en .
 # 
 # https://w3id.org/hdgi#IndexFingerCurled
 <https://w3id.org/hdgi#IndexFingerCurled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -709,16 +716,16 @@ _:genid46 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#B
 # https://w3id.org/hdgi#IndexFingerPose
 <https://w3id.org/hdgi#IndexFingerPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#IndexFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#FingerPose> .
+<https://w3id.org/hdgi#IndexFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid46 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftIndexFinger> .
 <https://w3id.org/hdgi#IndexFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
 _:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid47 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftIndexFinger> .
-<https://w3id.org/hdgi#IndexFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid48 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightIndexFinger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightIndexFinger> .
 <https://w3id.org/hdgi#IndexFingerPose> <http://www.w3.org/2000/01/rdf-schema#label> "IndexFingerPose" .
 # 
 # https://w3id.org/hdgi#IndexFingerStraightandBackward
@@ -754,80 +761,90 @@ _:genid48 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightIn
 # https://w3id.org/hdgi#LeftForearm
 <https://w3id.org/hdgi#LeftForearm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LeftForearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Forearm> .
-<https://w3id.org/hdgi#LeftForearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Forearm> .
-<https://w3id.org/hdgi#LeftForearm> <http://www.w3.org/2000/01/rdf-schema#label> "LeftForearm" .
+<https://w3id.org/hdgi#LeftForearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Forearm> .
+<https://w3id.org/hdgi#LeftForearm> <http://www.w3.org/2000/01/rdf-schema#comment> "LeftForearm is the region of the left upper limb between the left elbow and the left wrist. This is an owl:equivalentClass fma:fma11346."@en .
+<https://w3id.org/hdgi#LeftForearm> <http://www.w3.org/2000/01/rdf-schema#label> "LeftForearm"@en .
+# 
+# https://w3id.org/hdgi#LeftHand
+<https://w3id.org/hdgi#LeftHand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#LeftHand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Hand> .
+<https://w3id.org/hdgi#LeftHand> <http://www.w3.org/2000/01/rdf-schema#comment> "LeftHand is the terminal segmant of left upper limb which starts at end of the LeftForearm and consists of Fingers. This is an owl:equivalentClass fma:fma9714."@en .
+<https://w3id.org/hdgi#LeftHand> <http://www.w3.org/2000/01/rdf-schema#label> "LeftHand"@en .
 # 
 # https://w3id.org/hdgi#LeftIndexFinger
 <https://w3id.org/hdgi#LeftIndexFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LeftIndexFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#IndexFinger> .
-<https://w3id.org/hdgi#LeftIndexFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Left hand index finger."@en .
-<https://w3id.org/hdgi#LeftIndexFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LeftIndexFinger" .
+<https://w3id.org/hdgi#LeftIndexFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "LeftIndexFinger is the IndexFinger on the LeftHand. This is an owl:equivalentClass fma:fma60334."@en .
+<https://w3id.org/hdgi#LeftIndexFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LeftIndexFinger"@en .
 # 
 # https://w3id.org/hdgi#LeftLittleFinger
 <https://w3id.org/hdgi#LeftLittleFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LeftLittleFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#LittleFinger> .
-<https://w3id.org/hdgi#LeftLittleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Left hand little finger."@en .
-<https://w3id.org/hdgi#LeftLittleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LeftLittleFinger" .
+<https://w3id.org/hdgi#LeftLittleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "LeftLittleFinger is the LittleFinger on LeftHand. This is an owl:equivalentClass fma:fma60328."@en .
+<https://w3id.org/hdgi#LeftLittleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LeftLittleFinger"@en .
 # 
 # https://w3id.org/hdgi#LeftMiddleFinger
 <https://w3id.org/hdgi#LeftMiddleFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LeftMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#MiddleFinger> .
-<https://w3id.org/hdgi#LeftMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Left hand middle finger."@en .
-<https://w3id.org/hdgi#LeftMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LeftMiddleFinger" .
+<https://w3id.org/hdgi#LeftMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "LeftMiddleFinger is the MiddleFinger on LeftHand. This is an owl:equivalentClass fma:fma60332."@en .
+<https://w3id.org/hdgi#LeftMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LeftMiddleFinger"@en .
 # 
 # https://w3id.org/hdgi#LeftPalm
 <https://w3id.org/hdgi#LeftPalm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LeftPalm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Palm> .
-<https://w3id.org/hdgi#LeftPalm> <http://www.w3.org/2000/01/rdf-schema#comment> "Left hand palm."@en .
-<https://w3id.org/hdgi#LeftPalm> <http://www.w3.org/2000/01/rdf-schema#label> "LeftPalm" .
+<https://w3id.org/hdgi#LeftPalm> <http://www.w3.org/2000/01/rdf-schema#comment> "LeftPalm is the area located at the end of the LeftForearm (starting from left wrist) up until the start of a LeftHand Fingers which is the central region of the anterior part of the LeftHand. This is an owl:equivalentClass fma:fma61071."@en .
+<https://w3id.org/hdgi#LeftPalm> <http://www.w3.org/2000/01/rdf-schema#label> "LeftPalm"@en .
 # 
 # https://w3id.org/hdgi#LeftRingFinger
 <https://w3id.org/hdgi#LeftRingFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LeftRingFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#RingFinger> .
-<https://w3id.org/hdgi#LeftRingFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Left hand ring finger."@en .
-<https://w3id.org/hdgi#LeftRingFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LeftRingFinger" .
+<https://w3id.org/hdgi#LeftRingFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "LeftRingFinger is the RingFinger on LeftHand. This is an owl:equivalentClass fma:fma60330."@en .
+<https://w3id.org/hdgi#LeftRingFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LeftRingFinger"@en .
 # 
 # https://w3id.org/hdgi#LeftThumb
 <https://w3id.org/hdgi#LeftThumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LeftThumb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Thumb> .
-<https://w3id.org/hdgi#LeftThumb> <http://www.w3.org/2000/01/rdf-schema#comment> "Thumb of left hand."@en .
-<https://w3id.org/hdgi#LeftThumb> <http://www.w3.org/2000/01/rdf-schema#label> "LeftThumb" .
+<https://w3id.org/hdgi#LeftThumb> <http://www.w3.org/2000/01/rdf-schema#comment> "LeftThumb is the Thumb on LeftHand. This is an owl:equivalentClass fma:fma60326."@en .
+<https://w3id.org/hdgi#LeftThumb> <http://www.w3.org/2000/01/rdf-schema#label> "LeftThumb"@en .
 # 
 # https://w3id.org/hdgi#LeftUpperArm
 <https://w3id.org/hdgi#LeftUpperArm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LeftUpperArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#UpperArm> .
-<https://w3id.org/hdgi#LeftUpperArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#UpperArm> .
-<https://w3id.org/hdgi#LeftUpperArm> <http://www.w3.org/2000/01/rdf-schema#label> "LeftUpperArm" .
+<https://w3id.org/hdgi#LeftUpperArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#UpperArm> .
+<https://w3id.org/hdgi#LeftUpperArm> <http://www.w3.org/2000/01/rdf-schema#comment> "LeftUpperArm is the region of the left upper limb between the left shoulder and left elbow joint. This is an owl:equivalentClass fma:fma24896."@en .
+<https://w3id.org/hdgi#LeftUpperArm> <http://www.w3.org/2000/01/rdf-schema#label> "LeftUpperArm"@en .
 # 
 # https://w3id.org/hdgi#Leg
 <https://w3id.org/hdgi#Leg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Leg> <http://www.w3.org/2000/01/rdf-schema#label> "Leg" .
+<https://w3id.org/hdgi#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Leg> <http://www.w3.org/2000/01/rdf-schema#comment> "Leg is a BodyPart and it is the intermediate segment of lower limb. This is an owl:equivalentClass fma:fma24979."@en .
+<https://w3id.org/hdgi#Leg> <http://www.w3.org/2000/01/rdf-schema#label> "Leg"@en .
 # 
 # https://w3id.org/hdgi#LegGesture
 <https://w3id.org/hdgi#LegGesture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LegGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Gesture> .
+<https://w3id.org/hdgi#LegGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid51 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Leg> .
 <https://w3id.org/hdgi#LegGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
 _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid52 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Leg> .
-<https://w3id.org/hdgi#LegGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid53 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid53 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Leg> .
-<https://w3id.org/hdgi#LegGesture> <http://www.w3.org/2000/01/rdf-schema#label> "LegGesture" .
+<https://w3id.org/hdgi#LegGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "LegGesture is a Gesture executed with a Movement or a Pose using the BodayPart Leg."@en .
+<https://w3id.org/hdgi#LegGesture> <http://www.w3.org/2000/01/rdf-schema#label> "LegGesture"@en .
 # 
 # https://w3id.org/hdgi#LegPose
 <https://w3id.org/hdgi#LegPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -837,8 +854,8 @@ _:genid53 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Leg> .
 # https://w3id.org/hdgi#LittleFinger
 <https://w3id.org/hdgi#LittleFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LittleFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Finger> .
-<https://w3id.org/hdgi#LittleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Fifth finger or the fifth digit of hand."@en .
-<https://w3id.org/hdgi#LittleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LittleFinger" .
+<https://w3id.org/hdgi#LittleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "LittleFinger is the fifth Finger on Hand. Also known as fifth Digit of hand. This is an owl:equivalentClass fma:fma24949."@en .
+<https://w3id.org/hdgi#LittleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "LittleFinger"@en .
 # 
 # https://w3id.org/hdgi#LittleFingerCurled
 <https://w3id.org/hdgi#LittleFingerCurled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -853,16 +870,16 @@ _:genid53 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Leg> .
 # https://w3id.org/hdgi#LittleFingerPose
 <https://w3id.org/hdgi#LittleFingerPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#LittleFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#FingerPose> .
+<https://w3id.org/hdgi#LittleFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid53 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftLittleFinger> .
 <https://w3id.org/hdgi#LittleFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
 _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
 _:genid54 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid54 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftLittleFinger> .
-<https://w3id.org/hdgi#LittleFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid55 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid55 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightLittleFinger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightLittleFinger> .
 <https://w3id.org/hdgi#LittleFingerPose> <http://www.w3.org/2000/01/rdf-schema#label> "LittleFingerPose" .
 # 
 # https://w3id.org/hdgi#LittleFingerStraightandBackward
@@ -897,50 +914,50 @@ _:genid55 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightLi
 # 
 # https://w3id.org/hdgi#LocalCoordinateSystem
 <https://w3id.org/hdgi#LocalCoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#LocalCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#x-axisDirection> .
-_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid57 .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid57 <http://www.w3.org/2002/07/owl#oneOf> _:genid59 .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "leftward" .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+<https://w3id.org/hdgi#LocalCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#xAxisDirection> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid56 <http://www.w3.org/2002/07/owl#oneOf> _:genid58 .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "rightward" .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/hdgi#LocalCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#y-axisDirection> .
-_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid61 <http://www.w3.org/2002/07/owl#oneOf> _:genid63 .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "downward" .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "leftward" .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "rightward" .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/hdgi#LocalCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#yAxisDirection> .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid60 <http://www.w3.org/2002/07/owl#oneOf> _:genid62 .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "upward" .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/hdgi#LocalCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#z-axisDirection> .
-_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid65 .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid65 <http://www.w3.org/2002/07/owl#oneOf> _:genid67 .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "inward" .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "downward" .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "upward" .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/hdgi#LocalCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#zAxisDirection> .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid64 <http://www.w3.org/2002/07/owl#oneOf> _:genid66 .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "outward" .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "inward" .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "outward" .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/hdgi#LocalCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The local coordinate system is the coordinate system that is convenient for a given entity (Finger, palm etc.), local space, or object space."@en .
 <https://w3id.org/hdgi#LocalCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "LocalCoordinateSystem" .
 # 
 # https://w3id.org/hdgi#MiddleFinger
 <https://w3id.org/hdgi#MiddleFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#MiddleFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Finger> .
-<https://w3id.org/hdgi#MiddleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Third finger or the third digit of hand."@en .
-<https://w3id.org/hdgi#MiddleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "MiddleFinger" .
+<https://w3id.org/hdgi#MiddleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "MiddleFinger is the third Finger on Hand. Also known as third Digit of hand. This is an owl:equivalentClass fma:fma24947."@en .
+<https://w3id.org/hdgi#MiddleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "MiddleFinger"@en .
 # 
 # https://w3id.org/hdgi#MiddleFingerCurled
 <https://w3id.org/hdgi#MiddleFingerCurled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -955,16 +972,16 @@ _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://w3id.org/hdgi#MiddleFingerPose
 <https://w3id.org/hdgi#MiddleFingerPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#MiddleFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#FingerPose> .
+<https://w3id.org/hdgi#MiddleFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid67 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftMiddleFinger> .
 <https://w3id.org/hdgi#MiddleFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
 _:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
 _:genid68 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid68 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftMiddleFinger> .
-<https://w3id.org/hdgi#MiddleFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid69 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid69 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightMiddleFinger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightMiddleFinger> .
 <https://w3id.org/hdgi#MiddleFingerPose> <http://www.w3.org/2000/01/rdf-schema#label> "MiddleFingerPose" .
 # 
 # https://w3id.org/hdgi#MiddleFingerStraightandBackward
@@ -999,44 +1016,46 @@ _:genid69 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightMi
 # 
 # https://w3id.org/hdgi#Movement
 <https://w3id.org/hdgi#Movement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#Movement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid69 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
 <https://w3id.org/hdgi#Movement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
 _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid70 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Movement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasDuration> .
-_:genid71 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid71 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Duration> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasDuration> .
+_:genid70 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid70 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Duration> .
 <https://w3id.org/hdgi#Movement> <http://www.w3.org/2000/01/rdf-schema#comment> "The act of moving a certain body part towards a certain direction."@en .
 <https://w3id.org/hdgi#Movement> <http://www.w3.org/2000/01/rdf-schema#label> "Movement" .
 # 
 # https://w3id.org/hdgi#ObservableAffordance
 <https://w3id.org/hdgi#ObservableAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#ObservableAffordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Affordance> .
-<https://w3id.org/hdgi#ObservableAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "ObservableAffordance" .
+<https://w3id.org/hdgi#ObservableAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable Affordance of a Device. This is rdfs:subClassOf ssn:ObservableProperty."@en .
+<https://w3id.org/hdgi#ObservableAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "ObservableAffordance"@en .
+<https://w3id.org/hdgi#ObservableAffordance> <http://www.w3.org/2004/02/skos/core#example> "Thermostat is a Device that can sense/measure a temperature of a certain location at a given point of time and display it. Thus, “display measured temperature” is an ObservableAffordance of a thermostat."@en .
 # 
 # https://w3id.org/hdgi#Observer
 <https://w3id.org/hdgi#Observer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#Observer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#observes> .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#Gesture> .
 <https://w3id.org/hdgi#Observer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#observes> .
-_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#Gesture> .
-<https://w3id.org/hdgi#Observer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#observes> .
-_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#Pose> .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#Pose> .
 <https://w3id.org/hdgi#Observer> <http://www.w3.org/2000/01/rdf-schema#label> "Observer" .
 # 
 # https://w3id.org/hdgi#Palm
 <https://w3id.org/hdgi#Palm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#Palm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Palm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#Palm> <http://www.w3.org/2000/01/rdf-schema#comment> "The area located at the end of the forearm (starting from wrist) up until the start of a finger which is the central region of the anterior part of the hand."@en .
-<https://w3id.org/hdgi#Palm> <http://www.w3.org/2000/01/rdf-schema#label> "Palm" .
+<https://w3id.org/hdgi#Palm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#Palm> <http://www.w3.org/2000/01/rdf-schema#comment> "Palm is a BodyPart. It is the area located at the end of the Forearm (starting from wrist) up until the start of a Finger which is the central region of the anterior part of the Hand. This is an owl:equivalentClass fma:fma24920."@en .
+<https://w3id.org/hdgi#Palm> <http://www.w3.org/2000/01/rdf-schema#label> "Palm"@en .
 # 
 # https://w3id.org/hdgi#PalmAnticlockwiseRotation
 <https://w3id.org/hdgi#PalmAnticlockwiseRotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1086,16 +1105,16 @@ _:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#
 # https://w3id.org/hdgi#PalmMovement
 <https://w3id.org/hdgi#PalmMovement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#PalmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Movement> .
+<https://w3id.org/hdgi#PalmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid74 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid74 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
 <https://w3id.org/hdgi#PalmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
 _:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid75 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid75 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid75 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
-<https://w3id.org/hdgi#PalmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid76 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid76 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
 <https://w3id.org/hdgi#PalmMovement> <http://www.w3.org/2000/01/rdf-schema#comment> "Movement of palm. Either right or left." .
 <https://w3id.org/hdgi#PalmMovement> <http://www.w3.org/2000/01/rdf-schema#label> "PalmMovement" .
 # 
@@ -1107,16 +1126,16 @@ _:genid76 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
 # https://w3id.org/hdgi#PalmPose
 <https://w3id.org/hdgi#PalmPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#PalmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Pose> .
+<https://w3id.org/hdgi#PalmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid76 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid76 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
 <https://w3id.org/hdgi#PalmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
 _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid77 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid77 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid77 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
-<https://w3id.org/hdgi#PalmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid78 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid78 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
 <https://w3id.org/hdgi#PalmPose> <http://www.w3.org/2000/01/rdf-schema#label> "PalmPose" .
 # 
 # https://w3id.org/hdgi#PalmRightward
@@ -1141,141 +1160,149 @@ _:genid78 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Palm> .
 # 
 # https://w3id.org/hdgi#Pose
 <https://w3id.org/hdgi#Pose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#Pose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid78 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
 <https://w3id.org/hdgi#Pose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
 _:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid79 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasPosition> .
+_:genid79 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Position> .
 <https://w3id.org/hdgi#Pose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
 _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasPosition> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasRotation> .
 _:genid80 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid80 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Position> .
+_:genid80 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Rotation> .
 <https://w3id.org/hdgi#Pose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
 _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasRotation> .
-_:genid81 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid81 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Rotation> .
-<https://w3id.org/hdgi#Pose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#timeStamp> .
-_:genid82 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid82 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#timestamp> .
+_:genid81 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid81 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
 <https://w3id.org/hdgi#Pose> <http://www.w3.org/2000/01/rdf-schema#label> "Pose" .
 # 
 # https://w3id.org/hdgi#Position
 <https://w3id.org/hdgi#Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasLocalCoordinateSystem> .
+_:genid82 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid82 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LocalCoordinateSystem> .
 <https://w3id.org/hdgi#Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
 _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasLocalCoordinateSystem> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#originPoint> .
 _:genid83 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid83 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LocalCoordinateSystem> .
+_:genid83 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/hdgi#Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
 _:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#originPoint> .
-_:genid84 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid84 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#xPosition> .
+_:genid84 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid84 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/hdgi#Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
 _:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#xPosition> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#yPosition> .
 _:genid85 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid85 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/hdgi#Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
 _:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#yPosition> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#zPosition> .
 _:genid86 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid86 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
-<https://w3id.org/hdgi#Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#zPosition> .
-_:genid87 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid87 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/hdgi#Position> <http://www.w3.org/2000/01/rdf-schema#comment> "Position of a pose in a particular time" .
 <https://w3id.org/hdgi#Position> <http://www.w3.org/2000/01/rdf-schema#label> "Position" .
 # 
 # https://w3id.org/hdgi#Quaternion
 <https://w3id.org/hdgi#Quaternion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#Quaternion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#iComponent> .
+_:genid87 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid87 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
 <https://w3id.org/hdgi#Quaternion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
 _:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#i-component> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#jComponent> .
 _:genid88 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid88 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
 <https://w3id.org/hdgi#Quaternion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
 _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#j-component> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#kComponent> .
 _:genid89 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid89 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
 <https://w3id.org/hdgi#Quaternion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
 _:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#k-component> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#wComponent> .
 _:genid90 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid90 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/hdgi#Quaternion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#w-component> .
-_:genid91 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid91 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/hdgi#Quaternion> <http://www.w3.org/2000/01/rdf-schema#comment> "A quaternion is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.\n\nThe magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one."@en .
+<https://w3id.org/hdgi#Quaternion> <http://www.w3.org/2000/01/rdf-schema#comment> "A quaternion is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.\r\n\r\nThe magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one."@en .
 <https://w3id.org/hdgi#Quaternion> <http://www.w3.org/2000/01/rdf-schema#label> "Quaternion" .
 # 
 # https://w3id.org/hdgi#RightForearm
 <https://w3id.org/hdgi#RightForearm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RightForearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Forearm> .
-<https://w3id.org/hdgi#RightForearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid92 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Forearm> .
-<https://w3id.org/hdgi#RightForearm> <http://www.w3.org/2000/01/rdf-schema#label> "RightForearm" .
+<https://w3id.org/hdgi#RightForearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid91 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#Forearm> .
+<https://w3id.org/hdgi#RightForearm> <http://www.w3.org/2000/01/rdf-schema#comment> "RightForearm is the region of the right upper limb between the right elbow and the right wrist. This is an owl:equivalentClass fma:fma11345."@en .
+<https://w3id.org/hdgi#RightForearm> <http://www.w3.org/2000/01/rdf-schema#label> "RightForearm"@en .
+# 
+# https://w3id.org/hdgi#RightHand
+<https://w3id.org/hdgi#RightHand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#RightHand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Hand> .
+<https://w3id.org/hdgi#RightHand> <http://www.w3.org/2000/01/rdf-schema#comment> "RightHand is the terminal segmant of right upper limb which starts at end of the RightForearm and consists of Fingers. This is an owl:equivalentClass fma:fma9713."@en .
+<https://w3id.org/hdgi#RightHand> <http://www.w3.org/2000/01/rdf-schema#label> "RightHand"@en .
 # 
 # https://w3id.org/hdgi#RightIndexFinger
 <https://w3id.org/hdgi#RightIndexFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RightIndexFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#IndexFinger> .
-<https://w3id.org/hdgi#RightIndexFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Right hand index finger."@en .
-<https://w3id.org/hdgi#RightIndexFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RightIndexFinger" .
+<https://w3id.org/hdgi#RightIndexFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "RightIndexFinger is the IndexFinger on the RightHand. This is an owl:equivalentClass fma:fma60333."@en .
+<https://w3id.org/hdgi#RightIndexFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RightIndexFinger"@en .
 # 
 # https://w3id.org/hdgi#RightLittleFinger
 <https://w3id.org/hdgi#RightLittleFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RightLittleFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#LittleFinger> .
-<https://w3id.org/hdgi#RightLittleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Right hand little finger."@en .
-<https://w3id.org/hdgi#RightLittleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RightLittleFinger" .
+<https://w3id.org/hdgi#RightLittleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "RightLittleFinger is the LittleFinger on RightHand. This is an owl:equivalentClass fma:fma60327."@en .
+<https://w3id.org/hdgi#RightLittleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RightLittleFinger"@en .
 # 
 # https://w3id.org/hdgi#RightMiddleFinger
 <https://w3id.org/hdgi#RightMiddleFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RightMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#MiddleFinger> .
-<https://w3id.org/hdgi#RightMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Right hand middle finger."@en .
-<https://w3id.org/hdgi#RightMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RightMiddleFinger" .
+<https://w3id.org/hdgi#RightMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "RightMiddleFinger is the MiddleFinger on RightHand. This is an owl:equivalentClass fma:fma60331."@en .
+<https://w3id.org/hdgi#RightMiddleFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RightMiddleFinger"@en .
 # 
 # https://w3id.org/hdgi#RightPalm
 <https://w3id.org/hdgi#RightPalm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RightPalm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Palm> .
-<https://w3id.org/hdgi#RightPalm> <http://www.w3.org/2000/01/rdf-schema#comment> "Right hand palm."@en .
-<https://w3id.org/hdgi#RightPalm> <http://www.w3.org/2000/01/rdf-schema#label> "RightPalm" .
+<https://w3id.org/hdgi#RightPalm> <http://www.w3.org/2000/01/rdf-schema#comment> "RightPalm is the area located at the end of the RightForearm (starting from right wrist) up until the start of a RightHand Fingers which is the central region of the anterior part of the RightHand. This is an owl:equivalentClass fma:fma61070."@en .
+<https://w3id.org/hdgi#RightPalm> <http://www.w3.org/2000/01/rdf-schema#label> "RightPalm"@en .
 # 
 # https://w3id.org/hdgi#RightRingFinger
 <https://w3id.org/hdgi#RightRingFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RightRingFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#RingFinger> .
-<https://w3id.org/hdgi#RightRingFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Right hand ring finger."@en .
-<https://w3id.org/hdgi#RightRingFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RightRingFinger" .
+<https://w3id.org/hdgi#RightRingFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "RightRingFinger is the RingFinger on RightHand. This is an owl:equivalentClass fma:fma60329."@en .
+<https://w3id.org/hdgi#RightRingFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RightRingFinger"@en .
 # 
 # https://w3id.org/hdgi#RightThumb
 <https://w3id.org/hdgi#RightThumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RightThumb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Thumb> .
-<https://w3id.org/hdgi#RightThumb> <http://www.w3.org/2000/01/rdf-schema#comment> "Thumb of right hand."@en .
-<https://w3id.org/hdgi#RightThumb> <http://www.w3.org/2000/01/rdf-schema#label> "RightThumb" .
+<https://w3id.org/hdgi#RightThumb> <http://www.w3.org/2000/01/rdf-schema#comment> "RightThumb is the Thumb on RightHand. This is an owl:equivalentClass fma:fma60325."@en .
+<https://w3id.org/hdgi#RightThumb> <http://www.w3.org/2000/01/rdf-schema#label> "RightThumb"@en .
 # 
 # https://w3id.org/hdgi#RightUpperArm
 <https://w3id.org/hdgi#RightUpperArm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RightUpperArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#UpperArm> .
-<https://w3id.org/hdgi#RightUpperArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid93 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#UpperArm> .
-<https://w3id.org/hdgi#RightUpperArm> <http://www.w3.org/2000/01/rdf-schema#label> "RightUpperArm" .
+<https://w3id.org/hdgi#RightUpperArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid92 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#UpperArm> .
+<https://w3id.org/hdgi#RightUpperArm> <http://www.w3.org/2000/01/rdf-schema#comment> "RightUpperArm is the region of the right upper limb between the right shoulder and right elbow joint. This is an owl:equivalentClass fma:fma24895."@en .
+<https://w3id.org/hdgi#RightUpperArm> <http://www.w3.org/2000/01/rdf-schema#label> "RightUpperArm"@en .
 # 
 # https://w3id.org/hdgi#RingFinger
 <https://w3id.org/hdgi#RingFinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RingFinger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Finger> .
-<https://w3id.org/hdgi#RingFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Fourth finger or the fourth digit of hand."@en .
-<https://w3id.org/hdgi#RingFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RingFinger" .
+<https://w3id.org/hdgi#RingFinger> <http://www.w3.org/2000/01/rdf-schema#comment> "RingFinger is the fourth Finger on Hand. Also known as fourth Digit of hand. This is an owl:equivalentClass fma:fma24948."@en .
+<https://w3id.org/hdgi#RingFinger> <http://www.w3.org/2000/01/rdf-schema#label> "RingFinger"@en .
 # 
 # https://w3id.org/hdgi#RingFingerCurled
 <https://w3id.org/hdgi#RingFingerCurled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1290,16 +1317,16 @@ _:genid93 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/hdgi#U
 # https://w3id.org/hdgi#RingFingerPose
 <https://w3id.org/hdgi#RingFingerPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#RingFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#FingerPose> .
+<https://w3id.org/hdgi#RingFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid93 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid93 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftRingFinger> .
 <https://w3id.org/hdgi#RingFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
 _:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
 _:genid94 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid94 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftRingFinger> .
-<https://w3id.org/hdgi#RingFingerPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid95 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid95 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightRingFinger> .
+_:genid94 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightRingFinger> .
 <https://w3id.org/hdgi#RingFingerPose> <http://www.w3.org/2000/01/rdf-schema#label> "RingFingerPose" .
 # 
 # https://w3id.org/hdgi#RingFingerStraightandBackward
@@ -1334,114 +1361,114 @@ _:genid95 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightRi
 # 
 # https://w3id.org/hdgi#Rotation
 <https://w3id.org/hdgi#Rotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#Rotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasLocalCoordinateSystem> .
+_:genid95 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid95 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LocalCoordinateSystem> .
 <https://w3id.org/hdgi#Rotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
 _:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasLocalCoordinateSystem> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasQuaternion> .
 _:genid96 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid96 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LocalCoordinateSystem> .
+_:genid96 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Quaternion> .
 <https://w3id.org/hdgi#Rotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
 _:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#hasQuaternion> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#originPoint> .
 _:genid97 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid97 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#Quaternion> .
+_:genid97 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/hdgi#Rotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
 _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#originPoint> .
-_:genid98 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid98 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#xRotation> .
+_:genid98 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid98 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/hdgi#Rotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
 _:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#xRotation> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#yRotation> .
 _:genid99 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid99 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/hdgi#Rotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
 _:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#yRotation> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#zRotation> .
 _:genid100 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid100 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
-<https://w3id.org/hdgi#Rotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#zRotation> .
-_:genid101 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid101 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/hdgi#Rotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Rotation of a pose."@en .
 <https://w3id.org/hdgi#Rotation> <http://www.w3.org/2000/01/rdf-schema#label> "Rotation" .
 # 
 # https://w3id.org/hdgi#Thumb
 <https://w3id.org/hdgi#Thumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#Thumb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Finger> .
-<https://w3id.org/hdgi#Thumb> <http://www.w3.org/2000/01/rdf-schema#comment> "First digit of hand."@en .
-<https://w3id.org/hdgi#Thumb> <http://www.w3.org/2000/01/rdf-schema#label> "Thumb" .
+<https://w3id.org/hdgi#Thumb> <http://www.w3.org/2000/01/rdf-schema#comment> "Thumb is the first Finger on Hand. Also known as first Digit of hand. This is an owl:equivalentClass fma:fma24938."@en .
+<https://w3id.org/hdgi#Thumb> <http://www.w3.org/2000/01/rdf-schema#label> "Thumb"@en .
 # 
 # https://w3id.org/hdgi#ThumbCurled
 <https://w3id.org/hdgi#ThumbCurled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#ThumbCurled> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#TumbPose> .
+<https://w3id.org/hdgi#ThumbCurled> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#ThumbPose> .
 <https://w3id.org/hdgi#ThumbCurled> <http://www.w3.org/2000/01/rdf-schema#label> "ThumbCurled" .
 # 
 # https://w3id.org/hdgi#ThumbFolded
 <https://w3id.org/hdgi#ThumbFolded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#ThumbFolded> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#TumbPose> .
+<https://w3id.org/hdgi#ThumbFolded> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#ThumbPose> .
 <https://w3id.org/hdgi#ThumbFolded> <http://www.w3.org/2000/01/rdf-schema#label> "ThumbFolded" .
+# 
+# https://w3id.org/hdgi#ThumbPose
+<https://w3id.org/hdgi#ThumbPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hdgi#ThumbPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#FingerPose> .
+<https://w3id.org/hdgi#ThumbPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid101 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid101 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftThumb> .
+<https://w3id.org/hdgi#ThumbPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid102 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid102 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightThumb> .
+<https://w3id.org/hdgi#ThumbPose> <http://www.w3.org/2000/01/rdf-schema#label> "ThumbPose" .
 # 
 # https://w3id.org/hdgi#ThumbStraightandBackward
 <https://w3id.org/hdgi#ThumbStraightandBackward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#ThumbStraightandBackward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#TumbPose> .
+<https://w3id.org/hdgi#ThumbStraightandBackward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#ThumbPose> .
 <https://w3id.org/hdgi#ThumbStraightandBackward> <http://www.w3.org/2000/01/rdf-schema#label> "ThumbStraightandBackward" .
 # 
 # https://w3id.org/hdgi#ThumbStraightandDownward
 <https://w3id.org/hdgi#ThumbStraightandDownward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#ThumbStraightandDownward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#TumbPose> .
+<https://w3id.org/hdgi#ThumbStraightandDownward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#ThumbPose> .
 <https://w3id.org/hdgi#ThumbStraightandDownward> <http://www.w3.org/2000/01/rdf-schema#label> "ThumbStraightandDownward" .
 # 
 # https://w3id.org/hdgi#ThumbStraightandForward
 <https://w3id.org/hdgi#ThumbStraightandForward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#ThumbStraightandForward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#TumbPose> .
+<https://w3id.org/hdgi#ThumbStraightandForward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#ThumbPose> .
 <https://w3id.org/hdgi#ThumbStraightandForward> <http://www.w3.org/2000/01/rdf-schema#label> "ThumbStraightandForward" .
 # 
 # https://w3id.org/hdgi#ThumbStraightandLeftward
 <https://w3id.org/hdgi#ThumbStraightandLeftward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#ThumbStraightandLeftward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#TumbPose> .
+<https://w3id.org/hdgi#ThumbStraightandLeftward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#ThumbPose> .
 <https://w3id.org/hdgi#ThumbStraightandLeftward> <http://www.w3.org/2000/01/rdf-schema#label> "ThumbStraightandLeftward" .
 # 
 # https://w3id.org/hdgi#ThumbStraightandRightward
 <https://w3id.org/hdgi#ThumbStraightandRightward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#ThumbStraightandRightward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#TumbPose> .
+<https://w3id.org/hdgi#ThumbStraightandRightward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#ThumbPose> .
 <https://w3id.org/hdgi#ThumbStraightandRightward> <http://www.w3.org/2000/01/rdf-schema#label> "ThumbStraightandRightward" .
 # 
 # https://w3id.org/hdgi#ThumbStraightandUpward
 <https://w3id.org/hdgi#ThumbStraightandUpward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#ThumbStraightandUpward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#TumbPose> .
+<https://w3id.org/hdgi#ThumbStraightandUpward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#ThumbPose> .
 <https://w3id.org/hdgi#ThumbStraightandUpward> <http://www.w3.org/2000/01/rdf-schema#label> "ThumbStraightandUpward" .
-# 
-# https://w3id.org/hdgi#TumbPose
-<https://w3id.org/hdgi#TumbPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#TumbPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#FingerPose> .
-<https://w3id.org/hdgi#TumbPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid102 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid102 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#LeftThumb> .
-<https://w3id.org/hdgi#TumbPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid103 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid103 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#RightThumb> .
-<https://w3id.org/hdgi#TumbPose> <http://www.w3.org/2000/01/rdf-schema#label> "TumbPose" .
 # 
 # https://w3id.org/hdgi#UnitOfMeasure
 <https://w3id.org/hdgi#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/hdgi#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines units of measurement."@en .
-<https://w3id.org/hdgi#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "UnitOfMeasure" .
+<https://w3id.org/hdgi#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines units of measurement. This is an equivalent class to qudt:Unit"@en .
+<https://w3id.org/hdgi#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "UnitOfMeasure"@en .
 # 
 # https://w3id.org/hdgi#UpperArm
 <https://w3id.org/hdgi#UpperArm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#UpperArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#UpperArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
-_:genid104 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
-<https://w3id.org/hdgi#UpperArm> <http://www.w3.org/2000/01/rdf-schema#comment> "The upper arm is the line between the shoulder and elbow joint."@en .
-<https://w3id.org/hdgi#UpperArm> <http://www.w3.org/2000/01/rdf-schema#label> "UpperArm" .
+<https://w3id.org/hdgi#UpperArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#isPartOf> .
+_:genid103 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi#BodyPart> .
+<https://w3id.org/hdgi#UpperArm> <http://www.w3.org/2000/01/rdf-schema#comment> "UpperArm is a BodyPart. It is the region of the upper limb between the shoulder and elbow joint. This is an owl:equivalentClass fma:fma24890."@en .
+<https://w3id.org/hdgi#UpperArm> <http://www.w3.org/2000/01/rdf-schema#label> "UpperArm"@en .
 # 
 # https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation
 <https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1466,18 +1493,18 @@ _:genid104 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/hdgi
 # https://w3id.org/hdgi#UpperArmGesture
 <https://w3id.org/hdgi#UpperArmGesture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#UpperArmGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Gesture> .
+<https://w3id.org/hdgi#UpperArmGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid104 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid104 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperArm> .
 <https://w3id.org/hdgi#UpperArmGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
 _:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid105 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid105 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid105 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid105 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperArm> .
-<https://w3id.org/hdgi#UpperArmGesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid106 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid106 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperArm> .
-<https://w3id.org/hdgi#UpperArmGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "Gestures (movements) made with upper arm" .
-<https://w3id.org/hdgi#UpperArmGesture> <http://www.w3.org/2000/01/rdf-schema#label> "UpperArmGesture" .
+<https://w3id.org/hdgi#UpperArmGesture> <http://www.w3.org/2000/01/rdf-schema#comment> "UpperArmGesture is a Gesture executed with a Movement or a Pose using the BodayPart UpperArm."@en .
+<https://w3id.org/hdgi#UpperArmGesture> <http://www.w3.org/2000/01/rdf-schema#label> "UpperArmGesture"@en .
 # 
 # https://w3id.org/hdgi#UpperArmLeftward
 <https://w3id.org/hdgi#UpperArmLeftward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1497,31 +1524,31 @@ _:genid106 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperA
 # https://w3id.org/hdgi#UpperArmMovement
 <https://w3id.org/hdgi#UpperArmMovement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#UpperArmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Movement> .
+<https://w3id.org/hdgi#UpperArmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
+_:genid106 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid106 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperArm> .
 <https://w3id.org/hdgi#UpperArmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
 _:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid107 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid107 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid107 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid107 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperArm> .
-<https://w3id.org/hdgi#UpperArmMovement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#involves> .
-_:genid108 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid108 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperArm> .
 <https://w3id.org/hdgi#UpperArmMovement> <http://www.w3.org/2000/01/rdf-schema#label> "UpperArmMovement" .
 # 
 # https://w3id.org/hdgi#UpperArmPose
 <https://w3id.org/hdgi#UpperArmPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#UpperArmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Pose> .
+<https://w3id.org/hdgi#UpperArmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
+_:genid108 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid108 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperArm> .
 <https://w3id.org/hdgi#UpperArmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
 _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid109 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid109 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid109 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperArm> .
-<https://w3id.org/hdgi#UpperArmPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/hdgi#used> .
-_:genid110 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid110 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperArm> .
 <https://w3id.org/hdgi#UpperArmPose> <http://www.w3.org/2000/01/rdf-schema#label> "UpperArmPose" .
 # 
 # https://w3id.org/hdgi#UpperArmRightward
@@ -1542,29 +1569,7 @@ _:genid110 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/hdgi#UpperA
 # https://w3id.org/hdgi#UserContext
 <https://w3id.org/hdgi#UserContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/hdgi#UserContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hdgi#Context> .
-<https://w3id.org/hdgi#UserContext> <http://www.w3.org/2000/01/rdf-schema#label> "UserContext" .
+<https://w3id.org/hdgi#UserContext> <http://www.w3.org/2000/01/rdf-schema#comment> "UserContext describes the data that is specifically related to a Human in a certain Context that is Human specific data in a Context."@en .
+<https://w3id.org/hdgi#UserContext> <http://www.w3.org/2000/01/rdf-schema#label> "UserContext"@en .
 # 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<http://creativecommons.org/ns#attributionURL> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
-# 
-<http://purl.org/dc/terms/description> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
-# 
-<http://purl.org/dc/terms/issued> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
-# 
-<http://purl.org/dc/terms/license> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
-# 
-<http://purl.org/dc/terms/rights> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
-# 
-<http://purl.org/dc/terms/title> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
-# 
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://purl.org/dc/elements/1.1/creator> "madhawaperera" .
-# 
-# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

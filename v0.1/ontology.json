@@ -1,18 +1,24 @@
 [ {
-  "@id" : "_:genid100",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#yRotation"
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "leftward"
+    }, {
+      "@value" : "rightward"
+    } ]
   } ]
 }, {
-  "@id" : "_:genid101",
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/hdgi#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#affordedBy"
+  } ]
+}, {
+  "@id" : "_:genid100",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -25,7 +31,7 @@
     "@id" : "https://w3id.org/hdgi#zRotation"
   } ]
 }, {
-  "@id" : "_:genid102",
+  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#LeftThumb"
@@ -38,7 +44,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid103",
+  "@id" : "_:genid102",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#RightThumb"
@@ -51,7 +57,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid104",
+  "@id" : "_:genid103",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#isPartOf"
@@ -60,11 +66,24 @@
     "@id" : "https://w3id.org/hdgi#BodyPart"
   } ]
 }, {
-  "@id" : "_:genid105",
+  "@id" : "_:genid104",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/hdgi#UpperArm"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#involves"
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#UpperArm"
@@ -75,9 +94,9 @@
 }, {
   "@id" : "_:genid106",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
+    "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#UpperArm"
@@ -88,9 +107,9 @@
 }, {
   "@id" : "_:genid107",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#UpperArm"
@@ -101,19 +120,6 @@
 }, {
   "@id" : "_:genid108",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/hdgi#UpperArm"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#involves"
-  } ]
-}, {
-  "@id" : "_:genid109",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
@@ -125,7 +131,7 @@
     "@id" : "https://w3id.org/hdgi#used"
   } ]
 }, {
-  "@id" : "_:genid110",
+  "@id" : "_:genid109",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -138,16 +144,7 @@
     "@id" : "https://w3id.org/hdgi#used"
   } ]
 }, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/hdgi#Device"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#affordedBy"
-  } ]
-}, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#Gesture"
@@ -156,16 +153,7 @@
     "@id" : "https://w3id.org/hdgi#supportsGesture"
   } ]
 }, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/hdgi#BodyPart"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#hasPart"
-  } ]
-}, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#hasContext"
@@ -174,7 +162,7 @@
     "@id" : "https://w3id.org/hdgi#DeviceContext"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#DeviceManufacturer"
@@ -183,7 +171,7 @@
     "@id" : "https://w3id.org/hdgi#manufacturedBy"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#isPartOf"
@@ -192,7 +180,7 @@
     "@id" : "https://w3id.org/hdgi#BodyPart"
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Face"
@@ -203,6 +191,41 @@
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#isPartOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/hdgi#BodyPart"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/hdgi#Finger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#involves"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/hdgi#Finger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#involves"
   } ]
 }, {
   "@id" : "_:genid19",
@@ -221,7 +244,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/hdgi#Finger"
+    "@id" : "https://w3id.org/hdgi#Foot"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#involves"
@@ -231,10 +254,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "5"
+    "@value" : "2"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/hdgi#Finger"
+    "@id" : "https://w3id.org/hdgi#Foot"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#involves"
@@ -256,7 +279,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/hdgi#Foot"
+    "@id" : "https://w3id.org/hdgi#Forearm"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#involves"
@@ -269,7 +292,7 @@
     "@value" : "2"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/hdgi#Foot"
+    "@id" : "https://w3id.org/hdgi#Forearm"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#involves"
@@ -277,18 +300,22 @@
 }, {
   "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#isPartOf"
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/hdgi#BodyPart"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/hdgi#Forearm"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#involves"
   } ]
 }, {
   "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Forearm"
@@ -299,80 +326,31 @@
 }, {
   "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
+    "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Forearm"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#involves"
+    "@id" : "https://w3id.org/hdgi#used"
   } ]
 }, {
   "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Forearm"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#involves"
+    "@id" : "https://w3id.org/hdgi#used"
   } ]
 }, {
   "@id" : "_:genid29",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/hdgi#Forearm"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#involves"
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@value" : "leftward"
-    }, {
-      "@value" : "rightward"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/hdgi#Forearm"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#used"
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/hdgi#Forearm"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#used"
-  } ]
-}, {
-  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#Gesture"
@@ -381,7 +359,7 @@
     "@id" : "https://w3id.org/hdgi#includesGesture"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
@@ -390,7 +368,7 @@
     "@id" : "https://w3id.org/hdgi#used"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Pose"
@@ -403,7 +381,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Pose"
@@ -416,7 +394,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -429,7 +407,16 @@
     "@id" : "https://w3id.org/hdgi#hasMovement"
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#isPartOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/hdgi#BodyPart"
+  } ]
+}, {
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -442,7 +429,7 @@
     "@id" : "https://w3id.org/hdgi#involves"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -455,7 +442,7 @@
     "@id" : "https://w3id.org/hdgi#involves"
   } ]
 }, {
-  "@id" : "_:genid39",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -468,7 +455,7 @@
     "@id" : "https://w3id.org/hdgi#involves"
   } ]
 }, {
-  "@id" : "_:genid40",
+  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -481,7 +468,7 @@
     "@id" : "https://w3id.org/hdgi#involves"
   } ]
 }, {
-  "@id" : "_:genid41",
+  "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#isPartOf"
@@ -490,7 +477,17 @@
     "@id" : "https://w3id.org/hdgi#BodyPart"
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "downward"
+    }, {
+      "@value" : "upward"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Head"
@@ -503,7 +500,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#hasContext"
@@ -512,7 +509,7 @@
     "@id" : "https://w3id.org/hdgi#UserContext"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#performs"
@@ -521,7 +518,7 @@
     "@id" : "https://w3id.org/hdgi#Gesture"
   } ]
 }, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#performs"
@@ -530,7 +527,7 @@
     "@id" : "https://w3id.org/hdgi#Pose"
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
@@ -539,7 +536,16 @@
     "@id" : "https://w3id.org/hdgi#uses"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/hdgi#BodyPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#hasPart"
+  } ]
+}, {
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#LeftIndexFinger"
@@ -552,7 +558,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#RightIndexFinger"
@@ -565,7 +571,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#Forearm"
@@ -574,7 +580,7 @@
     "@id" : "https://w3id.org/hdgi#isPartOf"
   } ]
 }, {
-  "@id" : "_:genid50",
+  "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#UpperArm"
@@ -583,7 +589,7 @@
     "@id" : "https://w3id.org/hdgi#isPartOf"
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#isPartOf"
@@ -592,7 +598,7 @@
     "@id" : "https://w3id.org/hdgi#BodyPart"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -605,7 +611,7 @@
     "@id" : "https://w3id.org/hdgi#involves"
   } ]
 }, {
-  "@id" : "_:genid53",
+  "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -618,7 +624,7 @@
     "@id" : "https://w3id.org/hdgi#involves"
   } ]
 }, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#LeftLittleFinger"
@@ -631,7 +637,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid55",
+  "@id" : "_:genid54",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#RightLittleFinger"
@@ -644,16 +650,16 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#x-axisDirection"
+    "@id" : "https://w3id.org/hdgi#xAxisDirection"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid57"
+    "@id" : "_:genid56"
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -663,26 +669,16 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@value" : "downward"
-    }, {
-      "@value" : "upward"
-    } ]
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#yAxisDirection"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid60"
   } ]
 }, {
   "@id" : "_:genid60",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#y-axisDirection"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid61"
-  } ]
-}, {
-  "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -692,16 +688,16 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#z-axisDirection"
+    "@id" : "https://w3id.org/hdgi#zAxisDirection"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid65"
+    "@id" : "_:genid64"
   } ]
 }, {
-  "@id" : "_:genid65",
+  "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -711,7 +707,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid68",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#LeftMiddleFinger"
@@ -724,7 +720,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid69",
+  "@id" : "_:genid68",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#RightMiddleFinger"
@@ -737,7 +733,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid70",
+  "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
@@ -746,7 +742,17 @@
     "@id" : "https://w3id.org/hdgi#involves"
   } ]
 }, {
-  "@id" : "_:genid71",
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "inward"
+    }, {
+      "@value" : "outward"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Duration"
@@ -759,7 +765,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#observes"
@@ -768,7 +774,7 @@
     "@id" : "https://w3id.org/hdgi#Gesture"
   } ]
 }, {
-  "@id" : "_:genid73",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#observes"
@@ -777,7 +783,7 @@
     "@id" : "https://w3id.org/hdgi#Pose"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/hdgi#isPartOf"
@@ -786,11 +792,24 @@
     "@id" : "https://w3id.org/hdgi#BodyPart"
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid74",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/hdgi#Palm"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#involves"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Palm"
@@ -801,19 +820,6 @@
 }, {
   "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/hdgi#Palm"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#involves"
-  } ]
-}, {
-  "@id" : "_:genid77",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
@@ -825,7 +831,7 @@
     "@id" : "https://w3id.org/hdgi#used"
   } ]
 }, {
-  "@id" : "_:genid78",
+  "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -838,7 +844,7 @@
     "@id" : "https://w3id.org/hdgi#used"
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
@@ -847,7 +853,7 @@
     "@id" : "https://w3id.org/hdgi#used"
   } ]
 }, {
-  "@id" : "_:genid80",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -860,7 +866,7 @@
     "@id" : "https://w3id.org/hdgi#hasPosition"
   } ]
 }, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -873,20 +879,20 @@
     "@id" : "https://w3id.org/hdgi#hasRotation"
   } ]
 }, {
-  "@id" : "_:genid82",
+  "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#timeStamp"
+    "@id" : "https://w3id.org/hdgi#timestamp"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#LocalCoordinateSystem"
@@ -899,7 +905,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid84",
+  "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -912,7 +918,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -925,7 +931,7 @@
     "@id" : "https://w3id.org/hdgi#xPosition"
   } ]
 }, {
-  "@id" : "_:genid86",
+  "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -938,7 +944,7 @@
     "@id" : "https://w3id.org/hdgi#yPosition"
   } ]
 }, {
-  "@id" : "_:genid87",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -951,13 +957,26 @@
     "@id" : "https://w3id.org/hdgi#zPosition"
   } ]
 }, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#iComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
   "@id" : "_:genid88",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#i-component"
+    "@id" : "https://w3id.org/hdgi#jComponent"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -970,21 +989,11 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#j-component"
+    "@id" : "https://w3id.org/hdgi#kComponent"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@value" : "inward"
-    }, {
-      "@value" : "outward"
-    } ]
   } ]
 }, {
   "@id" : "_:genid90",
@@ -993,7 +1002,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#k-component"
+    "@id" : "https://w3id.org/hdgi#wComponent"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -1002,19 +1011,6 @@
 }, {
   "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/hdgi#w-component"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid92",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#Forearm"
   } ],
@@ -1022,7 +1018,7 @@
     "@id" : "https://w3id.org/hdgi#isPartOf"
   } ]
 }, {
-  "@id" : "_:genid93",
+  "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/hdgi#UpperArm"
@@ -1031,7 +1027,7 @@
     "@id" : "https://w3id.org/hdgi#isPartOf"
   } ]
 }, {
-  "@id" : "_:genid94",
+  "@id" : "_:genid93",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#LeftRingFinger"
@@ -1044,7 +1040,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid95",
+  "@id" : "_:genid94",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#RightRingFinger"
@@ -1057,7 +1053,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid96",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#LocalCoordinateSystem"
@@ -1070,7 +1066,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid97",
+  "@id" : "_:genid96",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/hdgi#Quaternion"
@@ -1083,7 +1079,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid98",
+  "@id" : "_:genid97",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1096,7 +1092,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid99",
+  "@id" : "_:genid98",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -1109,65 +1105,45 @@
     "@id" : "https://w3id.org/hdgi#xRotation"
   } ]
 }, {
-  "@id" : "http://creativecommons.org/ns#attributionURL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "madhawaperera"
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/hdgi#yRotation"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@id" : "http://creativecommons.org/ns#attributionURL",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "madhawaperera"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/issued",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "madhawaperera"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "madhawaperera"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/rights",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "madhawaperera"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "madhawaperera"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "madhawaperera"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "madhawaperera"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#example",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://schema.org/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "madhawaperera"
-  } ]
 }, {
   "@id" : "https://w3id.org/hdgi#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -1194,7 +1170,8 @@
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "hdgi"
-  }, {
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@value" : "https://w3id.org/hdgi#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1211,48 +1188,46 @@
 }, {
   "@id" : "https://w3id.org/hdgi#ActuatableAffordance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An actuatable Affordance of a Device. This is rdfs:subClassOf ssn:ActuatableProperty."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "ActuatableAffordance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Affordance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "TV is a Device that can change the state to “on” or “off”. This is a property of a TV which a human could act upon. Thus, ability to “turn on” is an ActuatableAffordance of a TV."
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Affordance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Affordances are all the type of properties that belong to devices. They indicate the possible actions users can take with it."
+    "@value" : "Affordance is a quality or characteristic of Devices that indicates the possible action a Human can take with it. This is rdfs:subClassOf ssn:Property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Affordance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid12"
+    "@id" : "_:genid10"
   }, {
-    "@id" : "_:genid13"
-  } ]
-}, {
-  "@id" : "https://w3id.org/hdgi#Body",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Human body. A collection of body parts."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Body"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid14"
+    "@id" : "_:genid11"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#BodyPart",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Parts of human body."
+    "@value" : "BodyPart is any part of HumanBody such as an Face, Leg etc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "BodyPart"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
@@ -1261,7 +1236,12 @@
 }, {
   "@id" : "https://w3id.org/hdgi#Context",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Context describes details of a situation."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Context"
   } ]
 }, {
@@ -1269,20 +1249,26 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A device denotes a piece of hardware or software which consists of sensors or actuators or both."
+    "@value" : "Device denotes a piece of hardware or software which consists of sensors or actuators or both."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid15"
+    "@id" : "_:genid12"
   }, {
-    "@id" : "_:genid16"
+    "@id" : "_:genid13"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#DeviceContext",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "DeviceContext describes the data that is specifically related to a Device in a certain Context that is Device specific data in a Context."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "DeviceContext"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1293,9 +1279,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The company manufacturing a device."
+    "@value" : "DeviceManufacturer is the company/vendor manufactures a Device."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "DeviceManufacturer"
   } ]
 }, {
@@ -1303,50 +1290,63 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Duration is a temporal extent."
+    "@value" : "Duration of a temporal extent expressed as a decimal number scaled by a temporal unit. This is an owl:equivalentClass time:Duration."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Duration"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Face",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Face is a BodyPart which represents the front side of a Head."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Face"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
   }, {
-    "@id" : "_:genid17"
+    "@id" : "_:genid14"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#FacialGesture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "FacialGesture is a Gesture executed with a Movement or a Pose using the BodayPart Face."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "FacialGesture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Gesture"
   }, {
-    "@id" : "_:genid18"
+    "@id" : "_:genid15"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Finger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A finger is a body part of the human body and a type of digit."
+    "@value" : "Finger is a BodyPart of the HumanBody. Also know as Digits of hand. This is an owl:equivalentClass fma:fma9666."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Finger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
   }, {
-    "@id" : "_:genid19"
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@value" : "thumb, middle finger, left ring finger etc"
+    "@language" : "en",
+    "@value" : "Thumb, MiddleFinger, RingFinger etc."
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#FingerAnticlcokwiseRotation",
@@ -1411,9 +1411,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Movement"
   }, {
-    "@id" : "_:genid20"
+    "@id" : "_:genid17"
   }, {
-    "@id" : "_:genid21"
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#FingerPose",
@@ -1446,25 +1446,35 @@
   "@id" : "https://w3id.org/hdgi#Foot",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Foot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "Foot is a BodyPart. It is the terminal segmant of lower limb. This is an owl:equivalentClass fma:fma9664."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
   }, {
-    "@id" : "_:genid22"
+    "@id" : "_:genid19"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#FootGesture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "FootGesture is a Gesture executed with a Movement or a Pose using the BodayPart Foot."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "FootGesture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Gesture"
   }, {
-    "@id" : "_:genid23"
+    "@id" : "_:genid20"
   }, {
-    "@id" : "_:genid24"
+    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#FootPose",
@@ -1480,15 +1490,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The forearm is the line between the elbow joint and the wrist."
+    "@value" : "Forearm is a BodyPart. It is the region of the upper limb between the elbow and the wrist. This is an owl:equivalentClass fma:fma9663."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Forearm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
   }, {
-    "@id" : "_:genid25"
+    "@id" : "_:genid22"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ForearmAnticlockwiseRotation",
@@ -1539,17 +1550,19 @@
   "@id" : "https://w3id.org/hdgi#ForearmGesture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Gestures (movements) made with forearm"
+    "@language" : "en",
+    "@value" : "ForearmGesture is a Gesture executed with a Movement or a Pose using the BodyPart Forearm."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "ForearmGesture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Gesture"
   }, {
-    "@id" : "_:genid26"
+    "@id" : "_:genid23"
   }, {
-    "@id" : "_:genid27"
+    "@id" : "_:genid24"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ForearmLeftward",
@@ -1587,9 +1600,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Movement"
   }, {
-    "@id" : "_:genid28"
+    "@id" : "_:genid25"
   }, {
-    "@id" : "_:genid29"
+    "@id" : "_:genid26"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ForearmPose",
@@ -1600,9 +1613,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Pose"
   }, {
-    "@id" : "_:genid30"
+    "@id" : "_:genid27"
   }, {
-    "@id" : "_:genid31"
+    "@id" : "_:genid28"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ForearmRightward",
@@ -1645,63 +1658,92 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A gesture is a movement or a pose of the fingers and/or palm and/or upper arm and/or forearm."
+    "@value" : "Gesture is a Movement or a Pose of a BodyPart."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Gesture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  }, {
+    "@id" : "_:genid31"
+  }, {
     "@id" : "_:genid32"
   }, {
     "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "https://w3id.org/hdgi#Hand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Hand is a BodyPart. It is the terminal segmant of upper limb which starts at end of the Forearm and consists of Fingers. This is an owl:equivalentClass fma:fma9712."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/hdgi#BodyPart"
   }, {
     "@id" : "_:genid34"
-  }, {
-    "@id" : "_:genid35"
-  }, {
-    "@id" : "_:genid36"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#HandGesture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Gestures (movements) made with fingers and palms"
+    "@language" : "en",
+    "@value" : "HandGesture is a Gesture executed with a Movement or a Pose using the BodayParts Hand, Palm and/or Fingers."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "HandGesture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Gesture"
   }, {
+    "@id" : "_:genid35"
+  }, {
+    "@id" : "_:genid36"
+  }, {
     "@id" : "_:genid37"
   }, {
     "@id" : "_:genid38"
-  }, {
-    "@id" : "_:genid39"
-  }, {
-    "@id" : "_:genid40"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Head",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Head is a BodyPart. It is the upper part of the HumanBody which starts from the upper end of the neck. This is an owl:equivalentClass fma:fma7154."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Head"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
   }, {
-    "@id" : "_:genid41"
+    "@id" : "_:genid39"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#HeadGesture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "HeadGesture is a Gesture executed with a Movement or a Pose using the BodayPart Head."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "HeadGesture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Gesture"
   }, {
-    "@id" : "_:genid42"
+    "@id" : "_:genid40"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Human",
@@ -1713,22 +1755,37 @@
     "@value" : "Human"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  }, {
     "@id" : "_:genid43"
   }, {
     "@id" : "_:genid44"
-  }, {
+  } ]
+}, {
+  "@id" : "https://w3id.org/hdgi#HumanBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "HumanBody holds a collection of BodyParts of a Human."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HumanBody"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid45"
-  }, {
-    "@id" : "_:genid46"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#IndexFinger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Second finger or the second digit of hand."
+    "@value" : "IndexFinger is the second Finger on Hand. Also known as second Digit of hand. This is an owl:equivalentClass fma:fma24946."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "IndexFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1761,9 +1818,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#FingerPose"
   }, {
-    "@id" : "_:genid47"
+    "@id" : "_:genid46"
   }, {
-    "@id" : "_:genid48"
+    "@id" : "_:genid47"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#IndexFingerStraightandBackward",
@@ -1822,22 +1879,42 @@
 }, {
   "@id" : "https://w3id.org/hdgi#LeftForearm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "LeftForearm is the region of the left upper limb between the left elbow and the left wrist. This is an owl:equivalentClass fma:fma11346."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LeftForearm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Forearm"
   }, {
-    "@id" : "_:genid49"
+    "@id" : "_:genid48"
+  } ]
+}, {
+  "@id" : "https://w3id.org/hdgi#LeftHand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "LeftHand is the terminal segmant of left upper limb which starts at end of the LeftForearm and consists of Fingers. This is an owl:equivalentClass fma:fma9714."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LeftHand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/hdgi#Hand"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#LeftIndexFinger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Left hand index finger."
+    "@value" : "LeftIndexFinger is the IndexFinger on the LeftHand. This is an owl:equivalentClass fma:fma60334."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LeftIndexFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1848,9 +1925,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Left hand little finger."
+    "@value" : "LeftLittleFinger is the LittleFinger on LeftHand. This is an owl:equivalentClass fma:fma60328."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LeftLittleFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1861,9 +1939,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Left hand middle finger."
+    "@value" : "LeftMiddleFinger is the MiddleFinger on LeftHand. This is an owl:equivalentClass fma:fma60332."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LeftMiddleFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1874,9 +1953,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Left hand palm."
+    "@value" : "LeftPalm is the area located at the end of the LeftForearm (starting from left wrist) up until the start of a LeftHand Fingers which is the central region of the anterior part of the LeftHand. This is an owl:equivalentClass fma:fma61071."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LeftPalm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1887,9 +1967,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Left hand ring finger."
+    "@value" : "LeftRingFinger is the RingFinger on LeftHand. This is an owl:equivalentClass fma:fma60330."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LeftRingFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1900,9 +1981,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Thumb of left hand."
+    "@value" : "LeftThumb is the Thumb on LeftHand. This is an owl:equivalentClass fma:fma60326."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LeftThumb"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1911,37 +1993,52 @@
 }, {
   "@id" : "https://w3id.org/hdgi#LeftUpperArm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "LeftUpperArm is the region of the left upper limb between the left shoulder and left elbow joint. This is an owl:equivalentClass fma:fma24896."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LeftUpperArm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#UpperArm"
   }, {
-    "@id" : "_:genid50"
+    "@id" : "_:genid49"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Leg",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Leg is a BodyPart and it is the intermediate segment of lower limb. This is an owl:equivalentClass fma:fma24979."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Leg"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
   }, {
-    "@id" : "_:genid51"
+    "@id" : "_:genid50"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#LegGesture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "LegGesture is a Gesture executed with a Movement or a Pose using the BodayPart Leg."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LegGesture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Gesture"
   }, {
-    "@id" : "_:genid52"
+    "@id" : "_:genid51"
   }, {
-    "@id" : "_:genid53"
+    "@id" : "_:genid52"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#LegPose",
@@ -1957,9 +2054,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Fifth finger or the fifth digit of hand."
+    "@value" : "LittleFinger is the fifth Finger on Hand. Also known as fifth Digit of hand. This is an owl:equivalentClass fma:fma24949."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "LittleFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1992,9 +2090,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#FingerPose"
   }, {
-    "@id" : "_:genid54"
+    "@id" : "_:genid53"
   }, {
-    "@id" : "_:genid55"
+    "@id" : "_:genid54"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#LittleFingerStraightandBackward",
@@ -2061,20 +2159,21 @@
     "@value" : "LocalCoordinateSystem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid56"
+    "@id" : "_:genid55"
   }, {
-    "@id" : "_:genid60"
+    "@id" : "_:genid59"
   }, {
-    "@id" : "_:genid64"
+    "@id" : "_:genid63"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#MiddleFinger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Third finger or the third digit of hand."
+    "@value" : "MiddleFinger is the third Finger on Hand. Also known as third Digit of hand. This is an owl:equivalentClass fma:fma24947."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "MiddleFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2107,9 +2206,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#FingerPose"
   }, {
-    "@id" : "_:genid68"
+    "@id" : "_:genid67"
   }, {
-    "@id" : "_:genid69"
+    "@id" : "_:genid68"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#MiddleFingerStraightandBackward",
@@ -2176,18 +2275,27 @@
     "@value" : "Movement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid70"
+    "@id" : "_:genid69"
   }, {
-    "@id" : "_:genid71"
+    "@id" : "_:genid70"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ObservableAffordance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An observable Affordance of a Device. This is rdfs:subClassOf ssn:ObservableProperty."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "ObservableAffordance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Affordance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Thermostat is a Device that can sense/measure a temperature of a certain location at a given point of time and display it. Thus, “display measured temperature” is an ObservableAffordance of a thermostat."
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Observer",
@@ -2196,24 +2304,25 @@
     "@value" : "Observer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid72"
+    "@id" : "_:genid71"
   }, {
-    "@id" : "_:genid73"
+    "@id" : "_:genid72"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Palm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The area located at the end of the forearm (starting from wrist) up until the start of a finger which is the central region of the anterior part of the hand."
+    "@value" : "Palm is a BodyPart. It is the area located at the end of the Forearm (starting from wrist) up until the start of a Finger which is the central region of the anterior part of the Hand. This is an owl:equivalentClass fma:fma24920."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Palm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
   }, {
-    "@id" : "_:genid74"
+    "@id" : "_:genid73"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#PalmAnticlockwiseRotation",
@@ -2308,9 +2417,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Movement"
   }, {
-    "@id" : "_:genid75"
+    "@id" : "_:genid74"
   }, {
-    "@id" : "_:genid76"
+    "@id" : "_:genid75"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#PalmOutwardPose",
@@ -2330,9 +2439,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Pose"
   }, {
-    "@id" : "_:genid77"
+    "@id" : "_:genid76"
   }, {
-    "@id" : "_:genid78"
+    "@id" : "_:genid77"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#PalmRightward",
@@ -2377,13 +2486,13 @@
     "@value" : "Pose"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid78"
+  }, {
     "@id" : "_:genid79"
   }, {
     "@id" : "_:genid80"
   }, {
     "@id" : "_:genid81"
-  }, {
-    "@id" : "_:genid82"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Position",
@@ -2395,6 +2504,8 @@
     "@value" : "Position"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid82"
+  }, {
     "@id" : "_:genid83"
   }, {
     "@id" : "_:genid84"
@@ -2402,47 +2513,65 @@
     "@id" : "_:genid85"
   }, {
     "@id" : "_:genid86"
-  }, {
-    "@id" : "_:genid87"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Quaternion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A quaternion is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.\n\nThe magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one."
+    "@value" : "A quaternion is defined as q = w + xi + yj + zk where w, x, y, and z are real numbers and i is defined as square root of -1. With quaternions, i = j = k = square root of -1.\r\n\r\nThe magnitude of a quaternion is calculated by magnitude = square root of (w2 + x2 + y2 + z2). For the unit quaternions, the magnitude is one."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Quaternion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid87"
+  }, {
     "@id" : "_:genid88"
   }, {
     "@id" : "_:genid89"
   }, {
     "@id" : "_:genid90"
-  }, {
-    "@id" : "_:genid91"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#RightForearm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "RightForearm is the region of the right upper limb between the right elbow and the right wrist. This is an owl:equivalentClass fma:fma11345."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "RightForearm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Forearm"
   }, {
-    "@id" : "_:genid92"
+    "@id" : "_:genid91"
+  } ]
+}, {
+  "@id" : "https://w3id.org/hdgi#RightHand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "RightHand is the terminal segmant of right upper limb which starts at end of the RightForearm and consists of Fingers. This is an owl:equivalentClass fma:fma9713."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RightHand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/hdgi#Hand"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#RightIndexFinger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Right hand index finger."
+    "@value" : "RightIndexFinger is the IndexFinger on the RightHand. This is an owl:equivalentClass fma:fma60333."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "RightIndexFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2453,9 +2582,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Right hand little finger."
+    "@value" : "RightLittleFinger is the LittleFinger on RightHand. This is an owl:equivalentClass fma:fma60327."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "RightLittleFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2466,9 +2596,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Right hand middle finger."
+    "@value" : "RightMiddleFinger is the MiddleFinger on RightHand. This is an owl:equivalentClass fma:fma60331."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "RightMiddleFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2479,9 +2610,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Right hand palm."
+    "@value" : "RightPalm is the area located at the end of the RightForearm (starting from right wrist) up until the start of a RightHand Fingers which is the central region of the anterior part of the RightHand. This is an owl:equivalentClass fma:fma61070."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "RightPalm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2492,9 +2624,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Right hand ring finger."
+    "@value" : "RightRingFinger is the RingFinger on RightHand. This is an owl:equivalentClass fma:fma60329."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "RightRingFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2505,9 +2638,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Thumb of right hand."
+    "@value" : "RightThumb is the Thumb on RightHand. This is an owl:equivalentClass fma:fma60325."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "RightThumb"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2516,22 +2650,28 @@
 }, {
   "@id" : "https://w3id.org/hdgi#RightUpperArm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "RightUpperArm is the region of the right upper limb between the right shoulder and right elbow joint. This is an owl:equivalentClass fma:fma24895."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "RightUpperArm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#UpperArm"
   }, {
-    "@id" : "_:genid93"
+    "@id" : "_:genid92"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#RingFinger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Fourth finger or the fourth digit of hand."
+    "@value" : "RingFinger is the fourth Finger on Hand. Also known as fourth Digit of hand. This is an owl:equivalentClass fma:fma24948."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "RingFinger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2564,9 +2704,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#FingerPose"
   }, {
-    "@id" : "_:genid94"
+    "@id" : "_:genid93"
   }, {
-    "@id" : "_:genid95"
+    "@id" : "_:genid94"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#RingFingerStraightandBackward",
@@ -2633,6 +2773,8 @@
     "@value" : "Rotation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid95"
+  }, {
     "@id" : "_:genid96"
   }, {
     "@id" : "_:genid97"
@@ -2642,17 +2784,16 @@
     "@id" : "_:genid99"
   }, {
     "@id" : "_:genid100"
-  }, {
-    "@id" : "_:genid101"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#Thumb",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "First digit of hand."
+    "@value" : "Thumb is the first Finger on Hand. Also known as first Digit of hand. This is an owl:equivalentClass fma:fma24938."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Thumb"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2665,7 +2806,7 @@
     "@value" : "ThumbCurled"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbFolded",
@@ -2674,7 +2815,20 @@
     "@value" : "ThumbFolded"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
+  } ]
+}, {
+  "@id" : "https://w3id.org/hdgi#ThumbPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ThumbPose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/hdgi#FingerPose"
+  }, {
+    "@id" : "_:genid101"
+  }, {
+    "@id" : "_:genid102"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandBackward",
@@ -2683,7 +2837,7 @@
     "@value" : "ThumbStraightandBackward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandDownward",
@@ -2692,7 +2846,7 @@
     "@value" : "ThumbStraightandDownward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandForward",
@@ -2701,7 +2855,7 @@
     "@value" : "ThumbStraightandForward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandLeftward",
@@ -2710,7 +2864,7 @@
     "@value" : "ThumbStraightandLeftward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandRightward",
@@ -2719,7 +2873,7 @@
     "@value" : "ThumbStraightandRightward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#ThumbStraightandUpward",
@@ -2728,29 +2882,17 @@
     "@value" : "ThumbStraightandUpward"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#TumbPose"
-  } ]
-}, {
-  "@id" : "https://w3id.org/hdgi#TumbPose",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TumbPose"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/hdgi#FingerPose"
-  }, {
-    "@id" : "_:genid102"
-  }, {
-    "@id" : "_:genid103"
+    "@id" : "https://w3id.org/hdgi#ThumbPose"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#UnitOfMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Defines units of measurement."
+    "@value" : "Defines units of measurement. This is an equivalent class to qudt:Unit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "UnitOfMeasure"
   } ]
 }, {
@@ -2758,15 +2900,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The upper arm is the line between the shoulder and elbow joint."
+    "@value" : "UpperArm is a BodyPart. It is the region of the upper limb between the shoulder and elbow joint. This is an owl:equivalentClass fma:fma24890."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "UpperArm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#BodyPart"
   }, {
-    "@id" : "_:genid104"
+    "@id" : "_:genid103"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#UpperArmAnticlcockwiseRotation",
@@ -2808,17 +2951,19 @@
   "@id" : "https://w3id.org/hdgi#UpperArmGesture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Gestures (movements) made with upper arm"
+    "@language" : "en",
+    "@value" : "UpperArmGesture is a Gesture executed with a Movement or a Pose using the BodayPart UpperArm."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "UpperArmGesture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Gesture"
   }, {
-    "@id" : "_:genid105"
+    "@id" : "_:genid104"
   }, {
-    "@id" : "_:genid106"
+    "@id" : "_:genid105"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#UpperArmLeftward",
@@ -2856,9 +3001,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Movement"
   }, {
-    "@id" : "_:genid107"
+    "@id" : "_:genid106"
   }, {
-    "@id" : "_:genid108"
+    "@id" : "_:genid107"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#UpperArmPose",
@@ -2869,9 +3014,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/hdgi#Pose"
   }, {
-    "@id" : "_:genid109"
+    "@id" : "_:genid108"
   }, {
-    "@id" : "_:genid110"
+    "@id" : "_:genid109"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#UpperArmRightward",
@@ -2903,7 +3048,12 @@
 }, {
   "@id" : "https://w3id.org/hdgi#UserContext",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "UserContext describes the data that is specifically related to a Human in a certain Context that is Human specific data in a Context."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "UserContext"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2913,7 +3063,8 @@
   "@id" : "https://w3id.org/hdgi#affordedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Relation from a Affordance to a Device describing the affordances of a device."
+    "@language" : "en",
+    "@value" : "Relation from an Affordance to a Device describing an affordance of a device."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "affordedBy"
@@ -2930,6 +3081,10 @@
 }, {
   "@id" : "https://w3id.org/hdgi#hasDuration",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a Movement and a Duration describing the time duration of a movement."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasDuration"
   } ]
@@ -3009,13 +3164,14 @@
     "@value" : "hasUnitOfMeasure"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#i-component",
+  "@id" : "https://w3id.org/hdgi#iComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers and i-component = x\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
+    "@language" : "en",
+    "@value" : "A quaternion “q” can be defined as (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers. The jComponent is the component of j which equals to y. In the equation 'j' is defined as √-1. With quaternions, i = j = k = √-1."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "i-component"
+    "@value" : "iComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -3039,25 +3195,25 @@
     "@value" : "isPartOf"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#j-component",
+  "@id" : "https://w3id.org/hdgi#jComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
+    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers j-component = y\r\n\r\nIn the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "j-component"
+    "@value" : "jComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#k-component",
+  "@id" : "https://w3id.org/hdgi#kComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z\n\nIn the euqation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
+    "@value" : "In an equation where quaternion (q) = w + xi + yj + zk, where w, x, y, and z are all real numbers k-component = z\r\n\r\nIn the equation 'i' is defined as sqrt(-1). With quaternions, i = j = k = sqrt(-1)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "k-component"
+    "@value" : "kComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -3081,7 +3237,7 @@
   "@id" : "https://w3id.org/hdgi#originPoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Frame of reference or the initial center.\nLocation of the (0,0,0) postion related to the given coordinates."
+    "@value" : "Frame of reference or the initial center.\r\nLocation of the (0,0,0) postion related to the given coordinates."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "originPoint"
@@ -3102,10 +3258,11 @@
     "@value" : "supportsGesture"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#timeStamp",
+  "@id" : "https://w3id.org/hdgi#timestamp",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "timeStamp"
+    "@language" : "en",
+    "@value" : "timestamp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
@@ -3115,13 +3272,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "used"
-  } ],
-  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/hdgi#hasPose"
-    }, {
-      "@id" : "https://w3id.org/hdgi#used"
-    } ]
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#uses",
@@ -3130,29 +3280,33 @@
     "@value" : "uses"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#w-component",
+  "@id" : "https://w3id.org/hdgi#wComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents the amount of rotation which will occur about this axis defined by (i-component, j-component, k-component). Known as scalar component."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "w-component"
+    "@value" : "wComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#x-axisDirection",
+  "@id" : "https://w3id.org/hdgi#xAxisDirection",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "x-axisDirection"
+    "@value" : "xAxisDirection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid3"
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#xPosition",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In a three-dimensional Cartesian coordinate system where coordinates of any point in space are determined by three real numbers: x, y, z, the xPosition is the value of the real number x. Known as abscissa or x-coordinate in mathematics."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "xPosition"
   } ],
@@ -3172,13 +3326,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#y-axisDirection",
+  "@id" : "https://w3id.org/hdgi#yAxisDirection",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "y-axisDirection"
+    "@value" : "yAxisDirection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid6"
+    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#yPosition",
@@ -3202,13 +3356,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
-  "@id" : "https://w3id.org/hdgi#z-axisDirection",
+  "@id" : "https://w3id.org/hdgi#zAxisDirection",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "z-axisDirection"
+    "@value" : "zAxisDirection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid7"
   } ]
 }, {
   "@id" : "https://w3id.org/hdgi#zPosition",
