@@ -4,10 +4,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 hdgi:ObservableAffordance
-  owl:equivalentClass sosa:ObservableProperty;
+  rdfs:subClassOf sosa:ObservableProperty;
 
 hdgi:ActuatableAffordance
-  owl:equivalentClass sosa:ActuatableProperty;
+  rdfs:subClassOf sosa:ActuatableProperty;
 
 hdgi:Device
-  owl:equivalentClass sosa:Platform;
+  rdfs:subClassOf sosa:Platform;
