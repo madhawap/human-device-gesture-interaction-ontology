@@ -1,0 +1,183 @@
+@prefix : <https://w3id.org/hdgi/gesture-interaction-pattern1> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@base <https://w3id.org/hdgi/gesture-interaction-pattern> .
+
+<https://w3id.org/hdgi/gesture-interaction-pattern> rdf:type owl:Ontology ;
+                                                     owl:imports <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#affordedBy
+:affordedBy rdf:type owl:ObjectProperty ;
+            rdfs:label "affordedBy"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#hasDuration
+:hasDuration rdf:type owl:ObjectProperty ;
+             rdfs:label "hasDuration"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#hasEndPose
+:hasEndPose rdf:type owl:ObjectProperty ;
+            rdfs:label "hasEndPose"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#hasMovement
+:hasMovement rdf:type owl:ObjectProperty ;
+             rdfs:label "hasMovement"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#hasStartPose
+:hasStartPose rdf:type owl:ObjectProperty ;
+              rdfs:label "hasStartPose"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#includesGesture
+:includesGesture rdf:type owl:ObjectProperty ;
+                 rdfs:label "includesGestures"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#performs
+:performs rdf:type owl:ObjectProperty ;
+          rdfs:label "performs"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#supportsGesture
+:supportsGesture rdf:type owl:ObjectProperty ;
+                 rdfs:label "supportsGesture"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#used
+:used rdf:type owl:ObjectProperty ;
+      rdfs:label "used"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#uses
+:uses rdf:type owl:ObjectProperty ;
+      rdfs:label "uses"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#timestamp
+:timestamp rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:dateTimeStamp ;
+           rdfs:comment "A timestamp represent the date and time of an event occured and that is recorded by a system/person."@en ;
+           rdfs:label "timestamp"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#Affordance
+:Affordance rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :affordedBy ;
+                              owl:allValuesFrom :Device
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :supportsGesture ;
+                              owl:allValuesFrom :Gesture
+                            ] ;
+            rdfs:comment "Affordance is a quality or characteristic of Devices that indicates the possible action a Human can take with it. This is rdfs:subClassOf ssn:Property."@en ;
+            rdfs:label "Affordance"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#BodyPart
+:BodyPart rdf:type owl:Class ;
+          rdfs:comment "BodyPart is any part of HumanBody such as an Face, Leg etc."@en ;
+          rdfs:label "BodyPart"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#Device
+:Device rdf:type owl:Class ;
+        rdfs:comment "Device denotes a piece of hardware or software which consists of sensors or actuators or both."@en ;
+        rdfs:label "Device"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#Duration
+:Duration rdf:type owl:Class ;
+          rdfs:comment "Duration of a temporal extent expressed as a decimal number scaled by a temporal unit. This is an owl:equivalentClass time:Duration."@en ;
+          rdfs:label "Duration"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#Gesture
+:Gesture rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :includesGesture ;
+                           owl:allValuesFrom :Gesture
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :used ;
+                           owl:allValuesFrom :BodyPart
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasEndPose ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Pose
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasStartPose ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Pose
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasMovement ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Movement
+                         ] ;
+         rdfs:comment "Gesture is a Movement or a Pose of a BodyPart."@en ;
+         rdfs:label "Gesture"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :performs ;
+                         owl:someValuesFrom :Gesture
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :performs ;
+                         owl:someValuesFrom :Pose
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :uses ;
+                         owl:allValuesFrom :BodyPart
+                       ] ;
+       rdfs:comment "Human represents the user who performs a Gesture or a Pose."@en ;
+       rdfs:label "Human"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#Movement
+:Movement rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDuration ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Duration
+                          ] ;
+          rdfs:comment "Movement is the act of moving a certain BodyPart towards a certain direction in a certain period of time (Duration)."@en ;
+          rdfs:label "Movement"@en .
+
+
+###  https://w3id.org/hdgi/gesture-interaction-pattern#Pose
+:Pose rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :timestamp ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:dateTimeStamp
+                      ] ;
+      rdfs:comment "Pose is repesent a particular Position and Rotation of a BodyPart at a particular timestamp."@en ;
+      rdfs:label "Pose"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
