@@ -3,12 +3,65 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix time: <http://www.w3.org/2006/time#> .
+@prefix time: <https://www.w3.org/TR/owl-time/#time:> .
 @base <https://w3id.org/hdgi/gesture-interaction-pattern> .
 
 <https://w3id.org/hdgi/gesture-interaction-pattern> rdf:type owl:Ontology ;
-                                                     owl:imports <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> .
+                                                     owl:imports <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> ;
+                                                     <http://creativecommons.org/ns#attributionURL> "https://w3id.org/hdgi/gesture-interaction-pattern"@en ;
+                                                     <http://purl.org/dc/elements/1.1/creator> "Madhawa Perera, Armin Haller"@en ;
+                                                     <http://purl.org/dc/terms/description> "Ontology pattern to model concepts related to human gesture interactions."@en ;
+                                                     <http://purl.org/dc/terms/license> <https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE> ;
+                                                     <http://purl.org/dc/terms/title> "Gesture Interaction Pattern: a content ontology design pattern."@en ;
+                                                     <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom> <https://w3id.org/hdgi/v0.1> ;
+                                                     <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> """The Gesture Interaction Pattern aims to model the pose and movement of human body that are used to interact with devices (particularly with device affordances). This helps to describe a human gesture with its relationship between certain device affordances, related body parts and the temporal components associated with those.
+
+This might be helpful in creating user specific gesture profiles. This ontology pattern is geared at mapping the ubiquitousness in gesture vocabularies by linking them appropriately and does not enforce designers and manufacturers to follow a standard."""@en ;
+                                                     <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> """This pattern is applicable for a wide range of scenarios in gesture interaction systems.
+
+For example:
+
+Consider a user who uses a certain gesture to turn on their personal air conditioner. If this user visits a hotel room with an air conditioner of a different model that carries different interactions, how can the system accommodate the user's preferred gesture and let the user continue, as in their own room, without having to read instructions. This ontology pattern will help to model parsonlised gesture details.
+
+Further, online search engines currently do not provide sufficient information for gesture related semantics. For example, search query to retrieve ‘gestures to turn on a TV’, would not provide relevant gesture vocabularies supported by different vendors. Designers/developers have to find individual studies separately and read/learn necessary data manually.  Being able to retrieve semantics of gestures which are related to the affordance of ‘turn on a TV’ would be convenient for designers and developers in such situations."""@en ;
+                                                     rdfs:label "Gesture Interaction Pattern"@en ;
+                                                     rdfs:seeAlso "Refer to https://w3id.org/hdgi to see a complete ontology schema build around Gesture Interaction Pattern"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#attributionURL
+<http://creativecommons.org/ns#attributionURL> rdf:type owl:AnnotationProperty ;
+                                               <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty ;
+                                          <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty ;
+                                       <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty ;
+                                   <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty ;
+                                 <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
+
+
+###  http://www.w3.org/2008/05/skos#example
+<http://www.w3.org/2008/05/skos#example> rdf:type owl:AnnotationProperty ;
+                                         <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
+
 
 #################################################################
 #    Object Properties
@@ -16,51 +69,62 @@
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#affordedBy
 :affordedBy rdf:type owl:ObjectProperty ;
-            rdfs:label "affordedBy"@en .
+            rdfs:comment "Relation between an Affordance and the Device classes where a device is able to afford it."@en ;
+            rdfs:label "affordedBy"@en ;
+            <http://www.w3.org/2008/05/skos#example> "Turn on TV"@en .
 
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#hasDuration
 :hasDuration rdf:type owl:ObjectProperty ;
+             rdfs:comment "Relation between a Gesture and the Duration, where the gesture has a duration. This is an owl:equivalentClass time:hasDuration."@en ;
              rdfs:label "hasDuration"@en .
 
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#hasEndPose
 :hasEndPose rdf:type owl:ObjectProperty ;
+            rdfs:comment "Relation between a Gesture and a Pose where the pose represents the ending Pose of that gesture."@en ;
             rdfs:label "hasEndPose"@en .
 
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#hasMovement
 :hasMovement rdf:type owl:ObjectProperty ;
+             rdfs:comment "Relation between a Gesture and a Movement where the movement describes a particular motion of a body part."@en ;
              rdfs:label "hasMovement"@en .
 
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#hasStartPose
 :hasStartPose rdf:type owl:ObjectProperty ;
+              rdfs:comment "Relation between a Gesture and Pose where the pose represents the initial pose of that gesture."@en ;
               rdfs:label "hasStartPose"@en .
 
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#includesGesture
 :includesGesture rdf:type owl:ObjectProperty ;
+                 rdfs:comment "A Gesture could consist multiple atomic Gestures. This represents the relation between the Gesture and its atomic Gestures."@en ;
                  rdfs:label "includesGestures"@en .
 
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#performs
 :performs rdf:type owl:ObjectProperty ;
+          rdfs:comment "Relation between a Human and a Gesture."@en ;
           rdfs:label "performs"@en .
 
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#supportsGesture
 :supportsGesture rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Relation between a Gesture and an Affordance where affordance is supported by that particular gesture."@en ;
                  rdfs:label "supportsGesture"@en .
 
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#used
 :used rdf:type owl:ObjectProperty ;
+      rdfs:comment "Relation between a Gesture and a BodyPart which describes the body parts used in that gesture. This is an owl:equivalentClass prov:used."@en ;
       rdfs:label "used"@en .
 
 
 ###  https://w3id.org/hdgi/gesture-interaction-pattern#uses
 :uses rdf:type owl:ObjectProperty ;
+      rdfs:comment "Relation between a Human and BodyPart which describes the body part that a human uses to perform a certain gesture."@en ;
       rdfs:label "uses"@en .
 
 
