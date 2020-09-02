@@ -1,247 +1,459 @@
-@prefix : <https://w3id.org/hdgi/gesture-interaction-pattern1> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix time: <https://www.w3.org/TR/owl-time/#time:> .
-@base <https://w3id.org/hdgi/gesture-interaction-pattern> .
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/hdgi/gesture-interaction-pattern"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/hdgi/gesture-interaction-pattern">
+    <Prefix name="" IRI="https://w3id.org/hdgi/gesture-interaction-pattern1"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="time" IRI="https://www.w3.org/TR/owl-time/#time:"/>
+    <Import>http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#attributionURL"/>
+        <Literal xml:lang="en">https://w3id.org/hdgi/gesture-interaction-pattern</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">Madhawa Perera, Armin Haller</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">Ontology pattern to model concepts related to human gesture interactions.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <IRI>https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">Gesture Interaction Pattern: a content ontology design pattern.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom"/>
+        <IRI>https://w3id.org/hdgi/v0.1</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent"/>
+        <Literal xml:lang="en">The Gesture Interaction Pattern aims to model the pose and movement of human body that are used to interact with devices (particularly with device affordances). This helps to describe a human gesture with its relationship between certain device affordances, related body parts and the temporal components associated with those.
 
-<https://w3id.org/hdgi/gesture-interaction-pattern> rdf:type owl:Ontology ;
-                                                     owl:imports <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> ;
-                                                     <http://creativecommons.org/ns#attributionURL> "https://w3id.org/hdgi/gesture-interaction-pattern"@en ;
-                                                     <http://purl.org/dc/elements/1.1/creator> "Madhawa Perera, Armin Haller"@en ;
-                                                     <http://purl.org/dc/terms/description> "Ontology pattern to model concepts related to human gesture interactions."@en ;
-                                                     <http://purl.org/dc/terms/license> <https://github.com/madhawap/human-device-gesture-interaction-ontology/blob/master/LICENSE> ;
-                                                     <http://purl.org/dc/terms/title> "Gesture Interaction Pattern: a content ontology design pattern."@en ;
-                                                     <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom> <https://w3id.org/hdgi/v0.1> ;
-                                                     <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> """The Gesture Interaction Pattern aims to model the pose and movement of human body that are used to interact with devices (particularly with device affordances). This helps to describe a human gesture with its relationship between certain device affordances, related body parts and the temporal components associated with those.
-
-This might be helpful in creating user specific gesture profiles. This ontology pattern is geared at mapping the ubiquitousness in gesture vocabularies by linking them appropriately and does not enforce designers and manufacturers to follow a standard."""@en ;
-                                                     <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> """This pattern is applicable for a wide range of scenarios in gesture interaction systems.
+This might be helpful in creating user specific gesture profiles. This ontology pattern is geared at mapping the ubiquitousness in gesture vocabularies by linking them appropriately and does not enforce designers and manufacturers to follow a standard.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"/>
+        <Literal xml:lang="en">This pattern is applicable for a wide range of scenarios in gesture interaction systems.
 
 For example:
 
-Consider a user who uses a certain gesture to turn on their personal air conditioner. If this user visits a hotel room with an air conditioner of a different model that carries different interactions, how can the system accommodate the user's preferred gesture and let the user continue, as in their own room, without having to read instructions. This ontology pattern will help to model parsonlised gesture details.
+Consider a user who uses a certain gesture to turn on their personal air conditioner. If this user visits a hotel room with an air conditioner of a different model that carries different interactions, how can the system accommodate the user&apos;s preferred gesture and let the user continue, as in their own room, without having to read instructions. This ontology pattern will help to model parsonlised gesture details.
 
-Further, online search engines currently do not provide sufficient information for gesture related semantics. For example, search query to retrieve ‘gestures to turn on a TV’, would not provide relevant gesture vocabularies supported by different vendors. Designers/developers have to find individual studies separately and read/learn necessary data manually.  Being able to retrieve semantics of gestures which are related to the affordance of ‘turn on a TV’ would be convenient for designers and developers in such situations."""@en ;
-                                                     rdfs:label "Gesture Interaction Pattern"@en ;
-                                                     rdfs:seeAlso "Refer to https://w3id.org/hdgi to see a complete ontology schema build around Gesture Interaction Pattern"@en .
+Further, online search engines currently do not provide sufficient information for gesture related semantics. For example, search query to retrieve ‘gestures to turn on a TV’, would not provide relevant gesture vocabularies supported by different vendors. Designers/developers have to find individual studies separately and read/learn necessary data manually.  Being able to retrieve semantics of gestures which are related to the affordance of ‘turn on a TV’ would be convenient for designers and developers in such situations.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en">Gesture Interaction Pattern</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal xml:lang="en">Refer to https://w3id.org/hdgi to see a complete ontology schema build around Gesture Interaction Pattern</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="1Affordance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="1BodyPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="1Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="1Duration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="1Gesture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="1Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="1Movement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="1Pose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1affordedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1hasEndPose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1hasMovement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1hasStartPose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1includesGesture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1performs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1supportsGesture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1used"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="1uses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="1timestamp"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#attributionURL"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2008/05/skos#example"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="1Affordance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="1affordedBy"/>
+            <Class IRI="1Device"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Affordance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="1supportsGesture"/>
+            <Class IRI="1Gesture"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Gesture"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="1includesGesture"/>
+            <Class IRI="1Gesture"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Gesture"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="1used"/>
+            <Class IRI="1BodyPart"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Gesture"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="1hasEndPose"/>
+            <Class IRI="1Pose"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Gesture"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="1hasStartPose"/>
+            <Class IRI="1Pose"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Gesture"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="1hasMovement"/>
+            <Class IRI="1Movement"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Human"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="1performs"/>
+            <Class IRI="1Gesture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Human"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="1performs"/>
+            <Class IRI="1Pose"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Human"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="1uses"/>
+            <Class IRI="1BodyPart"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Movement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="1hasDuration"/>
+            <Class IRI="1Duration"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="1Pose"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="1timestamp"/>
+            <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <DataPropertyRange>
+        <DataProperty IRI="1timestamp"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://creativecommons.org/ns#attributionURL</IRI>
+        <Literal>madhawaperera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal>madhawaperera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://purl.org/dc/terms/description</IRI>
+        <Literal>madhawaperera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://purl.org/dc/terms/license</IRI>
+        <Literal>madhawaperera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://purl.org/dc/terms/title</IRI>
+        <Literal>madhawaperera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.w3.org/2008/05/skos#example</IRI>
+        <Literal>madhawaperera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1Affordance</IRI>
+        <Literal xml:lang="en">Affordance is a quality or characteristic of Devices that indicates the possible action a Human can take with it. This is rdfs:subClassOf ssn:Property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1Affordance</IRI>
+        <Literal xml:lang="en">Affordance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1BodyPart</IRI>
+        <Literal xml:lang="en">BodyPart is any part of HumanBody such as an Face, Leg etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1BodyPart</IRI>
+        <Literal xml:lang="en">BodyPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1Device</IRI>
+        <Literal xml:lang="en">Device denotes a piece of hardware or software which consists of sensors or actuators or both.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1Device</IRI>
+        <Literal xml:lang="en">Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1Duration</IRI>
+        <Literal xml:lang="en">Duration of a temporal extent expressed as a decimal number scaled by a temporal unit. This is an owl:equivalentClass time:Duration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1Duration</IRI>
+        <Literal xml:lang="en">Duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1Gesture</IRI>
+        <Literal xml:lang="en">Gesture is a Movement or a Pose of a BodyPart.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1Gesture</IRI>
+        <Literal xml:lang="en">Gesture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1Human</IRI>
+        <Literal xml:lang="en">Human represents the user who performs a Gesture or a Pose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1Human</IRI>
+        <Literal xml:lang="en">Human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1Movement</IRI>
+        <Literal xml:lang="en">Movement is the act of moving a certain BodyPart towards a certain direction in a certain period of time (Duration).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1Movement</IRI>
+        <Literal xml:lang="en">Movement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1Pose</IRI>
+        <Literal xml:lang="en">Pose is repesent a particular Position and Rotation of a BodyPart at a particular timestamp.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1Pose</IRI>
+        <Literal xml:lang="en">Pose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1affordedBy</IRI>
+        <Literal xml:lang="en">Relation between an Affordance and the Device classes where a device is able to afford it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1affordedBy</IRI>
+        <Literal xml:lang="en">affordedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2008/05/skos#example"/>
+        <IRI>1affordedBy</IRI>
+        <Literal xml:lang="en">Turn on TV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1hasDuration</IRI>
+        <Literal xml:lang="en">Relation between a Gesture and the Duration, where the gesture has a duration. This is an owl:equivalentClass time:hasDuration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1hasDuration</IRI>
+        <Literal xml:lang="en">hasDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1hasEndPose</IRI>
+        <Literal xml:lang="en">Relation between a Gesture and a Pose where the pose represents the ending Pose of that gesture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1hasEndPose</IRI>
+        <Literal xml:lang="en">hasEndPose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1hasMovement</IRI>
+        <Literal xml:lang="en">Relation between a Gesture and a Movement where the movement describes a particular motion of a body part.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1hasMovement</IRI>
+        <Literal xml:lang="en">hasMovement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1hasStartPose</IRI>
+        <Literal xml:lang="en">Relation between a Gesture and Pose where the pose represents the initial pose of that gesture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1hasStartPose</IRI>
+        <Literal xml:lang="en">hasStartPose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1includesGesture</IRI>
+        <Literal xml:lang="en">A Gesture could consist multiple atomic Gestures. This represents the relation between the Gesture and its atomic Gestures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1includesGesture</IRI>
+        <Literal xml:lang="en">includesGestures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1performs</IRI>
+        <Literal xml:lang="en">Relation between a Human and a Gesture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1performs</IRI>
+        <Literal xml:lang="en">performs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1supportsGesture</IRI>
+        <Literal xml:lang="en">Relation between a Gesture and an Affordance where affordance is supported by that particular gesture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1supportsGesture</IRI>
+        <Literal xml:lang="en">supportsGesture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1timestamp</IRI>
+        <Literal xml:lang="en">A timestamp represent the date and time of an event occured and that is recorded by a system/person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1timestamp</IRI>
+        <Literal xml:lang="en">timestamp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1used</IRI>
+        <Literal xml:lang="en">Relation between a Gesture and a BodyPart which describes the body parts used in that gesture. This is an owl:equivalentClass prov:used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1used</IRI>
+        <Literal xml:lang="en">used</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>1uses</IRI>
+        <Literal xml:lang="en">Relation between a Human and BodyPart which describes the body part that a human uses to perform a certain gesture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>1uses</IRI>
+        <Literal xml:lang="en">uses</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://creativecommons.org/ns#attributionURL
-<http://creativecommons.org/ns#attributionURL> rdf:type owl:AnnotationProperty ;
-                                               <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
 
 
-###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty ;
-                                          <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
-
-###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty ;
-                                       <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
-
-
-###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty ;
-                                   <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
-
-
-###  http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty ;
-                                 <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
-
-
-###  http://www.w3.org/2008/05/skos#example
-<http://www.w3.org/2008/05/skos#example> rdf:type owl:AnnotationProperty ;
-                                         <http://purl.org/dc/elements/1.1/creator> "madhawaperera"^^xsd:string .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#affordedBy
-:affordedBy rdf:type owl:ObjectProperty ;
-            rdfs:comment "Relation between an Affordance and the Device classes where a device is able to afford it."@en ;
-            rdfs:label "affordedBy"@en ;
-            <http://www.w3.org/2008/05/skos#example> "Turn on TV"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#hasDuration
-:hasDuration rdf:type owl:ObjectProperty ;
-             rdfs:comment "Relation between a Gesture and the Duration, where the gesture has a duration. This is an owl:equivalentClass time:hasDuration."@en ;
-             rdfs:label "hasDuration"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#hasEndPose
-:hasEndPose rdf:type owl:ObjectProperty ;
-            rdfs:comment "Relation between a Gesture and a Pose where the pose represents the ending Pose of that gesture."@en ;
-            rdfs:label "hasEndPose"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#hasMovement
-:hasMovement rdf:type owl:ObjectProperty ;
-             rdfs:comment "Relation between a Gesture and a Movement where the movement describes a particular motion of a body part."@en ;
-             rdfs:label "hasMovement"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#hasStartPose
-:hasStartPose rdf:type owl:ObjectProperty ;
-              rdfs:comment "Relation between a Gesture and Pose where the pose represents the initial pose of that gesture."@en ;
-              rdfs:label "hasStartPose"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#includesGesture
-:includesGesture rdf:type owl:ObjectProperty ;
-                 rdfs:comment "A Gesture could consist multiple atomic Gestures. This represents the relation between the Gesture and its atomic Gestures."@en ;
-                 rdfs:label "includesGestures"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#performs
-:performs rdf:type owl:ObjectProperty ;
-          rdfs:comment "Relation between a Human and a Gesture."@en ;
-          rdfs:label "performs"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#supportsGesture
-:supportsGesture rdf:type owl:ObjectProperty ;
-                 rdfs:comment "Relation between a Gesture and an Affordance where affordance is supported by that particular gesture."@en ;
-                 rdfs:label "supportsGesture"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#used
-:used rdf:type owl:ObjectProperty ;
-      rdfs:comment "Relation between a Gesture and a BodyPart which describes the body parts used in that gesture. This is an owl:equivalentClass prov:used."@en ;
-      rdfs:label "used"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#uses
-:uses rdf:type owl:ObjectProperty ;
-      rdfs:comment "Relation between a Human and BodyPart which describes the body part that a human uses to perform a certain gesture."@en ;
-      rdfs:label "uses"@en .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#timestamp
-:timestamp rdf:type owl:DatatypeProperty ;
-           rdfs:range xsd:dateTimeStamp ;
-           rdfs:comment "A timestamp represent the date and time of an event occured and that is recorded by a system/person."@en ;
-           rdfs:label "timestamp"@en .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#Affordance
-:Affordance rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty :affordedBy ;
-                              owl:allValuesFrom :Device
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :supportsGesture ;
-                              owl:allValuesFrom :Gesture
-                            ] ;
-            rdfs:comment "Affordance is a quality or characteristic of Devices that indicates the possible action a Human can take with it. This is rdfs:subClassOf ssn:Property."@en ;
-            rdfs:label "Affordance"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#BodyPart
-:BodyPart rdf:type owl:Class ;
-          rdfs:comment "BodyPart is any part of HumanBody such as an Face, Leg etc."@en ;
-          rdfs:label "BodyPart"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#Device
-:Device rdf:type owl:Class ;
-        rdfs:comment "Device denotes a piece of hardware or software which consists of sensors or actuators or both."@en ;
-        rdfs:label "Device"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#Duration
-:Duration rdf:type owl:Class ;
-          rdfs:comment "Duration of a temporal extent expressed as a decimal number scaled by a temporal unit. This is an owl:equivalentClass time:Duration."@en ;
-          rdfs:label "Duration"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#Gesture
-:Gesture rdf:type owl:Class ;
-         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                           owl:onProperty :includesGesture ;
-                           owl:allValuesFrom :Gesture
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :used ;
-                           owl:allValuesFrom :BodyPart
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasEndPose ;
-                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :Pose
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasStartPose ;
-                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :Pose
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasMovement ;
-                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :Movement
-                         ] ;
-         rdfs:comment "Gesture is a Movement or a Pose of a BodyPart."@en ;
-         rdfs:label "Gesture"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#Human
-:Human rdf:type owl:Class ;
-       rdfs:subClassOf [ rdf:type owl:Restriction ;
-                         owl:onProperty :performs ;
-                         owl:someValuesFrom :Gesture
-                       ] ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :performs ;
-                         owl:someValuesFrom :Pose
-                       ] ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :uses ;
-                         owl:allValuesFrom :BodyPart
-                       ] ;
-       rdfs:comment "Human represents the user who performs a Gesture or a Pose."@en ;
-       rdfs:label "Human"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#Movement
-:Movement rdf:type owl:Class ;
-          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasDuration ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :Duration
-                          ] ;
-          rdfs:comment "Movement is the act of moving a certain BodyPart towards a certain direction in a certain period of time (Duration)."@en ;
-          rdfs:label "Movement"@en .
-
-
-###  https://w3id.org/hdgi/gesture-interaction-pattern#Pose
-:Pose rdf:type owl:Class ;
-      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                        owl:onProperty :timestamp ;
-                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onDataRange xsd:dateTimeStamp
-                      ] ;
-      rdfs:comment "Pose is repesent a particular Position and Rotation of a BodyPart at a particular timestamp."@en ;
-      rdfs:label "Pose"@en .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
