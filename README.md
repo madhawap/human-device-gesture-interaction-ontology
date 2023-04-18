@@ -39,7 +39,8 @@ https://github.com/madhawap/human-device-gesture-interaction-ontology/tree/maste
 https://github.com/madhawap/human-device-gesture-interaction-ontology/tree/gh-pages/v0.1/
 
 - HDGI Mapping service implementation.
-https://github.com/madhawap/hdgi-ontology-mappings/tree/master
+https://github.com/madhawap/hdgi-mapping-poc
+https://github.com/madhawap/hdgi-ontology-mappings
 
 - HDGI Mapping service.
 https://hdgi-mapping-service.ts.r.appspot.com
